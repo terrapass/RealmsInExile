@@ -1,4 +1,4 @@
-﻿religion_group_eruhini = {
+﻿free_peoples_religion = {
 	family = rf_eruhini
 	graphical_faith = pagan_gfx
 	
