@@ -1,9 +1,10 @@
 pdxmesh = {
-	name = "rock_khand_05_mesh"
-	file = "rock_khand_05.mesh"
+	name = "rock_khand_03_mesh"
+	file = "rock_khand_03.mesh"
+	scale = 0.2
 
 	meshsettings = {
-		name = "rock_khand_05"
+		name = "rock_khand_03"
 		index = 0
 		texture_diffuse = "khand_rocks_diffuse.dds"
 		texture_normal = "khand_rocks_normal.dds"
@@ -14,6 +15,6 @@ pdxmesh = {
 }
 
 entity = {
-	name = "rock_khand_05_entity"
-	pdxmesh = "rock_khand_05_mesh"
+	name = "rock_khand_03_entity"
+	pdxmesh = "rock_khand_03_mesh"
 }

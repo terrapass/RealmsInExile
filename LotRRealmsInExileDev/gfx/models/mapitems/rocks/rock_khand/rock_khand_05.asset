@@ -1,6 +1,7 @@
 pdxmesh = {
 	name = "rock_khand_05_mesh"
 	file = "rock_khand_05.mesh"
+	scale = 0.2
 
 	meshsettings = {
 		name = "rock_khand_05"
