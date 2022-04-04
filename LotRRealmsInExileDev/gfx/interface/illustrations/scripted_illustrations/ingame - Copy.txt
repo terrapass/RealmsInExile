@@ -20,16 +20,6 @@ character_view_bg = {
 	}
 
 	##########################################
-	# Wastelands: not a real leader
-	
-	texture = {
-		reference = "event_scenes/wastelands.dds"
-		trigger = {
-			lotr_wastelands_trigger = yes
-		}		
-	}
-
-	##########################################
 
 	# Wandering
 	texture = {
@@ -1197,8 +1187,7 @@ character_location_exterior = {
 			has_government = tribal_government
 			exists = capital_province
 			capital_province = {
-				geographical_region = middleearth_near_harad
-				geographical_region = middleearth_far_harad
+				geographical_region = middleearth_haradwaith
 #				geographical_region = world_africa
 			}
 		}
@@ -1224,8 +1213,7 @@ character_location_exterior = {
 			has_government = tribal_government
 			exists = capital_province
 			capital_province = {
-				geographical_region = middleearth_near_harad
-				geographical_region = middleearth_far_harad
+				geographical_region = middleearth_haradwaith
 #				geographical_region = world_middle_east_arabia
 			}
 		}
@@ -1476,8 +1464,7 @@ title_holding = {
 					terrain = oasis
 					terrain = steppe
 					terrain = drylands
-					geographical_region = middleearth_near_harad
-					geographical_region = middleearth_far_harad
+					geographical_region = middleearth_haradwaith
 #					geographical_region = world_steppe
 #					geographical_region = world_middle_east_persia
 #					geographical_region = world_middle_east_jerusalem
@@ -1629,8 +1616,7 @@ title_holding = {
 					terrain = oasis
 					terrain = steppe
 					terrain = drylands
-					geographical_region = middleearth_near_harad
-					geographical_region = middleearth_far_harad
+					geographical_region = middleearth_haradwaith
 #					geographical_region = world_steppe
 #					geographical_region = world_middle_east_persia
 #					geographical_region = world_middle_east_jerusalem
