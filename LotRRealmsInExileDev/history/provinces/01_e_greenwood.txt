@@ -107,6 +107,26 @@
     holding = none
 }
 
+##    Vinweald (c_vinweald)
+
+4515 = {    #Vinweald (b_vinweald)
+    culture = valemen
+    religion = faith_woodmen
+    holding = tribal_holding
+}
+
+4516 = {    #Stantun (b_stantun)
+    culture = valemen
+    religion = faith_woodmen
+    holding = none
+}
+
+3153 = {    #Theutkereik (b_theutkereik)
+    culture = valemen
+    religion = faith_woodmen
+    holding = none
+}
+
 ###    West Bight (d_west_bight)
 ##    Rhosgobel (c_rhosghobel)
 
@@ -307,12 +327,6 @@
     holding = none
 }
 
-3153 = {    #Theutkereik (b_theutkereik)
-    culture = valemen
-    religion = faith_woodmen
-    holding = none
-}
-
 3157 = {    #Ascireik (b_ascireik)
     culture = valemen
     religion = faith_woodmen
@@ -370,6 +384,20 @@
 }
 
 3161 = {    #Ediscad (b_ediscad)
+    culture = valemen
+    religion = faith_woodmen
+    holding = none
+}
+
+##    Astberg (c_astberg)
+
+4513 = {    #Astberg (b_astberg)
+    culture = valemen
+    religion = faith_woodmen
+    holding = tribal_holding
+}
+
+4514 = {    #Lipburn (b_lipburn)
     culture = valemen
     religion = faith_woodmen
     holding = none

@@ -588,18 +588,15 @@
 
 ##            Drinbar (c_drinbar)
 
-602 = {       #Tirith Ingon (b_tirith_ingon)
-             #culture = gondorian
-             #religion = faith_edain
-             #holding = castle_holding             
-		     culture = wastelands
-		     religion = faith_wastelands_pagan
-		     holding = wastelands_holding
-             
-            buildings = {
-                bandits
-				wolf_den
-            }
+602 = {       #Tirith Ingon (b_tirith_ingon)          
+  culture = wastelands
+  religion = faith_wastelands_pagan
+  holding = wastelands_holding
+              
+  buildings = {
+    bandits
+    wolf_den
+  }
 }
 
 603 = {       #Tirith Malbor (b_tirith_malbor)
@@ -668,7 +665,7 @@
 				}		
 }						
 
-200 = {       #Harlond (b_harlond)						
+200 = {       #Harlond (b_harlond_gondor)						
               culture = gondorian						
               religion = faith_edain						
               holding = city_holding						
@@ -2548,7 +2545,7 @@
               holding = none						
 }						
 						
-423 = {       #Caleneithel (b_caleneithel)						
+423 = {       #Caleneithel (b_caleneithel_gondor)						
               culture = gondorian						
               religion = faith_edain						
               holding = none						
@@ -3482,7 +3479,7 @@
 						
 ##            Annun (c_annun)						
 						
-1273 = {      #Barad Annun (b_barad_annun)						
+1273 = {      #Barad Annun (b_barad_annun_gondor)						
               culture = harondorim						
               religion = faith_edain						
               holding = castle_holding						
