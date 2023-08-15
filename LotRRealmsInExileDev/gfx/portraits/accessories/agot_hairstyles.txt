@@ -1,44 +1,4 @@
-﻿saruman_hair = {
-	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
-	entity = { required_tags = ""					shared_pose_entity = head		entity = "saruman_hair_entity" }
-}
-
-male_hair_uruk_01 = {
-	entity = {	required_tags = "no_hair"			shared_pose_entity = head	}
-	entity = {	required_tags = "helmet"				shared_pose_entity = head	entity = "male_hair_uruk_01_helmet_entity"}	
-	#entity = { required_tags = "cap"				shared_pose_entity = head		entity =  "male_hair_northern_02_cap_entity"  }
-	entity = {	required_tags = ""						shared_pose_entity = head	entity = "male_hair_uruk_01_entity"}
-}
-
-female_hair_uruk_01 = {
-	entity = {	required_tags = "no_hair"			shared_pose_entity = head	}
-	entity = {	required_tags = "helmet"				shared_pose_entity = head	entity = "female_hair_uruk_01_helmet_entity"}	
-	entity = { required_tags = "cap"				shared_pose_entity = head		entity =  "female_hair_uruk_01_helmet_entity"  }
-	entity = {	required_tags = ""						shared_pose_entity = head	entity = "female_hair_uruk_01_entity"}
-}
-
-male_hair_mountain_orc_01 = {
-	entity = {	required_tags = "no_hair"			shared_pose_entity = head	}	
-	entity = {	required_tags = ""						shared_pose_entity = head	entity = "male_hair_mountain_orc_01_entity"}
-}
-
-male_hair_mountain_orc_02 = {
-	entity = {	required_tags = "no_hair"				shared_pose_entity = head	}	
-	entity = {	required_tags = ""						shared_pose_entity = head	entity = "male_hair_mountain_orc_02_entity"}
-}
-
-male_hair_elvish_01 = {
-	entity = {	required_tags = "no_hair"			shared_pose_entity = head	}
-	entity = {	required_tags = "helmet"				shared_pose_entity = head	entity = "male_hair_elven_01_helmet_entity"}	
-	entity = { required_tags = "cap"				shared_pose_entity = head		entity =  "male_hair_elven_01_cap_entity"  }
-	entity = { required_tags = "crown"				shared_pose_entity = head		entity =  "male_hair_elven_01_crown_entity"  }	
-	entity = {	required_tags = ""						shared_pose_entity = head	entity = "male_hair_elven_01_entity"}
-}
-
-male_hair_balding_01 = {
-	entity = {	required_tags = "no_hair"				shared_pose_entity = head	}	
-	entity = {	required_tags = ""						shared_pose_entity = head	entity = "male_hair_balding_01_entity"}
-}
+﻿# These assets are then used in the genes (game/common/genes/..) at the bottom of the file. 
 
 #####################################
 #									#
@@ -160,6 +120,12 @@ female_hair_custom_19 = {
 	
 }
 
+# AGOT TODO 3D: Custom asset not in yet
+# female_hair_custom_20 = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_custom_20_entity" }
+# }
+
 female_hair_custom_21 = {
 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_custom_21_entity" }
@@ -238,6 +204,7 @@ male_hair_custom_06 = {
 	
 }
 
+
 male_hair_custom_07 = {
 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
 	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_hair_custom_07_entity" }
@@ -255,3 +222,149 @@ male_hair_custom_09 = {
 	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_hair_custom_09_entity" }
 	
 }
+
+# AGOT TODO 3D: Custom asset not in yet
+# male_hair_byzantine_02flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_hair_byzantine_02flip_entity" }
+	
+# }
+
+# female_hair_rtt_01flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_rtt_01flip_entity" }
+	
+# }
+
+# female_hair_rtt_01flip2 = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_rtt_01flip2_entity" }
+	
+# }
+
+# female_hair_fp1_01flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_fp1_01flip_entity" }
+	
+# }
+
+# female_hair_fp1_02flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_fp1_02flip_entity" }
+	
+# }
+
+# female_hair_fp1_03flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_fp1_03flip_entity" }
+	
+# }
+
+# female_hair_fp1_04flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_fp1_04flip_entity" }
+	
+# }
+
+# female_hair_fp1_05flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_fp1_05flip_entity" }
+	
+# }
+
+# female_hair_fp1_06flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_fp1_06flip_entity" }
+	
+# }
+
+# female_hair_custom_10flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_custom_10flip_entity" }
+	
+# }
+
+# female_hair_custom_19flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_custom_19flip_entity" }
+	
+# }
+
+# female_hair_custom_25flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_custom_25flip_entity" }
+	
+# }
+
+# female_hair_custom_26flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_custom_26flip_entity" }
+	
+# }
+
+# female_hair_custom_27flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_custom_27flip_entity" }
+	
+# }
+
+# female_hair_custom_27flip2 = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "female_hair_custom_27flip2_entity" }
+	
+# }
+
+# male_hair_rtt_01flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_hair_rtt_01flip_entity" }
+	
+# }
+
+# male_hair_rtt_02flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_hair_rtt_02flip_entity" }
+	
+# }
+
+# male_hair_fp1_01flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_hair_fp1_01flip_entity" }
+	
+# }
+
+# male_hair_fp1_02flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_hair_fp1_02flip_entity" }
+	
+# }
+
+# male_hair_fp1_04flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_hair_fp1_04flip_entity" }
+	
+# }
+
+# male_hair_fp1_05flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_hair_fp1_05flip_entity" }
+	
+# }
+
+# male_hair_fp1_06flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_hair_fp1_06flip_entity" }
+	
+# }
+
+# male_hair_fp1_07flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_hair_fp1_07flip_entity" }
+	
+# }
+
+# male_hair_fp1_08flip = {
+# 	entity = { required_tags = "no_hair"			shared_pose_entity = head		 }
+# 	entity = { required_tags = ""					shared_pose_entity = head		entity = "male_hair_fp1_08flip_entity" }
+	
+# }
+
