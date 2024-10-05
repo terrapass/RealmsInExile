@@ -26,7 +26,7 @@ fallohides = {
 	name_list = name_list_hobbit # TBD
 	
 	coa_gfx = { hobbit_coa_gfx }
-	building_gfx = { brythonic_building_gfx western_building_gfx }
+	building_gfx = { brythonic_building_gfx }
 	clothing_gfx = { hobbit_clothing_gfx }
 	unit_gfx = { northern_unit_gfx }
 	
@@ -52,7 +52,7 @@ harfoots = {
 	name_list = name_list_hobbit # TBD
 	
 	coa_gfx = { hobbit_coa_gfx }
-	building_gfx = { brythonic_building_gfx western_building_gfx }
+	building_gfx = { brythonic_building_gfx }
 	clothing_gfx = { hobbit_clothing_gfx }
 	unit_gfx = { northern_unit_gfx }
 	
@@ -78,7 +78,7 @@ stoors = {
 	name_list = name_list_hobbit # TBD
 	
 	coa_gfx = { hobbit_coa_gfx }
-	building_gfx = { brythonic_building_gfx western_building_gfx }
+	building_gfx = { brythonic_building_gfx }
 	clothing_gfx = { hobbit_clothing_gfx }
 	unit_gfx = { northern_unit_gfx }
 	
@@ -106,7 +106,7 @@ breelander = {
 	name_list = name_list_hobbit # TBD
 	
 	coa_gfx = { hobbit_coa_gfx }
-	building_gfx = { brythonic_building_gfx western_building_gfx }
+	building_gfx = { brythonic_building_gfx }
 	clothing_gfx = { hobbit_clothing_gfx }
 	unit_gfx = { northern_unit_gfx }
 	
@@ -136,7 +136,7 @@ hobbit = {
 	name_list = name_list_hobbit # TBD
 	
 	coa_gfx = { hobbit_coa_gfx }
-	building_gfx = { hobbit_building_gfx brythonic_building_gfx western_building_gfx }
+	building_gfx = { hobbit_building_gfx }
 	clothing_gfx = { hobbit_clothing_gfx }
 	unit_gfx = { northern_unit_gfx }
 	
@@ -166,7 +166,7 @@ bucklander = {
 	name_list = name_list_hobbit # TBD
 	
 	coa_gfx = { hobbit_coa_gfx }
-	building_gfx = { hobbit_building_gfx brythonic_building_gfx western_building_gfx }
+	building_gfx = { hobbit_building_gfx }
 	clothing_gfx = { hobbit_clothing_gfx }
 	unit_gfx = { northern_unit_gfx }
 	

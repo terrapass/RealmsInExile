@@ -20,7 +20,7 @@ tribe_01 = {
 		type = pdxmesh
 		names = { "building_western_tribal_01_a_mesh" }
 		graphical_cultures = { "numenorean_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_grass
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -28,7 +28,7 @@ tribe_01 = {
 		type = pdxmesh
 		names = { "building_orc_farm_01_mesh" }
 		graphical_cultures = { "orc_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_grass
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -37,7 +37,7 @@ tribe_01 = {
 		name = "fp1_building_norse_tribal_mesh" 
 		requires_dlc_flag = the_northern_lords
 		graphical_cultures = { "rohirrim_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_norse
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -45,15 +45,15 @@ tribe_01 = {
 		type = pdxmesh
 		names = { "building_sami_tribal_01_mesh" "thule_tribal_mesh" "building_sami_tribal_01_b_mesh" }
 		graphical_cultures = { "baltic_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_lossoth #Realms
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
 	asset = {
 		type = pdxmesh
 		name = "building_celtic_tribal_mesh"
-		graphical_cultures = { "goidelic_building_gfx" "brythonic_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		graphical_cultures = { goidelic_building_gfx brythonic_building_gfx }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_celtic
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -85,7 +85,7 @@ tribe_01 = {
 		type = pdxmesh
 		name = "slavic_tribal_01_mesh"
 		graphical_cultures = { "slavic_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_grass
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -93,7 +93,15 @@ tribe_01 = {
 		type = pdxmesh
 		name = "building_sea_tribal_mesh"
 		graphical_cultures = { "sea_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		illustration = @holding_illustration_grass
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
+	}
+	asset = {
+		type = pdxmesh
+		name = "ethiopian_tribe_mesh"
+		graphical_cultures = { "utter_south_building_gfx" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_grass
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -112,7 +120,7 @@ tribe_01 = {
 			"guinean_tribal_mesh"
 		}
 		graphical_cultures = { "african_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_african
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -123,7 +131,7 @@ tribe_01 = {
 		}
 		requires_dlc_flag = the_northern_lords
 		graphical_cultures = { "norse_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_norse
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -133,7 +141,7 @@ tribe_01 = {
 			building_western_tribal_01_a_mesh
 		}
 		graphical_cultures = { "western_building_gfx" "mediterranean_building_gfx" "iberian_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_grass
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -144,7 +152,7 @@ tribe_01 = {
 			"sahelian_tribal_mesh"
 		}
 		graphical_cultures = { "arabic_group_building_gfx" "berber_group_building_gfx" "mena_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_mena
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -155,7 +163,7 @@ tribe_01 = {
 			"tibetan_tribal_mesh"
 		}
 		graphical_cultures = { "rhun_building_gfx" "steppe_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_steppe
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -165,7 +173,7 @@ tribe_01 = {
 			"building_india_tribal_01_a_mesh"
 		}
 		graphical_cultures = { "indian_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_grass
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -258,7 +266,7 @@ tribe_02 = {
 		type = pdxmesh
 		names = { "building_western_tribal_01_a_mesh" }
 		graphical_cultures = { "numenorean_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_grass
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -266,7 +274,7 @@ tribe_02 = {
 		type = pdxmesh
 		names = { "building_orc_farm_01_mesh" }
 		graphical_cultures = { "orc_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_grass
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -275,7 +283,7 @@ tribe_02 = {
 		name = "fp1_building_norse_tribal_mesh" 
 		requires_dlc_flag = the_northern_lords
 		graphical_cultures = { "rohirrim_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_norse
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -283,15 +291,15 @@ tribe_02 = {
 		type = pdxmesh
 		names = { "building_sami_tribal_01_mesh" "thule_tribal_mesh" "building_sami_tribal_01_b_mesh" }
 		graphical_cultures = { "baltic_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_lossoth # Realms
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
 	asset = {
 		type = pdxmesh
 		name = "building_celtic_tribal_mesh"
-		graphical_cultures = { "goidelic_building_gfx" "brythonic_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		graphical_cultures = { goidelic_building_gfx brythonic_building_gfx }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_celtic
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -323,7 +331,7 @@ tribe_02 = {
 		type = pdxmesh
 		name = "slavic_tribal_01_mesh"
 		graphical_cultures = { "slavic_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_grass
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -331,7 +339,15 @@ tribe_02 = {
 		type = pdxmesh
 		name = "building_sea_tribal_mesh"
 		graphical_cultures = { "sea_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		illustration = @holding_illustration_grass
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
+	}
+	asset = {
+		type = pdxmesh
+		name = "ethiopian_tribe_mesh"
+		graphical_cultures = { "utter_south_building_gfx" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_grass
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -350,7 +366,7 @@ tribe_02 = {
 			"guinean_tribal_mesh"
 		}
 		graphical_cultures = { "african_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_african
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -361,7 +377,7 @@ tribe_02 = {
 		}
 		requires_dlc_flag = the_northern_lords
 		graphical_cultures = { "norse_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_norse
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -371,7 +387,7 @@ tribe_02 = {
 			building_western_tribal_01_a_mesh
 		}
 		graphical_cultures = { "western_building_gfx" "mediterranean_building_gfx" "iberian_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_grass
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -382,7 +398,7 @@ tribe_02 = {
 			"sahelian_tribal_mesh"
 		}
 		graphical_cultures = { "arabic_group_building_gfx" "berber_group_building_gfx" "mena_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_mena
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -393,7 +409,7 @@ tribe_02 = {
 			"tibetan_tribal_mesh"
 		}
 		graphical_cultures = { "rhun_building_gfx" "steppe_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_steppe
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
@@ -403,7 +419,7 @@ tribe_02 = {
 			"building_india_tribal_01_a_mesh"
 		}
 		graphical_cultures = { "indian_building_gfx" }
-		graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
+		# graphical_regions = { "graphical_western" "graphical_mediterranean" "graphical_india" "graphical_mena" "graphical_steppe" }
 		illustration = @holding_illustration_grass
 		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
 	}
