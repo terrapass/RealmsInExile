@@ -278,6 +278,7 @@ scripted_trigger valid_adventurous_character = {
 		camp_officer_generator_pickable_trigger = { POS = pike_captain EMPLOYER = root }
 		camp_officer_generator_pickable_trigger = { POS = master_of_spoils EMPLOYER = root }
 	}
+	lotr_can_recruit_in_laamp = yes #LotR
 }
 ep3_laamps.8020 = {
 	type = character_event
@@ -898,6 +899,7 @@ scripted_trigger laamp_8050_valid_minority = {
 			}
 		}
 	}
+	lotr_can_recruit_in_laamp =  yes
 }
 
 ep3_laamps.8050 = {
@@ -1556,6 +1558,7 @@ scripted_trigger valid_weird_sailor = {
 		court_position = quartermaster_camp_officer
 		employer = root
 	}
+	lotr_can_recruit_in_laamp = yes #LotR
 }
 ep3_laamps.8080 = {
 	type = character_event
@@ -3655,6 +3658,7 @@ ep3_laamps.8200 = {
 			}
 		}
 		NOT = { location.culture = culture:wastelands } #LotR
+		lotr_location_can_spawn_laamp_courtiers = yes #LotR
 	}
 
 	weight_multiplier = {

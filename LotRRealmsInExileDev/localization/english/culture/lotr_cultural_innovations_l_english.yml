@@ -540,6 +540,43 @@
 
  innovation_spirits_pact:0 "Spirit Pact"
  innovation_spirits_pact_desc:0 "Long ago this people made a pact with the spirits who dwelled in their lands, and now they dwell together in harmony, and work to enrich and defend their homes."
+ 
+ innovation_calaquendi_warfare:0 "Calaquendi Warfare"
+ innovation_calaquendi_warfare_desc:0 "The [caliquendielves|E] are among the greatest warriors in Arda, proud and ancient in bearing, in whom the light of [aman|E] still shines."
+ 
+ innovation_lomiquendi_warfare:0 "Lomiquendi Warfare"
+ innovation_lomiquendi_warfare_desc:0 "Though not as regal as their [caliquendielves|E] brethren, the Elves of Twilight have long stood against the Darkness."
+ 
+ innovation_avarin_warfare:0 "Avarin Warfare"
+innovation_avarin_warfare_desc:0 "The [avari|E] may be more primitive than their [eldar|E] cousins, but they have mastered the art of hit-and-run tactics, and still strike fear into the hearts of their enemies."
+ 
+ innovation_noldor_warfare:0 "Noldor Warfare"
+ innovation_noldor_warfare_desc:0 "The [noldorelves|E] are the most proud and fearsome warriors in Middle-Earth, clad in armour wrought by the finest and most skilled smiths."
+ 
+ innovation_sindar_warfare:0 "Sindar Warfare"
+ innovation_sindar_warfare_desc:0 "The [sindarelves|E] are amongst the most ancient enemies of [morgothcharacter|E] and [sauroncharacter|E], and are a worthy adversary to any."
+ 
+ innovation_falathrim_warfare:0 "Falathrim Warfare"
+ innovation_falathrim_warfare_desc:0 "The [falathrim|E] of Lindon are veterans of many conflicts, and are worthy, though perhaps unwilling, warriors."
+ 
+ innovation_laiquendi_warfare:0 "Laiquendi Warfare"
+ innovation_laiquendi_warfare_desc:0 "The [greenelves|E] are reclusive, yet they are among the best Rangers in Middle-Earth."
+ 
+ innovation_sirrandrai_warfare:0 "Sirrandrai Warfare"
+ innovation_sirrandrai_warfare_desc:0 "The men of the ancient realm of Sirgala are ferocious."
+ 
+ innovation_galadhrim_warfare:0 "Galadhrim Warfare"
+ innovation_galadhrim_warfare_desc:0 "The [galadhrimelves|E] of the Golden Wood are ferocious fighters, utmost enemies of the Darkness."
+ 
+ innovation_lasgalendrim_warfare:0 "Lasgalendrim Warfare"
+ innovation_lasgalendrim_warfare_desc:0 "The [lasgalendrimelves|E] are somewhat isolationist, yet their arrows strike true."
+ 
+ innovation_cuind_warfare:0 "Cuind Warfare"
+ innovation_cuind_warfare_desc:0 "The [cuind|E] of [thanihazad|E] are ready to defend their homelands, though they do not seek war."
+ 
+ innovation_kinnlai_warfare:0 "Kinn-lai Warfare"
+ innovation_kinnlai_warfare_desc:0 "Though they prefer to remain hidden within their dense jungles, the Kinn-lai of Usakan and their tamed War-Mûmakil are feared and respected."
+ 
 
  ### Dwarven Innovations ###
  innovation_longbeard_warfare:0 "Longbeard Warfare"

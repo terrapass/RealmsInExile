@@ -441,7 +441,7 @@ estecharacter = {
 
 tulkascharacter = {
 	parent = valargods
-		alias = { tulkascharactershort }
+		alias = { tulkascharactershort astald_maktal}
 }
 
 nessacharacter = {
@@ -1170,7 +1170,7 @@ falathrim = {
 # Elven Groups
 elves = {
 	parent = conceptrace
-	alias = { eledaim eldar elda elven elf elvish eldarin }
+	alias = { eledaim eldar elda elven elf elvish eldarin quendi }
 }
 
 highelves = {
@@ -1202,6 +1202,8 @@ penni = {
 cuind = {
 	parent = avari
 }
+
+
 
 ### Dwarves ###
 dwarves = {
@@ -1330,6 +1332,10 @@ doomofmandos = {
 firstkinslaying = {
 	parent = concepthistoricevent
 	alias = { }
+}
+kinnlai_sundering = {
+	parent = concepthistoricevent
+	alias = {kinnlai_sundered}
 }
 
 ### Dwarves ###
@@ -1463,6 +1469,14 @@ baitha = {
 tale_of_the_girl_and_the_spider = { #dune sea spider cult origin tale
 	parent = conceptmajorloreidea
 	alias = { the_girl_and_the_spider }
+}
+namur = {
+	parent = conceptmajorloreidea
+	alias = { namur_sky_god namur_great_sky_spirit }
+}
+audaj = {
+	parent = conceptmajorloreidea
+	alias = { audaj_lord_of_the_wilds }
 }
 tamska = {
 	parent = conceptmajorloreidea

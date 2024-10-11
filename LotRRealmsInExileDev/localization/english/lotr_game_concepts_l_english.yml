@@ -280,6 +280,7 @@
  
  game_concept_tulkascharacter:0 "Tulkas Astaldo"
  game_concept_tulkascharactershort:0 "Tulkas"
+ game_concept_astald_maktal:0 "Astald Maktal"
  game_concept_tulkascharacter_desc:0 "Tulkas Astaldo, the Champion of Valinor, was last of the [ainurgods|E] to enter into [eaworld|E], coming to aid the rest of the [valargods|E] in their great war against [melkorcharacter|E]. Tulkas delights in deeds of prowess and strength, such as wrestling and fighting. \n\nBut for all his warlike behaviour, he is far from dreadful; he laughs heartily in sports and war alike. He is a hardy friend, slow to anger but also slow to forgive. \n\n#TOLKIENQUOTE "So came Tulkas the Strong, whose anger passes like a mighty wind, scattering cloud and darkness before it" #!\n\n#QUOTEDCHARACTER ― The Silmarillion, "Valaquenta""
  
  game_concept_nessacharacter:0 "Nessa"
@@ -956,6 +957,7 @@
  game_concept_elf:0 "Elf"
  game_concept_elvish:0 "Elvish"
  game_concept_eldarin:0 "Eldarin"
+ game_concept_quendi:0 "Quendi"
  game_concept_elves_desc:0 "The Elves, also known as the Quendi ('Those that Speak') and the Eldar, are the Firstborn Children of Ilúvatar, a race of beautiful, immortal beings. They awoke beneath the stars at Cuivenen, first of all the Children of Ilúvatar, and were henceforth known as the Firstborn. They were sundered during [greatjourney|E], which saw half of the elves choose to travel west to [valinor|E] at the behest of the [valargods|E]. Thus, they were split into the [caliquendielves|E] and [moriquendielves|E]. \n\nThe elves are bound to the world, unable to leave it; even if they are slain, they can be reembodied after a period in the Halls of Mandos. They are blessed with incredible strength, mental fortitude, and skill."
  
  game_concept_highelves:0 "High Elves"
@@ -977,8 +979,13 @@
 
  game_concept_penni:0 "Penni"
  game_concept_penni_desc:0 "The Penni refer to the [avari|E] of [tareg|E]'s host who settled the Eryn Rhûn, northeast of the [seaofrhun|E]. Departing the east after the [battleofpalisor|E] with the host of [ermon|E], upon coming to the [seaofrhun|E], the Avari were drawn north to the great forest which at that time stretched far, encircling much of the northern side of the sea. There the great majority of the host chose to settle, and did so under the leadership of Lanthir, one of [tareg|E]'s captains.\n\nDue to their history, the Penni are wary of all Men, save those descended from [ermon|E] and his followers."
+
  game_concept_cuind:0 "Cuind"
- game_concept_cuind_desc:0 "Cuind Concept - PLACEHOLDER"
+ game_concept_cuind_desc:0 " One of the [avari|E] tribes, the [cuind|E] are descended from those who travelled to the far south of [middleearth|E] and settled in the jungles and forests of Drêl and the Sûza Sumar, primarily of Tatyarin heritage. In the ancient days, the Cuind wandered the western shores of [middleearth|E] as far north as the cape of Mardrûak and as far south as the forest of Drêl. They established many small sanctuaries in those lands, but were largely a migratory people. \n\nHowever, with the coming of [men|E], the Cuind grew wary, and increasingly abandoned the northern reaches of their wanderings. Evermore they congregated in the forest of Drêl, choosing safety in numbers.\n\nThe Cuind could not escape Men even here, however. As the [numenoreans|E] colonized the [thanihazad|E], the Cuind cut a secret deal with the colonial leaders. The colonists would turn a blind eye to the Cuind, and not infringe on their forest, and in exchange the Cuind would trade with them. Disguised Cuindi healers have averted many a tragedy in the [thanihazad|e], and thus both sides have benefited from this understanding."
+
+ game_concept_kinnlai_sundering:0 "The Sundering of the Kinn-lai"
+ game_concept_kinnlai_sundered:0 "sundered"
+ game_concept_kinnlai_sundering_desc:0 "The death of Tainalânn, first king of the Kinn-lai, on the isle of Dilsulinol rent the people in two. For his children, Shelepinn and Tûlanal, disputed over who should inherit his crown. Shelepinn claimed that as the eldest, the crown was her's by right. The younger, Tûlanal, argued that leadership passed from father to son. The Kinn-lai were irreconcilably divided, and the coming of Men further aggravated the issue. \n\nTûlanal had gained the friendship of the great young Chief of the incoming Men - Amâv. And Tûlanal used this friendship as an example of why he should lead them. For her part, Shelepinn argued that he lightly gave away their ancient homelands in exchange for a friendship that would die with Amâv. Both would ultimately be proven right - while long did the Kîrani maintain friendship, the Mûmakani in time fell back into the Shadow which even then lurked over them.\n\nIt seemed to all that blood would be shed, when at last Shelepinn proved herself the nobler, saying that she would take those who would follow her and build a realm her own, away from her brother's. And so their folk divided, and never again were united."
  
  ### Dwarves ###
  game_concept_dwarves:0 "Dwarves"
@@ -1184,7 +1191,16 @@
  game_concept_tamski:0 "Tamski"
  game_concept_great_queen:0 "Great Queen"
  game_concept_great_queens:0 "Great Queens"
- game_concept_tamska_desc:0 "The Tamska is the spiritual and political leader of Mag and Tumag. She is the divine daughter of the goddess Namur, incarnated into a physical form. The Tamska holds considerable power within her [realm|E].\n\nA council of six elders continuously searches for the next Tamska, and when a successor is found, she is raised in secret in the mountains of Tumag to become the perfect ruler. Occasionally, a daughter of the current ruling Tamska will be chosen to succeed her mother.\n\nThough it has historically never happened, it would theoretically be possible for her spirit to incarnate into a male body, which would then be treated as any Tamska would."
+ game_concept_tamska_desc:0 "The Tamska is the spiritual and political leader of Mag and Tumag. She is the divine daughter of the Sky God [namur|E], incarnated into a physical form. The Tamska holds considerable power within her [realm|E].\n\nA council of six elders continuously searches for the next Tamska, and when a successor is found, she is raised in secret in the mountains of Tumag to become the perfect ruler. Occasionally, a daughter of the current ruling Tamska will be chosen to succeed her mother.\n\nThough it has historically never happened, it would theoretically be possible for her spirit to incarnate into a male body, which would then be treated as any Tamska would."
+
+ game_concept_namur:0 "Namur"
+ game_concept_namur_sky_god:0 "Sky God"
+ game_concept_namur_great_sky_spirit:0 "Great Sky Spirit"
+ game_concept_namur_desc:0 "Namur, the Great Sky Spirit, is revered by the people of Mag and Tumag as the creator of humanity and the giver of life. Followers believe he watches over the world as a divine judge and arbiter, ensuring justice is maintained. His priests, who serve as law-keepers and mediators, hold an important role in their communities. Supporting the temples dedicated to Namur and the priests devoted to his service is considered a sacred duty among the faithful.\n\nIn their beliefs, Namur is often contrasted with his brother, [audaj|E], the Lord of the Wilds. While Namur is seen as a benevolent protector of humanity, Audaj is more dangerous and untamed, less compassionate toward humankind. Followers maintain a healthy respect for both brothers, knowing the wilds must not be overstepped.\n\nNamur’s influence extends into the spiritual core of the Ânji Tamskul, where the [tamska|E], or Great Queens, are believed to be his daughters. These queens are thought to be incarnations of Namur’s divine essence, guiding and protecting the land. The Tamska system, established by the first Tamska, Veryana, is rooted in the belief that the queens act as living embodiments of Namur’s will.\n\nIn addition to his role as a judge and protector, Namur is tied to the pursuit of spiritual enlightenment. Some sects within the faith believe that by traveling the world and experiencing the gifts bestowed upon humanity by Namur, one can achieve a deeper connection to the divine. This belief was notably advanced by Tamska Ayaka, who preached self-discovery through exploration."
+
+ game_concept_audaj:0 "Audaj"
+ game_concept_audaj_lord_of_the_wilds:0 "Lord of the Wilds"
+ game_concept_audaj_desc:0 "Audaj, the Lord of the Wilds, is revered as the god of nature and brother of Namur. While his brother, [namur|E], is seen as a protector of humanity, Audaj is more dangerous, embodying the untamed forces of the natural world. Followers believe he created the wild beasts, and homage to Audaj is necessary for success in martial endeavors, whether in hunting or war.\n\nUnlike Namur, Audaj’s worshippers favor outdoor rites in sacred groves rather than grand temples. Radical sects within his faith practice corpse exposure, allowing the dead to return to the cycle of nature. Audaj’s followers hold that humanity must respect the wild and not overstep its boundaries, lest they face his wrath.\n\nAudaj is both feared and revered, his wild spirit central to the beliefs of those who live closely with nature."
  
  game_concept_valake_civil_war:0 "Valake Civil War"
  game_concept_valake_civil_war_desc:0 "The $game_concept_valake_civil_war$ was a major conflict in Mag and Tumag that lasted from [ageTA|E] 1347 to [ageTA|E] 1375. At this time, dynastic succession of the [tamska|E] was relatively common, and the descendants of [tamska|E] Valake III sought to make the position completely hereditary. Trouble started when Valake IV's daughter, the Tamskangi, was murdered by her sister, who ascended to the throne as Valake V. When her treachery was discovered, she became the first Tamska in history to officially abdicate, and her sister, recognizing the choice of the council of elders, became Valake VI.\n\nWhen the council proclaimed they had found the new Tamskangi, a lowborn girl named Ânjiru, her new relatives welcomed her with envy and cold hatred.\n\nUpon her mothers deathbed, the eldest daughter of Valake V attempted to assassinate Ânjiru in order to secure the throne for herself. Ânjiru had to flee the capital, and when her rival proclaimed herself Valake VII, war broke loose between the heartlands, loyal to Valake, and the tribes of Mag and Tûmag, loyal to Ânjiru who was backed by the Council of Elders. The conflict quickly devolved into a series minor skirmishes, as Valake found herself unable to advance into the tribal lands loyal to Ânjiru, and Ânjiru employed hit and run tactics against her enemy but found herself unable to achieve any major victories.\n\nThe conflict eventually ended in [ageTA|E] 1375, when Tamska Valake VII finally died, having lost the support of most of the realm. During her reign, Tamska Ânjiru promoted a more pacifist philosophy, forever scarred by the conflicts she'd seen." 
@@ -1577,12 +1593,12 @@
  game_concept_struggle_balrog_phase_armageddon:0 "Armageddon"
  game_concept_struggle_balrog_phase_armageddon_desc:0 "The Balrog is on an indescriminate destructive rampage."
 
- ### Thani-Hazad Struggle ###
+ ### Thâni-Hazâd Struggle ###
  game_concept_thani_hazad_struggle:0 "$thani_hazad_struggle$"
  game_concept_thani_hazad_struggle_desc:0 "$thani_hazad_struggle_desc$"
- game_concept_struggle_thani_hazad_phase_disintegration:0 "Disintegration"
- game_concept_struggle_thani_hazad_phase_disintegration_desc:0 "Stuff is falling apart."
- game_concept_struggle_thani_hazad_phase_confederation:0 "Confederation"
- game_concept_struggle_thani_hazad_phase_confederation_desc:0 "Stuff is normal."
- game_concept_struggle_thani_hazad_phase_unification:0 "Unification"
- game_concept_struggle_thani_hazad_phase_unification_desc:0 "Peeps are pals."
+ game_concept_struggle_thani_hazad_phase_disintegration:0 "Disunity"
+ game_concept_struggle_thani_hazad_phase_disintegration_desc:0 "The once-proud [balan_lai|E] falters, its authority crumbling as its members act in their own interests with little regard for the council's decisions.\n\nRivalries escalate into open conflict, and the threads of cooperation fray beyond repair. The ideals of unity seem distant, replaced by fractured ambitions and territorial greed.\n\nWithout a cohesive force to guide them, the Kharadûnâi Princes look inward, and the council’s power wanes into irrelevance, if not outright collapse."
+ game_concept_struggle_thani_hazad_phase_confederation:0 "Status Quo"
+ game_concept_struggle_thani_hazad_phase_confederation_desc:0 "The [balan_lai|E] moves in its typical ebb and flow, a careful dance of diplomacy and intrigue. Princes cooperate when necessary but never without an eye toward their own gain.\n\nOld rivalries simmer beneath the surface, but no one prince gains enough power to upset the balance. Disagreements are resolved through backroom deals or tactical shows of force, ensuring that the council maintains its role as the regional stabiliser, if only just.\n\nFor now, the delicate equilibrium holds."
+ game_concept_struggle_thani_hazad_phase_unification:0 "Unity"
+ game_concept_struggle_thani_hazad_phase_unification_desc:0 "In a time of rare consensus, the [balan_lai|E] stands as a singular force, unified against external threats or bound by a shared vision of centralization. The Kharadûnâi Princes set aside personal ambitions, focusing on collective strength and the future of their people and realms.\n\nThis period of harmony allows them to act decisively, as though a single power governs the many. Borders are secured, laws are enforced, and cooperation reaches its zenith. Those who once fought for influence now work hand in hand to fortify their realms' supremacy."

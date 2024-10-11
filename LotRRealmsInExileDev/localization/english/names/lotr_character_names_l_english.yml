@@ -23,8 +23,14 @@
  Maiklaamm:0 "Maiklâmm"
  Ovokuul:0 "Ovokûl"
  Tuulanal:0 "Tûlanal"
- Astaldrai:0 "Astaldlai"
+ Astaldlai:0 "Astaldlai"
  Oyabiikuul:0 "Oyabîkûl"
+ Eltavash:0 "Eltavash"
+ Denveg:0 "Denveg"
+ Logeg:0 "Logeg"
+ Lilveg:0 "Lilveg"
+ Lodveg:0 "Lodveg"
+ Calminnon:0 "Calminnon"
 
 
 ##### Kinn-lai Female 
@@ -32,6 +38,12 @@
  Tiivpai:0 "Tîvpai"
  Astaldleel:0 "Astaldlêl"
  Galaadleel:0 "Galâdlêl"
+ Laadish:0 "Lâdish"
+ Laadest:0 "Lâdest"
+ Laadesh:0 "Lâdesh"
+ Elenish:0 "Elenish"
+ Elenesh:0 "Elenesh"
+ Elenest:0 "Elenest"
  
  
 
@@ -308,7 +320,7 @@
  
  
 
-#ToDo
+#To Sort/Review - Trig
  
  
  
@@ -13674,12 +13686,12 @@
  Willy:0 "Willy"
  Frygar:0 "Frygar"
 
- ### Native Thani-Hazad / Mag / Tumag Prefixes
+ ### Native Thâni-Hazâd / Mag / Tumag Prefixes
 
  dynnpat_suf_omo:0 "omo"
  dynnpat_suf_aya:0 "aya"
 
- ### Native Thani-Hazad / Mag / Tumag Male
+ ### Native Thâni-Hazâd / Mag / Tumag Male
 
 #  Adebayo:0 "Adébayo" # Already defined in Vanilla
 #  Adebola:0 "Adébola" # Already defined in Vanilla
@@ -13773,7 +13785,7 @@
 #  Uzoma:0 "Uzoma" # Already defined in Vanilla
  Uzoshi:0 "Uzoshi"
 
- ### Native Thani-Hazad / Mag / Tumag Female
+ ### Native Thâni-Hazâd / Mag / Tumag Female
  
  Adanza:0 "Adanza"
  Adanzaya:0 "Adanzaya"

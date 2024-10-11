@@ -3278,7 +3278,7 @@
  building_diamond_mines_10:0 "$building_dwarven_mine_10$"
  building_diamond_mines_10_desc:0 "$building_dwarven_mine_10_desc$"
 
-#Thani-Hazad wonders(rest of thani-hazad)
+#Thâni-Hazâd wonders(rest of Thâni-Hazâd)
  
   
  building_type_wonder_hall_of_tiralaen:0 "Royal Halls of The Cuind"
@@ -3329,7 +3329,7 @@
  building_type_wonder_akos:0 "$building_wonder_akos$"
  building_type_wonder_akos_desc:0 "$building_wonder_akos_desc$"
  building_wonder_akos:0 "Audaj's Perch"
- building_wonder_akos_desc:0 "Outside the city walls of Akos, the greatest city of Mag, lays Audaj's Perch, a tall stone structure surrounded by tall trees. It serves as the ceremonial center of the great proving grounds around it.Every few years, aspiring warriors and hunters from across the twin realms gather here to prove their mettle in great contests of skill.\n\nThis tradition has its origins in the unification of Mag and Tûmag by the [tamska|E]. After they were united, the martially inclined tribes of Mag sought a new way to settle their disputes. By the late [thirdage|E], they had, at least for the most part, exchanged their raids and petty skirmishes for friendly contests between tribes, and a chance to prove ones worth under the watchful eye of the Lord of the Wilds."
+ building_wonder_akos_desc:0 "Outside the city walls of Akos, the greatest city of Mag, lays [audaj|E]'s Perch, a tall stone structure surrounded by tall trees. It serves as the ceremonial center of the great proving grounds around it.Every few years, aspiring warriors and hunters from across the twin realms gather here to prove their mettle in great contests of skill.\n\nThis tradition has its origins in the unification of Mag and Tûmag by the [tamska|E]. After they were united, the martially inclined tribes of Mag sought a new way to settle their disputes. By the late [thirdage|E], they had, at least for the most part, exchanged their raids and petty skirmishes for friendly contests between tribes, and a chance to prove ones worth under the watchful eye of the Lord of the Wilds."
  
  building_type_wonder_ayahopa_01:0 "$building_wonder_ayahopa_01$"
  building_type_wonder_ayahopa_01_desc:0 "$building_wonder_ayahopa_01_desc$"
@@ -3348,7 +3348,7 @@
  building_type_wonder_namur_temple_01:0 "$building_wonder_namur_temple_02$"
  building_type_wonder_namur_temple_01_desc:0 "$building_wonder_namur_temple_02_desc$"
  building_wonder_namur_temple_01:0 "Derelict Temple Complex"
- building_wonder_namur_temple_01_desc:0 "Though a small community of priests remains at its entrance, most of the derelict temple complex has fallen into silence, and many of its chambers, expertly carved into the rock in ages past, have collapsed entirely.\n\nThe once great Mountain Temple of Namur have been mostly abandoned over the course of the [thirdage|E]. As the [tamska|E]'s importance grew, the attention of the Mag and the Tûmag shifted away from their old centers of worship, and their ancient sanctuaries at the edge of the world fell into decline."
+ building_wonder_namur_temple_01_desc:0 "Though a small community of priests remains at its entrance, most of the derelict temple complex has fallen into silence, and many of its chambers, expertly carved into the rock in ages past, have collapsed entirely.\n\nThe once great Mountain Temple of [namur|E] have been mostly abandoned over the course of the [thirdage|E]. As the [tamska|E]'s importance grew, the attention of the Mag and the Tûmag shifted away from their old centers of worship, and their ancient sanctuaries at the edge of the world fell into decline."
  building_wonder_namur_temple_02:0 "Mountain Temple of Namur"
  building_wonder_namur_temple_02_desc:0 "This ancient temple complex, expertly carved into rock itself, houses a great congregation of priests, workers and soldiers. Its rock-cut facade welcomes any worshippers to step deeper into this holy sanctum, and serves as a center of worship, culture and protection for the surrounding region."
  NOT_holy_site_magrin_or_holy_site_trigger:0 "The holder must be $magrin_religion$ or consider this a [holy_site|E]"
@@ -3356,12 +3356,21 @@
  building_type_wonder_lake_jak:0 "$building_wonder_lake_jak_01$"
  building_type_wonder_lake_jak_desc:0 "$building_wonder_lake_jak_01_desc$"
  building_wonder_lake_jak:0 "Lake Jak"
- building_wonder_lake_jak_desc:0 "Lake Jak (mag. Chika Jag) is an ancient lake located in the northernmost reaches of Tûmag, at the foot of the Yellow Mountains. It has been a holy place for the Mag and Tûmag ever since the six tribes migrated into the area, and its waters are said to have special healing property.\n\nLaunching any naval vessel upon the holy lake is considered taboo to anyone except the [tamska|E]. As the daughter of Namur, hers alone is the privilege to sail a small ceremonial vessel into the mists, where she can commune with the gods by interpreting the reflections upon the waters' surface."
+ building_wonder_lake_jak_desc:0 "Lake Jak (mag. Chika Jag) is an ancient lake located in the northernmost reaches of Tûmag, at the foot of the Yellow Mountains. It has been a holy place for the Mag and Tûmag ever since the six tribes migrated into the area, and its waters are said to have special healing property.\n\nLaunching any naval vessel upon the holy lake is considered taboo to anyone except the [tamska|E]. As the daughter of [namur|E], hers alone is the privilege to sail a small ceremonial vessel into the mists, where she can commune with the gods by interpreting the reflections upon the waters' surface."
  
  building_type_wonder_tumag_waterfall:0 "$building_wonder_tumag_waterfall$"
  building_type_wonder_tumag_waterfall_desc:0 "$building_wonder_tumag_waterfall_desc$"
  building_wonder_tumag_waterfall:0 "Alagik ikog Yêlogu"
  building_wonder_tumag_waterfall_desc:0 "The Alagik ikog Yêlogu (Falls of the Crocodile) are a series of great waterfalls located in the northern reaches of Tûmag. Due to their natural beauty, they have always been considered sacred, and they are said to be fuelled by the tears of a long forgotten goddess, grieving her lost husband high in the peaks of the Yellow Mountains."
+
+ building_type_wonder_kinnlai_sanctum_of_the_valiant_01:0 "Sanctum of the Valiant"
+ building_type_wonder_kinnlai_sanctum_of_the_valiant_01_desc:0 "The Sanctum of the Valiant serves as a revered place for the Disciples of [astald_maktal|E], dedicated to both the physical and spiritual practices of martial arts. Here, each movement and contest transcends mere combat, transforming into a sacred act that draws the disciples closer to the essence of their master, fostering strength of body, mind, and spirit."
+ building_wonder_kinnlai_sanctum_of_the_valiant_01:0 "Revered Ruins"
+ building_wonder_kinnlai_sanctum_of_the_valiant_01_desc:0 "The Sanctum lies in a state of poignant abandonment, consumed by the encroaching jungle. Vines coil around the once-majestic arches, and the air is thick with the whispers of ancient mantras. Though cracked and faded, the intricate carvings of [astald_maktal|E]'s victories still hold an otherworldly light.\n\nAmidst the decay, the disciples sense the presence of their master, inspiring quiet reflection and reverence. The gentle rustle of leaves serves as a reminder of the spiritual connection that once thrived here, urging them to restore this sacred place."
+ building_wonder_kinnlai_sanctum_of_the_valiant_02:0 "Burgeoning Retreat"
+ building_wonder_kinnlai_sanctum_of_the_valiant_02_desc:0 "Slowly, the disciples breathe life back into the Sanctum. The vibrant greenery surrounding the structure is carefully tended, symbolising their commitment to renewal. As they clear the debris and restore the carvings, echoes of laughter and strength reverberate through the air.\n\nSparring matches and rituals of strength reemerge, framed by a deepening spiritual awareness. In each movement, they strive to channel [astald_maktal|E]’s spirit, feeling his guidance as they grapple not just with each other but with their own inner battles.\n\nThe environment hums with a sense of purpose, where physical prowess intertwines with meditation, reinforcing their bond with the Valiant Warrior."
+ building_wonder_kinnlai_sanctum_of_the_valiant_03:0 "Sanctum of the Valiant"
+ building_wonder_kinnlai_sanctum_of_the_valiant_03_desc:0 "The Ascendant Hall of the Valiant stands as a beacon of strength and spirituality, radiating the essence of [astald_maktal|E]. Enveloped by lush flora, its architecture harmoniously blends with nature, incorporating natural elements that celebrate the jungle's vibrant life. Disciples gather here, their movements fluid and purposeful, embodying the principles of strength, grace, and resilience.\n\nInside, the hall is adorned with symbols of their master’s legacy—sculptures, murals, and offerings that honor his spirit. Sunlight filters through the canopy above, casting a serene glow that enhances the meditative atmosphere. The air hums with energy, echoing the laughter and encouragement of their revered warrior, guiding them toward personal mastery and spiritual enlightenment."
  
  # Tanturak #
  building_type_wonder_ardinak_01:0 "Ardinâk"

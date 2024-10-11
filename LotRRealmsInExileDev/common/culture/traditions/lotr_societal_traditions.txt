@@ -374,7 +374,7 @@ tradition_blacknumenorean_legacy = { # Black Numenorean traditions
 	}	
 }
 
-tradition_anbalukkhori = { # Anbalukkhori tradition
+tradition_anbalukkhori = { # Anbalukkhori tradition by Trig. Currently basically  the same as normal BN, open to suggestion on adjustments. 
 	category = societal
 
 	layers = {
@@ -416,6 +416,8 @@ tradition_anbalukkhori = { # Anbalukkhori tradition
 		
 	character_modifier = { # change from culture to tenet
 		#same_tradition_blacknumenorean_opinion = 5
+		dread_loss_mult = -0.5
+		tyranny_loss_mult = -0.5
 	}
 	
 	culture_modifier = {
@@ -424,6 +426,7 @@ tradition_anbalukkhori = { # Anbalukkhori tradition
 
 	county_modifier = {
 		monthly_county_control_growth_add = 0.5
+		development_growth_factor = -0.1
 	}	
 }
 
@@ -1059,7 +1062,6 @@ tradition_nelyarin_heritage = { # For Avari of primarily Nelyarin descent
 		dislikes_marrying_outside_of_cultural_heritage = yes
 		courtiers_less_likely_to_leave_same_culture_court = yes
 		# Add bonus to learning Sindarin and relations with other Telerin cultures (IE Sindar, Silvan, etc)
-		unlock_maa_nuinevari = yes
 	}
 	
 	culture_modifier = {
@@ -1168,7 +1170,6 @@ tradition_tatyarin_heritage = { # For Avari of primarily Tatyarin descent
 		dislikes_marrying_outside_of_cultural_heritage = yes
 		courtiers_less_likely_to_leave_same_culture_court = yes
 		# Add bonus to learning Sindarin and relations with other Telerin cultures (IE Sindar, Silvan, etc)
-		unlock_maa_tatyarin_harriers = yes
 	}
 	
 	culture_modifier = {
@@ -1270,7 +1271,6 @@ tradition_ancient_wanderers = { # Cuind Specific Tradition
 	}
 	
 	parameters = {
-		unlock_maa_cuind_wanderers = yes
 		more_likely_to_leave_court = yes
 		unlock_voluntary_laampdom = yes
 		more_likely_to_be_laamps = yes
@@ -1475,8 +1475,6 @@ tradition_sirgala_renewed = {
 	}
 	
 	parameters = {
-		unlock_maa_sirrandrai_riders = yes
-		unlock_maa_wardens_of_sirgala = yes
 		forest_fighter_trait_more_common = yes
 		content_trait_more_common = yes
 	}

@@ -718,16 +718,16 @@ lineisildur191 = {
 	
 	trait = beauty_good_2
 	trait = arrogant
-	trait = ambitious
+	trait = vengeful
 	trait = diligent
-	trait = education_intrigue_3
+	trait = education_intrigue_4
 	trait = blood_of_numenor_7
 	
-	diplomacy = 8
+	diplomacy = 7
     martial = 1
-    stewardship = 5
-    intrigue = 10
-    learning = 7
+    stewardship = 7
+    intrigue = 11
+    learning = 8
     prowess = 1
 	
 	5332.7.7 = {
@@ -747,7 +747,7 @@ lineisildur19 = {
 	dynasty_house = house_isildur			
 	religion = faith_edain
 	culture = arnorian
-#	dna = arveleg_i_dna
+	dna = arveleg_i_dna
 
 	father = lineisildur18			
 	mother = lineforo1131
@@ -763,11 +763,11 @@ lineisildur19 = {
 	trait = blood_of_numenor_7
 		
 	diplomacy = 7
-    martial = 8
+    martial = 10
     stewardship = 3
     intrigue = 2
     learning = 4
-    prowess = 8
+    prowess = 10
 
 	5342.7.3 = {
 		birth = yes			
@@ -776,15 +776,16 @@ lineisildur19 = {
 		}
 	}
 	5379.2.4 = { #Their first meeting upon the shores of Lake Nenuial
-		set_relation_soulmate = character:lineoftarmea31sister
+		set_relation_crush = character:lineoftarmea31sister
 	}
 	5381.5.28 = {
         effect = {
             create_betrothal = character:lineoftarmea31sister
 		}
     }
-	5420.2.14 = {
+	5423.6.14 = {
 		add_spouse = lineoftarmea31sister
+		set_relation_soulmate = character:lineoftarmea31sister
 	}
 	5442.5.22 = { # Fell in the fall of Amon Sûl
 		death = { death_reason = death_battle }
@@ -812,9 +813,8 @@ lineisildur20 = {
 	trait = vengeful
 	trait = education_martial_4
 	trait = aggressive_attacker # Forced Angmar from Arthedain and Cardolan
- 
-
 	trait = blood_of_numenor_7
+	
 	5424.3.20 = {
 		birth = yes		
 		effect = {
@@ -1120,7 +1120,7 @@ lineisildur30 = {
 	}
 }
 lineisildur31 = {
-	name = Aragorn			
+	name = Aragorn # the First 	
  
 	dynasty_house = house_isildur			
 	religion = faith_edain
@@ -1453,7 +1453,7 @@ lineisildur41 = {
 }
  
 lineisildur42 = {
-	name = Aragorn ### Elessar, High King of the Reunited Kingdoms			
+	name = Aragorn ### II, Elessar, High King of the Reunited Kingdom			
  
 	dynasty_house = house_isildur			
 	religion = faith_edain
@@ -1472,16 +1472,26 @@ lineisildur42 = {
 	prowess = 10		
  
 				
-	trait = education_martial_4			
+	trait = education_martial_4	
+    trait = rough_terrain_expert
+    trait = education_martial_prowess_4
+
 	trait = lifestyle_blademaster
 	trait = lifestyle_traveler
+    trait = lifestyle_physician
+
 	trait = physique_good_2			
-	trait = intellect_good_2			
+	trait = intellect_good_2
+
 	trait = compassionate			
 	trait = just			
-	trait = brave			
+	trait = brave	
+
 	trait = celibate			
-	trait = cannot_marry			
+	trait = cannot_marry
+
+    trait = blood_of_numenor_6
+
 	6964.3.1 = {
 		birth = yes					
 		effect = {	
@@ -1489,18 +1499,18 @@ lineisildur42 = {
 			add_character_flag = ai_immune_to_mental_breaks
 			add_character_flag = has_scripted_appearance	
 			add_character_flag = immune_to_disease
+
 			learn_language = language_sindarin
-			add_trait = blood_of_numenor_6
-             learn_language = language_quenya
-             add_trait_xp = {
+            learn_language = language_quenya
+            add_trait_xp = {
                  trait = lifestyle_traveler
                  track = travel
                  value = 100
-             }
-             add_trait_xp = {
+            }
+            add_trait_xp = {
                  trait = lifestyle_blademaster
                  value = 100
-             }
+            }
 		}
 		add_character_flag = {	
 			flag = can_not_marry	
@@ -1511,6 +1521,10 @@ lineisildur42 = {
 	6976.3.1 = { # Elrond and young Aragorn become friends
 		effect = {
 			set_relation_friend = { reason = friend_pedagogy target = character:linefinwe27 }
+            add_trait_xp = {
+                trait = lifestyle_physician
+                value = 10
+            }
 		}
 	}
 	6980.3.1 = { # Aragorn becomes befriends Elladan and Elrohir
@@ -3637,17 +3651,21 @@ lineoftarmea31sister = {
 	
 	diplomacy = 6
     martial = 1
-    stewardship = 8
+    stewardship = 9
     intrigue = 2
-    learning = 6
-    prowess = 2
+    learning = 5
+    prowess = 1
 	
-	5359.7.5 = {
+	5358.7.5 = {
 		birth = yes			
 		effect = {
 			learn_language = language_sindarin
 			learn_language = language_quenya
 		}
+	}
+	
+	5379.2.4 = { #Their first meeting upon the shores of Lake Nenuial
+		set_relation_crush = character:lineisildur19
 	}
  
 	5551.4.13 = { 
@@ -86690,6 +86708,49 @@ linecalinyar7 = {
 	7131.9.10 = {
 		death = { death_reason = death_natural_causes }
 	}
+}
+
+linecalinyar8 = {
+    name = Eradan
+
+    dynasty = dynasty_calinyar 
+    religion = faith_edain
+    culture = dunedain_ranger
+
+    father = linecalinyar3
+    mother = lineartenosse7
+
+    sexuality = heterosexual
+
+    trait = diligent
+    trait = brave
+    trait = vengeful
+
+    diplomacy = 3
+    martial = 9
+    stewardship = 4
+    intrigue = 7
+    learning = 3
+    prowess = 6
+
+    trait = education_martial_2
+	trait = strong
+
+	trait = blood_of_numenor_3
+    
+	6989.9.12 = {
+        birth = yes
+    }
+	
+	7031.4.10 = {
+		set_relation_friend = { target = character:lineisildur42 }
+		set_relation_friend = { target = character:lineofandriel }
+		set_relation_friend = { target = character:linefarin1 }
+	}
+
+    7118.12.26 = {
+        death = { death_reason = death_natural_causes }
+    }
 }
 
 ### House Amdirach - Melossë courtiers, claim descent from the few loyal hillmen

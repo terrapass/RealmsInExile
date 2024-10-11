@@ -9,6 +9,10 @@ lotr_on_game_start = {
 	}
 
 	effect = {
+		set_global_variable = {
+			name = th_confederation_val
+			value = 0
+		}
 		### GAME RULE: EXTRA ADMINS
 		apply_historic_administrative_game_rule_effect = yes
 		
@@ -24,7 +28,7 @@ lotr_on_game_start = {
 			}
 		}
 		## Rangers of Ithilien - 3000TA
-		character:lineofmadril1 ?= {
+		character:linearphenian24 ?= {
 			if = {
 				limit = { 
 					is_alive = yes
@@ -34,7 +38,7 @@ lotr_on_game_start = {
 				if = {
 					limit = {
 						character:lineofanborn1 = {
-							NOT = { is_courtier_of = character:lineofmadril1 }
+							NOT = { is_courtier_of = character:linearphenian24 }
 						}
 					}
 					add_courtier = character:lineofanborn1
@@ -42,18 +46,52 @@ lotr_on_game_start = {
 				if = {
 					limit = {
 						character:linehathor17 = {
-							NOT = { is_courtier_of = character:lineofmadril1 }
+							NOT = { is_courtier_of = character:linearphenian24 }
 						}
 					}
 					add_courtier = character:linehathor17
 				}
 				if = {
 					limit = {
-						character:linearphenian24 = {
-							NOT = { is_courtier_of = character:lineofmadril1 }
+						character:lineofmadril1 = {
+							NOT = { is_courtier_of = character:linearphenian24 }
 						}
 					}
-					add_courtier = character:linearphenian24
+					add_courtier = character:lineofmadril1
+				}
+			}
+		}
+
+		character:lineofvalathmir1 ?= {
+			if = {
+				limit = { 
+					is_alive = yes
+					has_dlc_feature = roads_to_power
+				}
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				if = {
+					limit = {
+						character:lineofvalathmir2 = {
+							NOT = { is_courtier_of = character:lineofvalathmir1 }
+						}
+					}
+					add_courtier = character:lineofvalathmir2
+				}
+				if = {
+					limit = {
+						character:lineofvalathmir3 = {
+							NOT = { is_courtier_of = character:lineofvalathmir1 }
+						}
+					}
+					add_courtier = character:lineofvalathmir3
+				}
+				if = {
+					limit = {
+						character:lineofvalathmir4 = {
+							NOT = { is_courtier_of = character:lineofvalathmir1 }
+						}
+					}
+					add_courtier = character:lineofvalathmir4
 				}
 			}
 		}
@@ -101,6 +139,9 @@ lotr_on_game_start = {
 		character:lineofdwalin0 ?= {
 			change_age = 200
 		}
+		character:lineofuri0 ?= {
+			change_age = 250
+		}
 		character:lineofthrar53 ?= {
 			add_trait_xp = {
 				trait = lifestyle_artifact_crafting
@@ -139,6 +180,8 @@ lotr_on_game_start = {
 		generate_sorcery_list_on_start = yes
 
 		title:k_wastelands.holder = { create_story = story_artifact_crafting }
+
+		title:e_mag_tumag.holder = { create_story = story_cycle_tamskangi }
 
 		if = { # The Establishment of the Ithilien Rangers
 			limit = { game_start_date > 2934.1.1 } # The year is after T.A. 2901, when Henneth Annun was built
@@ -434,6 +477,66 @@ lotr_on_game_start = {
 				vassal_contract_set_obligation_level = { type = title_revocation_rights level = 1 }
 			}
 		}
+		
+		############################
+		# Special Locations Set-up #
+		############################
+		
+		### GONDOR ###
+		
+		title:c_morannon = {
+			set_important_location = {
+				title = title:e_gondor
+				enter_realm_event = gondor.6001
+			}
+			set_important_location = {
+				title = title:e_gondor_steward
+				enter_realm_event = gondor.6001
+			}
+			set_important_location = {
+				title = title:e_castamir
+				enter_realm_event = gondor.6001
+			}
+		}
+		
+		title:c_minas_tirith = {
+			set_important_location = {
+				title = title:e_gondor
+				enter_realm_event = gondor.6002
+				leave_realm_event = gondor.6003
+			}
+			set_important_location = {
+				title = title:e_gondor_steward
+				enter_realm_event = gondor.6002
+				leave_realm_event = gondor.6003
+			}
+		}
+		
+		title:c_umbar = {
+			set_important_location = {
+				title = title:e_gondor
+				enter_realm_event = gondor.6004
+			}
+			set_important_location = {
+				title = title:e_gondor_steward
+				enter_realm_event = gondor.6004
+			}
+		}	
+		
+		title:c_minas_ithil = {
+			set_important_location = {
+				title = title:e_gondor
+				enter_realm_event = gondor.2300
+			}
+			set_important_location = {
+				title = title:e_gondor_steward
+				enter_realm_event = gondor.2300
+			}
+			set_important_location = {
+				title = title:e_castamir
+				enter_realm_event = gondor.2300
+			}
+		}
 	}
 }
 
@@ -448,6 +551,7 @@ lotr_on_game_start_after_lobby = {
     }	
 	
 	effect = {
+		character:lineofzuberi7 = { create_story = story_death_of_ola_barasi }
 		### Ruler designer elves get an event to age up
 		every_player = {
 			if = {

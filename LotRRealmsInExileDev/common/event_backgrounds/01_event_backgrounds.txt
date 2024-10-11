@@ -187,14 +187,14 @@ alley_night = {
 				scope:bg_override_char = {
 					location = {
 						graphical_wilderness_all_forests_trigger = yes
-						culture = { lotr_elven_cultures_trigger = yes }
+						culture = { is_elf_culture = yes }
 					}
 				}
 			}
 			trigger_else = {
 				location = {
 					graphical_wilderness_all_forests_trigger = yes
-					culture = { lotr_elven_cultures_trigger = yes }
+					culture = { is_elf_culture = yes }
 				}
 			}
 		}
@@ -219,14 +219,14 @@ alley_day = {
 				scope:bg_override_char = {
 					location = {
 						graphical_wilderness_all_forests_trigger = yes
-						culture = { lotr_elven_cultures_trigger = yes }
+						culture = { is_elf_culture = yes }
 					}
 				}
 			}
 			trigger_else = {
 				location = {
 					graphical_wilderness_all_forests_trigger = yes
-					culture = { lotr_elven_cultures_trigger = yes }
+					culture = { is_elf_culture = yes }
 				}
 			}
 		}
@@ -463,6 +463,22 @@ temple = {
 		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_jungle"
 	}
 	background = {
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = {
+					location.culture ?= { is_dwarf_culture = yes }
+				}
+			}
+			trigger_else = {
+				location.culture ?= { is_dwarf_culture = yes }
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/temple_dwarven.dds"
+		environment = "environment_event_temple"
+		ambience = "event:/SFX/Events/Backgrounds/temple_generic"
+	}
+	background = {
 		reference = "gfx/interface/illustrations/event_scenes/temple.dds"
 		environment = "environment_event_temple"
 		ambience = "event:/SFX/Events/Backgrounds/temple_generic"
@@ -546,6 +562,16 @@ temple_scope = {
 		reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_indian.dds"
 		environment = "environment_indian_holy_site"	
 		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_jungle"
+	}
+	background = {
+		trigger = {
+			scope:background_temple_scope = { 
+				culture ?= { is_dwarf_culture = yes } 
+			}
+		}
+		reference = "gfx/interface/illustrations/event_scenes/temple_dwarven.dds"
+		environment = "environment_event_temple"
+		ambience = "event:/SFX/Events/Backgrounds/temple_generic"
 	}
 	background = {
 		reference = "gfx/interface/illustrations/event_scenes/temple.dds"
@@ -715,6 +741,18 @@ corridor_day = {
 		reference = "gfx/interface/illustrations/event_scenes/corridor_dunedain.dds"
 		environment = "environment_frontend_mediterranean_main" 
 		ambience = "event:/DLC/FP2/SFX/Events/corridor_day"
+	}
+	background = {	#Dwarven
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:bg_override_char }
+				scope:bg_override_char = { location.culture = { is_dwarf_culture = yes } }
+			}
+			trigger_else = { location.culture = { is_dwarf_culture = yes } }
+		}
+		reference = "gfx/interface/illustrations/event_scenes/corridor_dwarven.dds"
+		environment = "environment_event_corridor_day"
+		ambience = "event:/SFX/Events/Backgrounds/castle_corridor_day"
 	}
 	background = {	#FP2
 		trigger = {
@@ -4469,14 +4507,14 @@ market = {
 				scope:bg_override_char = {
 					location = {
 						graphical_wilderness_forest_mallorn_trigger = yes
-						culture ?= { lotr_elven_cultures_trigger = yes }
+						culture ?= { is_elf_culture = yes }
 					}
 				}
 			}
 			trigger_else = {					 
 				location = {
 					graphical_wilderness_forest_mallorn_trigger = yes
-					culture ?= { lotr_elven_cultures_trigger = yes }
+					culture ?= { is_elf_culture = yes }
 				}
 			}
 		}
@@ -4492,14 +4530,14 @@ market = {
 				scope:bg_override_char = {
 					location = {
 						graphical_wilderness_forest_mallorn_trigger = no
-						culture ?= { lotr_elven_cultures_trigger = yes }
+						culture ?= { is_elf_culture = yes }
 					}
 				}
 			}
 			trigger_else = {					 
 				location = {
 					graphical_wilderness_forest_mallorn_trigger = no
-					culture ?= { lotr_elven_cultures_trigger = yes }
+					culture ?= { is_elf_culture = yes }
 				}
 			}
 		}
@@ -4697,7 +4735,7 @@ market_scope = {
 		trigger = {
 			scope:background_market_scope = {
 				graphical_wilderness_forest_mallorn_trigger = yes
-				culture ?= { lotr_elven_cultures_trigger = yes }
+				culture ?= { is_elf_culture = yes }
 			}
 		}
 		reference = "gfx/interface/illustrations/event_scenes/lorien_day.dds"
@@ -4709,7 +4747,7 @@ market_scope = {
 		trigger = {
 			scope:background_market_scope = {
 				graphical_wilderness_forest_mallorn_trigger = no
-				culture ?= { lotr_elven_cultures_trigger = yes }
+				culture ?= { is_elf_culture = yes }
 			}
 		}
 		reference = "gfx/interface/illustrations/event_scenes/elven_town.dds"
@@ -4828,7 +4866,7 @@ market_activity = {
 		trigger = {
 			scope:activity.activity_location ?= {
 				graphical_wilderness_forest_mallorn_trigger = yes
-				culture ?= { lotr_elven_cultures_trigger = yes }
+				culture ?= { is_elf_culture = yes }
 			}
 		}
 		reference = "gfx/interface/illustrations/event_scenes/lorien_day.dds"
@@ -4840,7 +4878,7 @@ market_activity = {
 		trigger = {
 			scope:activity.activity_location ?= {
 				graphical_wilderness_forest_mallorn_trigger = no
-				culture ?= { lotr_elven_cultures_trigger = yes }
+				culture ?= { is_elf_culture = yes }
 			}
 		}
 		reference = "gfx/interface/illustrations/event_scenes/elven_town.dds"
@@ -5218,6 +5256,7 @@ bedchamber = {
 }
 
 ### STUDY ###
+# Referenced in code, do not change the name
 study = {
 	background = { #LAAMPs
 		trigger = {
@@ -5803,7 +5842,7 @@ tavern = {
 			}
 			trigger_else = { location.culture ?= { is_hobbit_culture = yes } }
 		}
-		reference = "gfx/interface/illustrations/event_scenes/tavern_hobbit.dds"
+		reference = "gfx/interface/illustrations/event_scenes/hobbit_tavern.dds"
 		environment = "environment_event_tavern"
 		ambience = "event:/SFX/Events/Backgrounds/corner_of_tavern"
 	}
@@ -7216,7 +7255,7 @@ tour_arrival = {
 		trigger = {
 			scope:activity ?= {
 				activity_location = { graphical_wilderness_all_forests_trigger = no }
-				activity_location.culture = { lotr_elven_cultures_trigger = yes	}
+				activity_location.culture = { is_elf_culture = yes	}
 			}
 		}
 		reference = "gfx/interface/illustrations/event_scenes/elven_town.dds"

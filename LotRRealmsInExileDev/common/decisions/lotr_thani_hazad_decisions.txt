@@ -19,7 +19,7 @@ decision_anbalkumagan_empire = { #
 	desc = decision_anbalkumagan_empire_desc
 	confirm_text = decision_anbalkumagan_empire_confirm
 
-	decision_group_type = realms_in_exile
+	decision_group_type = realms_in_exile_major
 	
 	is_shown = {
 		is_landed = yes
@@ -90,7 +90,7 @@ decision_integrate_tulwang = {
 	desc = decision_integrate_tulwang_desc
 	confirm_text = decision_integrate_tulwang_confirm
 	
-	decision_group_type = realms_in_exile
+	decision_group_type = realms_in_exile_major
 	
 	is_shown = {
 		is_landed = yes
@@ -164,7 +164,7 @@ decision_form_sea_dragon_host = {
 	selection_tooltip = decision_form_sea_dragon_host_tooltip
 	desc = decision_form_sea_dragon_host_desc
 	confirm_text = decision_form_sea_dragon_host_confirm
-	decision_group_type = realms_in_exile
+	decision_group_type = realms_in_exile_major
 	
 	is_shown = {
 		faith = faith:faith_nlkum_kadir
@@ -254,7 +254,7 @@ decision_conquest_of_pel = {
 	selection_tooltip = decision_conquest_of_pel_tooltip
 	desc = decision_conquest_of_pel_desc
 	confirm_text = decision_conquest_of_pel_confirm
-	decision_group_type = realms_in_exile
+	decision_group_type = realms_in_exile_major
 	
 	is_shown = {
 		culture = { has_cultural_pillar = heritage_magri }
@@ -330,7 +330,7 @@ decision_stabalise_pel = {	# Make your vassals like you
 	selection_tooltip = decision_stabalise_pel_tooltip
 	desc = decision_stabalise_pel_desc
 	confirm_text = decision_stabalise_pel_confirm
-	decision_group_type = realms_in_exile
+	decision_group_type = realms_in_exile_major
 
 	ai_goal = yes
 	ai_potential = {
@@ -344,8 +344,7 @@ decision_stabalise_pel = {	# Make your vassals like you
 		current_year >= 7000 # Pel has shattered 
 		is_independent_ruler = yes
 		has_title = title:k_pel
-
-		not = {
+		NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:decision_stabalise_pel
@@ -354,9 +353,7 @@ decision_stabalise_pel = {	# Make your vassals like you
 	}
 
 	is_valid = {
-		custom_tooltip = {
-            text = stabalised_pel
-        }
+		custom_tooltip = stabalised_pel
 
 	 	trigger_if = {
 	 		limit = {
@@ -390,9 +387,7 @@ decision_stabalise_pel = {	# Make your vassals like you
 	}
 
 	effect = {
-		custom_tooltip = {
-            text = stabalised_pel_effect
-        }
+		custom_tooltip = stabalised_pel_effect
 		add_character_modifier = {
 			modifier = seregul_stabilized_pel_modifier
 			years = 2
@@ -402,11 +397,7 @@ decision_stabalise_pel = {	# Make your vassals like you
 			name = unavailable_unique_decisions
 			target = flag:decision_stabalise_pel
 		}
-		root = { 
-			trigger_event = { 
-				id = lotr_thani_hazad.5301
-			} 
-		}
+		trigger_event = lotr_seregul_events.0202
 	}
 }
 
@@ -418,7 +409,7 @@ decision_beat_mag = {
 	selection_tooltip = decision_beat_mag_tooltip
 	desc = decision_beat_mag_desc
 	confirm_text = decision_beat_mag_confirm
-	decision_group_type = realms_in_exile
+	decision_group_type = realms_in_exile_major
 
 	ai_goal = yes
 	ai_potential = {
@@ -432,8 +423,7 @@ decision_beat_mag = {
 		current_year >= 7000 # Pel has shattered 
 		is_independent_ruler = yes
 		has_title = title:k_pel
-
-		not = {
+		NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:decision_beat_mag
@@ -442,10 +432,20 @@ decision_beat_mag = {
 	}
 
 	is_valid = {
-		custom_tooltip = {
-            text = beat_mag
-        }
-		
+		custom_tooltip = beat_mag
+		OR = {
+			custom_tooltip = {
+				text = defeated_bandits_via_decision
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:decision_beat_bandits
+				}
+			}
+			custom_tooltip = {
+				text = defeated_bandits_via_normal_mechanics
+				has_title = title:c_obishamba
+			}
+		}
 	}
 
 	cost = {
@@ -454,19 +454,13 @@ decision_beat_mag = {
 	}
 
 	effect = {
-		custom_tooltip = {
-            text = beat_mag_effect
-        }
+		custom_tooltip = beat_mag_effect
 		add_to_global_variable_list = {
 			name = unavailable_unique_decisions
 			target = flag:decision_beat_mag
 		}
 		
-		root = { 
-			trigger_event = { 
-				id = lotr_thani_hazad.5202
-			} 
-		}
+		trigger_event = lotr_seregul_events.0103
 	}
 }
 
@@ -478,21 +472,21 @@ decision_beat_bandits = {
 	selection_tooltip = decision_beat_bandits_tooltip
 	desc = decision_beat_bandits_desc
 	confirm_text = decision_beat_bandits_confirm
-	decision_group_type = realms_in_exile
+	decision_group_type = realms_in_exile_major
 
 	ai_goal = yes
 	ai_potential = {
 		always = yes
 	}
 	ai_will_do = {
-		base = 100
+		base = 1000
 	}
 
 	is_shown = {
 		current_year >= 7000 # Pel has shattered 
 		is_independent_ruler = yes
 		has_title = title:k_pel
-
+		character:lineofbandit1 = { has_title = title:c_obishamba }
 		NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
@@ -502,10 +496,7 @@ decision_beat_bandits = {
 	}
 
 	is_valid = {
-		custom_tooltip = {
-            text = beat_bandits
-        }
-		
+		custom_tooltip = beat_bandits
 	}
 	
 	is_valid_showing_failures_only = {
@@ -519,19 +510,12 @@ decision_beat_bandits = {
 	}
 
 	effect = {
-		custom_tooltip = {
-            text = beat_bandits_effect
-        }
+		custom_tooltip = beat_bandits_effect
 		add_to_global_variable_list = {
 			name = unavailable_unique_decisions
 			target = flag:decision_beat_bandits
 		}
-		
-		root = { 
-			trigger_event = { 
-				id = lotr_thani_hazad.5201
-			} 
-		}
+		trigger_event = lotr_seregul_events.0102
 	}
 }
 
@@ -543,7 +527,7 @@ decision_beat_barasi = {
 	selection_tooltip = decision_beat_barasi_tooltip
 	desc = decision_beat_barasi_desc
 	confirm_text = decision_beat_barasi_confirm
-	decision_group_type = realms_in_exile
+	decision_group_type = realms_in_exile_major
 
 	ai_goal = yes
 	ai_potential = {
@@ -558,7 +542,7 @@ decision_beat_barasi = {
 		is_independent_ruler = yes
 		has_title = title:k_pel
 
-		not = {
+		NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:decision_beat_barasi
@@ -567,9 +551,6 @@ decision_beat_barasi = {
 	}
 
 	is_valid = {
-		# custom_tooltip = {
-        #     text = beat_barasi
-        # }
 		NOT = { 
 			character:lineofzuberi7 = {
 				has_title = title:d_barasi
@@ -577,13 +558,9 @@ decision_beat_barasi = {
 		}
 
 		OR = {
-			title:c_shalala = {
-				development_level <= 7
-			}
-			
+			title:c_shalala.development_level <= 7
 		    completely_controls = title:c_shalala
 			completely_controls = title:c_kwambiri
-			
 		}
 	}
 
@@ -593,9 +570,7 @@ decision_beat_barasi = {
 	}
 
 	effect = {
-		custom_tooltip = {
-            text = beat_barasi_effect
-        }
+		custom_tooltip = beat_barasi_effect
 		if = {
 			limit = { 
 				root = {
@@ -606,10 +581,16 @@ decision_beat_barasi = {
 		}
 		else = {
 			title:d_barasi = {
+				create_title_and_vassal_change = {
+					type = usurped
+					save_scope_as = title_change
+					add_claim_on_loss = no
+				}
 				change_title_holder = {
 					holder = root
 					change = scope:title_change
 				}
+				resolve_title_and_vassal_change = scope:title_change
 			}
 		}
 
@@ -641,7 +622,7 @@ decision_murder_bellakar = {
 		base = 100
 	}
 
-	decision_group_type = realms_in_exile
+	decision_group_type = realms_in_exile_major
 	
 	is_shown = {
 		current_year >= 7000 # Durin war of the Ring
@@ -707,7 +688,7 @@ decision_summon_princes_imrazor = {
 	desc = decision_summon_princes_imrazor_desc
 	confirm_text = decision_summon_princes_imrazor_confirm
 
-	decision_group_type = realms_in_exile
+	decision_group_type = realms_in_exile_major
 	
 	is_shown = {
 		has_trait = balan_lai_member
@@ -756,7 +737,7 @@ decision_ask_to_join_balan_lai = {
 	desc = decision_ask_to_join_balan_lai_desc
 	confirm_text = decision_ask_to_join_balan_lai_confirm
 
-	decision_group_type = realms_in_exile
+	decision_group_type = realms_in_exile_major
 	
 	is_shown = {
 		capital_province ?= { geographical_region = middleearth_thani_hazad_struggle_region }

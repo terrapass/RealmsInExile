@@ -13765,6 +13765,7 @@ linehornakh3 = { #Long Winter Start Date Ruler
     dynasty = dynasty_hornakh
     religion = way_of_strength
     culture = kazgumhoth
+    dna = gudul_dna
 
     father = linehornakh1
     mother = linehornakh2
@@ -13778,11 +13779,12 @@ linehornakh3 = { #Long Winter Start Date Ruler
     diplomacy = 5
     martial = 12
     stewardship = 10
-    intrigue = 8
+    intrigue = 11
     learning = 6
     prowess = 15
 
     trait = education_martial_4
+	trait = aggressive_attacker
 
     6737.4.22 = {
         birth = yes
@@ -13798,7 +13800,7 @@ linehornakh3 = { #Long Winter Start Date Ruler
     }
 
     6820.4.13 = {
-        death = { death_reason = death_duel killer = lineoropher6 } #Greenleaf finally got him
+        death = { death_reason = death_duel killer = lineoforopher6 } #Greenleaf finally got him
     }
 }
 
@@ -13935,7 +13937,7 @@ linehornakh7 = {
         add_spouse = linehornakh8
     }
 
-    6826.4.21 = {
+    6855.2.6 = {
         death = { death_reason = death_battle }
     }
 }
@@ -14004,7 +14006,7 @@ linehornakh9 = {
         add_spouse = linehornakh10
     }
 
-    6878.6.5 = {
+    6878.7.8 = {
         death = { death_reason = death_siege }
     }
 }
@@ -14043,6 +14045,7 @@ linehornakh10 = {
 linehornakh11 = {
     name = Rauha
     female = yes
+	dynasty = dynasty_hornakh
 
     religion = way_of_strength
     culture = kazgumhoth
@@ -15497,8 +15500,6 @@ linebruluk11 = {
     }
 }
 
-
-
 ## Other Dol Guldur Orcs
 
 dolguldurorc1 = {				
@@ -15586,6 +15587,372 @@ dolguldurorc4 = {
 		death = { death_reason = death_battle }		
 	}				
 }
+
+### USAKAN ORCS ###
+
+linemarku1 = {
+    name = Marku_u_
+
+    dynasty = dynasty_marku
+    religion = volcano_cult
+    culture = rukhashai
+
+    sexuality = heterosexual
+
+    trait = diligent
+    trait = zealous
+    trait = chaste
+
+    diplomacy = 5
+    martial = 6
+    stewardship = 5
+    intrigue = 7
+    learning = 2
+    prowess = 5
+
+    trait = education_intrigue_4
+
+    6899.9.24 = {
+        birth = yes
+    }
+
+    6928.3.5 = {
+        add_spouse = linemarku2
+    }
+
+    6938.11.18 = {
+        death = { death_reason = death_decapitated }
+    }
+}
+
+linemarku2 = {
+    name = Shagbet
+    female = yes
+
+    religion = volcano_cult
+    culture = rukhashai
+
+    sexuality = heterosexual
+
+    trait = paranoid
+    trait = greedy
+    trait = ambitious
+
+    diplomacy = 5
+    martial = 8
+    stewardship = 3
+    intrigue = 10
+    learning = 8
+    prowess = 7
+
+    trait = education_intrigue_2
+
+    6911.3.17 = {
+        birth = yes
+    }
+
+    6982.3.25 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+linemarku3 = {
+    name = Gazdush
+
+    dynasty = dynasty_marku
+    religion = volcano_cult
+    culture = rukhashai
+
+    father = linemarku1
+    mother = linemarku2
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = paranoid
+    trait = forgiving
+
+    diplomacy = 4
+    martial = 2
+    stewardship = 4
+    intrigue = 5
+    learning = 3
+    prowess = 9
+
+    trait = education_intrigue_1
+
+    6932.7.4 = {
+        birth = yes
+    }
+
+    6962.4.19 = {
+        add_spouse = linemarku4
+    }
+
+    6972.2.22 = {
+        death = { death_reason = death_battle }
+    }
+}
+
+linemarku4 = {
+    name = Toltukka
+    female = yes
+
+    religion = volcano_cult
+    culture = rukhashai
+
+    sexuality = heterosexual
+
+    trait = craven
+    trait = impatient
+    trait = fickle
+
+    diplomacy = 9
+    martial = 4
+    stewardship = 3
+    intrigue = 4
+    learning = 3
+    prowess = 4
+
+    trait = education_diplomacy_3
+
+    6931.7.26 = {
+        birth = yes
+    }
+
+    6992.8.16 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+linemarku5 = {
+    name = Lu_u_nthak
+
+    dynasty = dynasty_marku
+    religion = volcano_cult
+    culture = rukhashai
+
+    father = linemarku3
+    mother = linemarku4
+
+    sexuality = heterosexual
+
+    trait = sadistic
+    trait = vengeful
+    trait = diligent
+
+    diplomacy = 6
+    martial = 5
+    stewardship = 5
+    intrigue = 5
+    learning = 4
+    prowess = 3
+
+    trait = education_diplomacy_4
+
+    6970.8.24 = {
+        birth = yes
+    }
+
+    6987.11.21 = {
+        add_spouse = linemarku6
+    }
+
+    6997.10.21 = {
+        death = { death_reason = death_siege }
+    }
+}
+
+linemarku6 = {
+    name = Ghibittah
+    female = yes
+
+    religion = volcano_cult
+    culture = rukhashai
+
+    sexuality = heterosexual
+
+    trait = wrathful
+    trait = just
+    trait = impatient
+
+    diplomacy = 6
+    martial = 5
+    stewardship = 2
+    intrigue = 5
+    learning = 4
+    prowess = 2
+
+    trait = education_diplomacy_2
+
+    6970.12.9 = {
+        birth = yes
+    }
+
+    7053.4.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+linemarku7 = {
+    name = Gazduf
+
+    dynasty = dynasty_marku
+    religion = volcano_cult
+    culture = rukhashai
+
+    father = linemarku5
+    mother = linemarku6
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = lazy
+    trait = greedy
+
+    diplomacy = 5
+    martial = 9
+    stewardship = 3
+    intrigue = 8
+    learning = 3
+    prowess = 8
+
+    trait = education_intrigue_2
+
+    6996.8.18 = {
+        birth = yes
+    }
+
+    7024.5.18 = {
+        add_spouse = linemarku8
+		give_nickname = nick_the_bellower
+		effect = {
+			add_character_flag = had_nickname_event
+		}
+    }
+
+    7042.2.15 = {
+        death = { death_reason = death_battle }
+    }
+}
+
+linemarku8 = {
+    name = Obirta
+    female = yes
+
+    religion = volcano_cult
+    culture = rukhashai
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = calm
+    trait = just
+
+    diplomacy = 3
+    martial = 5
+    stewardship = 6
+    intrigue = 5
+    learning = 5
+    prowess = 4
+
+    trait = education_stewardship_1
+
+    6996.6.27 = {
+        birth = yes
+    }
+
+    7074.10.19 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+linemarku9 = {
+    name = Venla
+    female = yes
+
+    religion = volcano_cult
+    culture = rukhashai
+
+    father = linemarku7
+    mother = linemarku8
+
+    sexuality = heterosexual
+
+    7026.1.16 = {
+        birth = yes
+    }
+
+    7089.7.19 = {
+        death = { death_reason = death_plotting  }
+    }
+}
+
+linemarku10 = {
+    name = Rauha
+    female = yes
+
+    religion = volcano_cult
+    culture = rukhashai
+	dynasty = dynasty_marku
+
+    father = linemarku7
+    mother = linemarku8
+
+    sexuality = heterosexual
+
+    7027.7.7 = {
+        birth = yes
+    }
+
+    7097.1.20 = {
+        death = { death_reason = death_accident  }
+    }
+}
+
+linemarku11 = {
+    name = Shagu_u_l
+
+    dynasty = dynasty_marku
+    religion = volcano_cult
+    culture = rukhashai
+
+    father = linemarku7
+    mother = linemarku8
+
+    sexuality = asexual
+
+    7029.3.1 = {
+        birth = yes
+    }
+
+    7054.11.2 = {
+        add_spouse = linemarku12
+    }
+
+    7064.1.28 = {
+        death = { death_reason = death_attacked }
+    }
+}
+
+linemarku12 = {
+    name = Bolbet
+    female = yes
+
+    religion = volcano_cult
+    culture = rukhashai
+
+    sexuality = heterosexual
+
+    7032.4.11 = {
+        birth = yes
+    }
+
+    7100.11.16 = {
+        death = { death_reason = death_cancer }
+    }
+}
+
 
 ### MOUNT GUNDABAD ###
 linemorgmol = {
@@ -16050,7 +16417,7 @@ linekorgar = {
 	}
 }
 
-### Line of Grumlókh ~ High Chieftains of the Withered Heath // angmar start date ###
+### Line of Grumlókh ~ High Chieftains of the Withered Heath // Angmar start date ###
 
 linegrumlokh1 = {
     name = Gazlag
@@ -16124,6 +16491,7 @@ linegrumlokh3 = { #Angmar start date ruler
     dynasty = dynasty_grumlokh
     religion = dragon_cult
     culture = worauthai_madur
+    dna = champion_of_dragons_dna 
 
     father = linegrumlokh1
     mother = linegrumlokh2
@@ -16132,7 +16500,7 @@ linegrumlokh3 = { #Angmar start date ruler
 
     trait = lazy
     trait = paranoid
-    trait = humble
+    trait = eccentric
 
     diplomacy = 12
     martial = 14
