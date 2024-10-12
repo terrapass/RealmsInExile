@@ -734,7 +734,7 @@ linegrolfig1 = { #Angmar start date ruler of the Rhûn Mountains
 	}				
 }
 
-linekurolg1 = { #Long Winter start date ruler of the Rhûn Mountains
+linekurolg1 = { 
 	name = Gudul
 	
     dynasty = dynasty_kurolg

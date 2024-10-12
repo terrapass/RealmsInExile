@@ -10630,7 +10630,7 @@ lineogooka6 = {
 ##########################
 #Duchy of Durkandig
 
-lineyamiran1 = { #Long winter start date ruler
+lineyamiran1 = { 
     name = Yamira
     female = yes
 
@@ -13395,7 +13395,7 @@ linedugumier2 = {
     }
 }
 
-linedugumier3 = { #Long winter start date ruler
+linedugumier3 = { 
     name = Magore
     female = yes
 

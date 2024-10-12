@@ -37,15 +37,7 @@
 ## Line of Langmund ~~ Chieftains of Langburg ~ Estarewas ##
 ## Line of Edelgar ~~ Chieftains of Tarau ~ Estarewas ##
 
-### Long Winter Start Date Dynasties: ###
-## Line of Jarnrik ~~ Chieftains of Beornsele ~ Valemen ##
-## Line of Rigukind ~~ Chieftains of Wenoburga ~ Woodmen ##
-## Line of Hundigar ~~ Chieftains of Hudesfell ~ Woodmen ##
-## Line of Herning ~~ Chieftains of Beraland ~ Woodmen ##
-## Line of Froderik ~~ High Chieftains of Dundaedelu ~ Woodmen ##
-## Line of Gerwig ~ Chieftains of Taurongobel ~ Woodmen ##
-## Line of Wilrik ~ Chieftains of Gond Bangath ~ Woodmen ##
-## Line of Hagaldo ~ Chieftains of Barad Dolni ~ Woodmen ##
+
 					
 #### Beornings of the Anduin Vale ####				
 
@@ -2827,7 +2819,7 @@ linefram25wife = {
 	}				
 }
 
-linefram26 = {	#Long winter start date ruler			
+linefram26 = {			
 	name = Alatheus
  	dynasty = dynasty_framling
 	religion = faith_framling				
@@ -3307,7 +3299,7 @@ dummyframling1 = {	#Placeholder 1-county Framling
 
 # Line Langburging ~ Chieftains of Langburg
 
-linelangburging1 = { #Long Winter start date ruler
+linelangburging1 = { 
     name = Ceolwulf
 
     dynasty = dynasty_langburging
@@ -16826,11 +16818,9 @@ lineedelgar11 = {
 }
 
 
-###############
-# LONG WINTER #
-###############
 
-### Line of Jarnrik ~ Chieftains of Beornsele // Long Winter Start Date ###
+
+### Line of Jarnrik ~ Chieftains of Beornsele 
 
 linejarnrik1 = {
     name = Oshere
@@ -16967,7 +16957,7 @@ linejarnrik4 = {
     }
 }
 
-linejarnrik5 = { #Long Winter start date ruler
+linejarnrik5 = { 
     name = Cearl
 
     dynasty = dynasty_jarnrik
@@ -17243,7 +17233,7 @@ linejarnrik12 = {
     }
 }
 
-### Line of Rigukind ~ Chieftains of Wenoburga // Long Winter start date ###
+### Line of Rigukind ~ Chieftains of Wenoburga 
 
 linerigukind1 = {
     name = Sighere
@@ -17449,7 +17439,7 @@ linerigukind6 = {
     }
 }
 
-linerigukind7 = { #Long Winter start date ruler
+linerigukind7 = { 
     name = RE_genweald
 
     dynasty = dynasty_rigukind
@@ -17794,7 +17784,7 @@ linerigukind16 = {
     }
 }
 
-### Line of Hundigar ~ Chieftains of Hudesfell // Long Winter start date ###
+### Line of Hundigar ~ Chieftains of Hudesfell 
 
 linehundigar1 = {
     name = Wulfstan
@@ -17931,7 +17921,7 @@ linehundigar4 = {
     }
 }
 
-linehundigar5 = { #Long winter start date ruler
+linehundigar5 = { 
     name = Eadmund
 
     dynasty = dynasty_hundigar
@@ -18173,7 +18163,7 @@ linehundigar11 = {
     }
 }
 
-### Line of Herning ~ Chieftains of Beraland // Long Winter start date ###
+### Line of Herning ~ Chieftains of Beraland 
 
 lineherning1 = {
     name = Dieraglir
@@ -18379,7 +18369,7 @@ lineherning6 = {
     }
 }
 
-lineherning7 = { #Long Winter start date ruler
+lineherning7 = { 
     name = Dudannis
 
     dynasty = dynasty_herning
@@ -18552,7 +18542,7 @@ lineherning11 = {
     }
 }
 
-### Line of Froderik ~ High Chieftains of Dundaedelu // Long Winter Start Date ###
+### Line of Froderik ~ High Chieftains of Dundaedelu 
 
 linefroderik1 = {
     name = Bain
@@ -18689,7 +18679,7 @@ linefroderik4 = {
     }
 }
 
-linefroderik5 = { #Long Winter Start Date Ruler
+linefroderik5 = { 
     name = Delling
 
     dynasty = dynasty_froderik
@@ -18930,7 +18920,7 @@ linefroderik11 = {
     }
 }
 
-### Line of Gerwig ~ Chieftains of Taurongobel // Long Winter Start Date ###
+### Line of Gerwig ~ Chieftains of Taurongobel //   ###
 
 linegerwig1 = {
     name = Theoren
@@ -19136,7 +19126,7 @@ linegerwig6 = {
     }
 }
 
-linegerwig7 = { #Long Winter Start Date Ruler
+linegerwig7 = { # 
     name = Athalhere
 
     dynasty = dynasty_gerwig
@@ -19558,7 +19548,7 @@ linegerwig18 = {
     }
 }
 
-### Line of Wilrik ~ Chieftains of Gond Bangath // Long Winter Start Date ###
+### Line of Wilrik ~ Chieftains of Gond Bangath //   ###
 
 linewilrik1 = {
     name = Gustaw
@@ -19764,7 +19754,7 @@ linewilrik6 = {
     }
 }
 
-linewilrik7 = { #Long Winter Start Date Ruler
+linewilrik7 = { # 
     name = Eodoric
 
     dynasty = dynasty_wilrik
@@ -20212,7 +20202,7 @@ linewilrik19 = {
     }
 }
 
-### Line of Gerold ~ Chieftains of Medelarnis // Long Winter start date ###
+### Line of Gerold ~ Chieftains of Medelarnis //   ###
 
 linegerold1 = {
     name = Cormac
@@ -20625,7 +20615,7 @@ linegerold12 = {
     }
 }
 
-### Line of Hagaldo ~ Chieftains of Barad Dolni // Long Winter Start date ###
+### Line of Hagaldo ~ Chieftains of Barad Dolni 
 
 linehagaldo1 = {
     name = Thrain

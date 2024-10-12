@@ -19014,13 +19014,9 @@ lotr_vanity_loon_kellenpure = { # Kellen the Pure
 }
 
 
-##########################
-# LONG WINTER START DATE #
-##########################
-
 ## LEOFRINGS ##
 
-### Line of Cyneric ~ Last Leofrings north of Lothlórien // Long Winter start date ###
+### Line of Cyneric ~ Last Leofrings north of Lothlórien 
 
 linecyneric1 = {
     name = Beorhtnoth
@@ -19364,7 +19360,7 @@ linecyneric10 = {
     }
 }
 
-linecyneric11 = { #Long winter start date ruler
+linecyneric11 = {
     name = Cearl
 
     dynasty = dynasty_cyneric

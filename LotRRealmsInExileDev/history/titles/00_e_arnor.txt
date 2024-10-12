@@ -4804,7 +4804,7 @@ d_dor_en_egladil = {
 	6687.1.1 = {	
 		holder = lineisildur36 # Arahad
 	}	
-	6752.1.1 = { #Long winter start date ruler
+	6752.1.1 = { # 
 		holder = lineisildur37 # Arassuil
 	}	
 	6817.1.1 = {	
@@ -4926,7 +4926,7 @@ c_naithgardh = {
 	6687.1.1 = {	
 		holder = lineisildur36 # Arahad
 	}	
-	6752.1.1 = { #Long winter start date ruler
+	6752.1.1 = { # 
 		holder = lineisildur37 # Arassuil
 	}	
 	6817.1.1 = {	

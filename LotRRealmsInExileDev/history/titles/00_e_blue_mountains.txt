@@ -135,7 +135,7 @@ k_belegost = {
 	6462.2.12 = {
 		holder = lineofdwalin83 # H_ar
 	}
-	6705.4.19 = { #Long winter start date ruler
+	6705.4.19 = { # 
 		holder = lineofdwalin85 # Dari
 	}
 	6811.3.21 = {
@@ -281,7 +281,7 @@ d_belegost = {
 	6462.2.12 = {
 		holder = lineofdwalin83 # H_ar
 	}
-	6705.4.19 = { #Long winter start date ruler
+	6705.4.19 = { # 
 		holder = lineofdwalin85 # Dari
 	}
 	6811.3.21 = {
@@ -461,7 +461,7 @@ c_manakhrrukul = {
 	6462.2.12 = {
 		holder = lineofdwalin83 # H_ar
 	}
-	6705.4.19 = { #Long winter start date ruler
+	6705.4.19 = { # 
 		holder = lineofdwalin85 # Dari
 	}
 	6811.3.21 = {
@@ -749,7 +749,7 @@ c_fahamtekhem = {
 	6462.2.12 = {
 		holder = lineofdwalin83 # H_ar
 	}
-	6705.4.19 = { #Long winter start date ruler
+	6705.4.19 = { # 
 		holder = lineofdwalin85 # Dari
 	}
 	6811.3.21 = {
@@ -887,7 +887,7 @@ d_tagakhgershad = {
     6633.9.25 = {
         holder = lineofgemkarsh86 # Wigur
     }
-    6721.3.16 = { #Long winter start date ruler
+    6721.3.16 = { # 
         holder = lineofgemkarsh88 # Withur
     }
     6967.12.26 = {
@@ -1021,7 +1021,7 @@ c_tagakhgershad = {
     6633.9.25 = {
         holder = lineofgemkarsh86 # Wigur
     }
-    6721.3.16 = { #Long winter start date ruler
+    6721.3.16 = { # 
         holder = lineofgemkarsh88 # Withur
     }
     6967.12.26 = {
@@ -1155,7 +1155,7 @@ c_kairshadig = {
     6633.9.25 = {
         holder = lineofgemkarsh86 # Wigur
     }
-    6721.3.16 = { #Long winter start date ruler
+    6721.3.16 = { # 
         holder = lineofgemkarsh88 # Withur
     }
     6967.12.26 = {
@@ -1289,7 +1289,7 @@ c_farakudnu = {
     6633.9.25 = {
         holder = lineofgemkarsh86 # Wigur
     }
-    6721.3.16 = { #Long winter start date ruler
+    6721.3.16 = { # 
         holder = lineofgemkarsh88 # Withur
     }
     6967.12.26 = {
@@ -1318,7 +1318,7 @@ d_fahamgathol = {
     6491.2.4 = {
         holder = lineofufham_ashamur11 # Thror
     }
-    6709.7.15 = { #Long winter start date ruler
+    6709.7.15 = { # 
         holder = lineofufham_ashamur13 # Thror
     }
     6877.5.9 = {
@@ -1427,7 +1427,7 @@ c_fahamgathol = {
     6491.2.4 = {
         holder = lineofufham_ashamur11 # Thror
     }
-    6709.7.15 = { #Long winter start date ruler
+    6709.7.15 = { # 
         holder = lineofufham_ashamur13 # Thror
     }
     6877.5.9 = {
@@ -1460,7 +1460,7 @@ c_akhtathol = {
     6491.2.4 = {
         holder = lineofufham_ashamur11 # Thror
     }
-    6709.7.15 = { #Long winter start date ruler
+    6709.7.15 = { # 
         holder = lineofufham_ashamur13 # Thror
     }
     6877.5.9 = {
@@ -1550,7 +1550,7 @@ c_intukagla = {
 	6543.4.12 = {
 		holder = lineofhor26 # _An
 	}
-	6704.8.2 = { #Long winter start date ruler
+	6704.8.2 = { # 
 		holder = lineofhor29 # Uni
 	}
 	6859.8.14 = {
@@ -1613,7 +1613,7 @@ c_kheledul = {
     6552.2.26 = {
         holder = lineofuni25 # L_ithskyalf
     }
-    6754.8.21 = { #Long Winter start date ruler
+    6754.8.21 = { # 
         holder = lineofuni27 # Berling
     }
     6864.1.2 = {
@@ -1846,7 +1846,7 @@ d_mount_dolmed = {
     6557.12.4 = {
         holder = lineofeldran57 #Elmericel
     }
-    6668.1.27 = { #Long winter start date ruler
+    6668.1.27 = { # 
         holder = lineofeldran59 # Thur_or
     }
     6799.11.19 = {
@@ -1969,7 +1969,7 @@ c_lugnaurdsir = {
     6557.12.4 = {
         holder = lineofeldran57 #Elmericel
     }
-    6668.1.27 = { #Long winter start date ruler
+    6668.1.27 = { # 
         holder = lineofeldran59 # Thur_or
     }
     6799.11.19 = {
@@ -2139,7 +2139,7 @@ k_buzra_dum = {
 	6641.5.25 = {
 		holder = lineofuri83 # D_olgthurasir
 	}
-	6739.3.25 = { #Long winter start date ruler
+	6739.3.25 = { # 
 		holder = lineofuri85 # Fo_o_rwi
 	}
 	6943.10.3 = {
@@ -2282,7 +2282,7 @@ d_ursel_zabad = {
 	6641.5.25 = {
 		holder = lineofuri83 # D_olgthurasir
 	}
-	6739.3.25 = { #Long winter start date ruler
+	6739.3.25 = { # 
 		holder = lineofuri85 # Fo_o_rwi
 	}
 	6943.10.3 = {
@@ -2424,7 +2424,7 @@ c_ursel_zabad = {
 	6641.5.25 = {
 		holder = lineofuri83 # D_olgthurasir
 	}
-	6739.3.25 = { #Long winter start date ruler
+	6739.3.25 = { # 
 		holder = lineofuri85 # Fo_o_rwi
 	}
 	6943.10.3 = {
@@ -2554,7 +2554,7 @@ c_mekhem_ursel = {
     6385.2.2 = {
         holder = lineofstonewall42 # Gamil
     }
-    6687.2.13 = { #Long winter start date ruler
+    6687.2.13 = { # 
         holder = lineofstonewall44 # Eikinskyaldi
     }
     6859.5.20 = {
@@ -2831,7 +2831,7 @@ c_akhurstarag = {
 	6641.5.25 = {
 		holder = lineofuri83 # D_olgthurasir
 	}
-	6739.3.25 = { #Long winter start date ruler
+	6739.3.25 = { # 
 		holder = lineofuri85 # Fo_o_rwi
 	}
 	6843.10.3 = {
@@ -2972,7 +2972,7 @@ c_girazirin = {
 	6641.5.25 = {
 		holder = lineofuri83 # D_olgthurasir
 	}
-	6739.3.25 = { #Long winter start date ruler
+	6739.3.25 = { # 
 		holder = lineofuri85 # Fo_o_rwi
 	}
 	6943.10.3 = {
@@ -3108,7 +3108,7 @@ c_urskub = {
     # 6385.2.2 = {
     #     holder = lineofstonewall42 # Gamil
     # }
-    # 6687.2.13 = { #Long winter start date ruler
+    # 6687.2.13 = { # 
     #     holder = lineofstonewall44 # Eikinskyaldi
     # }
 	6808.1.1 = { #Reinhabited as Longbeards fleeing Smaug arrive at the Blue Mnts and swell the population. c. 2775
@@ -3249,7 +3249,7 @@ c_mikil_ashmur = {
     6533.5.7 = {
         holder = lineofhersarbinshmur76 # Dari
     }
-    6645.6.16 = { #Long winter start date ruler
+    6645.6.16 = { # 
         holder = lineofhersarbinshmur79 # Hornbori
     }
     6887.12.18 = {
@@ -3407,7 +3407,7 @@ d_amakharasi = {
     6487.9.28 = {
         holder = lineofubraz17 # Gimli
     }
-    6683.1.5 = { #Long winter start date ruler
+    6683.1.5 = { # 
         holder = lineofubraz19 # War
     }
     6857.2.24 = {
@@ -3488,7 +3488,7 @@ c_rasinut = {
     6557.7.2 = {
         holder = lineofarsan44 # Herauthur
     }
-    6720.7.25 = { #Long winter start date ruler
+    6720.7.25 = { # 
         holder = lineofarsan47 # Gimli
     }
     6884.6.9 = {
@@ -3632,7 +3632,7 @@ c_ibriz_garan = {
 	6628.5.19 = {
 		holder = lineofkhathzaibriz88 # Weggur
 	}
-	6745.6.2 = { #Long winter start date ruler
+	6745.6.2 = { # 
 		holder = lineofkhathzaibriz90 # Hanar
 	}
 	6938.4.18 = {
@@ -3761,7 +3761,7 @@ c_agzarasi = {
     6476.11.13 = {
         holder = lineofidagazay79 # Galar
     }
-    6739.9.17 = { #Long winter start date ruler
+    6739.9.17 = { # 
         holder = lineofidagazay82 # Northuri
     }
     6912.5.16 = {
@@ -3907,7 +3907,7 @@ c_amallost = {
     6487.9.28 = {
         holder = lineofubraz17 # Gimli
     }
-    6683.1.5 = { #Long winter start date ruler
+    6683.1.5 = { # 
         holder = lineofubraz19 # War
     }
     6857.2.24 = {

@@ -2342,7 +2342,7 @@ gorbad_dna = { # by Loon-kellenpure
 	enabled=yes
 }
 
-#Mauduf the Spider Eater, of Mirkwood - Long Winter start date
+#Mauduf the Spider Eater, of Mirkwood - 
 mauduf_dna = { # by Loon-kellenpure
 	portrait_info = {
 		genes={

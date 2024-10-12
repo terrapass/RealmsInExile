@@ -204,7 +204,7 @@ c_amarthrynd = {
     6750.10.2 = {
         holder = lineshirfik8 #Gorlu_u_n
     }
-    6751.4.18 = { #Long winter start date ruler
+    6751.4.18 = { # 
         holder = lineshirfik10 #Mauduf
     }
 	6900.1.1 = { #Ruins are reclaimed by the forest
@@ -267,7 +267,7 @@ c_mornrad = {
     6750.10.2 = {
         holder = lineshirfik8 #Gorlu_u_n
     }
-    6751.4.18 = { #Long winter start date ruler
+    6751.4.18 = { # 
         holder = lineshirfik10 #Mauduf
     }
 	6900.1.1 = { #Ruins are reclaimed by the forest
@@ -357,7 +357,7 @@ c_beraland = {
     6743.8.22 = {
         holder = lineherning5 #Sigiswulf
     }
-    6748.6.21 = { #Long Winter start date ruler
+    6748.6.21 = { # 
         holder = lineherning7 #Dudannis
     }
     6821.12.27 = {
@@ -396,7 +396,7 @@ c_gudmarhalle = {
     6743.8.22 = {
         holder = lineherning5 #Sigiswulf
     }
-    6748.6.21 = { #Long Winter start date ruler
+    6748.6.21 = { # 
         holder = lineherning7 #Dudannis
     }
     6821.12.27 = {
@@ -440,7 +440,7 @@ d_dundaedelu = {
     6731.10.24 = {
         holder = linefroderik3 #Gustadolph
     }
-    6758.11.23 = { #Long Winter Start Date Ruler
+    6758.11.23 = { # 
         holder = linefroderik5 #Delling
     }
     6800.12.4 = {
@@ -482,7 +482,7 @@ c_taurongobel = {
     6731.10.24 = {
         holder = linefroderik3 #Gustadolph
     }
-    6758.11.23 = { #Long Winter Start Date Ruler
+    6758.11.23 = { # 
         holder = linefroderik5 #Delling
     }
     6800.12.4 = {
@@ -591,7 +591,7 @@ c_talan_pengron = {# Olphanging tribe under the Beornings
     6775.6.4 = {
         holder = linegerwig5 #Brathalwin
     }
-    6785.3.19 = { #Long Winter Start Date ruler
+    6785.3.19 = { # 
         holder = linegerwig7 #Athalhere
     }
     6814.1.1 = {
@@ -633,7 +633,7 @@ c_cor_tauraglor = {
     6731.10.24 = {
         holder = linefroderik3 #Gustadolph
     }
-    6758.11.23 = { #Long Winter Start Date Ruler
+    6758.11.23 = { # 
         holder = linefroderik5 #Delling
     }
     6800.12.4 = {
@@ -772,7 +772,7 @@ c_gond_bangath = {# Waldandings
     6762.8.10 = {
         holder = linewilrik5 #Theoren
     }
-    6784.8.11 = { #Long Winter Start Date
+    6784.8.11 = { # 
         holder = linewilrik7 #Eodoric
     }
     6820.3.16 = {
@@ -807,7 +807,7 @@ d_men_i_naugrim = {# Meroagings
 	6700.8.28 = {
         holder = linehornakh1 #Gazdush
     }
-    6778.2.11 = { #Long Winter Start Date Ruler
+    6778.2.11 = { # 
         holder = linehornakh3 #Gudul
     }
     6820.4.13 = {
@@ -854,7 +854,7 @@ c_senn_i_naugrim = {
     6749.3.21 = {
         holder = linegerold7 #Gartila
     }
-    6784.9.11 = { #Long Winter Start Date Ruler
+    6784.9.11 = { # 
         holder = linegerold9 #Lunt
     }
     6822.2.1 = {
@@ -892,7 +892,7 @@ c_medelarnis = {
     6762.8.10 = {
         holder = linewilrik5 #Theoren
     }
-    6784.8.11 = { #Long Winter Start Date
+    6784.8.11 = { # 
         holder = linewilrik7 #Eodoric
     }
     6820.3.16 = {
@@ -940,7 +940,7 @@ c_rhumen_i_naugrim = {
     6749.3.21 = {
         holder = linegerold7 #Gartila
     }
-    6784.9.11 = { #Long Winter Start Date Ruler
+    6784.9.11 = { # 
         holder = linegerold9 #Lunt
     }
     6822.2.1 = {
@@ -983,7 +983,7 @@ c_enedhmen_i_naugrim = {
 		government = tribal_government
 		change_development_level = 9
     }
-    6778.2.11 = { #Long Winter Start Date Ruler
+    6778.2.11 = { # 
         holder = linehornakh3 #Gudul
     }
     6820.4.13 = {
@@ -1014,7 +1014,7 @@ c_taurannon = {
         holder = linehornakh1 #Gazdush
 		change_development_level = 8
     }
-    6778.2.11 = { #Long Winter Start Date Ruler
+    6778.2.11 = { # 
         holder = linehornakh3 #Gudul
     }
     6820.4.13 = {
@@ -1041,7 +1041,7 @@ c_nidurn = {
         holder = linehornakh1 #Gazdush
 		change_development_level = 7
     }
-    6778.2.11 = { #Long Winter Start Date Ruler
+    6778.2.11 = { # 
         holder = linehornakh3 #Gudul
     }
     6820.4.13 = {
@@ -1081,7 +1081,7 @@ c_carag_thoroth = {
         holder = linehornakh1 #Gazdush
 		change_development_level = 6
     }
-    6778.2.11 = { #Long Winter Start Date Ruler
+    6778.2.11 = { # 
         holder = linehornakh3 #Gudul
     }
     6820.4.13 = {
@@ -1193,7 +1193,7 @@ c_gorogrod = {
         holder = linegreleb1 #Shagu_u_l
 		liege = d_amon_lanc
     }
-    6756.1.11 = { #Long Winter start date ruler
+    6756.1.11 = { # 
         holder = linegreleb3 #A_A_rlok
     }
 	6984.1.1 = { # T.A. 2951, Khamul is dispatched to rebuild and strengthen Dol Guldur as a stronghold for Mordor
@@ -1229,7 +1229,7 @@ c_dimbar = {
         holder = linegreleb1 #Shagu_u_l
 		liege = d_amon_lanc
     }
-    6756.1.11 = { #Long Winter start date ruler
+    6756.1.11 = { # 
         holder = linegreleb3 #A_A_rlok
     }
 	6984.1.1 = { # T.A. 2951, Khamul is dispatched to rebuild and strengthen Dol Guldur as a stronghold for Mordor
@@ -1265,7 +1265,7 @@ c_barad_angol = {
         holder = linegrulukh1 #Zerl_uk
 		liege = d_amon_lanc
     }
-    6743.10.26 = { #Long Winter Start date ruler
+    6743.10.26 = { # 
         holder = linegrulukh3 #A_A_mbal
     }
 	6984.1.1 = { # T.A. 2951, Khamul is dispatched to rebuild and strengthen Dol Guldur as a stronghold for Mordor
@@ -1301,7 +1301,7 @@ c_naerorn = {
         holder = linegrulukh1 #Zerl_uk
 		liege = d_amon_lanc
     }
-    6743.10.26 = { #Long Winter Start date ruler
+    6743.10.26 = { # 
         holder = linegrulukh3 #A_A_mbal
     }
 	6984.1.1 = { # T.A. 2951, Khamul is dispatched to rebuild and strengthen Dol Guldur as a stronghold for Mordor
@@ -1379,7 +1379,7 @@ c_thon_gwaeren = {
 		change_development_level = 7
 		government = feudal_government
     }
-    6733.1.15 = { #Long winter start date ruler
+    6733.1.15 = { # 
         holder = linegrohak3 #Gorduf
     }
 	7000.3.15 = { # Independent Sairthiuda tribe
@@ -1435,7 +1435,7 @@ d_taur_e_ndaedlos = {
     6744.7.16 = {
         holder = linebruluk3 #Mauduf
     }
-    6770.11.17 = { #Long Winter Start date ruler
+    6770.11.17 = { # 
         holder = linebruluk5 #Ratak
     }
 	7010.1.1 = { #Corsechings
@@ -1473,7 +1473,7 @@ c_galbrethin = {
     6744.7.16 = {
         holder = linebruluk3 #Mauduf
     }
-    6770.11.17 = { #Long Winter Start date ruler
+    6770.11.17 = { # 
         holder = linebruluk5 #Ratak
     }
 	7010.1.1 = { #Corseching
@@ -1501,7 +1501,7 @@ c_barad_dolni = {
     6741.3.2 = {
         holder = linehagaldo5 #Gustaw
     }
-    6756.1.24 = { #Long Winter start date ruler
+    6756.1.24 = { # 
         holder = linehagaldo7 #Einar
     }
     6814.2.7 = {
@@ -1576,7 +1576,7 @@ c_tharlag = {
     6744.7.16 = {
         holder = linebruluk3 #Mauduf
     }
-    6770.11.17 = { #Long Winter Start date ruler
+    6770.11.17 = { # 
         holder = linebruluk5 #Ratak
     }
 	7012.1.1 = { #Corseching
@@ -1620,7 +1620,7 @@ c_minas_raug = {
     6744.7.16 = {
         holder = linebruluk3 #Mauduf
     }
-    6770.11.17 = { #Long Winter Start date ruler
+    6770.11.17 = { # 
         holder = linebruluk5 #Ratak
     }
 	6974.1.1 = { # T.A. 2941, The White Council dislodges Sauron from Dol Guldur, who returns to Mordor, Zimraphel takes residence

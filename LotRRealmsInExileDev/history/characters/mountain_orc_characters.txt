@@ -97,15 +97,6 @@
 
 ############################################################################
 
-#### Long Winter Start Date - Lines overview ####
-
-## Greenwood (e_greenwood) ##
-# Line of Shirfik ~ Chieftains of Amarthrynd, independent 
-# Line of Hórnakh ~ High Chieftains of Men-i-Naugrim, threatening Thranduil's realm
-# Line of Greleb ~ Minor Chieftains of Gorogrod under the Necromancer
-# Line of Grulúkh ~ Minor Chieftains of Barad Angol under the Necromancer
-# Line of Grohak ~ Minor Chieftains of Thôn Gwaeren, tributary to Dol Guldur
-# Line of Brúluk ~ High Chieftains of Taur-e-Ndaedelos, tributary to Dol Guldur
 
 ### Worauthai Madur ###
 # Line of Skorg, First decendents of Skorg
@@ -13308,7 +13299,7 @@ linenorbog8 = {
     }
 }
 
-### Line of Shirfik ~ Mirkwood Orcs that expanded the furthest north // Long Winter start date ###
+### Line of Shirfik ~ Mirkwood Orcs that expanded the furthest north 
 
 lineshirfik1 = {
     name = Gorduf
@@ -13616,7 +13607,7 @@ lineshirfik9 = {
     }
 }
 
-lineshirfik10 = { #Long Winter start date ruler
+lineshirfik10 = { 
     name = Mauduf
 
     dynasty = dynasty_shirfik
@@ -13691,7 +13682,7 @@ lineshirfik11 = {
     }
 }
 
-### Line of Hornakh ~ High Chieftains of Men-i-Naugrim // Long Winter Start Date ###
+### Line of Hornakh ~ High Chieftains of Men-i-Naugrim 
 
 linehornakh1 = {
     name = Gazdush
@@ -13759,7 +13750,7 @@ linehornakh2 = {
     }
 }
 
-linehornakh3 = { #Long Winter Start Date Ruler
+linehornakh3 = { 
     name = Gudul
 
     dynasty = dynasty_hornakh
@@ -14146,8 +14137,7 @@ linehornakh13 = {
     }
 }
 
-### Line of Greleb ~ Minor Chieftains of Gorogrod under the Necromancer // Long Winter Start Date ###
-
+### Line of Greleb ~ Minor Chieftains of Gorogrod under the Necromancer 
 linegreleb1 = {
     name = Shagu_u_l
 
@@ -14214,7 +14204,7 @@ linegreleb2 = {
     }
 }
 
-linegreleb3 = { #Long Winter Start date ruler
+linegreleb3 = { 
     name = A_A_rlok
 
     dynasty = dynasty_greleb
@@ -14489,7 +14479,7 @@ linegreleb10 = {
     }
 }
 
-### Line Grulukh ~ Minor Chieftains of Barad Angol under the Necromancer // Long Winter start date ###
+### Line Grulukh ~ Minor Chieftains of Barad Angol under the Necromancer // 
 
 linegrulukh1 = {
     name = Zerl_uk
@@ -14557,7 +14547,7 @@ linegrulukh2 = {
     }
 }
 
-linegrulukh3 = { #Long Winter start date ruler
+linegrulukh3 = { 
     name = A_A_mbal
 
     dynasty = dynasty_grulukh
@@ -14763,7 +14753,7 @@ linegrulukh8 = {
     }
 }
 
-### Line of Grokah ~ Minor Chieftains of Thôn Gwaeren // Long Winter Start date ###
+### Line of Grokah ~ Minor Chieftains of Thôn Gwaeren
 
 linegrohak1 = {
     name = Greb
@@ -14831,7 +14821,7 @@ linegrohak2 = {
     }
 }
 
-linegrohak3 = { #Long Winter start date ruler
+linegrohak3 = {
     name = Gorduf
 
     dynasty = dynasty_grohak
@@ -15114,8 +15104,7 @@ linegrohak10 = {
     }
 }
 
-### Line of Brúluk ~ Orc High Chieftains of Taur-e-Ndaedelos // Long Winter Start date ###
-
+### Line of Brúluk ~ Orc High Chieftains of Taur-e-Ndaedelos
 linebruluk1 = {
     name = Gorduf
 
@@ -15251,7 +15240,7 @@ linebruluk4 = {
     }
 }
 
-linebruluk5 = { #Long winter start date ruler
+linebruluk5 = { 
     name = Ratak
 
     dynasty = dynasty_bruluk

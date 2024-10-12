@@ -8637,7 +8637,7 @@ linetulgwerdia159 = {
     }
 }
 
-linetulgwerdia160 = { #Long winter start date ruler
+linetulgwerdia160 = { 
     name = Sigismund
 
     dynasty = dynasty_tulgwerdia
@@ -22091,7 +22091,7 @@ lineciuldwini23 = {
     }
 }
 
-### House Feordan ~ Chieftains of Brunstal // Long winter start date ###
+### House Feordan ~ Chieftains of Brunstal 
 
 linefeordan1 = {
     name = Sigrid

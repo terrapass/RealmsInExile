@@ -91793,7 +91793,7 @@ lineforovarne50 = {
     }
 }
 
-lineforovarne51 = { #Long Winter start date character
+lineforovarne51 = { 
     name = Ranatar
 
     dynasty_house = house_forovarne

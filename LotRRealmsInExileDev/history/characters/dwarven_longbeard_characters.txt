@@ -10669,7 +10669,7 @@ linebrokkr6 = {
     }
 }
 
-linebrokkr7 = { #Long winter start date ruler
+linebrokkr7 = { 
     name = Brokkr
 
     dynasty = dynasty_silverbeard
@@ -37232,7 +37232,7 @@ lineviglund27 = {
     }
 }
 
-lineviglund28 = { # Long winter start date ruler
+lineviglund28 = { 
     name = F_ain
 
     dynasty = dynasty_viglund

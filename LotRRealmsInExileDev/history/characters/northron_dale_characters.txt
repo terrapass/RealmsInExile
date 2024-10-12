@@ -20,9 +20,6 @@
 ##Line of Dagrun ~ High Chieftains of Vargfell ~ Gramas ##
 ##Line of Ríkolf ~ Chieftains of Banimyrr and Harbjarg ##
 
-##### Long Winter Stadt Date Lines Overview #####
-##Line of Forrik ~ Oversaw the expansion of Dalemen east of the Long Lake ##
-
 
 ###### WOTR START DATE ######
 
@@ -651,7 +648,7 @@ lineofdale34wife = {
 	}				
 }
 
-lineofdale35 = { #Long winter start date ruler			
+lineofdale35 = { 		
 	name = Girnir	
  	dynasty = dynasty_aivadiuria	
 	religion = faith_dale				
@@ -4019,7 +4016,7 @@ lineoffalkes20 = {
     }
 }
 
-lineoffalkes21 = { #Long Winter start date ruler
+lineoffalkes21 = { 
     name = Sigtrygg 
 
     dynasty = dynasty_falkes
@@ -26648,8 +26645,6 @@ linerikolf14 = {
 }
 
 
-######### LONG WINTER START DATE ##########
-
 ### House Forrik ~ Oversaw the first expansion into the east, founders of Grasgard ###
 
 lineforrik1 = {
@@ -26787,7 +26782,7 @@ lineforrik4 = {
     }
 }
 
-lineforrik5 = { #Long winter start date ruler
+lineforrik5 = { 
     name = Herion
 
     dynasty = dynasty_forrik

@@ -2653,7 +2653,7 @@ c_hathur_na_bunderok = {
 		government = feudal_government
 		change_development_level = 4
 	}
-	6769.3.14 = { #Long winter start date ruler
+	6769.3.14 = { # 
 		holder = linekurolg1 
 	}
 	7000.1.1 = {

@@ -336,7 +336,7 @@ d_minovuld = {
     6756.4.18 = {
         holder = linelogian011 #Thorberta
     }
-    6775.10.9 = { #Long winter start date ruler
+    6775.10.9 = { # 
         holder = linelogian013 #Amalasuintha
     }
 	6825.11.24 = {

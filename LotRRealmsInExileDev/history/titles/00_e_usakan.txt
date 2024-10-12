@@ -447,7 +447,7 @@ c_azra_zhe = {
     6710.2.13 = {
         holder = lineoludajin1 #Ayamido
     }
-    6759.2.25 = { #Long winter start date ruler
+    6759.2.25 = { # 
         holder = lineoludajin3 #Ojahar
     }
     6784.7.12 = {
@@ -479,7 +479,7 @@ c_hwozaya = {
     6710.2.13 = {
         holder = lineoludajin1 #Ayamido
     }
-    6759.2.25 = { #Long winter start date ruler
+    6759.2.25 = { # 
         holder = lineoludajin3 #Ojahar
     }
     6784.7.12 = {

@@ -117,7 +117,7 @@ c_ravenhill = {
     6657.5.13 = {
         holder = lineviglund25 #Durathur_or
     }
-    6772.8.13 = { # Long Winter start date ruler
+    6772.8.13 = { #  
 		holder = lineviglund28 #Fáin
 	}
 	6803.6.27 = { # Smaug sacks Erebor, line dies out in the flames
@@ -211,7 +211,7 @@ c_golden_hall = {
     6657.5.13 = {
         holder = lineviglund25 #Durathur_or
     }
-    6772.8.13 = { # Long Winter start date ruler
+    6772.8.13 = { #  
 		holder = lineviglund28 #Fáin
 	}
 	6803.6.27 = { # Smaug sacks Erebor, line dies out in the flames
@@ -616,7 +616,7 @@ c_nordinbad = {
 	6621.1.1 = { #Dragons drive out the Line of Durin from the Grey Mountains. Nordinbad, hidden away, survives
 		liege = 0
 	}
-	6757.6.5 = { #Long winter start date ruler
+	6757.6.5 = { # 
 		holder = linegorin5
 	}
 	6790.1.16 = { 
@@ -670,7 +670,7 @@ c_fireheart_mine = {
     6737.3.25 = {
         holder = linebrokkr5
     }
-	6743.10.7 = { #Long winter start date ruler
+	6743.10.7 = { # 
 		holder = linebrokkr7
 	}
 	6803.5.9 = { #Smaug drives the dwarves south, following them to Erebor
@@ -1600,7 +1600,7 @@ d_azanulinbar_dum = {
     6242.1.27 = {
         holder = linegruni25 #Atwarthur
     }
-	6622.1.6 = { #Long Winter Start date ruler
+	6622.1.6 = { # 
 		holder = lineofdurin88
 	}
 	6838.3.8 = { 
@@ -1659,7 +1659,7 @@ c_azanulinbar_dum = {
     6242.1.27 = {
         holder = linegruni25 #Atwarthur
     }
-	6622.1.6 = { #Long Winter Start date ruler
+	6622.1.6 = { # 
 		holder = lineofdurin88
 		change_development_level = 10
 	}
@@ -1715,7 +1715,7 @@ c_nartok = {
 		holder = lineofdurin79
 		change_development_level = 10
 	}
-	6622.1.6 = { #Long winter start date ruler
+	6622.1.6 = { # 
 		holder = lineofdurin88
 	}
 	6838.3.8 = { 
@@ -1767,7 +1767,7 @@ c_amrag_demel = {
 		holder = lineofdurin79
 		change_development_level = 10
 	}
-	6622.1.6 = { #Long winter start date ruler
+	6622.1.6 = { # 
 		holder = lineofdurin88
 	}
 	6838.3.8 = { 
@@ -1855,7 +1855,7 @@ c_barukkizdin = {
     6714.9.23 = {
         holder = lineoffalna45 # B_uin
     }
-    6779.6.10 = { #Long winter start date ruler
+    6779.6.10 = { # 
         holder = lineoffalna47 # Thurasir
     }
     6943.4.11 = {
@@ -2007,7 +2007,7 @@ c_zirin_ashmur = {
     6432.5.7 = {
         holder = lineofzabadith76 # L_ithskyalf
     }
-    6593.5.27 = { #Long winter start date ruler
+    6593.5.27 = { # 
         holder = lineofzabadith78 # Gror
     }
     6788.6.4 = {
@@ -2112,7 +2112,7 @@ c_barak_shatur = {
 	6596.10.27 = {
 		holder = lineoftheklel44 # _Iwaldi
 	}
-	6626.12.21 = { #Long winter start date ruler
+	6626.12.21 = { # 
 		holder = lineoftheklel46 # Weigur
 	}
 	6938.11.1 = {
@@ -2205,7 +2205,7 @@ c_anu_zirin = {
 	6596.10.27 = {
 		holder = lineoftheklel44 # _Iwaldi
 	}
-	6626.12.21 = { #Long winter start date ruler
+	6626.12.21 = { # 
 		holder = lineoftheklel46 # Weigur
 	}
 	6938.11.1 = {
@@ -2243,7 +2243,7 @@ c_abkan_nurtad = {
     5601.10.28 = {
         holder = linegrasil7 #Hor
     }
-	6865.12.21 = { #Long winter start date ruler
+	6865.12.21 = { # 
         holder = lineofargan1 #Yakub
     }
 	7000.12.21 = {
@@ -2331,7 +2331,7 @@ c_garul_idban = {
 	6596.10.27 = {
 		holder = lineoftheklel44 # _Iwaldi
 	}
-	6626.12.21 = { #Long winter start date ruler
+	6626.12.21 = { # 
 		holder = lineoftheklel46 # Weigur
 	}
 	6938.11.1 = {
@@ -2662,7 +2662,7 @@ c_isrujul_abad = {
     6381.6.28 = {
         holder = lineofAtrub75 # Skirfir
     }
-    6597.12.27 = {  #Long winter start date ruler
+    6597.12.27 = {  # 
         holder = lineofAtrub77 # Thurasir
 		liege = k_iron_hills
     }
@@ -2777,7 +2777,7 @@ c_basn_junudegam = {
     6355.1.15 = {
         holder = lineofhunduzir41 # Iri
     }
-    6550.6.3 = { #Long winter start date ruler
+    6550.6.3 = { # 
         holder = lineofhunduzir43 # Nyr
 		liege = k_iron_hills
     }
@@ -2868,7 +2868,7 @@ c_hundu_lubru = {
     6355.1.15 = {
         holder = lineofhunduzir41 # Iri
     }
-    6550.6.3 = { #Long winter start date ruler
+    6550.6.3 = { # 
         holder = lineofhunduzir43 # Nyr
 		liege = k_iron_hills
     }
@@ -3173,7 +3173,7 @@ c_ibriz_idzab = {
     6503.3.18 = {
         holder = lineofmorthain80 #A_i
     }
-    6662.6.8 = { #Long winter start date ruler
+    6662.6.8 = { # 
         holder = lineofmorthain82 # Gurer
 		liege = k_iron_hills
     }
@@ -3513,7 +3513,7 @@ c_narga_idzab = {
 	6503.3.18 = {
 		holder = lineofmorthain80 #A_i
 	}
-	6662.6.8 = { #Long winter start date ruler
+	6662.6.8 = { # 
 		holder = lineofmorthain82 # Gurer
 		liege = d_azanulinbar_dum
 	}
@@ -3641,7 +3641,7 @@ c_durins_anvil = {
     6454.6.28 = {
         holder = lineoftherrel65 # Austri
     }
-    6599.3.16 = { #Long winter start date ruler
+    6599.3.16 = { # 
         holder = lineoftherrel67 # Alius
 		liege = k_iron_hills
     }
@@ -3802,7 +3802,7 @@ c_boicstead = {
     6704.12.13 = {
         holder = lineofbravesoul86 # H_ar
     }
-    6749.4.16 = { #Long winter start date ruler
+    6749.4.16 = { # 
         holder = lineofbravesoul89 # Suthuri
 		liege = d_azanulinbar_dum
     }
@@ -3969,7 +3969,7 @@ c_unforged_terrace = {
     6704.12.13 = {
         holder = lineofbravesoul86 # H_ar
     }
-    6749.4.16 = { #Long winter start date ruler
+    6749.4.16 = { # 
         holder = lineofbravesoul89 # Suthuri
 		liege = d_azanulinbar_dum
     }

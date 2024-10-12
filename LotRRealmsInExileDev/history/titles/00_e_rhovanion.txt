@@ -117,7 +117,7 @@ d_dalelands = {
 	6752.1.1 = { 
 		holder = lineofdale34
 	}
-	6755.1.1 = { #Long Winter start date ruler
+	6755.1.1 = { # 
 		holder = lineofdale35
 	}
 	6792.1.1 = { 
@@ -163,7 +163,7 @@ c_dale = {
 	6752.1.1 = { 
 		holder = lineofdale34
 	}
-	6755.1.1 = { #Long Winter start date ruler
+	6755.1.1 = { # 
 		holder = lineofdale35
 	}
 	6792.1.1 = { 
@@ -215,7 +215,7 @@ c_felagsgard = {
 	6752.1.1 = { 
 		holder = lineofdale34
 	}
-	6755.1.1 = { #Long Winter start date ruler
+	6755.1.1 = { # 
 		holder = lineofdale35
 	}
 	6792.1.1 = { 
@@ -391,7 +391,7 @@ c_ulgerstat = {
     6707.7.28 = {
         holder = lineofcalmar31 #Kettil
     }
-    6766.2.25 = { #Long Winter start date ruler
+    6766.2.25 = { # 
         holder = lineofcalmar33 #Helge
     }
     6819.4.7 = {
@@ -460,7 +460,7 @@ c_lang_marish = {
 	6752.1.1 = { 
 		holder = lineofdale34
 	}
-	6755.1.1 = { #Long Winter start date ruler
+	6755.1.1 = { # 
 		holder = lineofdale35
 	}
 	6792.1.1 = { 
@@ -559,7 +559,7 @@ c_londaroth = {
     6730.1.19 = {
         holder = lineofhill33 #Grim
     }
-    6737.10.23 = { #Long Winter Start date ruler
+    6737.10.23 = { # 
         holder = lineofhill35 #Girion
     }
     6811.7.12 = {
@@ -661,7 +661,7 @@ c_banimyrr = {
     6714.2.6 = {
         holder = lineofarnstyr31 #Erik
     }
-    6759.6.15 = { #Long Winter start date ruler
+    6759.6.15 = { # 
         holder = lineofarnstyr33 #Mats
 		liege = d_dalelands
     }
@@ -750,7 +750,7 @@ c_harbjarg = {
     6714.2.6 = {
         holder = lineofarnstyr31 #Erik
     }
-    6759.6.15 = { #Long Winter start date ruler
+    6759.6.15 = { # 
         holder = lineofarnstyr33 #Mats
 		liege = d_dalelands
     }
@@ -886,7 +886,7 @@ c_langvaeg = {
     6723.6.19 = {
         holder = linefloki31 #Bain
     }
-    6750.11.22 = { #Long Winter start date ruler
+    6750.11.22 = { # 
         holder = linefloki33 #Yngvar
 		liege = d_dalelands
     }
@@ -970,7 +970,7 @@ c_vargborg = {
     6696.8.6 = {
         holder = linehenkild7 #RO_rek
     }
-    6764.9.25 = { #Long winter start date ruler
+    6764.9.25 = { # 
         holder = linehenkild9 #Toste
     }
     6806.3.19 = {
@@ -1035,7 +1035,7 @@ c_clanbyrst = {
     6696.8.6 = {
         holder = linehenkild7 #RO_rek
     }
-    6764.9.25 = { #Long winter start date ruler
+    6764.9.25 = { # 
         holder = linehenkild9 #Toste
     }
     6806.3.19 = {
@@ -1086,7 +1086,7 @@ c_grasgard = {
         holder = lineforrik3 #Theoren
 		liege = d_dalelands
     }
-    6755.10.12 = { #Long Winter start date ruler
+    6755.10.12 = { # 
         holder = lineforrik5 #Herion
     }
     6801.12.16 = {
@@ -1128,7 +1128,7 @@ c_hrafnvild = {
         holder = lineforrik3 #Theoren
 		liege = d_dalelands
     }
-    6755.10.12 = { #Long Winter start date ruler
+    6755.10.12 = { # 
         holder = lineforrik5 #Herion
     }
     6801.12.16 = {
@@ -1161,7 +1161,7 @@ d_gramavuld = {
 	6750.1.17 = {
         holder = lineandersson9 #Ulf
     }
-    6779.12.25 = { #Long winter start date ruler
+    6779.12.25 = { # 
         holder = lineandersson11 #Ingolf
     }
     6837.4.14 = {
@@ -1219,7 +1219,7 @@ c_gramavuld = {
     6719.3.18 = {
         holder = linepedermoor9 #Grim
     }
-    6747.5.9 = { #Long winter start date ruler
+    6747.5.9 = { # 
         holder = linepedermoor11 #Rolf
 		liege = d_gramavuld
     }
@@ -1326,7 +1326,7 @@ c_kaupoborg = {
     6719.3.18 = {
         holder = linepedermoor9 #Grim
     }
-    6747.5.9 = { #Long winter start date ruler
+    6747.5.9 = { # 
         holder = linepedermoor11 #Rolf
 		liege = d_gramavuld
     }
@@ -1386,7 +1386,7 @@ c_hamarsland = {
         holder = lineandersson9 #Ulf
 		liege = d_gramavuld
     }
-    6779.12.25 = { #Long winter start date ruler
+    6779.12.25 = { # 
         holder = lineandersson11 #Ingolf
     }
     6837.4.14 = {
@@ -1486,7 +1486,7 @@ c_myrrborg = {
     6701.2.11 = {
         holder = linefortinbras7 #Valdemar
     }
-    6761.11.9 = { #Long winter start date ruler 
+    6761.11.9 = { #  
         holder = linefortinbras9 #Glum
 		liege = d_gramavuld
     }
@@ -1544,7 +1544,7 @@ c_vargurat = {
     6727.2.3 = {
         holder = linenorling7 #Theoren
     }
-    6782.1.28 = { #Long winter start date ruler
+    6782.1.28 = { # 
         holder = linenorling9 #Viduhar
     }
     6803.2.2  = { #Smaug destroys any settlements north of Erebor
@@ -1603,7 +1603,7 @@ c_orlmond = {
     6727.2.3 = {
         holder = linenorling7 #Theoren
     }
-    6782.1.28 = { #Long winter start date ruler
+    6782.1.28 = { # 
         holder = linenorling9 #Viduhar
     }
     6803.2.2  = { #Smaug destroys any settlements north of Erebor
@@ -2035,7 +2035,7 @@ c_ahnoss = {
     6751.12.26 = {
         holder = lineofglenbrook7 #Ulf
     }
-    6761.5.3 = { #Long winter start date ruler
+    6761.5.3 = { # 
         holder = lineofglenbrook9 #Torgils
 		liege = d_gramavuld
     }
@@ -2157,7 +2157,7 @@ c_fragir = {
     6721.11.1 = {
         holder = lineoffalkes19 #Glum
     }
-    6765.7.6 = { #Long winter start date ruler
+    6765.7.6 = { # 
         holder = lineoffalkes21 #Sigtrygg
     }
     6792.12.21 = {
@@ -2241,7 +2241,7 @@ c_kollotarholt = {
         holder = linesunnthila44 #Ranimiro
     }
 	
-	6776.3.21 = { #Long winter start date ruler
+	6776.3.21 = { # 
         holder = lineoffalkes21 #Sigtrygg
 		change_development_level = 7
 		government = feudal_government
@@ -2431,7 +2431,7 @@ c_yesterinna = {
 		change_development_level = 9
 		government = feudal_government
     }
-    6749.9.18 = { #Long winter start date ruler
+    6749.9.18 = { # 
         holder = lineoftelliore7 #Tolir
 		liege = d_gramavuld
     }
@@ -2503,7 +2503,7 @@ k_dorwinion = {
 	4034.1.1 = { # With the fall of the Szreldor, the office of Realm-master is inagurated
 		succession_laws = { oligarchic_elective_succession_law } # Unique Dorwinion Elective akin to Princely?
 	}
-	6785.12.16 = { #Long winter start date ruler
+	6785.12.16 = { # 
         holder = linegaumar93 #
     }
 	6791.5.21 = { # Bladorthin is elected Realm-master
@@ -2597,7 +2597,7 @@ d_folyavuld = {
 	6000.1.1 = {
 		holder = 0
 	}
-	6785.4.8 = { # Long winter start date ruler
+	6785.4.8 = { #  
 		holder = lineofkoldana75 # Bladorthin the Great
 		liege = k_dorwinion
 	}
@@ -2644,7 +2644,7 @@ c_riavod = {
 	5466.2.17 = {
 		holder = lineathareik24
 	}
-	6785.4.8 = { #Long winter start date ruler
+	6785.4.8 = { # 
 		holder = lineofkoldana75 # Bladorthin the Great
 		change_development_level = 23
 	}
@@ -2742,7 +2742,7 @@ c_szrel_kain = {
     6761.6.24 = {
 		holder = lineofkoldana59
 	}
-	6785.4.8 = { #Long winter start date ruler
+	6785.4.8 = { # 
 		holder = lineofkoldana75 # Bladorthin the Great
 	}
 	6839.12.20 = {
@@ -2804,7 +2804,7 @@ c_kelperia = {
     6746.3.9 = { 
         holder = linealdanira3 #Alwis
     }
-    6782.6.28 = { #Long winter start date ruler
+    6782.6.28 = { # 
         holder = linealdanira5 #Lunt
     }
     6825.1.24 = {
@@ -2857,7 +2857,7 @@ c_aldanira = {
     6746.3.9 = { 
         holder = linealdanira3 #Alwis
     }
-    6782.6.28 = { #Long winter start date ruler
+    6782.6.28 = { # 
         holder = linealdanira5 #Lunt
     }
     6825.1.24 = {
@@ -3006,7 +3006,7 @@ c_caras_sant = {
     6755.3.9 = {
         holder = lineofilian63 #Edith
     }
-    6784.6.11 = { #Long winter start date ruler
+    6784.6.11 = { # 
         holder = lineofilian65 #Athala
     }
     6834.11.26 = {
@@ -3162,7 +3162,7 @@ d_doraldena = {
     6753.7.19 = {
         holder = linegaumar91 #Harkind
     }
-    6785.12.16 = { #Long winter start date ruler
+    6785.12.16 = { # 
         holder = linegaumar93 #Asabian
     }
     6816.7.17 = {
@@ -3313,7 +3313,7 @@ c_aldena = {
     6753.7.19 = {
         holder = linegaumar91 #Harkind
     }
-    6785.12.16 = { #Long winter start date ruler
+    6785.12.16 = { # 
         holder = linegaumar93 #Asabian
     }
     6816.7.17 = {
@@ -3484,7 +3484,7 @@ c_yselvod = {
     6753.7.19 = {
         holder = linegaumar91 #Harkind
     }
-    6785.12.16 = { #Long winter start date ruler
+    6785.12.16 = { # 
         holder = linegaumar93 #Asabian
     }
     6816.7.17 = {
@@ -3672,7 +3672,7 @@ d_ilanavuld = {
     6701.12.3 = {
         holder = linetulgwerdia156 #Vidusith
     }
-    6741.7.19 = { #Long winter start date ruler
+    6741.7.19 = { # 
         holder = linetulgwerdia158 #Brathalwin
     }
     6781.11.16 = {
@@ -4572,7 +4572,7 @@ c_saelin = {
     6742.6.7 = {
         holder = lineperisian9 #Munderic
     }
-    6762.9.5 = { #Long winter start date ruler
+    6762.9.5 = { # 
         holder = lineperisian13 #Thiudamir
     }
     6824.8.12 = {
@@ -4733,7 +4733,7 @@ c_maribor = {
     6742.6.7 = {
         holder = lineperisian9 #Munderic
     }
-    6762.9.5 = { #Long winter start date ruler
+    6762.9.5 = { # 
         holder = lineperisian13 #Thiudamir
     }
     6824.8.12 = {
@@ -5629,7 +5629,7 @@ c_urusvuld = {
     6732.9.1 = {
         holder = lineofcapariana7 #Roland
     }
-    6741.1.7 = { #Long winter start date ruler
+    6741.1.7 = { # 
         holder = lineofcapariana9 #Athalhere
     }
     6791.2.15 = {
@@ -5676,7 +5676,7 @@ d_ruscovuld = {
     5419.7.24 = {
 		holder = linebrydgar12 #Bergwin
 	}
-    6777.4.23 = { #Long winter start date ruler
+    6777.4.23 = { # 
         holder = lineofmontegian3 #Thordis
 		liege = k_dorwinion
     }
@@ -5979,7 +5979,7 @@ d_iaurvuld = {
     6742.7.5 = {
         holder = lineofraudbarad85 #Widin
     }
-    6757.3.7 = { #Long winter start date ruler
+    6757.3.7 = { # 
         holder = lineofraudbarad87 #Thorald
     }
     6790.4.17 = {
@@ -6570,7 +6570,7 @@ c_dannavuld = {
     6756.4.18 = {
         holder = linelogian011 #Thorberta
     }
-    6775.10.9 = { #Long winter start date ruler
+    6775.10.9 = { # 
         holder = linelogian013 #Amalasuintha
     }
 	6825.11.24 = {
@@ -6640,7 +6640,7 @@ c_minovuld = {
     6756.4.18 = {
         holder = linelogian011 #Thorberta
     }
-    6775.10.9 = { #Long winter start date ruler
+    6775.10.9 = { # 
         holder = linelogian013 #Amalasuintha
     }
 	6825.11.24 = {
@@ -6719,7 +6719,7 @@ c_aklerina = {
     6756.4.18 = {
         holder = linelogian011 #Thorberta
     }
-    6775.10.9 = { #Long winter start date ruler
+    6775.10.9 = { # 
         holder = linelogian013 #Amalasuintha
     }
 	6825.11.24 = {
@@ -6883,7 +6883,7 @@ d_gazar_narkad = {
     6723.6.26 = {
         holder = lineofibarad5 #Khodal
     }
-    6776.1.3 = { #Long winter start date ruler
+    6776.1.3 = { # 
         holder = lineofibarad7 #Uvangi
     }
     6792.10.24 = {
@@ -6978,7 +6978,7 @@ c_sadvar = {
     6723.6.26 = {
         holder = lineofibarad5 #Khodal
     }
-    6776.1.3 = { #Long winter start date ruler
+    6776.1.3 = { # 
         holder = lineofibarad7 #Uvangi
     }
     6792.10.24 = {
@@ -7072,7 +7072,7 @@ c_dastygoran = {
     6723.6.26 = {
         holder = lineofibarad5 #Khodal
     }
-    6776.1.3 = { #Long winter start date ruler
+    6776.1.3 = { # 
         holder = lineofibarad7 #Uvangi
     }
     6792.10.24 = {
@@ -7166,7 +7166,7 @@ c_anasur = {
     6723.6.26 = {
         holder = lineofibarad5 #Khodal
     }
-    6776.1.3 = { #Long winter start date ruler
+    6776.1.3 = { # 
         holder = lineofibarad7 #Uvangi
     }
     6792.10.24 = {
@@ -7260,7 +7260,7 @@ c_dyshem = {
     6723.6.26 = {
         holder = lineofibarad5 #Khodal
     }
-    6776.1.3 = { #Long winter start date ruler
+    6776.1.3 = { # 
         holder = lineofibarad7 #Uvangi
     }
     6792.10.24 = {
@@ -7354,7 +7354,7 @@ c_kadalot = {
     6723.6.26 = {
         holder = lineofibarad5 #Khodal
     }
-    6776.1.3 = { #Long winter start date ruler
+    6776.1.3 = { # 
         holder = lineofibarad7 #Uvangi
     }
     6792.10.24 = {
@@ -7448,7 +7448,7 @@ c_makovica = {
     6723.6.26 = {
         holder = lineofibarad5 #Khodal
     }
-    6776.1.3 = { #Long winter start date ruler
+    6776.1.3 = { # 
         holder = lineofibarad7 #Uvangi
     }
     6792.10.24 = {
@@ -7543,7 +7543,7 @@ d_gazar_barak = {
     6766.1.27 = {
         holder = lineofbarakad11 #Oravet
     }
-    6778.4.16 = { #Long winter start date ruler
+    6778.4.16 = { # 
         holder = lineofbarakad13 #Molluzha
     }
     6829.6.13 = {
@@ -7635,7 +7635,7 @@ c_demiroruk = {
     6766.1.27 = {
         holder = lineofbarakad11 #Oravet
     }
-    6778.4.16 = { #Long winter start date ruler
+    6778.4.16 = { # 
         holder = lineofbarakad13 #Molluzha
     }
     6829.6.13 = {
@@ -7730,7 +7730,7 @@ c_oran_kadar = {
     6766.1.27 = {
         holder = lineofbarakad11 #Oravet
     }
-    6778.4.16 = { #Long winter start date ruler
+    6778.4.16 = { # 
         holder = lineofbarakad13 #Molluzha
     }
     6829.6.13 = {
@@ -7779,7 +7779,7 @@ c_carnedir = {
 	6766.1.27 = {
         holder = lineofbarakad11 #Oravet
     }
-    6778.4.16 = { #Long winter start date ruler
+    6778.4.16 = { # 
         holder = lineofbarakad13 #Molluzha
     }
     6829.6.13 = {
@@ -7879,7 +7879,7 @@ c_kyzandar = {
     6766.1.27 = {
         holder = lineofbarakad11 #Oravet
     }
-    6778.4.16 = { #Long winter start date ruler
+    6778.4.16 = { # 
         holder = lineofbarakad13 #Molluzha
     }
     6829.6.13 = {
@@ -7973,7 +7973,7 @@ c_dyskhorai = {
     6766.1.27 = {
         holder = lineofbarakad11 #Oravet
     }
-    6778.4.16 = { #Long winter start date ruler
+    6778.4.16 = { # 
         holder = lineofbarakad13 #Molluzha
     }
     6829.6.13 = {
@@ -8022,7 +8022,7 @@ c_khunandar = {
 	6766.1.27 = {
         holder = lineofbarakad11 #Oravet
     }
-    6778.4.16 = { #Long winter start date ruler
+    6778.4.16 = { # 
         holder = lineofbarakad13 #Molluzha
     }
     6829.6.13 = {
@@ -8123,7 +8123,7 @@ d_gazar_utol = {
     6721.3.27 = {
         holder = lineofutalad9 #Tukrai
     }
-    6773.1.19 = { #long winter start date ruler
+    6773.1.19 = { # 
         holder = lineofutalad11 #Kashal
     }
     6796.12.14 = {
@@ -8219,7 +8219,7 @@ c_sprevia = {
     6721.3.27 = {
         holder = lineofutalad9 #Tukrai
     }
-    6773.1.19 = { #long winter start date ruler
+    6773.1.19 = { # 
         holder = lineofutalad11 #Kashal
     }
     6796.12.14 = {
@@ -8314,7 +8314,7 @@ c_krepostir = {
     6721.3.27 = {
         holder = lineofutalad9 #Tukrai
     }
-    6773.1.19 = { #long winter start date ruler
+    6773.1.19 = { # 
         holder = lineofutalad11 #Kashal
     }
     6796.12.14 = {
@@ -8406,7 +8406,7 @@ c_zutibor = {
     6721.3.27 = {
         holder = lineofutalad9 #Tukrai
     }
-    6773.1.19 = { #long winter start date ruler
+    6773.1.19 = { # 
         holder = lineofutalad11 #Kashal
     }
     6796.12.14 = {
@@ -8501,7 +8501,7 @@ c_terekdar = {
     6721.3.27 = {
         holder = lineofutalad9 #Tukrai
     }
-    6773.1.19 = { #long winter start date ruler
+    6773.1.19 = { # 
         holder = lineofutalad11 #Kashal
     }
     6796.12.14 = {
@@ -8596,7 +8596,7 @@ c_avakhorai = {
     6721.3.27 = {
         holder = lineofutalad9 #Tukrai
     }
-    6773.1.19 = { #long winter start date ruler
+    6773.1.19 = { # 
         holder = lineofutalad11 #Kashal
     }
     6796.12.14 = {
@@ -8648,7 +8648,7 @@ c_kavorai = {
 	6721.3.27 = {
         holder = lineofutalad9 #Tukrai
     }
-    6773.1.19 = { #long winter start date ruler
+    6773.1.19 = { # 
         holder = lineofutalad11 #Kashal
     }
     6796.12.14 = {
@@ -8698,7 +8698,7 @@ c_rharun = {
     6721.3.27 = {
         holder = lineofutalad9 #Tukrai
     }
-    6773.1.19 = { #long winter start date ruler
+    6773.1.19 = { # 
         holder = lineofutalad11 #Kashal
     }
     6796.12.14 = {
@@ -9111,7 +9111,7 @@ c_murgula = {
     6765.10.19 = { # The Jangovar's realm retracts
         holder = lineofjangovar15 #Tukhik
     }
-	6782.5.16 = { #Long winter start date ruler
+	6782.5.16 = { # 
         holder = lineofmollukian01 #Molluk
 		change_development_level = 5
 		liege = 0
@@ -9235,7 +9235,7 @@ d_men_rhunen = {
 		holder = 0
 		liege = 0
 	}
-	6724.9.6 = { #Long winter start date ruler
+	6724.9.6 = { # 
         holder = lineofkarmian1 #Karm
     }
     6806.6.4 = {
@@ -9285,7 +9285,7 @@ c_arpal = {
 	5871.1.1 = {
 		holder = caranthir9
 	}
-    6724.9.6 = { #Long winter start date ruler
+    6724.9.6 = { # 
         holder = lineofkarmian1 #Karm
     }
     6806.6.4 = {
@@ -9338,7 +9338,7 @@ c_gursu = {
     5447.6.26 = {
         holder = linewirgand11 #Sigismund
     }
-    6724.9.6 = { #Long winter start date ruler
+    6724.9.6 = { # 
         holder = lineofkarmian1 #Karm
 		liege = 0
 		change_development_level = 4
@@ -9392,7 +9392,7 @@ c_vadisa = {
     5447.6.26 = {
         holder = linewirgand11 #Sigismund
     }
-	6750.11.18 = { #Long winter start date ruler
+	6750.11.18 = { # 
 		holder = lineofnikathian03 #Nikath
 		liege = d_men_rhunen
 		change_development_level = 5
@@ -9443,7 +9443,7 @@ c_adalina = {
     5458.11.13 = {
         holder = linethiudhiri13 #Athalhere
     }
-    6724.9.6 = { #Long winter start date ruler
+    6724.9.6 = { # 
         holder = lineofkarmian1 #Karm
 		liege = 0
     }
@@ -9500,7 +9500,7 @@ c_ashkirir = {
 	5871.1.1 = {
 		holder = caranthir9
 	}		
-	6750.11.18 = { #Long winter start date ruler
+	6750.11.18 = { # 
 		holder = lineofnikathian03 #Nikath
 		liege = d_men_rhunen
 		change_development_level = 4
@@ -9635,7 +9635,7 @@ c_otakha = {
     5340.11.20 = { #Angmar Start date ruler
 		holder = linevethiar9 #Ethelburh
 	}
-	6784.11.27 = { #Long winter start date ruler
+	6784.11.27 = { # 
 		holder = lineofovathian01 
 		liege = 0
 	}
@@ -9681,7 +9681,7 @@ c_agara = {
     5340.11.20 = { #Angmar start date ruler
 		holder = linevethiar9 #Ethelburh
 	}
-	6784.11.27 = { #Long winter start date ruler
+	6784.11.27 = { # 
 		holder = lineofovathian01 
 		liege = 0
 	}
@@ -9731,7 +9731,7 @@ c_mangarik = {
     5429.10.6 = {
 		holder = linehunulf9 #Ragnild
 	}
-    6724.9.6 = { #Long winter start date ruler
+    6724.9.6 = { # 
         holder = lineofkarmian1 #Karm
 		liege = 0
     }
@@ -9798,7 +9798,7 @@ d_taj_ures = {
     6722.5.4 = {
         holder = lineofkhundolar13 #O_O_thour
     }
-    6753.1.4 = { #Long winter start date ruler
+    6753.1.4 = { # 
         holder = lineofkhundolar15 #Nuhuth
     }
     6796.5.18 = {
@@ -9846,7 +9846,7 @@ c_ermanarikis = {
     6722.5.4 = {
         holder = lineofkhundolar13 #O_O_thour
     }
-    6753.1.4 = { #Long winter start date ruler
+    6753.1.4 = { # 
         holder = lineofkhundolar15 #Nuhuth
     }
     6796.5.18 = {
@@ -9912,7 +9912,7 @@ c_fiskas = {
     6722.5.4 = {
         holder = lineofkhundolar13 #O_O_thour
     }
-    6753.1.4 = { #Long winter start date ruler
+    6753.1.4 = { # 
         holder = lineofkhundolar15 #Nuhuth
     }
     6796.5.18 = {
@@ -9960,7 +9960,7 @@ c_naznara = {
     6615.2.6 = {
         holder = lineofkhundolar7 #Nuhuth
     }
-    6670.2.25 = { #Long winter start date ruler
+    6670.2.25 = { # 
         holder = lineofkhundolar9 #Vaugan
     }
     6685.9.16 = {
@@ -10057,7 +10057,7 @@ c_ulurikon = {
     6615.2.6 = {
         holder = lineofkhundolar7 #Nuhuth
     }
-    6670.2.25 = { #Long winter start date ruler
+    6670.2.25 = { # 
         holder = lineofkhundolar9 #Vaugan
     }
     6685.9.16 = {
@@ -10136,7 +10136,7 @@ c_padareiks = {
     6722.5.4 = {
         holder = lineofkhundolar13 #O_O_thour
     }
-    6753.1.4 = { #Long winter start date ruler
+    6753.1.4 = { # 
         holder = lineofkhundolar15 #Nuhuth
     }
     6796.5.18 = {
@@ -10206,7 +10206,7 @@ c_carvarad = {
     6722.5.4 = {
         holder = lineofkhundolar13 #O_O_thour
     }
-    6753.1.4 = { #Long winter start date ruler
+    6753.1.4 = { # 
         holder = lineofkhundolar15 #Nuhuth
     }
     6796.5.18 = {
@@ -10587,7 +10587,7 @@ c_rhunost = {
     6742.7.20 = {
         holder = linefeordan5 #Viduhar
     }
-    6765.2.22 = { #Long winter start date ruler
+    6765.2.22 = { # 
         holder = linefeordan7 #Eroder
     }
     6813.3.10 = {
@@ -10690,7 +10690,7 @@ c_brunstal = {
     6742.7.20 = {
         holder = linefeordan5 #Viduhar
     }
-    6765.2.22 = { #Long winter start date ruler
+    6765.2.22 = { # 
         holder = linefeordan7 #Eroder
     }
     6813.3.10 = {

@@ -1503,45 +1503,6 @@ fire_warning_event = {
 	}
 }
 
-##########################################
-### LONG WINTER START DATE (2754 T.A.) ###
-##########################################
-fire_intro_events_2754 = {
-
-	## ERIADOR ##
-	character:lineisildur37 = { #Arassuil, Chieftain of the Dúnedain
-		trigger_event = {
-			id = lotr_intro_events.6007
-			days = 1
-		}
-	}
-	
-	## ROHAN & DUNLAND ##
-	character:6000008 = { # Helm Hammerhand of Rohan
-		trigger_event = {
-			id = lotr_intro_events.6403
-			days = 1
-		}
-	}
-
-	## GONDOR  ##
-	character:linesteward31 = { # Steward Beren of Gondor
-		if = {
-			limit = {
-				is_alive = yes
-				is_landed = yes
-				game_start_date = 6787.1.1
-			}
-			trigger_event = {
-				id = lotr_intro_events.6230
-				days = 1
-			}
-		}
-	}
-}
-
-
-
 
 ######################################
 ### Circa 1349 (ANGMAR START DATE) ###

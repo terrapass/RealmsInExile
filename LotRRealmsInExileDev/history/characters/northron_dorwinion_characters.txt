@@ -28656,7 +28656,7 @@ linelogian012 = {
     }
 }
 
-linelogian013 = { #Long winter start date ruler
+linelogian013 = { 
     name = Amalasuintha
     female = yes
 
@@ -37269,7 +37269,7 @@ linegaumar92 = {
     }
 }
 
-linegaumar93 = { #Long winter start date ruler
+linegaumar93 = { 
     name = Lindor
 
     dynasty = dynasty_gaumar
@@ -41180,9 +41180,6 @@ lineminoreik19 = {
 }
 
 
-##########################
-# LONG WINTER START DATE #
-##########################
 
 ### House Aldanira ~ Cadet branch of the longtime Realm-master ###
 
@@ -41324,7 +41321,7 @@ linealdanira4 = {
     }
 }
 
-linealdanira5 = { #Long winter start date ruler
+linealdanira5 = { 
     name = Lunt
 
     dynasty_house = house_aldanira
@@ -42428,7 +42425,7 @@ lineperisian12 = {
     }
 }
 
-lineperisian13 = { #Long winter start date ruler
+lineperisian13 = { 
     name = Thiudamir
 
     dynasty_house = house_perisian

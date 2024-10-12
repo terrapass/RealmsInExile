@@ -1404,7 +1404,7 @@ d_durkandig = {
 	5408.8.4 = { # Twin Kingdoms Reunite
 		holder = 0
 	}
-    6744.8.28 = { #Long winter start date ruler
+    6744.8.28 = { # 
         holder = lineyamiran1 #Degumi
     }
     6814.5.10 = {
@@ -1436,7 +1436,7 @@ c_chika_mag = {
 	3770.1.1 = {
 		change_development_level = 8
 	}
-    6744.8.28 = { #Long winter start date ruler
+    6744.8.28 = { # 
         holder = lineyamiran1 #Degumi
     }
     6814.5.10 = {
@@ -1482,7 +1482,7 @@ c_jiraka = {
 	3770.1.1 = {
 		change_development_level = 6
 	}
-    6744.8.28 = { #Long winter start date ruler
+    6744.8.28 = { # 
         holder = lineyamiran1 #Degumi
     }
     6814.5.10 = {
@@ -1514,7 +1514,7 @@ c_kulasa = {
 	3770.1.1 = {
 		change_development_level = 5
 	}
-    6744.8.28 = { #Long winter start date ruler
+    6744.8.28 = { # 
         holder = lineyamiran1 #Degumi
     }
     6814.5.10 = {
@@ -1547,7 +1547,7 @@ c_hosis = {
 	3770.1.1 = {
 		change_development_level = 7
 	}
-    6744.8.28 = { #Long winter start date ruler
+    6744.8.28 = { # 
         holder = lineyamiran1 #Degumi
     }
     6814.5.10 = {
@@ -2478,7 +2478,7 @@ c_ngichika = {
     6705.3.24 = {
         holder = linedugumier1 #Yoside
     }
-    6785.1.19 = { #Long winter start date ruler
+    6785.1.19 = { # 
         holder = linedugumier3 #Magore
     }
     6832.5.6 = {
@@ -2513,7 +2513,7 @@ c_chika_jak = { #Theocracy
     6687.12.12 = {
         holder = linesanirier1 #Saniri
     }
-    6750.5.27 = { #Long winter start date ruler
+    6750.5.27 = { # 
         holder = linesanirier3 #Valeya
     }
     6816.9.21 = {
@@ -2546,7 +2546,7 @@ c_nolil_osutug = {
     6705.3.24 = {
         holder = linedugumier1 #Yoside
     }
-    6785.1.19 = { #Long winter start date ruler
+    6785.1.19 = { # 
         holder = linedugumier3 #Magore
     }
     6832.5.6 = {
@@ -2758,7 +2758,7 @@ d_kurusek = {
     6701.10.13 = {
         holder = linesamurier1 #Samure
     }
-    6762.3.16 = { #Long winter start date ruler
+    6762.3.16 = { # 
         holder = linesamurier3 #Emake
     }
     6819.12.10 = {
@@ -2794,7 +2794,7 @@ c_alagisa = {
     6701.10.13 = {
         holder = linesamurier1 #Samure
     }
-    6762.3.16 = { #Long winter start date ruler
+    6762.3.16 = { # 
         holder = linesamurier3 #Emake
     }
     6819.12.10 = {
@@ -2830,7 +2830,7 @@ c_kulasa_rusek = {
     6701.10.13 = {
         holder = linesamurier1 #Samure
     }
-    6762.3.16 = { #Long winter start date ruler
+    6762.3.16 = { # 
         holder = linesamurier3 #Emake
     }
     6819.12.10 = {
@@ -2866,7 +2866,7 @@ c_rusek_habor = {
     6701.10.13 = {
         holder = linesamurier1 #Samure
     }
-    6762.3.16 = { #Long winter start date ruler
+    6762.3.16 = { # 
         holder = linesamurier3 #Emake
     }
     6819.12.10 = {

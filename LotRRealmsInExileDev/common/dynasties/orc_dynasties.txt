@@ -508,7 +508,7 @@ dynasty_grulukh = { #Mirkwood orcs under the Necromancer in Barad Angol
 	motto = dynn_grulukh_motto
 }
 
-dynasty_grohak = { #Minor Orcs near Sairtheod for Long winter
+dynasty_grohak = { #Minor Orcs near Sairtheod 
 	name = dynn_grohak
 	culture = kazgumhoth
 	motto = dynn_grohak_motto
