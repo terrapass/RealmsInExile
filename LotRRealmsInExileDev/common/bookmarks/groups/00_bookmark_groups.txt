@@ -10,17 +10,12 @@
 
 # 5465.1.1 kin-strife happens
 
-# 6787.1.1 War of the Rohirrim/Death of Freca
-bm_group_2754TA = {
-	default_start_date = 6787.1.1
-}
+# bm_group_1349TA = { # Arnor/Angmar Start
+# 	default_start_date = 5382.5.1
+# }
 
-bm_group_1349TA = { # Arnor/Angmar Start
-	default_start_date = 5382.5.1
-}
+# # 4033 Last Alliance
 
-# 4033 Last Alliance
-
-bm_group_3320SA = { # Realms in Exile
-	default_start_date = 3912.1.1
-}
+# bm_group_3320SA = { # Realms in Exile
+# 	default_start_date = 3912.1.1
+# }

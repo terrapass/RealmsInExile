@@ -1101,173 +1101,113 @@ bm_3000_thani_hazad = {
 	}
 }
 
-#### 2754 TA ####
-bm_2754_rohan = {
-	start_date = 6787.1.1
-	is_playable = yes
-	group = bm_group_2754TA
+# #### 1349TA ####
 
-	weight = {
-		value = 1
-	}
+# bm_1349_angmar = {
+# 	start_date = 5382.5.1
+# 	is_playable = yes
+# 	group = bm_group_1349TA
 
-	
-	# Freca 
-	character = {
-		name = "bookmark_long_winter_freca"
-		dynasty = dynasty_freca
-		dynasty_splendor_level = 1
-		type = male
-		birth = 6717.2.11
-		title = d_westmarches
-		government = feudal_government
-		religion = faith_rohirric
-		culture = rohirrim
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
-		history_id = lineoffreca1
-		position = { 400 600 }
-		animation = personality_irrational
+# 	weight = {
+# 		value = 1
+# 	}
 
-		# Wulf, son of Freca
-		character = {
-			name = "bookmark_long_winter_wulf"
-			relation = "BOOKMARK_RELATION_SON"
-			dynasty = dynasty_freca
-			type = male
-			birth = 6762.2.21
-			religion = faith_rohirric
-			culture = adornaen
-			history_id = lineoffreca3
-			animation = personality_bold
-		}
-	}
-	
-	# Helm Hammerhand
-	character = {
-		name = "bookmark_long_winter_helm_hammerhand"
-		dynasty = 100
-		dynasty_splendor_level = 2
-		type = male
-		birth = 6724.8.12
-		title = k_rohan
-		government = feudal_government
-		religion = faith_rohirric
-		culture = rohirrim
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
-		history_id = 6000008
-		position = { 800 400 }
-		animation = personality_bold
+# 	# The Witch-king of Angmar
+# 	character = {
+# 		name = "bookmark_angmar_witchking"
+# 		dynasty = dynasty_witchking
+# 		dynasty_splendor_level = 8
+# 		type = male
+# 		birth = 2412.1.1
+# 		title = k_angmar
+# 		government = feudal_government
+# 		religion = faith_angmar_evil
+# 		culture = ringwraith
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+# 		history_id = nazgul1
+# 		position = { 900 150 }
+# 		animation = personality_irrational
 		
-	}
-}
-
-#### 1349TA ####
-
-bm_1349_angmar = {
-	start_date = 5382.5.1
-	is_playable = yes
-	group = bm_group_1349TA
-
-	weight = {
-		value = 1
-	}
-
-	# The Witch-king of Angmar
-	character = {
-		name = "bookmark_angmar_witchking"
-		dynasty = dynasty_witchking
-		dynasty_splendor_level = 8
-		type = male
-		birth = 2412.1.1
-		title = k_angmar
-		government = feudal_government
-		religion = faith_angmar_evil
-		culture = ringwraith
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
-		history_id = nazgul1
-		position = { 900 150 }
-		animation = personality_irrational
-		
-	}
+# 	}
 	
-	# Tarmacil
-	character = {
-		name = "bookmark_angmar_tarmacil"
-		dynasty = dynasty_caladir
-		dynasty_splendor_level = 4
-		type = male
-		birth = 5311.3.5
-		title = k_cardolan
-		government = feudal_government
-		religion = faith_edain
-		culture = arnorian
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
-		history_id = lineofcaladir43
-		position = { 600 700 }
-		animation = personality_bold
-	}
+# 	# Tarmacil
+# 	character = {
+# 		name = "bookmark_angmar_tarmacil"
+# 		dynasty = dynasty_caladir
+# 		dynasty_splendor_level = 4
+# 		type = male
+# 		birth = 5311.3.5
+# 		title = k_cardolan
+# 		government = feudal_government
+# 		religion = faith_edain
+# 		culture = arnorian
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+# 		history_id = lineofcaladir43
+# 		position = { 600 700 }
+# 		animation = personality_bold
+# 	}
 
-	# Argeleb
-	character = {
-		name = "bookmark_angmar_argeleb"
-		dynasty_house = house_isildur
-		dynasty_splendor_level = 10
-		type = male
-		birth = 5259.4.27
-		title = k_arthedain
-		government = feudal_government
-		religion = faith_edain
-		culture = arnorian
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
-		history_id = lineisildur18
-		position = { 450 300 }
-		animation = personality_honorable
-	}
+# 	# Argeleb
+# 	character = {
+# 		name = "bookmark_angmar_argeleb"
+# 		dynasty_house = house_isildur
+# 		dynasty_splendor_level = 10
+# 		type = male
+# 		birth = 5259.4.27
+# 		title = k_arthedain
+# 		government = feudal_government
+# 		religion = faith_edain
+# 		culture = arnorian
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+# 		history_id = lineisildur18
+# 		position = { 450 300 }
+# 		animation = personality_honorable
+# 	}
 
-	# Hwaldar
-	character = {
-		name = "bookmark_angmar_hwaldar"
-		dynasty_house = house_broccach
-		dynasty_splendor_level = 1
-		type = male
-		birth = 5338.7.21
-		title = k_rhudaur
-		government = tribal_government
-		religion = faith_hillmen
-		culture = hillmen
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
-		history_id = linebroccach
-		position = { 1100 400 }
-		animation = personality_vengeful
-	}
+# 	# Hwaldar
+# 	character = {
+# 		name = "bookmark_angmar_hwaldar"
+# 		dynasty_house = house_broccach
+# 		dynasty_splendor_level = 1
+# 		type = male
+# 		birth = 5338.7.21
+# 		title = k_rhudaur
+# 		government = tribal_government
+# 		religion = faith_hillmen
+# 		culture = hillmen
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+# 		history_id = linebroccach
+# 		position = { 1100 400 }
+# 		animation = personality_vengeful
+# 	}
 	
-	# Mellondir II.
-	character = {
-		name = "bookmark_angmar_mellondir"
-		dynasty = dynasty_melosse
-		dynasty_splendor_level = 3
-		type = male
-		birth = 5301.8.13
-		title = d_dor_en_egladil
-		government = feudal_government
-		religion = faith_edain
-		culture = arnorian
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
-		history_id = linemelosse33
-		position = { 1050 650 }
-		animation = personality_compassionate
-	}
-}
+# 	# Mellondir II.
+# 	character = {
+# 		name = "bookmark_angmar_mellondir"
+# 		dynasty = dynasty_melosse
+# 		dynasty_splendor_level = 3
+# 		type = male
+# 		birth = 5301.8.13
+# 		title = d_dor_en_egladil
+# 		government = feudal_government
+# 		religion = faith_edain
+# 		culture = arnorian
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+# 		history_id = linemelosse33
+# 		position = { 1050 650 }
+# 		animation = personality_compassionate
+# 	}
+# }
 
-#### 3320SA ####
+# #### 3320SA ####
 
-bm_3320_downfall = {
-	start_date = 3912.1.1
-	is_playable = yes
-	group = bm_group_3320SA
+# bm_3320_downfall = {
+# 	start_date = 3912.1.1
+# 	is_playable = yes
+# 	group = bm_group_3320SA
 
-	weight = {
-		value = 1
-	}
-}
+# 	weight = {
+# 		value = 1
+# 	}
+# }
 
