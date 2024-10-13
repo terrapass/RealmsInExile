@@ -12,12 +12,12 @@ fire_intro_events = {
 		}
 		fire_intro_events_1349 = yes
 	}
-	else_if = {
-		limit = { 
-			game_start_date = 6787.1.1 
-		}
-		fire_intro_events_2754 = yes
-	}	
+	# else_if = {
+	# 	limit = { 
+	# 		game_start_date = 6787.1.1 
+	# 	}
+	# 	fire_intro_events_2754 = yes
+	# }	
 }
 
 fire_intro_events_3000 = {

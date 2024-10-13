@@ -4361,114 +4361,114 @@ decision_rebuild_royal_road = {
 
 ## Claim the throne of Gondor ~ Arassuil edition ##
 
-decision_claim_gondor_arassuil = {
-	sort_order = 99
-	title = decision_claim_gondor_arassuil
-	picture = {
-		reference ="gfx/interface/illustrations/decisions/decision_minas_tirith_03.dds"
-	}
-	selection_tooltip = claim_gondor_arassuil_tooltip
-	desc = decision_claim_gondor_arassuil_desc
-	confirm_text = decision_claim_gondor_arassuil_confirm
+# decision_claim_gondor_arassuil = {
+# 	sort_order = 99
+# 	title = decision_claim_gondor_arassuil
+# 	picture = {
+# 		reference ="gfx/interface/illustrations/decisions/decision_minas_tirith_03.dds"
+# 	}
+# 	selection_tooltip = claim_gondor_arassuil_tooltip
+# 	desc = decision_claim_gondor_arassuil_desc
+# 	confirm_text = decision_claim_gondor_arassuil_confirm
 
-	decision_group_type = realms_in_exile_major
+# 	decision_group_type = realms_in_exile_major
 
-	# IS_SHOWN
-	is_shown = {
-		current_year >= 4035 # Is only shown if bookmark is after the two kingdoms split
+# 	# IS_SHOWN
+# 	is_shown = {
+# 		current_year >= 4035 # Is only shown if bookmark is after the two kingdoms split
 		
-		OR = {
-			exists = title:e_gondor_steward.holder
-			exists = title:e_castamir.holder
-		}
-		has_title = title:d_northern_dunedain
-		NOT = { exists = title:e_gondor.holder }
+# 		OR = {
+# 			exists = title:e_gondor_steward.holder
+# 			exists = title:e_castamir.holder
+# 		}
+# 		has_title = title:d_northern_dunedain
+# 		NOT = { exists = title:e_gondor.holder }
 
-		OR = {
-			dynasty = dynasty:dynasty_elros
-			dynasty = dynasty:dynasty_elendil
-			dynasty = dynasty:dynasty_anarion
-		}
+# 		OR = {
+# 			dynasty = dynasty:dynasty_elros
+# 			dynasty = dynasty:dynasty_elendil
+# 			dynasty = dynasty:dynasty_anarion
+# 		}
 		
-		NOT = { is_ai = yes }
-		NOT = { has_character_flag = is_aragorn }
+# 		NOT = { is_ai = yes }
+# 		NOT = { has_character_flag = is_aragorn }
 		
-		title:e_gondor_steward.holder = { is_ai = yes } #Should not be able to oust a human playing the steward
+# 		title:e_gondor_steward.holder = { is_ai = yes } #Should not be able to oust a human playing the steward
 
-		NOT = {
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:decision_claim_gondor_arassuil
-			}
-		}
-	}
+# 		NOT = {
+# 			is_target_in_global_variable_list = {
+# 				name = unavailable_unique_decisions
+# 				target = flag:decision_claim_gondor_arassuil
+# 			}
+# 		}
+# 	}
 	
-	# IS_VALID
-	is_valid = {
-		prestige_level >= 5
-		piety_level >= 4
-		trigger_if = {
-			limit = { 
-				has_dlc_feature = legends
-				is_ai = no
-			}
-			custom_tooltip = {
-				text = finished_isildur_legend_tt
-				house = { has_house_modifier = heirs_of_isildur_modifier }
-			}
-		}
-		OR = {
-			exists = title:e_gondor_steward.holder
-			exists = title:e_castamir.holder
-		}
-	}
+# 	# IS_VALID
+# 	is_valid = {
+# 		prestige_level >= 5
+# 		piety_level >= 4
+# 		trigger_if = {
+# 			limit = { 
+# 				has_dlc_feature = legends
+# 				is_ai = no
+# 			}
+# 			custom_tooltip = {
+# 				text = finished_isildur_legend_tt
+# 				house = { has_house_modifier = heirs_of_isildur_modifier }
+# 			}
+# 		}
+# 		OR = {
+# 			exists = title:e_gondor_steward.holder
+# 			exists = title:e_castamir.holder
+# 		}
+# 	}
 	
-	is_valid_showing_failures_only = {
-		is_imprisoned = no
-		is_available_adult = yes
-		is_at_war = no
-	}
+# 	is_valid_showing_failures_only = {
+# 		is_imprisoned = no
+# 		is_available_adult = yes
+# 		is_at_war = no
+# 	}
 	
-	# EFFECT 
-	effect = {
-		custom_tooltip = decision_claim_gondor_arassuil.tt
+# 	# EFFECT 
+# 	effect = {
+# 		custom_tooltip = decision_claim_gondor_arassuil.tt
 		
-		start_travel_plan = { #Travel to Minas Tirith
-			destination = title:c_minas_tirith.title_province
-			on_arrival_event = gondor.3800
-			return_trip = no
-			players_use_planner = yes
-			on_arrival_destinations = all
-		}
-		hidden_effect = { #give free caravan master
-			if = {
-				limit = { NOT = { employs_court_position = travel_leader_court_position } }
-				create_character = {
-					template = foreign_architect_template
-					employer = root
-					save_scope_as = caravan_master
-				}
-				appoint_court_position = {
-					recipient = scope:caravan_master
-					court_position = travel_leader_court_position
-				}
-			}
-		}
+# 		start_travel_plan = { #Travel to Minas Tirith
+# 			destination = title:c_minas_tirith.title_province
+# 			on_arrival_event = gondor.3800
+# 			return_trip = no
+# 			players_use_planner = yes
+# 			on_arrival_destinations = all
+# 		}
+# 		hidden_effect = { #give free caravan master
+# 			if = {
+# 				limit = { NOT = { employs_court_position = travel_leader_court_position } }
+# 				create_character = {
+# 					template = foreign_architect_template
+# 					employer = root
+# 					save_scope_as = caravan_master
+# 				}
+# 				appoint_court_position = {
+# 					recipient = scope:caravan_master
+# 					court_position = travel_leader_court_position
+# 				}
+# 			}
+# 		}
 		
-		#trigger_event = gondor.3800 #Effects will happen here
+# 		#trigger_event = gondor.3800 #Effects will happen here
 		
-		add_prestige = 1500
-		dynasty = { add_dynasty_prestige = 1000 }
+# 		add_prestige = 1500
+# 		dynasty = { add_dynasty_prestige = 1000 }
 		
 
-		add_to_global_variable_list = {
-			name = unavailable_unique_decisions
-			target = flag:decision_claim_gondor_arassuil
-		}
-	}
+# 		add_to_global_variable_list = {
+# 			name = unavailable_unique_decisions
+# 			target = flag:decision_claim_gondor_arassuil
+# 		}
+# 	}
 
-	# AI shouldn't take this decision at all
-	ai_goal = yes
-	ai_potential = { always = no }
-	ai_will_do = { base = 0 }
-}
+# 	# AI shouldn't take this decision at all
+# 	ai_goal = yes
+# 	ai_potential = { always = no }
+# 	ai_will_do = { base = 0 }
+# }
