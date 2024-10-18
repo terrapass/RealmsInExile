@@ -3789,25 +3789,29 @@ decision_recreate_watch_on_mordor = {
 			has_primary_title = title:e_castamir
 		}
 		NOR = {
-			exists = title:e_mordor.holder
 			exists = title:d_watch_on_mordor.holder
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:decision_recreate_watch_on_mordor
 			}
 		}
+		OR = {
+			NOT = { exists = title:e_mordor.holder }
+			has_title = title:e_mordor
+		}
 	}
 	is_valid = {
 		completely_controls = title:c_morannon
 		completely_controls = title:c_durthang
 		completely_controls = title:c_cirith_ungol
+		completely_controls = title:c_lhingris
 	}
 	is_valid_showing_failures_only = {
 		is_imprisoned = no
 		is_available_adult = yes
 	}
 	cost = {
-		gold = 100
+		gold = 150
 	}
 	effect = {
 		trigger_event = {
@@ -3860,17 +3864,21 @@ decision_abandon_watch_on_mordor = {
 			has_primary_title = title:e_castamir
 		}
 		NOR = {
-			exists = title:e_mordor.holder
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:decision_abandon_watch_on_mordor
 			}
 		}
+		OR = {
+			NOT = { exists = title:e_mordor.holder }
+			has_title = title:e_mordor
+		}
 	}
 	is_valid = {
 		exists = title:d_watch_on_mordor.holder
-		completely_controls = title:c_morannon # The Commander of the Watch has to be your vasall
+		completely_controls = title:c_morannon # The Commander of the Watch has to be your vassall
 		completely_controls = title:c_durthang # otherwise players could destroy a watch that someone else established
+		completely_controls = title:c_lhingris
 		completely_controls = title:c_cirith_ungol
 	}
 	is_valid_showing_failures_only = {
@@ -4292,12 +4300,14 @@ decision_rebuild_royal_road = {
 			has_title = title:e_numenor_colonies
 			has_title = title:e_enedhwaith
 			has_title = title:e_castamir
-			has_title = title:e_adunaim
 			has_title = title:k_cardolan
 			has_title = title:k_arthedain
 			has_title = title:k_enedhwaith
 			has_title = title:k_rohan
-			#has_title = title:k_gondor
+			AND = {
+				has_title = title:e_adunaim
+				has_title = title:c_tharbad
+			}
 		}
 		OR = {
 			lotr_has_numenorean_culture_trigger = yes
@@ -4312,24 +4322,36 @@ decision_rebuild_royal_road = {
 	}
 	
 	is_valid = {
-		calc_true_if = { # Need control of roughly 70% of the road
-			amount >= 10
+		# calc_true_if = { # Need control of roughly 70% of the road
+			# amount >= 10
 			
-			completely_controls = title:c_tharbad
-			completely_controls = title:c_harabad
-			completely_controls = title:c_larcnoc
-			completely_controls = title:c_thalion
-			completely_controls = title:c_adandor
-			completely_controls = title:c_maerndor
-			completely_controls = title:c_andrath
-			completely_controls = title:c_cardhbain
-			completely_controls = title:c_tormcaladach
-			completely_controls = title:c_gapofrohan
-			completely_controls = title:c_fornost
-			completely_controls = title:c_riverwatch
-			completely_controls = title:c_bree
-			completely_controls = title:c_galtrev
+			# completely_controls = title:c_tharbad
+			# completely_controls = title:c_harabad
+			# completely_controls = title:c_larcnoc
+			# completely_controls = title:c_thalion
+			# completely_controls = title:c_adandor
+			# completely_controls = title:c_maerndor
+			# completely_controls = title:c_andrath
+			# completely_controls = title:c_cardhbain
+			# completely_controls = title:c_tormcaladach
+			# completely_controls = title:c_gapofrohan
+			# completely_controls = title:c_fornost
+			# completely_controls = title:c_riverwatch
+			# completely_controls = title:c_bree
+			# completely_controls = title:c_galtrev
 
+		# }
+		
+		custom_tooltip = {
+			text = decision_rebuild_royal_road_tooltip_condition
+			any_county_in_region = {
+				region = special_royal_road
+				OR = {
+					holder = { is_vassal_or_below_of = root }
+					holder = root
+				}
+				percent >= 0.7
+			}
 		}
     }
 	

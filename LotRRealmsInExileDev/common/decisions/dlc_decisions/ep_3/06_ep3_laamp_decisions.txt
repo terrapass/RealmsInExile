@@ -64,6 +64,10 @@ become_landless_adventurer_decision = {
 		# 	culture = { has_cultural_parameter = unlock_voluntary_laampdom }
 		# 	faith = { has_doctrine_parameter = unlock_voluntary_laampdom_faith }
 		# }
+		NAND = { #LotR - AI canon characters don't go laamping on lore-friendly
+			lotr_canon_safe_from_harm_trigger = yes
+			is_ai = yes
+		}
 	}
 
 	is_valid_showing_failures_only = {
@@ -2351,9 +2355,7 @@ visit_local_settlement_decision = {
 		#DLC check.
 		has_ep3_dlc_trigger = yes
 		is_landless_adventurer = yes
-		#root.location = { #LOTR
-		#	is_wastelands = no	
-		#}
+		root.location = { is_wastelands = no } #LotR
 	}
 
 	is_valid_showing_failures_only = {
@@ -2366,9 +2368,10 @@ visit_local_settlement_decision = {
 			has_holding = yes
 			is_occupied = no
 			is_raided = no	
-			NOT = { has_holding_type = wastelands_holding }
-			NOT = { has_holding_type = ruined_holding }
+			# NOT = { has_holding_type = wastelands_holding }
+			# NOT = { has_holding_type = ruined_holding }
 		}
+		lotr_laamp_can_visit_location = yes #LotR
 		custom_description = {
 			text = "visit_local_settlement_decision_sieged"
 			subject = root

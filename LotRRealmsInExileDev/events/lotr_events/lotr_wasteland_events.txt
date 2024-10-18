@@ -24,6 +24,8 @@
 #			wastelands.2601 - 2800 
 #		# Eregion ruin ghosts Events:
 #			wastelands.2801 - 3000 
+#		# Shadow of Mordor Events:
+#			wastelands.3201 - 3300
 #
 ##########################################
 
@@ -7449,6 +7451,186 @@ wastelands.2804 = { # Artifacts of old
 #  Flooded Tunnels Den  #
 #########################
 
+####################
+# Shadow of Mordor #
+####################
+
+wastelands.3201 = { # Unnerving Shadows
+	content_source = realms_dlc
+	type = character_event
+	title = wastelands.3201.t
+	desc = wastelands.3201.desc
+	theme = mental_break
+	override_background = { reference = barad_dur }
+
+	left_portrait = {
+		character = root
+		animation = personality_compassionate
+	}
+
+	right_portrait = {
+		character = scope:courtier
+		animation = lantern
+	}
+
+	immediate = {
+		random_courtier = {
+			save_scope_as = courtier
+		}
+	}
+
+	option = { # We shall bring light to these darkened lands
+		name = wastelands.3201.a
+		trigger = {
+			root = {
+				is_elf = yes
+			}
+		}
+		remove_short_term_gold = minor_gold_value
+		scope:obstacle_province.county = { change_development_level = 3 }
+		scope:obstacle_province = { remove_building = shadow_of_mordor_cleared }
+	}
+
+	option = { # Study the strange happenings
+		name = wastelands.3201.b
+		skill = learning
+		duel = {
+			skill = learning
+			value = medium_skill_rating
+			70 = { # You find a way to combat the shadows
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 0.5
+				}
+				send_interface_toast = {
+					left_icon = root
+					title = wastelands.3201.success.toast.t
+					scope:obstacle_province = { remove_building = shadow_of_mordor_cleared }
+					add_prestige = medium_prestige_gain
+				}
+			}
+			30 = { # You fail
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -0.5
+				}
+				show_as_tooltip = {
+					add_stress = major_stress_gain
+				}
+				send_interface_toast = {
+					left_icon = root
+					title = wastelands.3201.failure.toast.t
+					hidden_effect = { scope:obstacle_province = { remove_building = shadow_of_mordor_cleared } }
+					scope:obstacle_province = { add_building = shadow_of_mordor }
+				}
+				
+			}			
+		}
+	}
+	
+	option = { #Ignore those happenings
+		name = wastelands.3201.c
+		add_prestige = medium_prestige_loss
+		scope:obstacle_province.county = { 
+			change_development_progress = -50
+		}
+	}
+		
+
+	option = { # We should never have come here
+		name = wastelands.3201.d
+		make_settlement_county_wilderness = {
+			COUNTY = scope:obstacle_province.county
+		}
+		scope:obstacle_province = { add_building = shadow_of_mordor }
+	}
+}
+
+wastelands.3202 = { # A Light in the Darkness
+	content_source = realms_dlc
+	type = character_event
+	title = wastelands.3202.t
+	desc = wastelands.3202.desc
+	theme = friendly
+	override_background = { reference = barad_dur }
+
+	left_portrait = {
+		character = root
+		animation = interested
+	}
+
+	option = { # A good omen!
+		name = wastelands.3202.a
+		scope:obstacle_province.county = { 
+			change_development_progress = 75
+		}
+	}
+	
+	option = { # Have it brought here so I can study it
+		name = wastelands.3202.b 
+		add_learning_lifestyle_xp = medium_lifestyle_xp
+		stress_impact = {
+			base = medium_stress_loss
+			impatient = minor_stress_loss
+			patient = major_stress_loss
+		}
+	}
+	
+	option = { # Attempt to cultivate it
+		name = wastelands.3202.c 
+		duel = {
+			skills = { stewardship learning }
+			value = medium_skill_rating
+			70 = { # You are successful
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 0.5
+				}
+				send_interface_toast = {
+					left_icon = root
+					title = wastelands.3202.success.toast.t
+					scope:obstacle_province = { remove_building = shadow_of_mordor_cleared }
+					add_prestige = medium_prestige_gain
+					scope:obstacle_province.county = { 
+						change_development_level = 3
+					}
+				}
+			}
+			30 = { # You fail
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -0.5
+				}
+				show_as_tooltip = {
+					add_stress = major_stress_gain
+				}
+				send_interface_toast = {
+					left_icon = root
+					title = wastelands.3202.failure.toast.t
+					hidden_effect = { scope:obstacle_province = { remove_building = shadow_of_mordor_cleared } }
+					scope:obstacle_province = { add_building = shadow_of_mordor }
+				}
+				
+			}			
+		}
+	}
+	
+	option = { # Feed it to our furnaces
+		name = wastelands.3202.d
+		trigger = {
+			OR = {
+				is_orc = yes
+				is_dwarf = yes
+			}
+		}
+		scope:obstacle_province.county = { 
+			change_development_progress = 50
+		}
+		add_gold = medium_gold_value
+	}
+	
+}
+		
 
 wastelands.9000 = {
 	hidden = yes
