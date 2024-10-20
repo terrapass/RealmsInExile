@@ -1,0 +1,39 @@
+﻿###############
+#### UMBAR ####
+###############
+
+dynasty_aragorn = {
+	name = "dynasty_aragorn"
+	culture = "jelut"
+	motto = dynn_kamal_motto
+}
+dynasty_bilbo = {
+	name = "dynasty_bilbo"
+	culture = "jelut"
+	motto = dynn_aglarbalak_motto
+}
+dynasty_celeborn = {
+	name = "dynasty_celeborn"
+	culture = "jelut"
+	motto = dynn_rothpharaz_motto
+}
+dynasty_balin = {
+	name = "dynasty_balin"
+	culture = "jelut"
+	motto = dynn_shakalzori_motto
+}
+dynasty_eomer = {
+	name = "dynasty_eomer"
+	culture = "jelut"
+	motto = dynn_sakalbarionath_motto
+}
+dynasty_frodo = {
+	name = "dynasty_frodo"
+	culture = "jelut"
+	motto = dynn_eruholionath_motto
+}
+dynasty_glorfindel = {
+	name = "dynasty_glorfindel"
+	culture = "jelut"
+	motto = dynn_eruholionath_motto
+}

@@ -3,6 +3,15 @@
  ### Wilderness ###
  dynn_wilderness:0 "of the Wilds"
 
+ ### Tests ###
+ dynasty_aragorn:0 "Alpha"
+ dynasty_bilbo:0 "Beta"
+ dynasty_celeborn:0 "Gamma"
+ dynasty_balin:0 "Delta"
+ dynasty_eomer:0 "Epsilon"
+ dynasty_frodo:0 "Zeta"
+ dynasty_glorfindel:0 "Eta"
+
  ### ATTACHMENTS ###
  dynnp_of_the:0 "of the "
  dynnp_nos:0 "Nos "
