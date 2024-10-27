@@ -1048,6 +1048,7 @@ sauron.5000 = { # Morannon is lost
 	desc = sauron.5000.desc
 	theme = realm
 	trigger = { faith_is_evil = yes }
+	cooldown = { days = 3 }
 	left_portrait = {
 		character = root
 		animation = rage
@@ -1066,6 +1067,7 @@ sauron.5001 = { # Morannon is reconquered
 	desc = sauron.5001.desc
 	theme = war
 	trigger = { faith_is_evil = yes }
+	cooldown = { days = 3 }
 	left_portrait = {
 		character = root
 		animation = menacing
@@ -1084,6 +1086,7 @@ sauron.5002 = { # Conquest of Minas Tirith
 	desc = sauron.5002.desc
 	theme = war
 	trigger = { faith_is_evil = yes }
+	cooldown = { days = 3 }
 	override_background = {
 		reference = minas_tirith
 	}
@@ -1092,17 +1095,17 @@ sauron.5002 = { # Conquest of Minas Tirith
 		animation = menacing
 	}
 	immediate = {
+		# Major News - Sauron conquered Minas Tirith
 		if = {
-			limit = {
-				title:c_minas_tirith.holder = { 
-					faith_is_evil = yes 
-					NOT = { has_character_flag = minas_tirith_conquered }
-					is_independent_ruler = no
-				}
+			limit = { # Major News
+				NOT = { has_game_rule = no_news }
+				this = character:lineofsauron
 			}
-			title:c_minas_tirith.holder = {
-				add_character_flag = minas_tirith_conquered
-				trigger_event = sauron.5002
+			every_player = { #Global News Announcement
+				trigger_event = {
+					id = news_event.0038
+					days = 5
+				}
 			}
 		}
 	}
@@ -1111,11 +1114,5 @@ sauron.5002 = { # Conquest of Minas Tirith
 	option = { #I shall corrupt it like its sister-city
 		name = sauron.5002.a
 		add_prestige = medium_prestige_gain
-		if = {
-			limit = {
-				has_character_flag = minas_tirith_conquered
-			}
-			remove_character_flag = minas_tirith_conquered
-		}
 	}
 }

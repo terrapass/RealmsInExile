@@ -8,8 +8,9 @@
     religion = faith_wastelands_pagan
     holding = wastelands_holding
 	buildings = {
-			wolf_den
-		}
+		bear_den
+		wild_orcs
+	}
 	5100.1.1 = { # Lomchy Migration
 		culture = lomchy
 		religion = faith_tamska_ogeda
@@ -45,8 +46,8 @@
     religion = faith_wastelands_pagan
     holding = wastelands_holding
 	buildings = {
-			wolf_den
-		}
+		bandits
+	}
 	5100.1.1 = { # Lomchy Migration
 		culture = lomchy
 		religion = faith_tamska_ogeda
@@ -76,8 +77,9 @@
     religion = faith_wastelands_pagan
     holding = wastelands_holding
 	buildings = {
-			bandits
-		}
+		dense_growth
+		bandits
+	}
 	5100.1.1 = { # Lomchy Migration
 		culture = lomchy
 		religion = faith_tamska_ogeda
@@ -107,8 +109,8 @@
     religion = faith_wastelands_pagan
     holding = wastelands_holding
 	buildings = {
-			wolf_den
-		}
+		spider_nest
+	}
 }
 
 5790 = {    #Dudab'e (b_dudab_e)
@@ -124,8 +126,8 @@
     religion = faith_wastelands_pagan
     holding = wastelands_holding
 	buildings = {
-			wolf_den
-		}
+		bandits
+	}
 }
 
 5792 = {    #Rerul (b_rerul)
@@ -147,9 +149,8 @@
     religion = faith_wastelands_pagan
     holding = wastelands_holding
 	buildings = {
-			wolf_den
-			bear_den
-		}
+		dense_growth
+	}
 }
 
 5795 = {    #Huka Kulaka (b_huka_kulaka)
@@ -166,9 +167,9 @@
     religion = faith_wastelands_pagan
     holding = wastelands_holding
 	buildings = {
-			bear_den
-			bandits
-		}
+		wolf_den
+		bandits
+	}
 }
 
 5797 = {    #Gowil Duda (b_gowil_duda)
@@ -190,8 +191,9 @@
     religion = faith_wastelands_pagan
     holding = wastelands_holding
 	buildings = {
-			bandits
-		}
+		wild_orcs
+		bandits
+	}
     3.1.1 = {			
         special_building_slot = mountain_pass_01	
         special_building = mountain_pass_01
@@ -205,8 +207,8 @@
     religion = faith_wastelands_pagan
     holding = wastelands_holding
 	buildings = {
-			bandits
-		}
+		wild_orcs
+	}
     3.1.1 = {			
         special_building_slot = mountain_pass_01	
         special_building = mountain_pass_01
@@ -267,8 +269,9 @@
     religion = faith_wastelands_pagan
     holding = wastelands_holding
 	buildings = {
-			spider_nest
-		}
+		dense_growth
+		ghosts
+	}
 }
 
 5808 = {    #Lonnad (b_lonnad)
@@ -283,9 +286,15 @@
     culture = kinnlai
     religion = faith_kinnlai
     holding = elven_holding
-    3.1.1 = { # Add rise and fall history at appropriate time	
+    2000.1.1 = { # Add rise and fall history at appropriate time	
         special_building_slot = wonder_kinnlai_sanctum_of_the_valiant_01	
         special_building = wonder_kinnlai_sanctum_of_the_valiant_01
+		culture = wastelands
+		religion = faith_wastelands_pagan
+		holding = wastelands_holding
+		buildings = {
+			dense_growth
+		}
     }
 }
 
@@ -334,6 +343,15 @@
     culture = kinnlai
     religion = faith_kinnlai
     holding = elven_holding
+    2000.1.1 = { # Add rise and fall history at appropriate time
+		culture = wastelands
+		religion = faith_wastelands_pagan
+		holding = wastelands_holding
+		buildings = {
+			dense_growth
+			wild_orcs
+		}
+    }
 }
 
 5817 = {    #Tumm Lum (b_tumm_lum)
@@ -384,8 +402,9 @@
     religion = faith_wastelands_pagan
     holding = wastelands_holding
 	buildings = {
-			bandits
-		}
+		wild_orcs
+		bandits
+	}
 }
 
 5824 = {    #Gowôn (b_gowon)
@@ -407,8 +426,9 @@
     religion = faith_wastelands_pagan
     holding = wastelands_holding
 	buildings = {
-			wolf_den
-		}
+		dense_growth
+		flooded_lands
+	}
 }
 
 5827 = {    #Ûdeg (b_udeg)
@@ -576,7 +596,7 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			bear_den
+			wild_orcs
 		}
 	}
 }
@@ -603,6 +623,10 @@
 		culture = wastelands
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
+		buildings = {
+			dense_growth
+			flooded_lands
+		}
 	}
 }
 
@@ -646,7 +670,7 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			wolf_den
+			wild_orcs
 		}
 	}
 }
@@ -705,7 +729,7 @@
 		holding = wastelands_holding
 		buildings = {
 			spider_nest
-			wolf_den
+			dense_growth
 		}
 	}
 }
@@ -756,7 +780,7 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			bear_den
+			spider_nest
 		}
 	}
 }
@@ -779,6 +803,10 @@
     culture = usakani
     religion = faith_amav
     holding = tribal_holding
+		buildings = {
+			dense_growth
+			spider_nest
+		}
 }
 
 5865 = {    #Hitega (b_hitega)
@@ -810,7 +838,8 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			wolf_den
+			dense_growth
+			spider_nest
 		}
 	}
 }
@@ -838,7 +867,7 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			bandits
+			wild_orcs
 		}
 	}
 }
@@ -855,6 +884,14 @@
     culture = usakani
     religion = faith_amav
     holding = tribal_holding
+	5001.1.1 = {
+		culture = wastelands
+		religion = faith_wastelands_pagan
+		holding = wastelands_holding
+		buildings = {
+			spider_nest
+		}
+	}
 }
 
 5875 = {    #Tâm Ado (b_tam_ado)
@@ -881,6 +918,15 @@
     culture = usakani
     religion = faith_amav
     holding = tribal_holding
+	5001.1.1 = {
+		culture = wastelands
+		religion = faith_wastelands_pagan
+		holding = wastelands_holding
+		buildings = {
+			spider_nest
+			wild_orcs
+		}
+	}
 }
 
 5879 = {    #Sekâlu (b_sekalu)
@@ -980,7 +1026,6 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			bear_den
 			bandits
 		}
 	}
@@ -1015,7 +1060,6 @@
 		holding = wastelands_holding
 		buildings = {
 			spider_nest
-			bear_den
 		}
 	}
 	5583.1.1 = {
@@ -1043,7 +1087,7 @@
 		holding = wastelands_holding
 		buildings = {
 			spider_nest
-			bandits
+			wild_orcs
 		}
 	}
 	5583.1.1 = {
@@ -1071,13 +1115,14 @@
 	culture = wastelands
 	religion = faith_wastelands_pagan
 	holding = wastelands_holding
+	buildings = {
+		flooded_lands
+		dense_growth
+	}
 	5583.1.1 = {
 		culture = rukhashai
 		religion = volcano_cult
 		holding = tribal_holding
-		buildings = {
-			bear_den
-		}
     }
 }
 

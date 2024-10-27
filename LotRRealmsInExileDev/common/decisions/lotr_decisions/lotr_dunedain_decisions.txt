@@ -4412,8 +4412,9 @@ decision_rebuild_royal_road = {
 # 			dynasty = dynasty:dynasty_anarion
 # 		}
 		
-# 		NOT = { is_ai = yes }
-# 		NOT = { has_character_flag = is_aragorn }
+		# NOT = { is_ai = yes }
+		# NOT = { has_character_flag = is_aragorn }
+		# NOT = { THIS = character:lineisildur42 }
 		
 # 		title:e_gondor_steward.holder = { is_ai = yes } #Should not be able to oust a human playing the steward
 
@@ -4455,39 +4456,34 @@ decision_rebuild_royal_road = {
 # 	effect = {
 # 		custom_tooltip = decision_claim_gondor_arassuil.tt
 		
-# 		start_travel_plan = { #Travel to Minas Tirith
-# 			destination = title:c_minas_tirith.title_province
-# 			on_arrival_event = gondor.3800
-# 			return_trip = no
-# 			players_use_planner = yes
-# 			on_arrival_destinations = all
-# 		}
-# 		hidden_effect = { #give free caravan master
-# 			if = {
-# 				limit = { NOT = { employs_court_position = travel_leader_court_position } }
-# 				create_character = {
-# 					template = foreign_architect_template
-# 					employer = root
-# 					save_scope_as = caravan_master
-# 				}
-# 				appoint_court_position = {
-# 					recipient = scope:caravan_master
-# 					court_position = travel_leader_court_position
-# 				}
-# 			}
-# 		}
+		# start_travel_plan = { #Travel to Minas Tirith
+		# 	destination = title:c_minas_tirith.title_province
+		# 	on_arrival_event = gondor.3801
+		# 	return_trip = no
+		# 	players_use_planner = yes
+		# 	on_arrival_destinations = all
+		# }
+		# hidden_effect = { #give free caravan master
+		# 	if = {
+		# 		limit = { NOT = { employs_court_position = travel_leader_court_position } }
+		# 		create_character = {
+		# 			template = foreign_architect_template
+		# 			employer = root
+		# 			save_scope_as = caravan_master
+		# 		}
+		# 		appoint_court_position = {
+		# 			recipient = scope:caravan_master
+		# 			court_position = travel_leader_court_position
+		# 		}
+		# 	}
+		# }
 		
 # 		#trigger_event = gondor.3800 #Effects will happen here
 		
 # 		add_prestige = 1500
 # 		dynasty = { add_dynasty_prestige = 1000 }
 		
-
-# 		add_to_global_variable_list = {
-# 			name = unavailable_unique_decisions
-# 			target = flag:decision_claim_gondor_arassuil
-# 		}
-# 	}
+	# }
 
 # 	# AI shouldn't take this decision at all
 # 	ai_goal = yes

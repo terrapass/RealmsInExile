@@ -693,6 +693,7 @@ gondor.6001 = { # Morannon reconquered
 	desc = gondor.6001.desc
 	theme = war
 	trigger = { culture = { has_cultural_pillar = heritage_dunedain } } #Should only trigger for Dúnedain
+	cooldown = { days = 3 }
 	left_portrait = {
 		character = root
 		animation = marshal_shield
@@ -708,17 +709,51 @@ gondor.6002 = { # Fall of Minas Tirith
 	content_source = realms_dlc
 	type = character_event
 	title = gondor.6002.t
-	desc = gondor.6002.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					root = { has_character_flag = try_rotk }
+				}
+				desc = gondor.6002.desc.rotk
+			}
+			desc = gondor.6002.desc
+		}
+	}
 	theme = battle
-	trigger = { culture = { has_cultural_pillar = heritage_dunedain } } #Should only trigger for Dúnedain
+	override_background = {
+		reference = minas_tirith
+	}
+	trigger = { 
+		culture = { has_cultural_pillar = heritage_dunedain } #Should only trigger for Dúnedain
+	} 
+	cooldown = { days = 3 }
 	left_portrait = {
 		character = root
+		triggered_animation = {
+			trigger = {
+				root = {
+					has_character_flag = try_rotk
+				}
+			}
+			animation = personality_honorable
+		}
 		animation = rage
 	}
 	
 	option = { #This can't be happening...
+		trigger = {
+			root = { NOT = { has_character_flag = try_rotk } }
+		}
 		name = gondor.6002.a
 		add_prestige = minor_prestige_loss
+	}
+	option = { #Yeah I'm back baybeee
+		trigger = {
+			root = { has_character_flag = try_rotk }
+		}
+		name = gondor.6002.b
+		add_prestige = minor_prestige_gain
 	}
 }
 
@@ -729,6 +764,7 @@ gondor.6003 = { # Minas Tirith reclaimed
 	desc = gondor.6003.desc
 	theme = war
 	trigger = { culture = { has_cultural_pillar = heritage_dunedain } } #Should only trigger for Dúnedain
+	cooldown = { days = 3 }
 	override_background = {
 		reference = minas_tirith
 	}
@@ -751,6 +787,7 @@ gondor.6004 = { # Conquest of Umbar
 	theme = war
 	override_background = { reference = docks_adunai }
 	trigger = { culture = { has_cultural_pillar = heritage_dunedain } } #Should only trigger for Dúnedain
+	cooldown = { days = 3 }
 	left_portrait = {
 		character = root
 		animation = marshal_shield

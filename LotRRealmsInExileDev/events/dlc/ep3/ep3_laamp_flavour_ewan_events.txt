@@ -14193,11 +14193,11 @@ ep3_laamp_flavour_ewan.3031 = {
 			order_by = {
 				# If we're a player, order it by their opinion of us.
 				if = {
-					limit = { is_ai = no }
-					value = "reverse_opinion(root)"
+					limit = { holder = { is_ai = no } }
+					value = "holder.reverse_opinion(root)"
 				}
 				# Otherwise, order by our opinion of them.
-				else = { value = "opinion(root)" }
+				else = { value = "holder.opinion(root)" }
 			}
 			save_scope_as = adjacent_title
 		}
@@ -17701,6 +17701,8 @@ ep3_laamp_flavour_ewan.4041 = {
 							terrain = desert
 							terrain = desert_mountains
 							terrain = oasis
+							terrain = dune_sea #LOTR
+							terrain = red_desert #LOTR
 						}
 					}
 				}
@@ -17717,6 +17719,8 @@ ep3_laamp_flavour_ewan.4041 = {
 							terrain = desert
 							terrain = desert_mountains
 							terrain = oasis
+							terrain = dune_sea #LOTR
+							terrain = red_desert #LOTR
 						}
 					}
 				}
@@ -17748,6 +17752,8 @@ ep3_laamp_flavour_ewan.4041 = {
 							terrain = desert
 							terrain = desert_mountains
 							terrain = oasis
+							terrain = dune_sea #LOTR
+							terrain = red_desert #LOTR
 						}
 					}
 				}
@@ -22454,7 +22460,7 @@ ep3_laamp_flavour_ewan.9512 = {
 					scope:skill = flag:prowess
 				}
 			}
-			animation = martial
+			animation = marshal
 		}
 		triggered_animation = {
 			trigger = { scope:skill = flag:stewardship }
