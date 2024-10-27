@@ -1259,7 +1259,7 @@ lotr_intro_events.6005 = { # Introduction to Madogh
 	}
 }
 
-lotr_intro_events.6007 = { # Introduction to Chieftain Arassuil - Long Winter Start Date
+lotr_intro_events.6007 = { # Introduction to Chieftain Arassuil - Start Date
 	content_source = realms_dlc
 	type = character_event
 	title = lotr_intro_events.6007.t

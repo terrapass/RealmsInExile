@@ -9437,7 +9437,7 @@ gondor.3700 = { # Stewards to become Kings via decision
 	}
 }
 
-gondor.3800 = { #Return of the King - Long Winter edition 
+gondor.3800 = { #Return of the King - edition 
 	content_source = realms_dlc
 	type = character_event
 	title = gondor.3800.t

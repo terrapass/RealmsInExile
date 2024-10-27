@@ -8850,7 +8850,7 @@ d_talath_harroch = {
 	5889.1.1 = { 
 	 	holder = 0 # Gondor loses the province to the Wainraiders
 	}
-	6782.5.16 = { #Long Winter Start Date ruler
+	6782.5.16 = {  Start Date ruler
         holder = lineofmollukian01 #Molluk
     }
 	6830.3.11 = {
@@ -8940,7 +8940,7 @@ c_thoron = {
     6765.10.19 = { # The Jangovar's realm retracts
         holder = lineofjangovar15 #Tukhik
     }
-	6782.5.16 = { #Long Winter Start date ruler
+	6782.5.16 = {  Start date ruler
         holder = lineofmollukian01 #Molluk
 		change_development_level = 5
     }
@@ -9018,7 +9018,7 @@ c_ursh_lanna = {
     5415.10.18 = {
         holder = linerunrik10 #Vandermir
     }
-	6782.5.16 = { #Long Winter start date ruler
+	6782.5.16 = {  start date ruler
         holder = lineofmollukian01 #Molluk
 		change_development_level = 5
 		liege = 0
@@ -9178,7 +9178,7 @@ c_anthar = {
 		change_development_level = 6
 		liege = 0
 	}
-	6755.6.27 = { #Long Winter Start date ruler
+	6755.6.27 = {  Start date ruler
         holder = linepretoki1 #Arnwin
     }
     6836.2.23 = {
@@ -10066,7 +10066,7 @@ c_ulurikon = {
     6722.5.4 = {
         holder = lineofkhundolar13 #O_O_thour
     }
-    6753.1.4 = { #Long winter start date ruler
+    6753.1.4 = {  start date ruler
         holder = lineofkhundolar15 #Nuhuth
     }
     6796.5.18 = {
@@ -10880,7 +10880,7 @@ c_othlebed = {
         holder = linetheudrea17 #Miron
 		liege = 0
     }
-	6769.12.4 = { #Long Winter Start Date Ruler
+	6769.12.4 = {  Start Date Ruler
 		holder = lineofakhevian05 #Akhev
 		change_development_level = 4
 	}
@@ -10966,7 +10966,7 @@ c_ayitar = {
     5662.3.14 = {
         holder = linetheodring37 #Gesalecho
     }
-	6776.6.27 = { #Long Winter start date ruler
+	6776.6.27 = {  start date ruler
 		holder = lineofmashakian05 #Mashak
 		change_development_level = 4
 	}
@@ -11020,7 +11020,7 @@ c_dobok_bron = {
         holder = linetheudrea17 #Miron
 		liege = 0
     }
-	6769.12.4 = { #Long winter start date ruler
+	6769.12.4 = {  start date ruler
 		holder = lineofakhevian05 #Akhev
 		change_development_level = 4
 	}
@@ -11076,7 +11076,7 @@ c_sorna = {
         holder = linetheudrea17 #Miron
 		liege = 0
     }
-	6769.12.4 = { #Long winter start date ruler
+	6769.12.4 = {  start date ruler
 		holder = lineofakhevian05 #Akhev
 		change_development_level = 5
 	}
@@ -11131,7 +11131,7 @@ c_gadraught = {
     5474.5.6 = {
         holder = linelucidwinia14 #Khindaswintho
     }
-	6769.12.4 = { #Long Winter start date ruler
+	6769.12.4 = {  start date ruler
 		holder = lineofakhevian05 #Akhev
 		change_development_level = 6
 	}
@@ -11181,7 +11181,7 @@ c_waysend = {
     5474.5.6 = {
         holder = linelucidwinia14 #Khindaswintho
     }
-	6769.12.4 = { #Long Winter start date ruler
+	6769.12.4 = {  start date ruler
 		holder = lineofakhevian05 #Akhev
 		change_development_level = 3
 	}
@@ -11492,7 +11492,7 @@ c_vadran = {
     6743.5.18 = {
         holder = lineliuthwig13 #Ivor
     }
-    6768.2.16 = { #Long winter start date ruler
+    6768.2.16 = {  start date ruler
         holder = lineliuthwig15 #Berglind
     }
     6816.8.23 = {
@@ -11639,7 +11639,7 @@ d_anthardor = {
     6732.7.24 = {
         holder = lineofjangovar13 #Harvâl
     }
-    6765.10.19 = { #Long Winter Start date ruler
+    6765.10.19 = {  Start date ruler
         holder = lineofjangovar15 #Tukhik
     }
     6798.12.25 = {
@@ -11771,7 +11771,7 @@ c_anwuning = {
     6732.7.24 = {
         holder = lineofjangovar13 #Harvâl
     }
-    6765.10.19 = { #Long Winter Start date ruler
+    6765.10.19 = {  Start date ruler
         holder = lineofjangovar15 #Tukhik
     }
     6798.12.25 = {
@@ -11965,7 +11965,7 @@ c_rhaina = {
     5885.5.2 = {
         holder = lineofaloito75 #Leovigildo
     }
-	6765.10.19 = { #Long Winter Start date ruler
+	6765.10.19 = {  Start date ruler
         holder = lineofjangovar15 #Tukhik
 		change_development_level = 3
     }
@@ -12116,7 +12116,7 @@ c_sauthis = {
     6768.3.22 = {
         holder = linepreorming15 #Halward
     }
-    6785.4.22 = { #Long Winter Start date ruler
+    6785.4.22 = {  Start date ruler
         holder = linepreorming17 #Forthwin
     }
     6822.11.26 = {
@@ -12557,7 +12557,7 @@ d_sekelavuld = {
     5684.3.16 = {
         holder = 0
     }
-	6776.6.27 = { #Long Winter Start date ruler
+	6776.6.27 = {  Start date ruler
 		holder = lineofmashakian05 #Mashak
 	}
 	6847.9.5 = {
@@ -12621,7 +12621,7 @@ c_suvarinda = {
     5662.3.14 = {
         holder = linetheodring37 #Gesalecho
     }
-	6776.6.27 = { #Long Winter Start date ruler
+	6776.6.27 = {  Start date ruler
 		holder = lineofmashakian05 #Mashak
 	}
 	6847.9.5 = {
@@ -12698,7 +12698,7 @@ c_urutiros = {
     5662.3.14 = {
         holder = linetheodring37 #Gesalecho
     }
-	6776.6.27 = { #Long Winter Start Date Ruler
+	6776.6.27 = {  Start Date Ruler
 		holder = lineofmashakian05 #Mashak
 		change_development_level = 6
 	}
@@ -12779,7 +12779,7 @@ c_calemir = {
     5662.3.14 = {
         holder = linetheodring37 #Gesalecho
     }
-	6776.6.27 = { #Long Winter Start Date ruler
+	6776.6.27 = {  Start Date ruler
 		holder = lineofmashakian05 #Mashak
 		change_development_level = 3
 	}
@@ -12863,7 +12863,7 @@ c_ayikana = {
     5662.3.14 = {
         holder = linetheodring37 #Gesalecho
     }
-	6776.6.27 = { #Long Winter Start Date Ruler
+	6776.6.27 = {  Start Date Ruler
 		holder = lineofmashakian05 #Mashak
 		change_development_level = 7
 	}
@@ -12940,7 +12940,7 @@ c_korpan = {
     5662.3.14 = {
         holder = linetheodring37 #Gesalecho
     }
-	6776.6.27 = { #Long Winter Start Date Ruler
+	6776.6.27 = {  Start Date Ruler
 		holder = lineofmashakian05 #Mashak
 		change_development_level = 6
 	}

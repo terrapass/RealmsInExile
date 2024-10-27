@@ -23614,7 +23614,7 @@ linefeordan20 = {
     }
 }
 
-### House Líuthwig ~ Last Phaon-Afod followers, Chieftains of Vadran ~ Long winter ###
+### House Líuthwig ~ Last Phaon-Afod followers, Chieftains of Vadran ~ ###
 
 lineliuthwig1 = {
     name = Sigrid
@@ -24096,7 +24096,7 @@ lineliuthwig14 = {
     }
 }
 
-lineliuthwig15 = { #Long winter start date ruler
+lineliuthwig15 = {  start date ruler
     name = Berglind
     female = yes
 
@@ -24452,7 +24452,7 @@ lineliuthwig24 = {
     }
 }
 
-### Line of Jothivia ~ Chieftains of East Bight in the Long Winter start date ###
+### Line of Jothivia ~ Chieftains of East Bight in the start date ###
 
 linejothivian1 = {
     name = Odoacer
@@ -24520,7 +24520,7 @@ linejothivian2 = {
     }
 }
 
-linejothivian3 = { #Long Winter start date ruler
+linejothivian3 = {  start date ruler
     name = Forthwin
 
     dynasty = dynasty_jothivian
