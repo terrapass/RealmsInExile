@@ -24096,7 +24096,7 @@ lineliuthwig14 = {
     }
 }
 
-lineliuthwig15 = {  start date ruler
+lineliuthwig15 = {
     name = Berglind
     female = yes
 
@@ -24520,7 +24520,7 @@ linejothivian2 = {
     }
 }
 
-linejothivian3 = {  start date ruler
+linejothivian3 = {
     name = Forthwin
 
     dynasty = dynasty_jothivian

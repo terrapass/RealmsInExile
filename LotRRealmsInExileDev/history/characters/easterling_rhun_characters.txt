@@ -11346,7 +11346,7 @@ lineofkhundolar14 = {
     }
 }
 
-lineofkhundolar15 = {  start date ruler
+lineofkhundolar15 = {
     name = Nuhuth
 
     dynasty = dynasty_khundolar
@@ -12483,7 +12483,7 @@ lineofjangovar14 = {
     }
 }
 
-lineofjangovar15 = {  start date ruler
+lineofjangovar15 = {   
     name = Tukhik
 
     dynasty = dynasty_jangovar
@@ -14039,7 +14039,7 @@ lineofilnoria19 = {
 }
 
 ### Akevian Dynasty ###
-lineofakhevian05 = {  start date ruler
+lineofakhevian05 = {   
     name = Akhev
 
     dynasty = dynasty_akhevian
@@ -16154,7 +16154,7 @@ lineofkhurshian20 = {
 }
 
 ### Mashakian Dynasty ###
-lineofmashakian05 = {  start date ruler
+lineofmashakian05 = {   
     name = Mashak
 
     dynasty = dynasty_mashakian
@@ -20170,7 +20170,7 @@ lineofshakhalian19 = {
 
 ### Nikathian Dynasty ###
 
-lineofnikathian03 = {  start date ruler
+lineofnikathian03 = {   
     name = Nikath
 
     dynasty = dynasty_nikathian
@@ -21483,7 +21483,7 @@ lineofnikathian42 = {
 
 ### Dynasty Karmian ###
 
-lineofkarmian1 = {  start date ruler
+lineofkarmian1 = {
     name = Karm
 
     dynasty = dynasty_karmian
@@ -23019,7 +23019,7 @@ lineofkarmian46 = {
 
 ### Mollukian Dynasty ###
 
-lineofmollukian01 = {  start date ruler
+lineofmollukian01 = {
     name = Molluk
 
     dynasty = dynasty_mollukian
@@ -27795,7 +27795,7 @@ lineofmakian19 = {
 
 ### Ovathian Dynasty ###
 
-lineofovathian01 = {  start date ruler
+lineofovathian01 = {
     name = Ru_u_daz
 
     dynasty = dynasty_ovathian
