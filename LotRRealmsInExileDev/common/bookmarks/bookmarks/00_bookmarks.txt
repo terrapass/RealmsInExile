@@ -1135,40 +1135,6 @@ bm_2793_war_of_dwarves_and_orcs = {
 	}
 }
 
-#### 2754 T.A. ####
-bm_2754_rohan = {
-	start_date = 6787.1.1
-	is_playable = yes
-	group = bm_group_2754TA
-
-# bm_1349_angmar = {
-# 	start_date = 5382.5.1
-# 	is_playable = yes
-# 	group = bm_group_1349TA
-
-# 	weight = {
-# 		value = 1
-# 	}
-
-# 	# The Witch-king of Angmar
-# 	character = {
-# 		name = "bookmark_angmar_witchking"
-# 		dynasty = dynasty_witchking
-# 		dynasty_splendor_level = 8
-# 		type = male
-# 		birth = 2412.1.1
-# 		title = k_angmar
-# 		government = feudal_government
-# 		religion = faith_angmar_evil
-# 		culture = ringwraith
-# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
-# 		history_id = nazgul1
-# 		position = { 900 150 }
-# 		animation = personality_irrational
-		
-	}
-}
-
 #### 2510 T.A. ####
 bm_2510_rideofeorl_01 = {
 	start_date = 6543.1.1
@@ -1362,13 +1328,13 @@ bm_3430_last_alliance_01 = {
 
 #### 3320 S.A. ####
 
-# bm_3320_downfall = {
-# 	start_date = 3912.1.1
-# 	is_playable = yes
-# 	group = bm_group_3320SA
+bm_3320_downfall = {
+	start_date = 3912.1.1
+	is_playable = yes
+	group = bm_group_3320SA
 
-# 	weight = {
-# 		value = 1
-# 	}
-# }
+	weight = {
+		value = 1
+	}
+}
 
