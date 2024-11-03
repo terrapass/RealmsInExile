@@ -15796,6 +15796,7 @@ linemarku1 = {
     dynasty = dynasty_marku
     religion = volcano_cult
     culture = rukhashai
+	dna = linemarku1_dna
 
     sexuality = heterosexual
 
@@ -15831,6 +15832,7 @@ linemarku2 = {
 
     religion = volcano_cult
     culture = rukhashai
+	dna = linemarku2_dna
 
     sexuality = heterosexual
 

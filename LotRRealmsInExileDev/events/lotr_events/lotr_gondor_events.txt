@@ -2354,6 +2354,7 @@ gondor.0508 = { # Arwen is pregnant!
 	trigger = {
 		has_character_flag = is_aragorn
 		any_spouse = { has_character_flag = is_arwen }
+		NOT = { has_trait = eunuch }
 	}
 
 	option = { 
@@ -2448,6 +2449,7 @@ gondor.0510 = { # Arwen is pregnant again!
 	trigger = {
 		has_character_flag = is_aragorn
 		any_spouse = { has_character_flag = is_arwen }
+		NOT = { has_trait = eunuch }
 	}
 	
 	option = { 
@@ -2542,6 +2544,7 @@ gondor.0512 = { # Arwen is pregnant for the third time!
 	trigger = {
 		has_character_flag = is_aragorn
 		any_spouse = { has_character_flag = is_arwen }
+		NOT = { has_trait = eunuch }
 	}
 	
 	option = { 
@@ -2636,6 +2639,7 @@ gondor.0514 = { # Arwen is pregnant for the fourth time!
 	trigger = {
 		has_character_flag = is_aragorn
 		any_spouse = { has_character_flag = is_arwen }
+		NOT = { has_trait = eunuch }
 	}
 	
 	option = { 
