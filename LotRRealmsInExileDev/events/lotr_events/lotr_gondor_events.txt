@@ -4258,6 +4258,12 @@ gondor.0562 = { # Royalist victory - Aragorn is crowned
 				}
 			}
 		}
+		
+		if = { ### Fixed Govornment Type depending on gamerule
+			limit = { has_game_rule = historicity_extra_admin_gondor_alt_historic_always } 
+			change_government = administrative_government
+		}
+		
 		hidden_effect = {
 			house = {
 				add_house_modifier = {
@@ -5974,7 +5980,7 @@ gondor.2102 = { # Victory, Mordor Shattered
 	theme = war
 	left_portrait = {
 		character = root
-		animation = bold
+		animation = personality_bold
 	}
 	override_background = {
 		reference = barad_dur
@@ -6016,7 +6022,7 @@ gondor.2103 = { # Victory, Every other ruler gets news
 	}
 	right_portrait = {
 		character = title:e_gondor.holder
-		animation = bold
+		animation = personality_bold
 	}
 	trigger = {
 		NOR = {
@@ -6282,7 +6288,7 @@ gondor.2200 = { # Search Orthanc
 	}
 	left_portrait = {
 		character = root
-		animation = bold
+		animation = personality_bold
 	}
 	option = {
 		name = gondor.2200.a

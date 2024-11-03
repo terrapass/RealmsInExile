@@ -1,4 +1,16 @@
-﻿bm_3000_eriador = {
+﻿### 120 F.A. ###
+bm_120_fourth_age_01 = {
+	start_date = 7172.1.1
+	is_playable = yes
+	group = bm_group_120FA
+
+	weight = {
+		value = 0
+	}
+}
+
+### 3000 T.A. ###
+bm_3000_eriador = {
 	start_date = 7033.1.1
 	is_playable = yes
 	group = bm_group_3000TA
@@ -1101,7 +1113,33 @@ bm_3000_thani_hazad = {
 	}
 }
 
-# #### 1349TA ####
+#### 2941 T.A. ####
+bm_2941_quest_for_erebor_01 = {
+	start_date = 6974.1.1
+	is_playable = yes
+	group = bm_group_2941TA
+
+	weight = {
+		value = 1
+	}
+}
+
+#### 2793 T.A. ####
+bm_2793_war_of_dwarves_and_orcs = {
+	start_date = 6826.1.1
+	is_playable = yes
+	group = bm_group_2793TA
+
+	weight = {
+		value = 1
+	}
+}
+
+#### 2754 T.A. ####
+bm_2754_rohan = {
+	start_date = 6787.1.1
+	is_playable = yes
+	group = bm_group_2754TA
 
 # bm_1349_angmar = {
 # 	start_date = 5382.5.1
@@ -1128,78 +1166,201 @@ bm_3000_thani_hazad = {
 # 		position = { 900 150 }
 # 		animation = personality_irrational
 		
-# 	}
+	}
+}
+
+#### 2510 T.A. ####
+bm_2510_rideofeorl_01 = {
+	start_date = 6543.1.1
+	is_playable = yes
+	group = bm_group_2510TA
+
+	weight = {
+		value = 1
+	}
+}
+
+#### 1944 T.A. ####
+bm_1944_morannon_01 = {
+	start_date = 5977.1.1
+	is_playable = yes
+	group = bm_group_1944TA
+
+	weight = {
+		value = 1
+	}
+}
+
+#### 1634 T.A. ####
+bm_1634_great_plague_01 = {
+	start_date = 5667.1.1
+	is_playable = yes
+	group = bm_group_1634TA
+
+	weight = {
+		value = 1
+	}
+}
+
+#### 1432 T.A. ####
+
+bm_1432_kin_strife_01 = {
+	start_date = 5465.1.1
+	is_playable = yes
+	group = bm_group_1432TA
+
+	weight = {
+		value = 1
+	}
+}
+
+#### 1409 T.A. ####
+
+bm_1409_fall_of_amon_sul_01 = {
+	start_date = 5442.1.1
+	is_playable = yes
+	group = bm_group_1409TA
+
+	weight = {
+		value = 1
+	}
+}
+
+#### 1349 T.A. ####
+
+bm_1349_angmar = {
+	start_date = 5382.5.1
+	is_playable = yes
+	group = bm_group_1349TA
+
+	weight = {
+		value = 1
+	}
+
+	# The Witch-king of Angmar
+	character = {
+		name = "bookmark_angmar_witchking"
+		dynasty = dynasty_witchking
+		dynasty_splendor_level = 8
+		type = male
+		birth = 2412.1.1
+		title = k_angmar
+		government = feudal_government
+		religion = faith_angmar_evil
+		culture = ringwraith
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = nazgul1
+		position = { 900 150 }
+		animation = personality_irrational
+		
+	}
 	
-# 	# Tarmacil
-# 	character = {
-# 		name = "bookmark_angmar_tarmacil"
-# 		dynasty = dynasty_caladir
-# 		dynasty_splendor_level = 4
-# 		type = male
-# 		birth = 5311.3.5
-# 		title = k_cardolan
-# 		government = feudal_government
-# 		religion = faith_edain
-# 		culture = arnorian
-# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
-# 		history_id = lineofcaladir43
-# 		position = { 600 700 }
-# 		animation = personality_bold
-# 	}
+	# Tarmacil
+	character = {
+		name = "bookmark_angmar_tarmacil"
+		dynasty = dynasty_caladir
+		dynasty_splendor_level = 4
+		type = male
+		birth = 5311.3.5
+		title = k_cardolan
+		government = feudal_government
+		religion = faith_edain
+		culture = arnorian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = lineofcaladir43
+		position = { 600 700 }
+		animation = personality_bold
+	}
 
-# 	# Argeleb
-# 	character = {
-# 		name = "bookmark_angmar_argeleb"
-# 		dynasty_house = house_isildur
-# 		dynasty_splendor_level = 10
-# 		type = male
-# 		birth = 5259.4.27
-# 		title = k_arthedain
-# 		government = feudal_government
-# 		religion = faith_edain
-# 		culture = arnorian
-# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
-# 		history_id = lineisildur18
-# 		position = { 450 300 }
-# 		animation = personality_honorable
-# 	}
+	# Argeleb
+	character = {
+		name = "bookmark_angmar_argeleb"
+		dynasty_house = house_isildur
+		dynasty_splendor_level = 10
+		type = male
+		birth = 5259.4.27
+		title = k_arthedain
+		government = feudal_government
+		religion = faith_edain
+		culture = arnorian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = lineisildur18
+		position = { 450 300 }
+		animation = personality_honorable
+	}
 
-# 	# Hwaldar
-# 	character = {
-# 		name = "bookmark_angmar_hwaldar"
-# 		dynasty_house = house_broccach
-# 		dynasty_splendor_level = 1
-# 		type = male
-# 		birth = 5338.7.21
-# 		title = k_rhudaur
-# 		government = tribal_government
-# 		religion = faith_hillmen
-# 		culture = hillmen
-# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
-# 		history_id = linebroccach
-# 		position = { 1100 400 }
-# 		animation = personality_vengeful
-# 	}
+	# Hwaldar
+	character = {
+		name = "bookmark_angmar_hwaldar"
+		dynasty_house = house_broccach
+		dynasty_splendor_level = 1
+		type = male
+		birth = 5338.7.21
+		title = k_rhudaur
+		government = tribal_government
+		religion = faith_hillmen
+		culture = hillmen
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = linebroccach
+		position = { 1100 400 }
+		animation = personality_vengeful
+	}
 	
-# 	# Mellondir II.
-# 	character = {
-# 		name = "bookmark_angmar_mellondir"
-# 		dynasty = dynasty_melosse
-# 		dynasty_splendor_level = 3
-# 		type = male
-# 		birth = 5301.8.13
-# 		title = d_dor_en_egladil
-# 		government = feudal_government
-# 		religion = faith_edain
-# 		culture = arnorian
-# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
-# 		history_id = linemelosse33
-# 		position = { 1050 650 }
-# 		animation = personality_compassionate
-# 	}
-# }
+	# Mellondir II.
+	character = {
+		name = "bookmark_angmar_mellondir"
+		dynasty = dynasty_melosse
+		dynasty_splendor_level = 3
+		type = male
+		birth = 5301.8.13
+		title = d_dor_en_egladil
+		government = feudal_government
+		religion = faith_edain
+		culture = arnorian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = linemelosse33
+		position = { 1050 650 }
+		animation = personality_compassionate
+	}
+}
 
-# #### 3320SA ####
+#### 861 T.A. ####
+
+bm_861_arnor_broken_01 = {
+	start_date = 4894.1.1 #Trig - Moved to start of year pending discussion, but this is better for history work.
+	is_playable = yes
+	group = bm_group_861TA
+
+	weight = {
+		value = 1
+	}
+}
+
+#### 2 T.A. ####
+
+bm_3320_disaster_of_the_gladden_fields_01 = {
+	start_date = 4035.1.1
+	is_playable = yes
+	group = bm_group_2TA
+
+	weight = {
+		value = 1
+	}
+}
+
+#### 3430 S.A. ####
+
+bm_3430_last_alliance_01 = {
+	start_date = 4022.1.1
+	is_playable = yes
+	group = bm_group_3430SA
+
+	weight = {
+		value = 1
+	}
+}
+
+#### 3320 S.A. ####
 
 # bm_3320_downfall = {
 # 	start_date = 3912.1.1
