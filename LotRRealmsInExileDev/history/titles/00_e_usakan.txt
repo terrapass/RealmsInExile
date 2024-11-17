@@ -32,6 +32,12 @@ c_guishas = {
         change_development_level = 8
 		government = tribal_government
     }
+	6760.10.1 = {
+		holder = linegumahar1 #Jabaka
+	}
+	6792.2.23 = {
+        holder = linegumahar3 #Adeg
+    }
     6849.7.11 = {
         holder = lineolamma1 #Mihar
     }
@@ -62,6 +68,12 @@ c_nol_klust = {
         change_development_level = 5
 		government = tribal_government
     }
+	6760.10.1 = {
+		holder = linegumahar1 #Jabaka
+	}
+	6792.2.23 = {
+        holder = linegumahar3 #Adeg
+    }
     6849.7.11 = {
         holder = lineolamma1 #Mihar
     }
@@ -91,6 +103,12 @@ c_che_chy = {
 	5100.1.1 = { # Lomchy Migration
         change_development_level = 4
 		government = tribal_government
+    }
+	6760.10.1 = {
+		holder = linegumahar1 #Jabaka
+	}
+	6792.2.23 = {
+        holder = linegumahar3 #Adeg
     }
     6849.7.11 = {
         holder = lineolamma1 #Mihar
@@ -576,6 +594,9 @@ d_azra_zhe = {
 	6780.1.1 = {
         holder = linemasamavin1 #Radovan
     }
+	6833.12.1 = {
+	    holder = 0
+	}
 }
 c_azra_zhe = {
 	3770.1.1 = {
@@ -684,6 +705,9 @@ c_rathane = {
 d_wariga = {
 	6703.1.12 = {
 		holder = lineraghash1 #Radnag
+	}
+	6786.10.8 = {
+	    holder = 0
 	}
 }
 c_hwomo = {

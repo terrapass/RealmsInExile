@@ -2512,7 +2512,7 @@ decision_numenor_in_exile = {
 		struggle:thani_hazad_struggle ?= { end_struggle = yes }
 		
 		hidden_effect = {
-			every_realm_de_jure_kingdom = {
+			every_kingdom = {
 				if = {
 					limit = {
 						OR = {
@@ -3188,6 +3188,16 @@ decision_new_capital = {
 		
 		else = {
 			
+		}
+		
+		# decrease opinion with parochial vassals
+		every_vassal = {
+			custom = every_parochial_vassal
+			add_opinion = {
+				modifier = angry_opinion
+				opinion = -20
+				target = root
+			}
 		}
 	}
 	
@@ -4480,10 +4490,14 @@ decision_rebuild_royal_road = {
 		
 # 		#trigger_event = gondor.3800 #Effects will happen here
 		
-# 		add_prestige = 1500
-# 		dynasty = { add_dynasty_prestige = 1000 }
+		# dynasty = { add_dynasty_prestige = 1000 } # Added if sucessful. 
 		
 	# }
+
+# 	cost = { # If you've got level 5, you have prestige to burn. It should cost something to reclaim the kingship.
+# 		prestige = 2000
+# 		gold = 200
+# 	}
 
 # 	# AI shouldn't take this decision at all
 # 	ai_goal = yes

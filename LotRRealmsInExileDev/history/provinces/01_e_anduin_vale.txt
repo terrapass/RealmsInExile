@@ -508,6 +508,19 @@
 			wild_orcs
 		}
 	}
+	6744.4.4 = {
+	    culture = towndweller_goblin
+		religion = way_of_strength
+		holding = castle_holding
+	}
+	6832.12.11 = { # Azog is slain by Dain II, the Orcish domain of the Misty Mountains collapses outside of Gundabad
+		culture = wastelands
+		religion = faith_wastelands_pagan
+		holding = wastelands_holding
+		buildings = {
+			wild_orcs
+		}
+	}
 }
 4514 = {	#Lipburn (b_lipburn)
 	holding = none
@@ -2016,6 +2029,20 @@
 		holding = castle_holding
 	}
 	5882.1.1 = {
+		culture = wastelands
+		religion = faith_wastelands_pagan
+		holding = wastelands_holding
+		buildings = {
+			wild_orcs
+			wolf_den
+		}
+	}
+	6705.5.5 = { # Orcs spread from Gundabad into the Vale
+		culture = ghrazim
+		religion = cult_of_the_ulukai
+		holding = castle_holding
+	}
+	6974.11.30 = { # The Battle of the five armies reduces Gundabad's population
 		culture = wastelands
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
