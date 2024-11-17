@@ -10704,8 +10704,8 @@ sailing.9110 = {
 				NOR = {
 					culture = root.location.culture
 					culture = root.culture
-					empire = root.location.empire
-					kingdom = root.location.kingdom
+					# empire = root.location.empire
+					# kingdom = root.location.kingdom
 					geographical_region = middleearth_valinor
 					is_wastelands = yes
 				}
@@ -10719,8 +10719,8 @@ sailing.9110 = {
 					this = scope:piracy_destination_1
 					culture = root.location.culture
 					culture = root.culture
-					empire = root.location.empire
-					kingdom = root.location.kingdom
+					# empire = root.location.empire
+					# kingdom = root.location.kingdom
 					geographical_region = middleearth_valinor
 					is_wastelands = yes
 				}
@@ -10734,8 +10734,8 @@ sailing.9110 = {
 					this = scope:piracy_destination_1
 					this = scope:piracy_destination_2
 					culture = root.culture
-					empire = root.location.empire
-					kingdom = root.location.kingdom
+					# empire = root.location.empire
+					# kingdom = root.location.kingdom
 					geographical_region = middleearth_valinor
 					is_wastelands = yes
 				}
