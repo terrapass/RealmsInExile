@@ -226,7 +226,7 @@ dynasty_lowun = { #Tribe in northern Tumag
 ####### USAKAN ###################
 ##################################
 
-dynasty_gumahar = { #LW Mag-Usakan Lomchy Border Tribe
+dynasty_gumahar = { # Mag-Usakan Lomchy Border Tribe
 	name = "dynn_gumahar"
 	culture = "lomchy"
 	motto = dynn_gumahar_motto
@@ -258,19 +258,19 @@ dynasty_eguundayo = { #Tribe in central Usakan
 	motto = dynn_eguundayo_motto
 }
 
-dynasty_musanes = { #Bandit-tribe, northern Usakan LW
+dynasty_musanes = { #Bandit-tribe, northern Usakan 
 	name = "dynn_musanes"
 	culture = "usakani"
 	motto = dynn_musanes_motto
 }
 
-dynasty_masamavin = { #Great Conqueror, Usakan, LW
+dynasty_masamavin = { #Great Conqueror, Usakan, 
 	name = "dynn_masamavin"
 	culture = "usakani"
 	motto = dynn_masamavin_motto
 }
 
-dynasty_dirsakounika = { #Tribe in western Usakan LW
+dynasty_dirsakounika = { #Tribe in western Usakan 
 	name = "dynn_dirsakounika"
 	culture = "usakani"
 	motto = dynn_dirsakounika_motto

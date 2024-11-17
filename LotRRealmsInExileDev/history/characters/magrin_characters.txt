@@ -17832,7 +17832,7 @@ linemusanes2 = {
 ## Tribe of Masamavin ##
 ########################
 
-linemasamavin1 = { #LW Conqueror
+linemasamavin1 = { # Conqueror
     name = Radova_a_n
 
     dynasty = dynasty_masamavin
@@ -17952,7 +17952,7 @@ linemasamavin3 = {
 # Tribe of Dirsakoûnikä #
 #########################
 
-linedirsakounika1 = { #LW
+linedirsakounika1 = { #
     name = Veyo_o_no_o_mor
 
     dynasty = dynasty_dirsakounika
@@ -18093,7 +18093,7 @@ linedirsakounika4 = {
 ###############################
 ### House Gumahar #############
 ###############################
-#Tribe on the border of Usakan LW
+#Tribe on the border of Usakan 
 
 linegumahar1 = {
     name = Jab_aka

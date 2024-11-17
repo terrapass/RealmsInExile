@@ -4939,7 +4939,7 @@ lineofmuzhur2 = {
     }
 }
 
-lineofmuzhur3 = { # LW ruler Grey Mountains
+lineofmuzhur3 = { #  ruler Grey Mountains
     name = N_u_zu
 
     dynasty = dynasty_muzhur
@@ -5059,7 +5059,7 @@ lineofyagrash2 = {
     }
 }
 
-lineofyagrash3 = { #LW Ruler Grey Mountains
+lineofyagrash3 = { # Ruler Grey Mountains
     name = Thirk
 
     dynasty = dynasty_yagrash
@@ -5103,7 +5103,7 @@ lineofyagrash3 = { #LW Ruler Grey Mountains
     }
 }
 
-lineofyagrash4 = { #LW ruler Grey Mountains
+lineofyagrash4 = { # ruler Grey Mountains
     name = Naakhu_u_rz
 
     dynasty = dynasty_yagrash
@@ -5158,7 +5158,7 @@ lineofyagrash4 = { #LW ruler Grey Mountains
 }
 
 ## Burzat
-lineofburzat = {	#LW Ruler, Grey Mountains
+lineofburzat = {	# Ruler, Grey Mountains
     name = Marluk
 
     dynasty = dynasty_burzat

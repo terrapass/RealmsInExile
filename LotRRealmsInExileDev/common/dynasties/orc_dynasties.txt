@@ -712,31 +712,31 @@ dynasty_morakh = { #Usakan Orcs
 	motto = dynn_morakh_motto
 }
 
-dynasty_raghash = { #Feuding Usakan Orcs LW
+dynasty_raghash = { #Feuding Usakan Orcs
 	name = dynn_raghash
 	culture = rukhashai
 	motto = dynn_raghash_motto
 }
 
-dynasty_burzat = { #Grey Mountain Orcs LW
+dynasty_burzat = { #Grey Mountain Orcs 
 	name = dynn_burzat
 	culture = worauthai_madur
 	motto = dynn_burzat_motto
 }
 
-dynasty_yagrash = {	#Grey Mountain Orcs LW
+dynasty_yagrash = {	#Grey Mountain Orcs 
 	name = dynn_yagrash
 	culture = worauthai_madur
 	motto = dynn_yagrash_motto
 }
 
-dynasty_muzhur = {	#Grey Mountain Orcs LW
+dynasty_muzhur = {	#Grey Mountain Orcs 
 	name = dynn_muzhur
 	culture = ghrazim
 	motto = dynn_muzhur_motto
 }
 
-dynasty_sark = {	#Grey Mountain Goblins LW
+dynasty_sark = {	#Grey Mountain Goblins 
 	name = dynn_sark
 	culture = hidesprouter_goblin
 	motto = dynn_sark_motto

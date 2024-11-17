@@ -1797,7 +1797,7 @@ lineoflokha11 = {
 
 ########### Fariyins ##########
 
-# LW Old lords of Lari
+#  Old lords of Lari
 lineoflari1 = {
     name = Kyatika_a_la_a_n
 
@@ -13961,7 +13961,7 @@ lineofnashar1brother2 = {
     }
 }
 
-#LW Line of lord of Imari and Harsarat before death
+# Line of lord of Imari and Harsarat before death
 lineofimarharsfather = {
     name = Ha_a_ramo_o_r 
     dynasty = dynasty_haramorsplit

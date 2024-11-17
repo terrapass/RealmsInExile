@@ -1454,7 +1454,7 @@ solardynasty27 = { # Alryn
 	}
 }
 
-# LW Cadet Branch of the Solar Dynasty - the House of Warriors
+#  Cadet Branch of the Solar Dynasty - the House of Warriors
 warriordynasty1 = { # Pô Qâldamâ
 	name = Po_o__Qa_a_ldama_a_
 	dynasty_house = house_warriorray
@@ -21261,7 +21261,7 @@ lineofnaryef13 = {
     }
 }
 
-# LW lords of Nara and later Acasha and Narator
+#  lords of Nara and later Acasha and Narator
 lineofnara1 = {
     name = Gyorad
 
@@ -22798,7 +22798,7 @@ lineofqalogos1 = {
     }
 }
 
-# LW Yargir Progenitors
+#  Yargir Progenitors
 lineofoldyargir2 = {
     name = Tiho_o_mo_o_r 
 

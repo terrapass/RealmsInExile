@@ -30864,7 +30864,7 @@ linezayares40 = {
 	}
 }
 
-# LW Arani who claim Tralwas, Ewatu and bow to the Trasara 
+#  Arani who claim Tralwas, Ewatu and bow to the Trasara 
 lineoftralwaslw1 = {
     name = Bra_a_limarh
 

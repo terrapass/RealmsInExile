@@ -46470,7 +46470,7 @@ linekhoronai23 = {
     }
 }
 
-### Line of Feaskian - Fishman lords of Dilgul for LW start date ###
+### Line of Feaskian - Fishman lords of Dilgul
 
 linefeaskian1 = {
     name = Ari_i_g
@@ -47159,7 +47159,7 @@ linefeaskian20 = {
     }
 }
 
-### Line of Sarandian ~ Chieftains of Sarand (Yeah, very creative, I get it) ~ LW start date ###
+### Line of Sarandian ~ Chieftains of Sarand (Yeah, very creative, I get it)
 
 linesarandian1 = {
     name = Retvir
@@ -47676,7 +47676,7 @@ linesarandian15 = {
     }
 }
 
-### Line of Efekian - up and coming rulers of Crispa, later crushed by Bountig // LW start date ###
+### Line of Efekian - up and coming rulers of Crispa, later crushed by Bountig //  start date ###
 
 lineefekian1 = {
     name = Khongiu

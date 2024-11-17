@@ -928,7 +928,7 @@ lotr_intro_events.4005 = { # Mt Gram orc intro - The Heart-ripper
 	}
 }
 
-lotr_intro_events.4006 = { # Azog, Lord of Moria - LW Start Date
+lotr_intro_events.4006 = { # Azog, Lord of Moria
 	content_source = realms_dlc
 	type = character_event
 	window = visit_settlement_window
