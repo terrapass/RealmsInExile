@@ -188,7 +188,7 @@ black_death_frequency = {
 		difficulty health historicity
 	}
 	
-	default = bd_frequency_once
+	default = bd_frequency_never
 	bd_frequency_once = {}
 	bd_frequency_unlimited = {}
 	bd_frequency_never = { flag = blocks_achievements }
