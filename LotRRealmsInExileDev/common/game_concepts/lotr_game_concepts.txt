@@ -59,11 +59,19 @@ wilderness = {
 
 wilderness_holding = {
 	alias = { wilderness_holdings }
+	parent = holding_type
+	texture = "gfx/interface/icons/concept_icons/conceptwilderness.dds"
+}
+
+ruined_holding = {
+	alias = { ruined_holdings }
+	parent = holding_type
 	texture = "gfx/interface/icons/concept_icons/conceptwilderness.dds"
 }
 
 settlement_holding = {
 	alias = { settlement_holdings }
+	parent = holding_type
 	texture = "gfx/interface/icons/concept_icons/conceptwilderness.dds"
 }
 
@@ -249,7 +257,7 @@ elven_city_limit = {
 }
 
 delving_holding = {
-	alias = { delving delvings }
+	alias = { delving delvings delving_holdings }
 	parent = holding_type
 	texture = "gfx/interface/icons/icon_holding_castle.dds"
 }
@@ -823,11 +831,19 @@ farharad = {
 	parent = harad
 	alias = { }
 }
+arpel = {
+	parent = conceptplace
+	alias = { loni_hisekhor hisielonde }
+}
+ardinak = {
+	parent = conceptplace
+	alias = {}
+}
 
 # Eastern Middle-earth
 rhun = {
 	parent = conceptplace
-	alias = { }
+	alias = { east }
 }
 seaofrhun = {
 	parent = rhun
@@ -928,7 +944,7 @@ bellakar = {
 }
 southerndragonarmy = {
 	parent = conceptmajorloreidea
-	alias = { southerndragonarmyadunaic }
+	alias = { southerndragonarmyadunaic stormhost}
 }
 anbalkumagan = {
 	parent = conceptplace
@@ -1499,6 +1515,9 @@ mothername = {
 fathername = {
 	parent = conceptmajorloreidea
 }
+whitecouncil = {
+	parent = conceptmajorloreidea
+}
 
 #conceptsailed_west={
 #	texture = "gfx/interface/icons/concept_icons/gone_westconcept.dds"
@@ -1721,9 +1740,3 @@ gem_elven_gems = {}
 ### Metallurgy Modifiers ###
 metallurgy_modifiers = {}
 enhancement_modifiers = {}
-
-ruined_holding = {}
-
-whitecouncil = {
-	parent = conceptmajorloreidea
-}

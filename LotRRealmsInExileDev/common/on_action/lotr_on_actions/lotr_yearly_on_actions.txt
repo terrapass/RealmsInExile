@@ -315,17 +315,28 @@ lotr_yearly_playable_pulse = {
 			limit = {
 				struggle:thani_hazad_struggle = {
 					any_involved_ruler = {
+						exists = dynasty
 						dynasty ?= { has_dynasty_modifier = old_order_triumphant_th_struggle_modifier }
+						is_landed = yes
 					}
 				}
 			}
 			struggle:thani_hazad_struggle = {
 				every_involved_ruler = {
-					limit = { dynasty ?= { has_dynasty_modifier = old_order_triumphant_th_struggle_modifier } }
+					limit = {
+						exists = dynasty
+						dynasty ?= { has_dynasty_modifier = old_order_triumphant_th_struggle_modifier }
+						is_landed = yes
+						NOT = { has_variable = catalyst_fired }
+					}
+					set_variable = {
+						name = catalyst_fired
+						months = 6
+					}
 					every_character_struggle = {
 						activate_struggle_catalyst = {
 							catalyst = catalyst_has_confederation_modifier
-							character = root
+							character = prev
 						}
 					}
 				}
@@ -695,6 +706,14 @@ lotr_five_year_everyone_pulse = {
 					}
 				}
 				set_global_variable = lotr_achievement_36
+			}
+			if = { # The First Shirereich | Achievement
+				limit = { 
+					NOT = { exists = global_var:lotr_achievement_37 }
+					root = character:lineofsaruman
+					current_military_strength >= 10000
+				}
+				set_global_variable = lotr_achievement_37
 			}
 		}
 	}

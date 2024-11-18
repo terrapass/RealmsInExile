@@ -81,6 +81,11 @@
  decision_claim_high_kingship_confirm:0 "Let the High-Kings once more oppose the Shadow"
  decision_claim_high_kingship_effect_tooltip:0 "Every [elf|E] in [lindon|E] vassalizes themselves to you."
 
+ convert_to_elven_government_decision: "Convert to Elven Government"
+ convert_to_elven_government_decision_desc: "This is no way for elves to govern, we must return to our traditional way of life."
+ convert_to_elven_government_decision_tooltip: "Convert to Elven Government"
+ convert_to_elven_government_decision_confirm: "Return to Elvendom"
+
  ### Maglor Decision ###
  decision_annihilate_abhorred:0 "Annihilate Sauron the Abhorred"
  decision_annihilate_abhorred_tooltip:0 "Destroy Morgoth's lieutenant once and for all" 
@@ -343,6 +348,7 @@
  decision_rebuild_royal_road_desc:0 "The Royal Road, to some known as the North-South-Road or the Greenway, has long since the destruction of the Kingdom of [arnor|E] fallen into disrepair. \n\nIf the road were to be rebuilt, trade would surely begin to flow once more from the northern lands, benefitting [eriador|E] and [gondor|E] alike."
  decision_rebuild_royal_road_tooltip:0 "You will begin rebuilding the Royal Road."
  decision_rebuild_royal_road_confirm:0 "Let the road be rebuilt!"
+ decision_rebuild_royal_road_tooltip_condition:0 "You control at least #V 70%#! of the [GetGeographicalRegion('special_royal_road').GetName] region"
  
  ##################################
  ### Reunited Kingdom Decisions ###
@@ -354,7 +360,6 @@
  decision_reunited_kingdom_confirm:0 "No longer divided, out of two, one."
  control_percentage_of_gondor_desc:1 "Control at least #V 90%#! of the [counties|E] of the [GetTitleByKey('e_gondor').GetName]"
  control_percentage_of_arnor_desc:1 "Control at least #V 90%#! of the [counties|E] of the [GetTitleByKey('e_arnor').GetName]"
-
 
  decision_solidify_reunited_kingdom:0 "Solidify the Reunited Kingdom"
  decision_solidify_reunited_kingdom_desc:0 "Despite our proclamation of [GetTitleByKey('e_reunitedkingdom').GetNameNoTier], our lack of control over the entirety of the kingdoms of [arnor|E] and [gondor|E] have had some look askance at our claim to be lords of a true Reunited Kingdom and all the [dunedain|E]. If we could put these doubts to rest by securing our control over the entirety of both of the constituent kingdoms, we could finally quell any remaining regionalism and permanently solidify it as an entity."
@@ -561,7 +566,6 @@
  decision_reclaim_dor_rhunen_desc:0 "The great Rómendacil claimed these lands for [gondor|E], but gradually they were lost through a combination of neglect and the machinations of the Enemy. After much strife they are ours again; wide lands ripe for settlement and fortification. \n\nLet us formalise our control, and announce to all that Dor Rhúnen is under the Sceptre now and forever!"
  decision_reclaim_dor_rhunen_confirm:0 "Dor Rhúnen is Gondorian again!"
  reclaim_dor_rhunen_decision:0 "Gondor's great eastern province will be formally returned to the sceptre."
- 
 
  decision_gondorian_renaissance:0 "Promote a Gondorian Renaissance"
  decision_gondorian_renaissance_desc:0 "Now that the Shadow has finally been vanquished, [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip] will be free. A new age of art and discovery awaits the [dunedain|E], now unburdened.\n\n#TOLKIENQUOTE "Darkness must pass, a new day will come. And when the sun shines, it will shine out the clearer."#!"
@@ -773,6 +777,11 @@
  rohan.0002.a:0 "We shall be one people, one Éothéod."
  rohan.0002.b:0 "Never... I will not abandon our ways!"
  
+ # decision_visit_dwimordene:0 "Visit the Dwimordene"
+ # decision_visit_dwimordene_desc:0 "The Dwimordene is an enchanted forest, shrouded in mists. Some say, a powerful fey rules these lands. Some even suggest visiting this forest in order to receive the fey's guidance..."
+ # decision_visit_dwimordene_tooltip:0 "Travel to the Golden Wood and meet its ruler."
+ # decision_visit_dwimordene_confirm:0 "I shall make for the Dwimordene."
+ 
  ###################################
  ####### Enedwaith Decisions #######
  ###################################
@@ -826,8 +835,6 @@
  decision_annex_east_forodwaith_tooltip:0 "Assimilate the western marches into our realm"
  decision_annex_east_forodwaith_desc:0 "The folk of East Forodwaith have deep ties with the Angmarrim. Now that they recognize my sway, we must bring them more fully under our control. They must learn to serve and fear me as their kinsmen do."
  decision_annex_east_forodwaith_confirm:0 "Their rightful place!"
-
-
 
  decision_subjugate_the_ettenmoors:0 "Subjugate the Ettenmoors"
  decision_subjugate_the_ettenmoors_tooltip:0 "You notice the presence of Hill-trolls roaming in the Ettenmoors. Maybe they could serve to a greater purpose..."
@@ -943,15 +950,15 @@
  decision_reclaim_ray_desc:0 "In the first days, our people wrought mighty things, learning from the Ancient Ones who awoke beneath the stars, and the Spirits that dwelt among us. Then the Strangers came out of the east. For a time we dwelt in harmony, but they grew to distrust and hate us, pushing us into the forest of Sûza Sûmar with their ever swelling numbers. We forgot much we once knew, and became a simple people, barely able to maintain the great stone buildings we once had raised. But perhaps, if we could push back against the invaders, we could reclaim our lost stature..."
  decision_reclaim_ray_confirm:0 "Sûzush Agkhôr is our homeland!"
 
- decision_recreate_zajantak:0 "Recreate the Kingdom of Zajantak"
- decision_recreate_zajantak_tooltip:0 "Restore the War-kingdom of the Forest by taking back its heartlands, and prepare a mighty blow against the Stormhost"
- decision_recreate_zajantak_desc:0 "In long years past, we were a simple people - the folk of our tribes, living as savages in the forest, lived and died as they could, worthy of no song or tale. Then the Sea-kings sailed up the river Zaja, and united us into one great kingdom - Zajantak, the Forest of Zaja. For long years have we fought against the descendants of the Sea-kings - the Thôn an-Khârlôkh, who have enslaved our miserable kin - but now we are scattered, with petty chieftains vying for some little semblance of power. But the forest must unite once more - under my rule, Zajantak shall be restored. Never again shall we be slaves!"
- decision_recreate_zajantak_confirm:0 "There was a dream that once was [GetTitleByKey('k_zajantak').GetNameNoTier]..."
+ decision_recreate_zajantak:0 "Unite the Kingdom of Zajantak"
+ decision_recreate_zajantak_tooltip:0 "Unite the War-kingdom by consolidating its heartlands, and prepare a mighty blow against the Stormhost"
+ decision_recreate_zajantak_desc:0 "In long years past, we were a simple people: dwelling as savages in the forest, living and dying as we could, worthy of no great song or tale. For time to time we might unite behind a great War-King against an outside threat, but never all, and never for long. Through long years have we fought against the descendants of the Sea-kings - the [southerndragonarmyadunaic|E], who have enslaved our miserable kin - but now we are scattered, with petty chieftains vying for some little semblance of power. But the forest must unite once more - and under my rule, Zajantak shall triumph. Never again shall we be slaves!"
+ decision_recreate_zajantak_confirm:0 "[GetTitleByKey('k_zajantak').GetNameNoTier] arises!"
 
  decision_break_stormhost_power:0 "Free your kinsmen from the Stormhost"
  decision_break_stormhost_power_tooltip:0 "Set your forces against the Stormhost to free a portion of your peoples from the Adûnâi"
- decision_break_stormhost_power_desc:0 "Zajantak is restored, and the Stormhost quavers. Without the power of the Storm-Sorceror, the Adûnâim have grown weak and impotent, and yet they still clutch onto the yoke with the last vestiges of their strength. More and worse, they have grown crueler since the restoration of our kingdom, and whatever of our kinsmen that have not been destroyed by their new deprativies are bleeding from a sharper lash, keen with new sadism.\n\nWe cannot assail the Stormhost in entire - but we shall chip away at the chains that hold our kinsmen. Vengeance comes, and with bloody blade!"
- decision_break_stormhost_power_confirm:0 "Never again shall we be slaves!"
+ decision_break_stormhost_power_desc:0 "Zajantak is united, and the [stormhost|E] quavers. Without the power of the [stormking|E], the Adûnâi have grown weak and impotent, and yet they still clutch onto the yoke with the last vestiges of their strength. More and worse, they have grown crueler since the restoration of our kingdom, and whatever of our kinsmen that have not been destroyed by their new deprativies are bleeding from a sharper lash, keen with new sadism.\n\nWe cannot assail the Stormhost in entire - but we shall chip away at the chains that hold our kinsmen. Vengeance comes, and with bloody blade!"
+ decision_break_stormhost_power_confirm:0 "Never again shall they be slaves!"
  
  ################################
  ####### Tedjin Decisions #######
@@ -995,6 +1002,7 @@
  decision_integrate_tulwang_tooltip:0 "Reintegrate Tûlwang, one of the Seven Dominions of Thâni-Hazâd"
  decision_integrate_tulwang_desc:0 "For too long the realms of Thâni-Hazâd were separate petty fiefdoms, bickering and warring against each other, but now that I have unified the Seven Lands, it is important to reintegrate those lands that have slipped out of our control. Tûlwang is the Seventh Realm of Thâni-Hazâd, yet today it is seen by many as an extension of a greater Bôzishnarûd realm, therefore, now that we have established a firm grip in Tûlwang, it is important to ensure that the world recognises this region as ours."
  decision_integrate_tulwang_confirm:0 "The Seven Lands united"
+ decision_integrate_tulwang_an_balkumagan_priamry_title:0 "Either [GetTitleByKey('e_anbalkumagan').GetNameNoTier] or [GetTitleByKey('e_pharazain').GetNameNoTier] is your primary title"
 
  decision_murder_bellakar:0 "Invade Bellakar"
  decision_murder_bellakar_tooltip:0 "Pretty Self Explanitory"
@@ -1123,6 +1131,7 @@
  decision_harnen_submission_tooltip:0 "Reclaim the mouth of the Harnen from the proud Umbareans"
  decision_harnen_submission_desc:0 "The Umbareans too long have had free reign over the mouth of the Harnen. They tax our trade from it, and could possibly even close it to us completely. If we wish to restore our hegemony over Near Harad, we will need to put them in their place."
  decision_harnen_submission_confirm:0 "The Harnen is mine!"
+ decision_harnen_submission.tt:0 "The Umbareans along the Harnen will receive your demands..."
   
  decision_repulse_khand_lurmsakun:0 "Repulse Khand's claim to Lurmsakun"
  decision_repulse_khand_lurmsakun_tooltip:0 "Shift Lurmsakun from Khand to Haradwaith"
@@ -1145,6 +1154,11 @@
  decision_arysor_trade_dominance_desc:0 "For most of our history, the Arysori have been content to live divided along clan borders, at most loosely united under a weak, decentralized confederation. But with my families' rise to prominence and the greatly increased trade flowing through our lands, an opportunity to solidly establish ourselves and the [GetTitleByKey('k_arysis').GetName] as a proper monarchy, more akin to our northern cousins by the Harnen, arrives."
  decision_arysor_trade_dominance_tooltip:0 "You will elevate [GetTitleByKey('k_arysis').GetNameNoTier] to a centralized trade-kingdom at the heart of the eastern [haradric|E] trade routes, with yourself as its King."
  decision_arysor_trade_dominance_confirm:0 "United, we will prosper."
+
+ decision_restore_ancient_lurmsakun:0 "Restore Ancient Lurmsakun"
+ decision_restore_ancient_lurmsakun_tooltip:0 "Restore ancient borders of Lurmsakun"
+ decision_restore_ancient_lurmsakun_desc:0 "For countless generations, Lurmsakun has suffered the depredations of Khand's cruel raids and overlordship. Yet after the migration of Tedjin our ancestors overthrow their Khandish overlords and created a great kingdom which lasted for several hundreds years. If we reclaim ancient borders of Lurmsakun of old, we will restore the former glory of this kingdom and perhaps finally put an end to Khand's claims of lordship over the region."
+ decision_restore_ancient_lurmsakun_confirm:0 "Never again kneel!"
  
  recruit_witch_decision:0 "Recruit a Witch"
  recruit_witch_decision_desc:0 "Recruit a witch to your court, to serve as an advisor from the shadows."
@@ -1180,10 +1194,9 @@
  decision_khand_stabilise_successions_ruled_for_three_generations:0 "The last three [rulers|E] of the [GetTitleByKey('e_khand').GetName] are of your [dynasty|E]"
  EFFECT_REMOVE_VARIAG_SUCCESSION:0 "Your [culture|E] will replace the [GetCultureTradition('tradition_variag_succession').GetName] [tradition|E] with [GetCultureTradition('tradition_variag_succession_stable').GetName]."
 
- 
- #############################
+ ###############################
  #### Anduin Vale Decisions ####
- #############################
+ ###############################
 
  decision_aladegana:0 "Become the Aladegan"
  decision_aladegana_tooltip:0 "Unify the Men of Wood & Vale under one crown"
@@ -1241,8 +1254,6 @@
  decision_margoz_prepare_easterling_host:0 "A Golden Igath Host"
  decision_margoz_prepare_easterling_host_tooltip:0 "A treasury on the march"
  decision_margoz_prepare_easterling_host_desc:0 "My predecessor made much progress on a great host with which to march on the wine-peddlers of [dorwinion|E]. Yet his selfish and short-sighted heir has kept those men for his own disloyal purposses. I must finish the previous Lôke-Kân's work in the west, before I can reclaim Szrel-Kain from the [dorwinrim|E]."
-
- 
 
  decision_margoz_prepare_easterling_host_confirm:0 "Vintage Wine and Crimson Blood, Shall Flow as One"
  
@@ -1346,7 +1357,6 @@
  decision_dominion_of_the_sorcerer.check_evil_trigger:0 "There is at least one [ruler|E] with an Evil [faith|E] within [GetTitleByKey('k_amon_lanc').GetNameNoTier]"
  DESECRATE_CARAS_GALADHON_DONE:0 "The Desecrate Caras Galadhon [decision|E] is done"
  DESECRATE_ARADHRYND_DONE:0 "The Desecrate Aradhrynd [decision|E] is done"
- 
  
  decision_subjugate_mount_gundabad:0 "Subjugate Mount Gundabad"
  decision_subjugate_mount_gundabad_desc:0 "Once, the orcs of [gundabad|E] and men of Langwell paid homage to [witchking|E] of [angmar|E], supplying his armies with bodies and supplies. In those days that land became known as [eastangmar|E]. Now the time has come for them to acknowledge another master."
@@ -1469,10 +1479,21 @@
  decision_restore_durin_throne_confirm:0 "Our Glory Restored"
  durin_hall_upgrade_holding_tooltip:0 "The Delving in [GetTitleByKey('b_durins_hall').GetNameNoTier] will be upgraded two levels. If it cannot be upgraded two levels, for every level it would otherwise have upgraded [GetTitleByKey('c_durins_hall').GetNameNoTier] will recieve 5 [development|E]."
 
- decision_reunite_yellow_mountains:0 "TEMP Title"
- decision_reunite_yellow_mountains_desc:0 "TEMP Desc"
- decision_reunite_yellow_mountains_tooltip:0 "TEMP Tooltip"
- decision_reunite_yellow_mountains_confirm:0 "TEMP Confirm"
+ decision_reunite_yellow_mountains:0 "Unite the Yellow Mountains"
+ decision_reunite_yellow_mountains_desc:0 "For many years, we [blacklocks|E] have settled in the Yellow Mountains, fighting against the [goblins|E] and other filth that infested the Mountains. Although we have in the past attempted to united both the southern and northern parts of these mountains, the attempt was short-lived and unsuccesful. Yet that attempt was made centuries ago, and once more the opportunity presents itself to us. Let the mighty sons of Thrár the Proud who have inhabited these ancient mountains for untold years be at last united!"
+ decision_reunite_yellow_mountains_tooltip:0 "The Yellow Mountains shall be united!"
+ decision_reunite_yellow_mountains_confirm:0 "No longer divided, but one!"
+ 
+ decision_colonise_erebor:0 "Return to Erebor"
+ decision_colonise_erebor_tooltip:0 "Restore the Lonely Mountain"
+ decision_colonise_erebor_desc:0 "The Longbeard people have lost home after home. Gunduzbad; The waking spot of Durin. Khazad-Dum; The home our people ruled from under Durin and now Erebor; The Lonely Mountain. \n"
+ decision_colonise_erebor_pre_smaug:0 "Ousted from the mountain but never forgetting it. We may have lost Erebor but we will retake it! \n\n"
+ decision_colonise_erebor_post_smaug:0 "Ousted from the mountain by Smaug, having lost our home and our King, our spirits are low but we will never forget our mountain. We will retake Erebor! \n\n"
+ decision_colonise_erebor_post_thorin:0 "Ousted from Erebor again! We lost our mountain to Smaug and Thorin took it back. Only for use to lose it a second time. But we will not give up! We will retake the Lonely Mountain! \n\n"
+ decision_colonise_erebor_outro:0 "We will take back our home! We are the Dwarves of Durin and our King is the King Under the Mountain!"
+ decision_colonise_erebor_confirm:0 "Reclaim the Mountain!"
+
+ colonises_erebor:0 "The [GetTitleByKey('b_throne_of_erebor').GetNameNoTier] is reclaimed by you"
 
  #####################################
  #### Artifact Crafting Decisions ####
@@ -1604,8 +1625,8 @@
  ###     Thani Hazad    ###
  ##########################
 
- decision_conquest_of_pel:0 "Conquest of Pel"
- decision_conquest_of_pel_desc:0 "For countless years, the Magrin people have desired to incorporate Pel into their twin realms. With the kingdom secured, we may secure it as a core part of the Twin Crowns."
+ decision_conquest_of_pel:0 "Conquest of Pél"
+ decision_conquest_of_pel_desc:0 "For countless years, the Magrin people have stuggled over Pél, even before the Adûnâi came to that land. With the kingdom secured, we may now proclaim it once again as a core part of the Twin Crowns."
  decision_conquest_of_pel_confirm:0 "From Twin Crowns to Three"
  decision_conquest_of_pel_tooltip:0 "From Twin Crowns to Three"
  
@@ -1664,7 +1685,7 @@
  decision_settle_lowlands_desc:0 "For half an age we have contented ourselves with the occasional raid into Tantûrak, keeping mainly to our mountain dwellings. More and more, now, we find ourselves migrating into the lowlands. Perhaps it is time to embrace our new home."
  decision_settle_lowlands_confirm:0 "Settle the Lowlands"
  decision_settle_lowlands_tooltip:0 "Abandon your mountaineering way of life"
- decision_remove_rukhashai_tradition_1:0 "Loses the [GetCultureTradition('tradition_mountaineers').GetName] [tradition|E]"
+ decision_remove_rukhashai_tradition_1:0 "Loses the [GetCultureTradition('tradition_mountain_homes').GetName] [tradition|E]"
  decision_rukhashai_new_tradition_1:0 "Gains the [GetCultureTradition('tradition_jungle_dwellers').GetName] [tradition|E]"
  
  decision_volcano_forges:0 "Harness the High Forges"
@@ -1717,6 +1738,22 @@
  ############################
  ### Adventurer Decisions ###
  ############################
+ settle_wilderness_county_or_duchy_decision:0 "Settle Region"
+ settle_wilderness_county_or_duchy_decision_desc:0 "Settle the local region, becoming a landed ruler and leaving behind your adventuring days."
+ settle_wilderness_county_or_duchy_decision_tooltip:0 "Settle the local region, becoming a landed [ruler|E]"
+ settle_one_county:0 "Settle the immediate [county|E]"
+ settle_one_county_tooltip:0 "$settle_one_county$"
+ settle_one_county_desc:0 ""
+ settle_duchy:0 "Attempt to settle the [duchy|E]"
+ settle_duchy_tooltip:0 "$settle_duchy$"
+ settle_duchy_desc:0 ""
+ settle_wilderness_county_or_duchy_decision_confirm:0 "It is time to make a home..."
+ settle_wilderness_county_or_duchy_basic_effect:0 "For every #V 500#! Men-at-Arms, you will settle #P 1#! [county|E]"
+ settle_wilderness_county_or_duchy_current_settle_limit_effect:0 "Current counties that can be settled: #V [GetPlayer.MakeScope.ScriptValue('lotr_settle_wilderness_as_adventurer_county_limit')]#!"
+ settle_wilderness_county_or_duchy_destroy_maa_effect:0 "#V 50%#! of your Men-at-Arms will be destroyed!"
+ settle_wilderness_county_or_duchy_not_enough_maa_tt:0 "You do not have enough Men-at-Arms"
+ settle_wilderness_duchy_has_underground_counties:0 "There are underground counties in this [duchy|E] which will #N not#! be settled."
+
  ### start_city_construction_decision
  county_is_wilderness_culture_tt:0 "County is not settled"
 

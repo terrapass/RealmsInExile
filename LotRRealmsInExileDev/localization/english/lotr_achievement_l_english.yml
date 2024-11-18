@@ -1,7 +1,7 @@
 ﻿l_english:
  tab_achievement:0 "#T Realms In Exile: Achievements#!"
  ACHIEVEMENT:0 "#bold Realms In Exile: Achievements#!"
- cross_save_tt:0 "#I You need to enable tutorials in the settings to make achievements cross save compatible!#!"
+ cross_save_tt:0 "#I You need to enable the `Show Reactive Advice` in the settings under the Game Tab to make achievements cross save compatible (and keep it enabled)!#!"
  i_understand_tt_enabled:0 "I Understand"
 
  # lotr_extremely_easy_achievements:0 "Extremely Easy [EmptyScope.ScriptValue('lotr_achievement_extremely_easy_unlocked')|0]/1"
@@ -401,18 +401,6 @@
  lesson_achievement_73_desc_tt:0 "As a character with [GetTrait('blood_of_numenor_5').GetName( GetNullCharacter )] or higher, make sure the Pharazôniath [dynasty|E] of [GetTitleByKey('e_adunaim').GetNameNoTier] goes extinct"
  achievement_73:0 "Pretenders Out!"
  achievement_73_tt:1 "$lesson_achievement_73_desc_tt$"
- 
- # To the King! # Medium
- action_achievement_74_alert_tt:0 "#T $action_achievement_74_alert$#!\n\n$RIGHT_CLICK_DISMISS$"
- action_achievement_74_alert:0 "Loading Achievement 74" 
- action_achievement_74_alert_desc:0 ""
- action_achievement_74_alert_click:0 ""
- 
- lesson_achievement_74:0 "Achievement Gained"
- lesson_achievement_74_desc:1 "You gained achievement, #V To the King!#!"
- lesson_achievement_74_desc_tt:0 "As King Dáin of [GetTitleByKey('k_erebor').GetNameNoTier], hold the [kingdoms|E] of [GetTitleByKey('k_khazad_dum').GetNameNoTier] and [GetTitleByKey('k_gundabad').GetNameNoTier], and the [duchy|E] of the [GetTitleByKey('d_glittering_caves').GetNameNoTier]"
- achievement_74:0 "To the King!"
- achievement_74_tt:1 "$lesson_achievement_74_desc_tt$"
 
  # But you have heard of me? # Medium
  action_achievement_65_alert_tt:0 "#T $action_achievement_65_alert$#!\n\n$RIGHT_CLICK_DISMISS$"
@@ -450,6 +438,18 @@
  lesson_achievement_63_desc_tt:0 "As a [noldor|E] [elf|E], have a [dunedain|E] vassal of king rank or higher, who is your [friend|E]"
  achievement_63:0 "Finrod and Beor"
  achievement_63_tt:1 "$lesson_achievement_63_desc_tt$"
+ 
+ # A King on Carven Throne
+ action_achievement_20_alert_tt:0 "#T $action_achievement_20_alert$#!\n\n$RIGHT_CLICK_DISMISS$"
+ action_achievement_20_alert:0 "Loading Achievement 20" 
+ action_achievement_20_alert_desc:0 ""
+ action_achievement_20_alert_click:0 ""
+ 
+ lesson_achievement_20:0 "Achievement Gained" 
+ lesson_achievement_20_desc:1 "You gained achievement, #V A King on Carven Throne#!"
+ lesson_achievement_20_desc_tt:0 "As a member of the House of [durin|E], hold [GetTitleByKey('k_khazad_dum').GetNameNoTier]"
+ achievement_20:0 "A King on Carven Throne"
+ achievement_20_tt:1 "$lesson_achievement_20_desc_tt$"
  
  ######################
  ###      Hard      ###
@@ -491,18 +491,18 @@
  lesson_achievement_14_desc_tt:0 "With [GetTitleByKey('k_ray').GetNameNoTier] as your [primary_title|E], execute 200 people (#V [EmptyScope.ScriptValue('lotr_death_ray_total_kills')|0]#! left)"
  achievement_14:0 "My new Death-Ray"
  achievement_14_tt:1 "$lesson_achievement_14_desc_tt$"
+
+ # To the King!
+ action_achievement_74_alert_tt:0 "#T $action_achievement_74_alert$#!\n\n$RIGHT_CLICK_DISMISS$"
+ action_achievement_74_alert:0 "Loading Achievement 74" 
+ action_achievement_74_alert_desc:0 ""
+ action_achievement_74_alert_click:0 ""
  
- # A King on Carven Throne
- action_achievement_20_alert_tt:0 "#T $action_achievement_20_alert$#!\n\n$RIGHT_CLICK_DISMISS$"
- action_achievement_20_alert:0 "Loading Achievement 20" 
- action_achievement_20_alert_desc:0 ""
- action_achievement_20_alert_click:0 ""
- 
- lesson_achievement_20:0 "Achievement Gained" # Hard 
- lesson_achievement_20_desc:1 "You gained achievement, #V A King on Carven Throne#!"
- lesson_achievement_20_desc_tt:0 "As a member of the House of [durin|E], hold [GetTitleByKey('k_khazad_dum').GetNameNoTier]"
- achievement_20:0 "A King on Carven Throne"
- achievement_20_tt:1 "$lesson_achievement_20_desc_tt$"
+ lesson_achievement_74:0 "Achievement Gained"
+ lesson_achievement_74_desc:1 "You gained achievement, #V To the King!#!"
+ lesson_achievement_74_desc_tt:0 "As King Dáin of [GetTitleByKey('k_erebor').GetNameNoTier], hold the [kingdoms|E] of [GetTitleByKey('k_khazad_dum').GetNameNoTier] and [GetTitleByKey('k_gundabad').GetNameNoTier], and the [duchy|E] of the [GetTitleByKey('d_glittering_caves').GetNameNoTier]"
+ achievement_74:0 "To the King!"
+ achievement_74_tt:1 "$lesson_achievement_74_desc_tt$"
  
  # All shall love me and despair!
  action_achievement_06_alert_tt:0 "#T $action_achievement_06_alert$#!\n\n$RIGHT_CLICK_DISMISS$"
@@ -809,7 +809,7 @@
  
  lesson_achievement_26:0 "Achievement Gained"
  lesson_achievement_26_desc:1 "You gained achievement, #V Last King of the Elder Days#!"
- lesson_achievement_26_desc_tt:0 "As Aragorn, defeat [sauroncharacter|E] and take all [decisions|E] relating to the [GetTitleByKey('e_reunited_kingdom').GetNameNoTier] before the age of 150"
+ lesson_achievement_26_desc_tt:0 "As Aragorn, defeat [sauroncharacter|E] and take all [decisions|E] relating to the [GetTitleByKey('e_reunitedkingdom').GetNameNoTier] before the age of 150"
  achievement_26:0 "Last King of the Elder Days"
  achievement_26_tt:1 "$lesson_achievement_26_desc_tt$"
   
@@ -943,7 +943,7 @@
  
  lesson_achievement_77:0 "Achievement Gained"
  lesson_achievement_77_desc:1 "You gained achievement, #V Gor-good#!"
- lesson_achievement_77_desc_tt:0 "As the [orc|E] Gorbad of Mirkwood, stay neutral with the [lasgalendrimelves|E] and [dalemen|E], and expand to take [GetTitleByKey('k_dol_guldur').GetNameNoTier] from [khamulshadwoftheeast|El]"
+ lesson_achievement_77_desc_tt:0 "As the [orc|E] Gorbad of Mirkwood, stay neutral with the [lasgalendrimelves|E] and [dalemen|E], and expand to take [GetTitleByKey('k_amon_lanc').GetNameNoTier] from [khamulshadwoftheeast|El]"
  achievement_77:0 "Gor-good"
  achievement_77_tt:1 "$lesson_achievement_77_desc_tt$"
 
@@ -968,7 +968,7 @@
  
  lesson_achievement_79:0 "Achievement Gained"
  lesson_achievement_79_desc:1 "You gained achievement, #V Brother's Keeper#!"
- lesson_achievement_79_desc_tt:0 "As Aglarin of [GetTitleByKey('k_madruak').GetNameNoTier], reform your father's [kingdom|E] without killing any of your brothers"
+ lesson_achievement_79_desc_tt:0 "As Aglarin of [GetTitleByKey('k_mardruak').GetNameNoTier], reform your father's [kingdom|E] without killing any of your brothers"
  lesson_achievement_79_main_menu_desc_tt:0 "As Aglarin of Mardruak, reform your father's [kingdom|E] without killing any of your brothers"
  achievement_79:0 "Brother's Keeper"
  achievement_79_tt:1 "$lesson_achievement_79_desc_tt$"

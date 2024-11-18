@@ -147,8 +147,8 @@
  ## Kinn-lai ##
  annammon_kin:0 "Annammon-Kin"
  annammon_kin_flavor:0 "The Mûmakil of the Kinn-lai bond with their handlers at a young age, training and perfecting their technique over the course of decades, until, it is said, both beast and rider share a single mind."
- kinnlai_skirmishers:0 "Kinn-lai Skirmishers"
- kinnlai_skirmishers_flavor:0 "Kinn-lai skirmishers are used to both hand-to-hand and other types of combat."
+ kinnlai_skirmishers:0 "Kinn-lai Masters"
+ kinnlai_skirmishers_flavor:0 "Martial artists skilled in the ways of unarmed combat, Kinn-lai Masters train both their body and soul."
  
  ### Dwarven ###
  ## Longbeards ##
@@ -195,11 +195,11 @@
  blacklock_heavy_infantry:0 "Azâruk'Azâgh" #Masters of War
  blacklock_heavy_infantry_flavor:0 ""Masters of War" are renowned and feared by all servants of the great enemy. Adept in many climates and terrain. Many peoples from Mumakan to Womawas have avoided turning to shadow by these champions, whose skill is only rivaled by zeal."
  blacklock_crossbowmen:0 "Isbêj Tahfâ'urd" #Yellow Mountains Scouts
- blacklock_crossbowmen_flavor:0 "The "Yellow Mountains Scouts" venture across " 
+ blacklock_crossbowmen_flavor:0 "The "Yellow Mountains Scouts" venture across the hillsides, always on the watch for their foul foes." 
  blacklock_pikemen:0 "Naikhdiri" #Companion Wall
  blacklock_pikemen_flavor:0 "Blacklock warriors spend more time with their brothers in arms than their families. becoming true "Companion Walls". Wether guarding War Mansions while the host is on campaign, or fighting as mercenaries, they are always prepared for combat."
  blacklock_engineers:0 "Blacklock Engineers"
- blacklock_engineers_flavor:0 ""
+ blacklock_engineers_flavor:0 "Masters of constuction and excavation, these Dwarves can both swifty raise and lower halls. They are armed with "Blacklock powder", a inelegant excavation tool now turned to martial work."
 
  ## Stiffbeards ##
  stiffbeard_skirmishers:0 "Zarsthu Balrâk" #Frigid Forest Wardens
@@ -335,6 +335,10 @@
  ### Maia ###
  rabbit_riders:0 "Rabbit Riders"
  rabbit_riders_flavor:0 "#F Trained by Radagast the Brown himself, these trusty sleds rule the battlefields of the [anduinvale|E].#!"
+
+### Usakani ###
+usakani_ambushers:0 "Ûsakani Ambushers"
+usakani_ambushers_flavor:0 "Expert harriers and saboteurs, Ûsakani Ambushers attack by stealth, before slipping back into the jungle undetected."
 
  ### Sederi ###
  impali_tribesmen:0 "Impali Tribesmen"

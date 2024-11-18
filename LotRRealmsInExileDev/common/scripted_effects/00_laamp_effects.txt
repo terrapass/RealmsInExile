@@ -9,9 +9,12 @@ apply_saharan_provisions_debuff_effect = {
 	if = {
 		limit = {
 			# geographical_region = custom_sahara_proper #LotR
+			geographical_region = middleearth_haradwaith_far_dune_sea
 			OR = {
 				terrain = desert
 				terrain = desert_mountains
+				terrain = dune_sea
+				terrain = red_desert
 			}
 		}
 		add_province_modifier = world_africa_sahara_provisions_usage_multiplier_modifier
@@ -69,7 +72,8 @@ populate_location_with_contracts_effect = {
 				laamp_contracts_learning_group
 				laamp_contracts_martial_group
 				laamp_contracts_stewardship_group
-				laamp_contracts_justicar_group 
+				laamp_contracts_justicar_group
+				laamp_contracts_ranger_group
 			}
 		}
 		# Then flag our new contracts (again, if necessary).
@@ -1234,7 +1238,7 @@ remove_laamp_from_exiled_county_automatically_effect = {
 						}
 					}
 					order_by = {
-						title_province = { add = "squared_distance(scope:province_to_exit)" }
+						title_capital_county = { add = "squared_distance(scope:province_to_exit)" }
 						multiply = -1
 					}
 					random_de_jure_county = {
@@ -1558,6 +1562,27 @@ relation_increase_harrying_stats_effect = {
 				}
 			}
 			ep3_increase_$STAT$_effect = { AMOUNT = harrying_miniscule_increase_value }
+		}
+	}
+}
+
+###########################
+# City Construction Effects
+laamp_city_builder_construction_effect = {
+	if = {
+		limit = {
+			has_character_flag = laamp_city_builder_$FLAG$_upgrade
+		}
+		scope:city_location = {
+			add_building = $BUILDING$_03
+		}
+	}
+	else_if = {
+		limit = {
+			has_character_flag = laamp_city_builder_$FLAG$
+		}
+		scope:city_location = {
+			add_building = $BUILDING$_02
 		}
 	}
 }

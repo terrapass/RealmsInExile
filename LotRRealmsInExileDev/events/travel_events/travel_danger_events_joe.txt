@@ -185,6 +185,7 @@ travel_danger_events.6000 = { #Animal attack
 	}
 
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_high }
 		mp_delay_travel_plan = { DAYS = 90 }
 		save_scope_as = root_scope
 		save_scope_as = big_local_game
@@ -501,6 +502,7 @@ travel_danger_events.6010 = { #Siege
 	}
 
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
 		mp_delay_travel_plan = { DAYS = 90 }
 		location = {
 			province_owner = { save_scope_as = siege_victim }
@@ -768,14 +770,16 @@ travel_danger_events.6010 = { #Siege
 				current_travel_plan = {
 					if = {
 						limit = {
-							any_entourage_character = { is_adult = yes }
+							#any_entourage_character = { is_adult = yes }
+							any_entourage_character = { is_lotr_adult = yes }
 						}
 				random = {
 					chance = 50
 					custom_tooltip = travel_danger_events.6010.c.wound
 					hidden_effect = {
 							random_entourage_character = {
-								limit = { is_adult = yes }
+								#limit = { is_adult = yes }
+								limit = { is_lotr_adult = yes }
 								weight = {
 									base = 1
 									modifier = { add = prowess }
@@ -986,6 +990,7 @@ travel_danger_events.6011 = { #Battal
 	}
 
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_medium }
 		mp_delay_travel_plan = { DAYS = 90 }
 		location = {
 			ordered_army_in_location = {
@@ -1327,7 +1332,8 @@ travel_danger_events.6011 = { #Battal
 					hidden_effect = {
 						current_travel_plan = {
 							random_entourage_character = {
-								limit = { is_adult = yes }
+								#limit = { is_adult = yes }
+								limit = { is_lotr_adult = yes }
 								weight = {
 									base = 1
 									modifier = { add = prowess }
@@ -1506,6 +1512,7 @@ travel_danger_events.6012 = { #Army
 	}
 
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
 		mp_delay_travel_plan = { DAYS = 90 }
 		location = {
 			ordered_army_in_location = {
@@ -1742,7 +1749,8 @@ travel_danger_events.6012 = { #Army
 					limit = {
 						current_travel_plan = { 
 							any_entourage_character = {
-								is_adult = yes
+								#is_adult = yes
+								is_lotr_adult = yes
 							}
 						}
 					}
@@ -1752,7 +1760,8 @@ travel_danger_events.6012 = { #Army
 					hidden_effect = {
 						current_travel_plan = {
 							random_entourage_character = {
-								limit = { is_adult = yes }
+								#limit = { is_adult = yes }
+								limit = { is_lotr_adult = yes }
 								weight = {
 									base = 1
 									modifier = { add = prowess }
@@ -1921,6 +1930,7 @@ travel_danger_events.6013 = { #Occupation
 	}
 
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
 		mp_delay_travel_plan = { DAYS = 90 }
 		location = {
 			barony.barony_controller = { save_scope_as = occupy_owner }
@@ -2160,7 +2170,8 @@ travel_danger_events.6013 = { #Occupation
 					limit = {
 						current_travel_plan = {
 							any_entourage_character = {
-								is_adult = yes
+								#is_adult = yes
+								is_lotr_adult = yes
 							}
 						}
 					}
@@ -2170,7 +2181,8 @@ travel_danger_events.6013 = { #Occupation
 						hidden_effect = {
 							current_travel_plan = {
 								random_entourage_character = {
-									limit = { is_adult = yes }
+									#limit = { is_adult = yes }
+									limit = { is_lotr_adult = yes }
 									weight = {
 										base = 1
 										modifier = { add = prowess }
@@ -2342,6 +2354,7 @@ travel_danger_events.6020 = { #Craig
 	}
 
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_medium }
 		mp_delay_travel_plan = { DAYS = 90 }
 		current_travel_plan = {
 			#Save travel leader
@@ -2471,10 +2484,12 @@ travel_danger_events.6030 = { #Spoiled food
 
 	trigger = {
 		current_travel_plan.days_travelled >= 15
-		is_adult = yes
+		#is_adult = yes
+		is_lotr_adult = yes
 		current_travel_plan = {
 			any_entourage_character = {
-				is_adult = yes
+				#is_adult = yes
+				is_lotr_adult = yes
 				NOT = { this = root }
 			}
 		}
@@ -2507,17 +2522,20 @@ travel_danger_events.6030 = { #Spoiled food
 			else = {
 				random_entourage_character = {
 					limit = {
-						is_adult = yes
+						#is_adult = yes
+						is_lotr_adult = yes
 						is_courtier_of = root
 					}
-					alternative_limit = { is_adult = yes }
+					#alternative_limit = { is_adult = yes }
+					alternative_limit = { is_lotr_adult = yes }
 					save_scope_as = travel_leader
 				}
 			}
 			#Save highest learning character - used for foraging
 			ordered_entourage_character = {
 				limit = {
-					is_adult = yes
+					#is_adult = yes
+					is_lotr_adult = yes
 					NOT = { this = root }
 				}
 				order_by = learning
@@ -2782,7 +2800,9 @@ travel_danger_events.6030 = { #Spoiled food
 						desc = travel_danger_events.6030.b.death
 						min = 1
 						trigger = {
-							is_location_valid_for_travel_event_on_land = yes }
+							is_location_valid_for_travel_event_on_land = yes
+							cannot_be_killed = no
+						}
 						#Chances of finding a deadly poisonous fish on the game map is low
 						compare_modifier = {
 							value = scope:duel_value
@@ -2975,6 +2995,7 @@ travel_danger_events.6030 = { #Spoiled food
 					min = 1
 					trigger = {
 						is_location_valid_for_travel_event_on_land = yes
+						cannot_be_killed = no
 					} #Chances of finding a deadly poisonous fish on the game map is low
 					compare_modifier = {
 						value = scope:duel_value
@@ -3067,7 +3088,8 @@ travel_danger_events.6030 = { #Spoiled food
 				hidden_effect = {
 					current_travel_plan = {
 						random_entourage_character = {
-							limit = { is_adult = yes }
+							#limit = { is_adult = yes }
+							limit = { is_lotr_adult = yes }
 							weight = {
 								base = 1
 								modifier = { add = prowess }
@@ -3171,7 +3193,8 @@ travel_danger_events.6040 = { #Disease
 
 	trigger = {
 		current_travel_plan.days_travelled >= 15
-		is_adult = yes
+		#is_adult = yes
+		is_lotr_adult = yes
 		is_healthy = yes
 		NOR = {
 			has_trait = ill

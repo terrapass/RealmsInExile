@@ -48,14 +48,12 @@ lotr_thani_hazad.0002 = { # Pel is conquered by the mag special military operati
 	desc = lotr_thani_hazad.0002.desc
 	theme = war
 	override_background = { reference = docks_adunai }
+	
 	left_portrait = {
 		character = root
 		animation = aggressive_sword
 	}
-	# right_portrait = {
-	# 	character = character:nazgul5
-	# 	animation = personality_dishonorable
-	# }
+	
 	option = {
 		name = lotr_thani_hazad.0002.a
 	}
@@ -673,7 +671,7 @@ lotr_thani_hazad.1200 = { # You find out the truth
 				father = scope:spymaster_father
 				mother = scope:spymaster_mother
 				intrigue = 12
-				trait = intellect_good_1
+				trait = intellect_good_2
 				trait = education_intrigue_3
 				save_scope_as = spymaster
 				
@@ -887,15 +885,13 @@ lotr_thani_hazad.2001 = {
  		animation = scheme
  	}
 
- 	
-
  	#Try to arrest the upstart
  	option = {
  		name = lotr_thani_hazad.2001.a
  		duel = {
  			skill = intrigue
  			target = scope:outspoken_rebel
- 			35 = {
+ 			50 = {
 				# You arrest him
  				desc = lotr_thani_hazad.2001.a.success
  				compare_modifier = {
@@ -914,7 +910,7 @@ lotr_thani_hazad.2001 = {
  				}
  				inherit_tulwangi_rebellion_effect = yes
  			}
- 			65 = {
+ 			50 = {
  				# The upstart escapes
  				desc = lotr_thani_hazad.2001.a.failure
  				compare_modifier = {
@@ -1754,8 +1750,8 @@ lotr_thani_hazad.2011 = {
  		character = scope:tulwangi_leader
  		animation = celebrate_sword
  	}
+	
  	immediate = {
-
  		# scope:tulwangi_leader = {
 		# 	# give_nickname = nick_chief_of_the_tulwangi ~~ Aerien note: not needed
  		# 	hidden_effect = {
@@ -1789,6 +1785,25 @@ lotr_thani_hazad.2011 = {
  				LOCATION = scope:tulwangi_leader.location
  			}
  		}
+		
+		every_ruler = { #Give rulers in the Thon-an-Kharlokh the chance to swap to the rebels
+			limit = {
+				is_landed = yes
+				exists = capital_province 
+				capital_province = { 
+					county = {
+ 						empire = title:e_thon_an_kharlokh
+					}
+				}
+				NOT = { this = root }
+				is_ai = no
+			}
+			trigger_event = {
+				id = lotr_thani_hazad.2012
+				days = 1 
+			}
+		}
+
  	}
 
  	option = {
@@ -1812,7 +1827,103 @@ lotr_thani_hazad.2011 = {
 			}
 		}
  	}
+	
+	option = { #Switch to playing as the rebels
+		name = lotr_thani_hazad.2011.b 
+		custom_tooltip = lotr_thani_hazad.2011.b.tt
+		add_character_flag = switch_to_rebel
+		scope:tulwangi_leader = { get_title = title:c_rumyar }
+		#set_player_character = scope:tulwangi_leader
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+	after = {
+		if = {
+			limit = {
+				root = {
+					has_character_flag = switch_to_rebel
+				}
+			}
+			set_player_character = scope:tulwangi_leader
+		}
+	}
 }
+
+#Local rulers get the chance to swap to the rebels
+lotr_thani_hazad.2012 = {
+	content_source = realms_dlc
+ 	type = character_event
+ 	theme = war
+ 	override_background = { reference = wilderness_wetlands }
+ 	title = lotr_thani_hazad.2012.t
+ 	desc = lotr_thani_hazad.2012.desc 
+ 	left_portrait = {
+ 		character = scope:stormhost_ruler
+ 		animation = anger
+ 	}
+ 	right_portrait = {
+ 		character = scope:tulwangi_leader
+ 		animation = celebrate_sword
+ 	}
+	immediate = {
+		title:e_thon_an_kharlokh.holder = { save_scope_as = stormhost_ruler }
+		faith:faith_tulwang = { # make sure the rebel leader is the correct one and is scoped
+			ordered_faith_character = {
+				limit =  {
+					has_character_flag = tulwangi_leader_character
+				}
+				save_scope_as = tulwangi_leader 
+			}
+		}
+		# scope:tulwangi_leader = {
+			# random_character_war  = { save_scope_as = tulwangi_uprising }
+		# }
+	}
+		
+	option = { #I'll better sit this one out...
+		name = lotr_thani_hazad.2012.a
+		scope:stormhost_ruler = {
+			add_opinion = {
+				modifier = pleased_opinion
+				opinion = 25
+				target = root
+			}
+		}
+	}
+	option = { #I will join the rebellion!
+		name = lotr_thani_hazad.2012.b 
+		scope:tulwangi_leader = {
+			random_character_war = {
+				limit = { using_cb = lotr_tulwangi_rebellion_war }
+				add_attacker = root
+			}
+		}
+	}
+	option = { #His cause is a just cause! (Swap to the rebel)
+		name = lotr_thani_hazad.2012.c 
+		custom_tooltip = lotr_thani_hazad.2012.c.tt
+		add_character_flag = switch_to_rebel
+		scope:tulwangi_leader = { get_title = title:c_rumyar }
+		#set_player_character = scope:tulwangi_leader
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+	after = {
+		if = {
+			limit = {
+				root = {
+					has_character_flag = switch_to_rebel
+				}
+			}
+			set_player_character = scope:tulwangi_leader
+		}
+	}
+}
+	
 
 ### BACKUP War event ###
 # In case the first war doesn't fire correctly #
@@ -2589,11 +2700,30 @@ lotr_thani_hazad.2116 = {
 	content_source = realms_dlc
 	type = character_event
 	title = lotr_thani_hazad.2116.t
-	desc = lotr_thani_hazad.2116.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					root = {
+						OR = {
+							has_culture = culture:tuladen
+							culture = { any_parent_culture_or_above = { this = culture:tuladen } }
+						}
+					}
+				}
+				desc = lotr_thani_hazad.2116.desc
+			}
+			desc = lotr_thani_hazad.2012.desc
+		}
+	}
 	theme = war
 	left_portrait = {
 		character = root
 		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:tulwangi_leader
+		animation = marshal_shield
 	}
 	immediate = {
 		faith:faith_tulwang = { # make sure the rebel leader is the correct one and is scoped
@@ -2616,16 +2746,38 @@ lotr_thani_hazad.2116 = {
 			}
 		}
 
-		ai_chance = {
-			base = 1
-		}
 	}
 
 	option = { # Refuse
 		name = lotr_thani_hazad.2116.b 
-		
+		scope:stormhost_ruler = {
+			add_opinion = {
+				modifier = pleased_opinion
+				opinion = 25
+				target = root
+			}
+		}
+	}
+	
+	option = { #His cause is a just cause! (Swap to the rebel)
+		name = lotr_thani_hazad.2012.c 
+		custom_tooltip = lotr_thani_hazad.2012.c.tt
+		add_character_flag = switch_to_rebel
+		scope:tulwangi_leader = { get_title = title:c_rumyar }
+		#set_player_character = scope:tulwangi_leader
 		ai_chance = {
 			base = 0
+		}
+	}
+	
+	after = {
+		if = {
+			limit = {
+				root = {
+					has_character_flag = switch_to_rebel
+				}
+			}
+			set_player_character = scope:tulwangi_leader
 		}
 	}
 
@@ -2639,6 +2791,7 @@ lotr_thani_hazad.2120 = { # The Fate of the Natives
 	title = lotr_thani_hazad.2120.t 
 	desc = lotr_thani_hazad.2120.desc 
 	theme = dread 
+	window = visit_settlement_window
 	override_background = {
 		reference = burning_building
 	}
@@ -3032,7 +3185,7 @@ lotr_thani_hazad.3002 = { # Decide when to start your visit tour of the princes
 			title:d_alsarias.holder = {
 				add_truce_both_ways = { 
 					character = title:d_karasalas.holder
-					years = 5
+					years = 10
 					name = TRUCE_TRADE_DEAL
 				}
 			}
@@ -3045,6 +3198,23 @@ lotr_thani_hazad.3002 = { # Decide when to start your visit tour of the princes
 			title:d_alsarias.holder = {
 				add_truce_both_ways = { # To keep Mispir from interrupting the event chain
 					character = title:d_mispir.holder
+					years = 10
+					name = TRUCE_TRADE_DEAL
+				}
+				add_truce_both_ways = { # To keep those damn dwarves from interrupting the event chain
+					character = title:d_kurdurasi.holder
+					years = 10
+					name = TRUCE_TRADE_DEAL
+				}
+			}
+			title:d_karasalas.holder = {
+				add_truce_both_ways = { # To keep Mispir from interrupting the event chain
+					character = title:d_mispir.holder
+					years = 10
+					name = TRUCE_TRADE_DEAL
+				}
+				add_truce_both_ways = { # To keep those damn dwarves from interrupting the event chain
+					character = title:d_kurdurasi.holder
 					years = 5
 					name = TRUCE_TRADE_DEAL
 				}
@@ -3077,7 +3247,7 @@ lotr_thani_hazad.3002 = { # Decide when to start your visit tour of the princes
 		}
 		add_character_modifier = {	#Make travelling less tedious
 			modifier = imrazor_princely_visits
-			years = 3
+			years = 5
 		}
 		start_travel_plan = { #Travel to Phôrakon and Karaag
 			destination = title:c_uruloni.title_province
@@ -4665,6 +4835,7 @@ lotr_thani_hazad.3020 = { # The great council - victory
 	type = character_event
 	title = lotr_thani_hazad.3020.t  
 	theme = marriage
+	window = visit_settlement_window
 	trigger = {
 		NOT = {
 			has_character_flag = imrazor_council_called
@@ -4686,6 +4857,10 @@ lotr_thani_hazad.3020 = { # The great council - victory
 		}
 	}	
 	left_portrait = {
+		character = scope:match
+		animation = love
+	}
+	center_portrait = {
 		character = root
 		animation = happiness
 	}
@@ -4709,8 +4884,18 @@ lotr_thani_hazad.3020 = { # The great council - victory
 		remove_character_flag = imrazor_council_called
 		trigger_event = { # Remove truce with Mispir
 			id = lotr_thani_hazad.3026
-			days = 10
+			days = 30
 		}
+		if = {
+			limit = { 
+				has_title = title:d_alsarias
+			}
+			character:lineofkrassabarohin103 = { save_scope_as = match }
+		}
+		else = {
+			character:linealsariastwo37 = { save_scope_as = match }
+		}
+	
 	}
 	option = { # Time to get married - Imrazôr edition
 		name = lotr_thani_hazad.3020.a
@@ -4892,7 +5077,8 @@ lotr_thani_hazad.3021 = { # Give them an heir ~ End of the event chain
 			set_pregnancy_gender = male
 		}
 		remove_character_flag = aragorn_gw
-		remove_trait = fornicator
+		scope:imrazor = { remove_trait = fornicator }
+		scope:arimith = { remove_trait = fornicator }
 	}
 }
 
@@ -4948,13 +5134,18 @@ lotr_thani_hazad.3025 = { # Inform the Balan-lai of Imrazôr's failure
 	}
 }
 
-lotr_thani_hazad.3026 = { # Remove truce with Mispir once the event chain ends
+lotr_thani_hazad.3026 = { # Remove truces once the event chain ends
 	hidden = yes
 	immediate = {
 		if = {
 			limit = { has_truce = title:d_mispir.holder }
 			cancel_truce_both_ways = title:d_mispir.holder
 		}
+		if = {
+			limit = { has_truce = title:d_kurdurasi.holder }
+			cancel_truce_both_ways = title:d_kurdurasi.holder
+		}
+		
 	}
 }
 

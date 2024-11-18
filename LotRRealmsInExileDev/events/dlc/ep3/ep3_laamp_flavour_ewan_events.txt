@@ -101,7 +101,7 @@ namespace = ep3_laamp_flavour_ewan
 # MISC SCRIPTED TRIGGERS & EFFECTS
 
 scripted_trigger ep3_laamp_flavour_ewan_available_courtier_trigger = {
-	is_adult = yes
+	is_lotr_adult = yes
 	is_courtier_of = root
 	location = root.location
 	is_available_allow_travelling = yes
@@ -116,7 +116,7 @@ scripted_trigger ep3_laamp_flavour_ewan_available_child_trigger = {
 
 scripted_trigger ep3_laamp_flavour_ewan_available_anybody_trigger = {
 	OR = {
-		is_adult = yes
+		is_lotr_adult = yes
 		child_can_have_full_conversations_trigger = yes
 	}
 	is_courtier_of = root
@@ -125,7 +125,7 @@ scripted_trigger ep3_laamp_flavour_ewan_available_anybody_trigger = {
 }
 
 scripted_trigger ep3_laamp_flavour_ewan_available_courtier_travel_danger_trigger = {
-	is_adult = yes
+	is_lotr_adult = yes
 	location = root.location
 }
 
@@ -438,7 +438,7 @@ ep3_laamp_flavour_ewan.0001 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -862,7 +862,7 @@ ep3_laamp_flavour_ewan.0011 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -1190,7 +1190,7 @@ ep3_laamp_flavour_ewan.0021 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -1426,7 +1426,7 @@ ep3_laamp_flavour_ewan.0031 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -1692,7 +1692,7 @@ ep3_laamp_flavour_ewan.0041 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -3022,7 +3022,7 @@ ep3_laamp_flavour_ewan.0051 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -3564,7 +3564,7 @@ ep3_laamp_flavour_ewan.0061 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -3774,7 +3774,7 @@ ep3_laamp_flavour_ewan.0071 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -4015,7 +4015,7 @@ ep3_laamp_flavour_ewan.1001 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Laamps use title cooldowns, to help trim down repeats when succession happens.
 		primary_title = {
@@ -4433,7 +4433,7 @@ ep3_laamp_flavour_ewan.1011 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Laamps use title cooldowns, to help trim down repeats when succession happens.
 		primary_title = {
@@ -5054,7 +5054,7 @@ ep3_laamp_flavour_ewan.1021 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Laamps use title cooldowns, to help trim down repeats when succession happens.
 		primary_title = {
@@ -5432,7 +5432,7 @@ ep3_laamp_flavour_ewan.1021 = {
 			}
 			scope:crush_child = {
 				if = {
-					limit = { is_adult = no }
+					limit = { is_lotr_adult = no }
 					set_relation_crush = scope:child
 				}
 				else = {
@@ -5791,7 +5791,7 @@ ep3_laamp_flavour_ewan.1031 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Laamps use title cooldowns, to help trim down repeats when succession happens.
 		primary_title = {
@@ -6162,7 +6162,7 @@ ep3_laamp_flavour_ewan.1041 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Laamps use title cooldowns, to help trim down repeats when succession happens.
 		primary_title = {
@@ -6492,7 +6492,7 @@ ep3_laamp_flavour_ewan.1051 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Laamps use title cooldowns, to help trim down repeats when succession happens.
 		primary_title = {
@@ -6698,7 +6698,7 @@ ep3_laamp_flavour_ewan.1061 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Laamps use title cooldowns, to help trim down repeats when succession happens.
 		primary_title = {
@@ -6935,7 +6935,7 @@ ep3_laamp_flavour_ewan.1071 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Laamps use title cooldowns, to help trim down repeats when succession happens.
 		primary_title = {
@@ -7238,7 +7238,7 @@ ep3_laamp_flavour_ewan.1081 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Laamps use title cooldowns, to help trim down repeats when succession happens.
 		primary_title = {
@@ -7480,7 +7480,7 @@ ep3_laamp_flavour_ewan.1091 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Laamps use title cooldowns, to help trim down repeats when succession happens.
 		primary_title = {
@@ -7753,7 +7753,7 @@ ep3_laamp_flavour_ewan.1102 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Only valid for Laamps
 		is_landless_adventurer = yes
@@ -7798,14 +7798,14 @@ scripted_trigger ep3_laamp_flavour_ewan_1103_child_older_trigger = {
 
 scripted_trigger ep3_laamp_flavour_ewan_1103_child_teen_trigger = {
 	age > @ep3_laamp_flavour_ewan_1103_age_threshold_older
-	is_adult = no
+	is_lotr_adult = no
 	root = {
 		NOT = { has_character_flag = had_packing_assistant_chain_stage_teen }
 	}
 }
 
 scripted_trigger ep3_laamp_flavour_ewan_1103_child_adult_trigger = {
-	is_adult = yes
+	is_lotr_adult = yes
 	root = {
 		NOT = { has_character_flag = had_packing_assistant_chain_stage_adult }
 		# And they have to done it several times.
@@ -8239,7 +8239,7 @@ ep3_laamp_flavour_ewan.1111 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Laamps use title cooldowns, to help trim down repeats when succession happens.
 		primary_title = {
@@ -8970,7 +8970,7 @@ ep3_laamp_flavour_ewan.2002 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -9188,7 +9188,7 @@ ep3_laamp_flavour_ewan.2011 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -10511,6 +10511,7 @@ scripted_trigger ep3_laamp_flavour_ewan_2021_valid_courtier_for_own_marriage_pre
 	NOT = { this = $TARGET$ }
 	# Must have matching sexualities & the right legalities in place.
 	is_attracted_to_gender_of = $TARGET$
+	lotr_marriage_to_allowed = { TARGET = $TARGET$ }
 	$TARGET$ = { is_attracted_to_gender_of = prev }
 	allowed_to_marry_character_gender_trigger = { CHARACTER = $TARGET$ }
 	# Ensure our ages aren't too far apart — not that this couldn't happen, but huge age gaps are a big verisimilitude problem for many players.
@@ -10833,7 +10834,7 @@ ep3_laamp_flavour_ewan.2022 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -10959,7 +10960,7 @@ ep3_laamp_flavour_ewan.2031 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -11535,7 +11536,7 @@ ep3_laamp_flavour_ewan.2042 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -11686,7 +11687,7 @@ ep3_laamp_flavour_ewan.2051 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -12035,7 +12036,7 @@ ep3_laamp_flavour_ewan.2062 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -12233,7 +12234,7 @@ ep3_laamp_flavour_ewan.2071 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -12507,7 +12508,7 @@ ep3_laamp_flavour_ewan.2081 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -13021,7 +13022,7 @@ ep3_laamp_flavour_ewan.2093 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -13298,7 +13299,7 @@ ep3_laamp_flavour_ewan.3001 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -13567,7 +13568,7 @@ ep3_laamp_flavour_ewan.3011 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -13892,7 +13893,7 @@ ep3_laamp_flavour_ewan.3021 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -14140,7 +14141,7 @@ ep3_laamp_flavour_ewan.3031 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -14193,11 +14194,11 @@ ep3_laamp_flavour_ewan.3031 = {
 			order_by = {
 				# If we're a player, order it by their opinion of us.
 				if = {
-					limit = { is_ai = no }
-					value = "reverse_opinion(root)"
+					limit = { holder = { is_ai = no } }
+					value = "holder.reverse_opinion(root)"
 				}
 				# Otherwise, order by our opinion of them.
-				else = { value = "opinion(root)" }
+				else = { value = "holder.opinion(root)" }
 			}
 			save_scope_as = adjacent_title
 		}
@@ -14468,7 +14469,7 @@ ep3_laamp_flavour_ewan.3041 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -14767,12 +14768,17 @@ ep3_laamp_flavour_ewan.3051 = {
 		character = root
 		animation = writing
 	}
+	artifact = {
+		target = scope:newly_created_map
+		position = lower_center_portrait
+		trigger = { exists = scope:newly_created_map }
+	}
 
 	trigger = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -14912,7 +14918,7 @@ ep3_laamp_flavour_ewan.3061 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -15033,7 +15039,7 @@ ep3_laamp_flavour_ewan.3071 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -15467,7 +15473,7 @@ ep3_laamp_flavour_ewan.3081 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes
@@ -17150,7 +17156,7 @@ scripted_effect ep3_laamp_flavour_ewan_4041_process_consequences_by_weather_type
 						if = {
 							limit = {
 								OR = {
-									is_adult = no
+									is_lotr_adult = no
 									AND = {
 										is_female = yes
 										age >= Define:NCharacter|FEMALE_ELDERLY_AGE
@@ -17187,7 +17193,7 @@ scripted_effect ep3_laamp_flavour_ewan_4041_process_consequences_by_weather_type
 						if = {
 							limit = {
 								OR = {
-									is_adult = no
+									is_lotr_adult = no
 									AND = {
 										is_female = yes
 										age >= Define:NCharacter|FEMALE_ELDERLY_AGE
@@ -17701,6 +17707,8 @@ ep3_laamp_flavour_ewan.4041 = {
 							terrain = desert
 							terrain = desert_mountains
 							terrain = oasis
+							terrain = dune_sea #LOTR
+							terrain = red_desert #LOTR
 						}
 					}
 				}
@@ -17717,6 +17725,8 @@ ep3_laamp_flavour_ewan.4041 = {
 							terrain = desert
 							terrain = desert_mountains
 							terrain = oasis
+							terrain = dune_sea #LOTR
+							terrain = red_desert #LOTR
 						}
 					}
 				}
@@ -17748,6 +17758,8 @@ ep3_laamp_flavour_ewan.4041 = {
 							terrain = desert
 							terrain = desert_mountains
 							terrain = oasis
+							terrain = dune_sea #LOTR
+							terrain = red_desert #LOTR
 						}
 					}
 				}
@@ -19417,7 +19429,11 @@ scripted_effect ep3_laamp_flavour_ewan_4062_animal_duel_effect = {
 			desc = ep3_laamp_flavour_ewan.4062.tt.failure
 			send_interface_toast = {
 				title = ep3_laamp_flavour_ewan.4062.tt.failure
-				ep3_laamp_flavour_ewan_4062_animal_duel_loss_effect = yes
+				if = {
+					limit = { cannot_be_killed = no }
+					ep3_laamp_flavour_ewan_4062_animal_duel_loss_effect = yes
+				}
+				else = { increase_wounds_no_death_effect = { REASON = wild_animal } }
 			}
 		}
 	}
@@ -22454,7 +22470,7 @@ ep3_laamp_flavour_ewan.9512 = {
 					scope:skill = flag:prowess
 				}
 			}
-			animation = martial
+			animation = marshal
 		}
 		triggered_animation = {
 			trigger = { scope:skill = flag:stewardship }
@@ -23512,7 +23528,7 @@ ep3_laamp_flavour_ewan.9534 = {
 ##################################################
 
 scripted_trigger ep3_laamp_flavour_ewan_9541_suitable_courtier_trigger = {
-	is_adult = yes
+	is_lotr_adult = yes
 	is_available_allow_travelling = yes
 }
 
@@ -23562,7 +23578,7 @@ ep3_laamp_flavour_ewan.9541 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Laamps use title cooldowns, to help trim down repeats when succession happens.
 		primary_title = {
@@ -23844,7 +23860,7 @@ ep3_laamp_flavour_ewan.9551 = {
 		# DLC check.
 		has_ep3_dlc_trigger = yes
 		# Standard checks.
-		is_adult = yes
+		is_lotr_adult = yes
 		is_available_allow_travelling = yes
 		# Make sure we're on dry land.
 		is_location_valid_for_travel_event_on_land = yes

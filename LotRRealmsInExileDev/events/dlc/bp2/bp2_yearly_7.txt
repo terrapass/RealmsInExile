@@ -149,7 +149,8 @@ bp2_yearly.7000 = { #Wet Nurse is sick and can pass it down to a child
 					has_relation_wet_nurse = scope:wet_nurse_temp
 					is_ai = yes
 					is_landed = no
-					is_adult = no
+					#is_adult = no
+					is_lotr_adult = no
 					location = scope:wet_nurse_temp.location
 				}
 			}
@@ -176,7 +177,8 @@ bp2_yearly.7000 = { #Wet Nurse is sick and can pass it down to a child
 					has_relation_wet_nurse = scope:wet_nurse
 					is_ai = yes
 					is_landed = no
-					is_adult = no
+					#is_adult = no
+					is_lotr_adult = no
 					location = scope:wet_nurse.location
 				}
 				save_scope_as = nursed_child
@@ -293,11 +295,13 @@ bp2_yearly.7000 = { #Wet Nurse is sick and can pass it down to a child
 	# I'm mad and gonna throw you in prison
 	option = {
 		name = {
-			trigger = { is_adult = no }
+			#trigger = { is_adult = no }
+			trigger = { is_lotr_adult = no }
 			text = bp2_yearly.7000.c_child_liege
 		}
 		name = {
-			trigger = { is_adult = yes }
+			#trigger = { is_adult = yes }
+			trigger = { is_lotr_adult = yes }
 			text = bp2_yearly.7000.c
 	 	}
 	 	rightfully_imprison_character_effect = {
@@ -3689,7 +3693,8 @@ bp2_yearly.7021 = { #duel
 		triggered_animation = {
 			trigger = {
 				NOT = { this = scope:teentribal }
-				is_adult = yes
+				#is_adult = yes
+				is_lotr_adult = yes
 			}
 			animation = marshal
 		}
@@ -3743,7 +3748,8 @@ bp2_yearly.7021 = { #duel
 		}
 		triggered_animation = {
 			trigger = {
-				is_adult = no
+				#is_adult = no
+				is_lotr_adult = no
 				NOT = { this = scope:teentribal }
 			}
 			animation = war_attacker
@@ -5268,30 +5274,48 @@ bp2_yearly.7027 = { #cleansing with water
 	option = { #Submerge completely in the water
 		name = bp2_yearly.7027.a
 		flavor =  bp2_yearly.7027.a.tt
-		send_interface_toast = {
-			title = bp2_yearly.7027.tt
-			left_icon = scope:teentribal
-			scope:teentribal = {
-				if = {
-					limit = {
-						num_sinful_traits > 0
-					}
-					random_list = {
-						1 = {
-							desc = passage_rites_effect.trait
+		if = {
+			limit = {
+				scope:teentribal = { num_sinful_traits > 0 }
+			}
+			random_list = {
+				1 = {
+					desc = passage_rites_effect.trait
+					send_interface_toast = {
+						title = bp2_yearly.7027.tt
+						left_icon = scope:teentribal
+						scope:teentribal = {
 							flip_sinful_trait_effect = yes
 						}
-						1 = {
-							desc = passage_rites_effect.xp
+					}
+				}
+				1 = {
+					desc = passage_rites_effect.xp
+					send_interface_toast = {
+						title = bp2_yearly.7027.tt
+						left_icon = scope:teentribal
+						scope:teentribal = {
 							add_learning_lifestyle_xp = major_lifestyle_xp
 						}
-						1 = {
-							desc = passage_rites_effect.skill
+					}
+				}
+				1 = {
+					desc = passage_rites_effect.skill
+					send_interface_toast = {
+						title = bp2_yearly.7027.tt
+						left_icon = scope:teentribal
+						scope:teentribal = {
 							add_learning_skill = 1
 						}
 					}
 				}
-				else = {
+			}
+		}
+		else = {
+			send_interface_toast = {
+				title = bp2_yearly.7027.tt
+				left_icon = scope:teentribal
+				scope:teentribal = {
 					passage_rites_effect = {
 						TRAIT = zealous
 						OPPOSITE_TRAIT = cynical
@@ -5396,30 +5420,48 @@ bp2_yearly.7028 = { #cleansing with fire
 	option = { #Run through the fire pit
 		name = bp2_yearly.7028.a
 		flavor = bp2_yearly.7028.a.tt
-		send_interface_toast = {
-			title = bp2_yearly.7028.tt
-			left_icon = scope:teentribal
-			scope:teentribal = {
-				if = {
-					limit = {
-						num_sinful_traits > 0
-					}
-					random_list = {
-						1 = {
-							desc = passage_rites_effect.trait
+		if = {
+			limit = {
+				scope:teentribal = { num_sinful_traits > 0 }
+			}
+			random_list = {
+				1 = {
+					desc = passage_rites_effect.trait
+					send_interface_toast = {
+						title = bp2_yearly.7028.tt
+						left_icon = scope:teentribal
+						scope:teentribal = {
 							flip_sinful_trait_effect = yes
 						}
-						1 = {
-							desc = passage_rites_effect.xp
+					}
+				}
+				1 = {
+					desc = passage_rites_effect.xp
+					send_interface_toast = {
+						title = bp2_yearly.7028.tt
+						left_icon = scope:teentribal
+						scope:teentribal = {
 							add_learning_lifestyle_xp = major_lifestyle_xp
 						}
-						1 = {
-							desc = passage_rites_effect.skill
+					}
+				}
+				1 = {
+					desc = passage_rites_effect.skill
+					send_interface_toast = {
+						title = bp2_yearly.7028.tt
+						left_icon = scope:teentribal
+						scope:teentribal = {
 							add_learning_skill = 1
 						}
 					}
 				}
-				else = {
+			}
+		}
+		else = {
+			send_interface_toast = {
+				title = bp2_yearly.7028.tt
+				left_icon = scope:teentribal
+				scope:teentribal = {
 					passage_rites_effect = {
 						TRAIT = zealous
 						OPPOSITE_TRAIT = cynical

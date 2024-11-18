@@ -68,6 +68,18 @@ head_of_faith_male = {
 	}
 }
 
+#head_of_faith_pope = {
+#	type = character
+#	gender = male
+#	special = head_of_faith
+#	priority = 1
+#	flavourization_rules = { 
+#		top_liege = no
+#	}
+#	governments = { theocracy_government }
+#	faith = catholic
+#}
+
 head_of_faith_female = {
 	type = character
 	gender = female
@@ -1624,6 +1636,7 @@ duke_landless_adventurer_male_camp = {
 	gender = male
 	special = holder
 	tier = duchy
+	domicile_type = camp
 	priority = 25
 	governments = { landless_adventurer_government }
 
@@ -1637,6 +1650,7 @@ duke_landless_adventurer_female_camp = {
 	gender = female
 	special = holder
 	tier = duchy
+	domicile_type = camp
 	priority = 25
 	governments = { landless_adventurer_government }
 
@@ -1734,6 +1748,7 @@ duke_landless_adventurer_camp_mercenaries = {
 	type = character
 	special = holder
 	tier = duchy
+	domicile_type = camp
 	priority = 31
 	governments = { landless_adventurer_government }
 	flag = flavourise_camp_purpose_mercenaries
@@ -1747,6 +1762,7 @@ duke_landless_adventurer_camp_wanderers = {
 	type = character
 	special = holder
 	tier = duchy
+	domicile_type = camp
 	priority = 31
 	governments = { landless_adventurer_government }
 	flag = flavourise_camp_purpose_wanderers
@@ -1760,6 +1776,7 @@ duke_landless_adventurer_camp_scholars = {
 	type = character
 	special = holder
 	tier = duchy
+	domicile_type = camp
 	priority = 31
 	governments = { landless_adventurer_government }
 	flag = flavourise_camp_purpose_scholars
@@ -1773,6 +1790,7 @@ duke_landless_adventurer_camp_explorers = {
 	type = character
 	special = holder
 	tier = duchy
+	domicile_type = camp
 	priority = 31
 	governments = { landless_adventurer_government }
 	flag = flavourise_camp_purpose_explorers
@@ -1786,6 +1804,7 @@ duke_landless_adventurer_camp_brigands = {
 	type = character
 	special = holder
 	tier = duchy
+	domicile_type = camp
 	priority = 31
 	governments = { landless_adventurer_government }
 	flag = flavourise_camp_purpose_brigands
@@ -1799,6 +1818,7 @@ duke_landless_adventurer_camp_legitimists = {
 	type = character
 	special = holder
 	tier = duchy
+	domicile_type = camp
 	priority = 31
 	governments = { landless_adventurer_government }
 	flag = flavourise_camp_purpose_legitimists

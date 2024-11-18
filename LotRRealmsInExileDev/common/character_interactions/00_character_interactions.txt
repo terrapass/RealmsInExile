@@ -957,6 +957,46 @@ offer_vassalization_interaction = {
 			desc = CONTRACT_HIGH_TAXES_REASON
 		}
 
+		# INSPECTION BONUSES
+		modifier = {
+			desc = "INSPECTION_REASON"
+			add = 5
+			scope:recipient = {
+				has_variable_list = lesser_inspection_bonus
+				is_target_in_variable_list = {
+					name = lesser_inspection_bonus
+					target = scope:actor
+				}
+			}
+		}
+		modifier = {
+			desc = "INSPECTION_REASON"
+			add = 10
+			scope:recipient = {
+				has_variable_list = inspection_bonus
+				is_target_in_variable_list = {
+					name = inspection_bonus
+					target = scope:actor
+				}
+			}
+		}
+		modifier = {
+			desc = "INSPECTION_REASON_REWARD"
+			add = 10
+			scope:recipient = {
+				has_variable_list = inspection_reward
+				is_target_in_variable_list = {
+					name = inspection_reward
+					target = scope:actor
+				}
+			}
+		}
+		modifier = {
+			desc = "INSPECTION_REASON_REWARD_FOCUSED"
+			add = 10
+			scope:actor = { has_character_modifier = inspection_reward_focused_vassal_acceptance }
+		}
+
 		# LOW LEGITIMACY
 		modifier = {
 			desc = "LOW_LEGITIMACY_REASON"
@@ -1911,28 +1951,28 @@ grant_independence_interaction = {
 		custom_description = {
 			text = is_de_jure_vassal_check
 			object = scope:recipient
-			NOT = { #Cannot be used against de jure vassals
-				scope:recipient.primary_title = {
-					any_this_title_or_de_jure_above = {
-						holder = scope:actor
+			
+			trigger_if = { # Admin rulers can grant tribal vassals independence regardless of de jure
+				limit = {
+					scope:actor = { government_has_flag = government_is_administrative }
+					scope:recipient = { government_has_flag = government_is_tribal }
+				}
+				# Always possible
+			}
+			trigger_else = {
+				NOT = { #Cannot be used against de jure vassals
+					scope:recipient.primary_title = {
+						any_this_title_or_de_jure_above = {
+							holder = scope:actor
+						}
 					}
 				}
 			}
+			
 		}
 		custom_tooltip = {
 			text = can_only_remove_diarch_by_elevating_them.tt
 			NOT = { scope:recipient ?= scope:actor.diarch }
-		}
-		trigger_if = {
-			limit = {
-				scope:recipient = { government_has_flag = government_is_administrative }
-			}
-			custom_tooltip = {
-				text = has_admin_gov
-				NOT = {
-					scope:recipient = { government_has_flag = government_is_administrative }
-				}
-			}
 		}
 	}
 

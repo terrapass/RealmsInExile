@@ -1387,6 +1387,12 @@ strategist = {
 	enemy_hard_casualty_modifier = 0.25
 	no_water_crossing_penalty = yes
 	
+	culture_modifier = {
+		parameter = formation_fighting_strategist
+		max_combat_roll = 4
+		enemy_terrain_advantage = -0.2
+	}
+	
 	ruler_designer_cost = 50
 
 	ai_rationality = 30
@@ -6590,10 +6596,6 @@ beauty_good_1 = {
 	physical = yes
 	good = yes
 	
-	genetic_constraint_all = beauty_1
-	genetic_constraint_men = male_beauty_1
-	genetic_constraint_women = female_beauty_1
-	
 	ruler_designer_cost = 40
 
 	desc = {
@@ -6661,9 +6663,6 @@ beauty_good_2 = {
 	physical = yes
 	good = yes
 	
-	genetic_constraint_all = beauty_2
-	genetic_constraint_men = male_beauty_2
-	genetic_constraint_women = female_beauty_2
 }
 
 # Beauty (+3) - Beautiful
@@ -6688,10 +6687,6 @@ beauty_good_3 = {
 	genetic = yes
 	physical = yes
 	good = yes
-	
-	genetic_constraint_all = beauty_3
-	genetic_constraint_men = male_beauty_3
-	genetic_constraint_women = female_beauty_3
 	
 	ruler_designer_cost = 120
 
@@ -11595,6 +11590,28 @@ holy_warrior = {
 	
 	ruler_designer_cost = 25
 
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_holy_warrior
+			}
+			triggered_desc = {
+				trigger = { faith_is_evil = yes }
+				desc = trait_holy_warrior_darkness
+			}
+			triggered_desc = {
+				trigger = { faith.religion = religion:dwarven_religion }
+				desc = trait_holy_warrior_mahal
+			}
+			triggered_desc = {
+				trigger = { faith.religion = { is_in_family = rf_eruhini } }
+				desc = trait_holy_warrior_free_peoples
+			}
+			desc = trait_holy_warrior
+		}
+	}
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -11602,6 +11619,18 @@ holy_warrior = {
 					NOT = { exists = this }
 				}
 				desc = trait_holy_warrior_desc
+			}
+			triggered_desc = {
+				trigger = { faith_is_evil = yes }
+				desc = trait_holy_warrior_darkness_desc
+			}
+			triggered_desc = {
+				trigger = { faith.religion = religion:dwarven_religion }
+				desc = trait_holy_warrior_mahal_desc
+			}
+			triggered_desc = {
+				trigger = { faith.religion = { is_in_family = rf_eruhini } }
+				desc = trait_holy_warrior_free_peoples_desc
 			}
 			desc = trait_holy_warrior_character_desc
 		}
@@ -13032,6 +13061,7 @@ tourney_participant = {
 lifestyle_traveler = {
 	icon = "traveler.dds"
 
+	monthly_wanderer_lifestyle_xp_gain_mult = 0.1
 	same_opinion = 5
 	diplomacy = 1
 
@@ -13231,6 +13261,7 @@ lifestyle_traveler = {
 				learning = 1
 				diplomacy = 1
 				health = 0.05
+				monthly_wanderer_lifestyle_xp_gain_mult = 0.2
 				
 				faith_modifier = { # LotR
 					parameter = lotr_traveler_rewards
@@ -13244,6 +13275,7 @@ lifestyle_traveler = {
 				learning = 1
 				diplomacy = 1
 				health = 0.05
+				monthly_wanderer_lifestyle_xp_gain_mult = 0.2
 				
 				faith_modifier = { # LotR
 					parameter = lotr_traveler_rewards
@@ -13336,7 +13368,6 @@ fp3_struggle_supporter = {
 		}
 	}
 }
-
 
 ############### EP3 TRAITS ##############
 
@@ -13844,20 +13875,7 @@ knight_errant = {
 				}
 				desc = knight_of_the_lion.dds
 			}
-			triggered_desc = { # Fallback
-				trigger = {
-					location = {
-						NOR = {
-							geographical_region = world_europe
-							geographical_region = world_africa
-							geographical_region = world_india
-							geographical_region = world_burma
-							# geographical_region = ghw_region_caucasus #LotR
-						}
-					}
-				}
-				desc = knight_of_the_swan.dds
-			}
+			desc = knight_of_the_swan.dds
 		}
 	}
 	shown_in_ruler_designer = yes
@@ -14093,3 +14111,49 @@ immortal = {
 	long_reign_bonus_mult = -1000
 	no_prowess_loss_from_age = yes
 }
+
+lifestyle_wayfarer = {
+	category = lifestyle
+
+	diplomacy = 2
+	prowess_per_prestige_level = 1
+	stress_loss_per_prestige_level = 0.05
+
+	ruler_designer_cost = 50
+}
+
+lifestyle_voyager = {
+	category = lifestyle
+
+	stewardship = 2
+	character_travel_speed = 10
+	monthly_prestige = 0.25
+	diplomatic_range_mult = 0.15
+
+	ruler_designer_cost = 50
+}
+
+lifestyle_surveyor = {
+	category = lifestyle
+
+	stewardship = 2
+	development_growth_factor = 0.1
+	long_reign_bonus_mult = 0.25
+	character_travel_safety = 10
+
+	ruler_designer_cost = 50
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = this
+					is_landless_adventurer = yes
+				}
+				desc = trait_lifestyle_surveyor_adventurer_desc
+			}
+			desc = trait_lifestyle_surveyor_desc
+		}
+	}
+}
+

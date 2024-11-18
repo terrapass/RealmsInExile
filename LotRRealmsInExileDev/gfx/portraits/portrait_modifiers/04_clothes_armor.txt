@@ -2006,6 +2006,7 @@
                 }
             }
 		}
+        outfit_tags = { gondor_war_prince }
 	}
 	
     gondorian_imperial_armour = {
@@ -2386,6 +2387,7 @@
 				culture = { has_cultural_pillar = heritage_calaquendi }
 			}		
 		}
+        outfit_tags = { elven_war_noldor }
 	}
 	
 	elven_war_galadhrim = {
@@ -2434,6 +2436,7 @@
                 }
             }
 		}
+        outfit_tags = { elven_war_silvan }
 	}
 	
 	elven_war_silvan_king = {
@@ -2523,6 +2526,25 @@
                 portrait_wear_helmet_trigger = yes
 				portrait_dwarf_clothing_trigger = yes
 				portrait_dwarf_bronze_clothing_trigger = yes
+            }
+		}
+	}
+	
+	dwarf_war_blacklock = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				template = dwarf_war_blacklock
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+                add = 130
+				portrait_wear_armor_trigger = yes
+				culture = { has_cultural_pillar = heritage_blacklock }
             }
 		}
 	}

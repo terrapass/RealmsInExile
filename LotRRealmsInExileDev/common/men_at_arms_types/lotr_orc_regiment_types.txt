@@ -27,7 +27,7 @@ orc_warriors = {
 	buy_cost = { gold = 80 }
 	low_maintenance_cost = { gold = 0.3 }
 	high_maintenance_cost = { gold = 0.9 }
-	provision_cost = @provisions_cost_infantry_cheap
+	provision_cost = 2
 
 	stack = 200
 	damage = 14
@@ -49,7 +49,10 @@ orc_warriors = {
 	}
 	
 	allowed_in_hired_troops = no
-	ai_quality = { value = 125 }
+	ai_quality = {
+		value = 125
+		add = counter_synergy_ai_weight_heavy_infantry
+	}
 	icon = orc_warriors
 }
 orc_rabble = {
@@ -63,7 +66,7 @@ orc_rabble = {
 	buy_cost = { gold = 20 }
 	low_maintenance_cost = { gold = 0.08 }
 	high_maintenance_cost = { gold = 0.24 }
-	provision_cost = @provisions_cost_infantry_cheap
+	provision_cost = 1.5
 	
 	stack = 300
 	damage = 2
@@ -87,7 +90,7 @@ orc_archers = {
 	buy_cost = { gold = 50 }
 	low_maintenance_cost = { gold = 0.18 }
 	high_maintenance_cost = { gold = 0.54 }
-	provision_cost = @provisions_cost_infantry_cheap
+	provision_cost = 2
 	
 	stack = 200
 	damage = 10
@@ -109,7 +112,10 @@ orc_archers = {
 	}
 
 	allowed_in_hired_troops = no
-	ai_quality = { value = 40 }
+	ai_quality = { 
+		value = 40
+		add = counter_synergy_ai_weight_archers
+	}
 	icon = orc_archers
 }
 orc_trackers = {
@@ -123,7 +129,7 @@ orc_trackers = {
 	buy_cost = { gold = 30 }
 	low_maintenance_cost = { gold = 0.13 }
 	high_maintenance_cost = { gold = 0.39 }
-	provision_cost = @provisions_cost_infantry_cheap
+	provision_cost = 2
 	
 	stack = 200
 	damage = 8
@@ -155,7 +161,7 @@ orc_pikemen = {
 	buy_cost = { gold = 65 }
 	low_maintenance_cost = { gold = 0.22 }
 	high_maintenance_cost = { gold = 0.66 }
-	provision_cost = @provisions_cost_infantry_cheap
+	provision_cost = 2
 	
 	stack = 200
 	damage = 10
@@ -179,7 +185,10 @@ orc_pikemen = {
 	}
 	
 	allowed_in_hired_troops = no
-	ai_quality = { value = culture_ai_weight_pikemen }
+ 	ai_quality = {
+		value = culture_ai_weight_pikemen
+		add = counter_synergy_ai_weight_pikemen
+	}
 	icon = orc_pikemen
 }
 
@@ -190,7 +199,7 @@ mountainorc_warriors = {
 	buy_cost = { gold = 130 }
 	low_maintenance_cost = { gold = 0.55 }
 	high_maintenance_cost = { gold = 1.65 }
-	provision_cost = @provisions_cost_infantry_moderate
+	provision_cost = 5
 	
 	stack = 200
 	damage = 14
@@ -856,7 +865,7 @@ hunter_orcs_on_fell_wargs = { # Hunter Orcs on Fell Wargs, know that orc rides w
 	buy_cost = { gold = 140 }
 	low_maintenance_cost = { gold = 0.6 }
 	high_maintenance_cost = { gold = 1.8 }
-	provision_cost = @provisions_cost_cavalry_moderate
+	provision_cost = 10
 
 	stack = 75
 	damage = 50
@@ -903,7 +912,7 @@ gundabad_blackshields = { #Gundabad Blackshields, based on the Age of the Ring u
 	buy_cost = { gold = 125 }
 	low_maintenance_cost = { gold = 0.5 }
 	high_maintenance_cost = { gold = 1.5 }
-	provision_cost = @provisions_cost_infantry_moderate
+	provision_cost = 2.5
 	
 	stack = 150
 	damage = 18
@@ -1031,7 +1040,7 @@ goblin_skirmishers = {
 	buy_cost = { gold = 35 }
 	low_maintenance_cost = { gold = 0.16 }
 	high_maintenance_cost = { gold = 0.36 }
-	provision_cost = @provisions_cost_infantry_cheap
+	provision_cost = 1.5
 	
 	stack = 300
 	damage = 4
@@ -1058,7 +1067,7 @@ goblin_warg_riders = {
 	buy_cost = { gold = 125 }
 	low_maintenance_cost = { gold = 0.5 }
 	high_maintenance_cost = { gold = 1.5 }
-	provision_cost = @provisions_cost_cavalry_cheap
+	provision_cost = 5
 
 	stack = 150
 	damage = 15

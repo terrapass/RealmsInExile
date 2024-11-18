@@ -312,8 +312,8 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			bandits
 			wolf_den
+			wild_orcs
 		}
 	}
 	6933.1.1 = {
@@ -505,7 +505,20 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			bear_den
+			wild_orcs
+		}
+	}
+	6744.4.4 = {
+	    culture = towndweller_goblin
+		religion = way_of_strength
+		holding = castle_holding
+	}
+	6832.12.11 = { # Azog is slain by Dain II, the Orcish domain of the Misty Mountains collapses outside of Gundabad
+		culture = wastelands
+		religion = faith_wastelands_pagan
+		holding = wastelands_holding
+		buildings = {
+			wild_orcs
 		}
 	}
 }
@@ -679,7 +692,7 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			wolf_den
+			wild_orcs
 		}
 	}
 	6933.1.1 = {
@@ -894,7 +907,7 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			bear_den
+			dense_growth
 		}
 	}
 	6933.1.1 = {
@@ -1750,7 +1763,7 @@
 		holding = wastelands_holding
 		buildings = {
 			bear_den
-			spider_nest
+			wild_orcs
 		}
 	}
 	6933.1.1 = {
@@ -1884,7 +1897,7 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			bear_den	
+			wild_orcs	
 		}
 	}
 }
@@ -2020,8 +2033,22 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			bear_den
-			bandits
+			wild_orcs
+			wolf_den
+		}
+	}
+	6705.5.5 = { # Orcs spread from Gundabad into the Vale
+		culture = ghrazim
+		religion = cult_of_the_ulukai
+		holding = castle_holding
+	}
+	6974.11.30 = { # The Battle of the five armies reduces Gundabad's population
+		culture = wastelands
+		religion = faith_wastelands_pagan
+		holding = wastelands_holding
+		buildings = {
+			wild_orcs
+			wolf_den
 		}
 	}
 }

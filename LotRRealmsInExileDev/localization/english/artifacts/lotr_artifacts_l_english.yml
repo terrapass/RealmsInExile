@@ -146,6 +146,8 @@
  feature_book_topic_tedjin:0 "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] commented copy of The Tedjin Conquest and Occupation of Bellakar, showing great understanding of the source material and the darkest times of the history of [bellakar|E]."
  feature_book_title_kinstrife:0 "The Kinstrife"
  feature_book_topic_kinstrife:0 "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] commented copy of The [kinstrife|E], showing great understanding of the source material and the bloody civil war that tore [gondor|E] apart and saw a great weakening of the [dunedain|E]."
+ feature_book_title_arnor:0 "The Fall of Arnor"
+ feature_book_topic_arnor:0 "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] commented copy of the Fall of Arnor, showing great understanding of the source material and the harrowing conflict that bled the North Kingdom dry and led to its final disappearance"
  feature_book_title_castamir:0 "Of Castamir and the ruin of Gondor"
  feature_book_topic_castamir:0 "[Artifact.GetOwner.Custom('ArtifactArticleBookContentQuality')|U] commented copy of Castamir and the ruin of Gondor, showing great understanding of the source material and the bloody civil war that tore [gondor|E] apart and saw the tragic victory of the half-blood usurper."
  feature_book_title_umbar:0 "Of the Adûnâi in Umbar"
@@ -187,3 +189,11 @@
 ### New Slots ###
 
  crafting_tools:0 "Tools"
+
+ # Two-Handed Axes
+ artifact_longaxe_name:0 "$artifact_name_prefix$ Two-Handed Axe"
+ artifact_longaxe_description:2 "A two-handed axe of [SCOPE.Custom('ArtifactQuality')] craftsmanship. [newly_created_artifact.Custom('ArtifactLongaxeHeadDescription')] [newly_created_artifact.Custom('ArtifactLongaxeHaftDescription')]"
+ artifact_longaxe_head_undecorated:1 "The [ROOT.Artifact.GetFeatureText( 'head_metal' )] head is mounted on"
+ artifact_longaxe_head_decorated:1 "The [ROOT.Artifact.GetFeatureText( 'head_metal' )] head has been [ROOT.Artifact.GetFeatureText( 'head_decoration' )], and then mounted on"
+ artifact_longaxe_haft_undecorated:2 "a sturdy [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] haft. It is expertly balanced and as easy to swing as it is sharp."
+ artifact_longaxe_haft_decorated:1 "an elegant [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] haft that has been [ROOT.Artifact.GetFeatureText( 'shaft_decoration' )]."

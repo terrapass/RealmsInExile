@@ -12,6 +12,8 @@
 		# DLC locked
 		has_dlc_feature = tours_and_tournaments
 		has_dlc_feature = advanced_activities
+		is_nazgul = no
+		NOT = { has_trait = sauron_ringless }
 	}
 
 	can_start_showing_failures_only = {
@@ -164,7 +166,15 @@
 				trigger_event = activity_system.0331
 			}
 		}
-
+		#LotR: give a second chance to special grand weddings if they fail because war was declared on their spouse
+		else_if = {
+			limit = {
+				scope:host = { has_character_flag = aragorn_gw }
+			}
+			scope:host = {
+				trigger_event = flavourevent.0014
+			}
+		}
 		# Only the player as spouse_1 can say no at the altar, no reason to have events to notify the AI
 		else_if = {
 			limit = {
@@ -1012,6 +1022,15 @@
 									desc = ep2_activities_legacy_2_name
 								}
 							}
+							if = {
+								limit = {
+									has_perk = journey_planner_perk
+								}
+								multiply = {
+									value = voyager_journey_planner_value
+									desc = journey_planner_perk_name
+								}
+							}
 							# Some people get one free.
 							if = {
 								limit = { 
@@ -1107,6 +1126,15 @@
 									multiply = ep2_activities_legacy_2_grand_weddings_discount_value
 									multiply = -1
 									desc = ep2_activities_legacy_2_name
+								}
+							}
+							if = {
+								limit = {
+									has_perk = journey_planner_perk
+								}
+								multiply = {
+									value = voyager_journey_planner_value
+									desc = journey_planner_perk_name
 								}
 							}
 							# Some people get one free.
@@ -1205,6 +1233,15 @@
 									multiply = ep2_activities_legacy_2_grand_weddings_discount_value
 									multiply = -1
 									desc = ep2_activities_legacy_2_name
+								}
+							}
+							if = {
+								limit = {
+									has_perk = journey_planner_perk
+								}
+								multiply = {
+									value = voyager_journey_planner_value
+									desc = journey_planner_perk_name
 								}
 							}
 							# Some people get one free.
@@ -1319,6 +1356,15 @@
 									desc = ep2_activities_legacy_2_name
 								}
 							}
+							if = {
+								limit = {
+									has_perk = journey_planner_perk
+								}
+								multiply = {
+									value = voyager_journey_planner_value
+									desc = journey_planner_perk_name
+								}
+							}
 							# Some people get one free.
 							if = {
 								limit = { 
@@ -1414,6 +1460,15 @@
 									multiply = ep2_activities_legacy_2_grand_weddings_discount_value
 									multiply = -1
 									desc = ep2_activities_legacy_2_name
+								}
+							}
+							if = {
+								limit = {
+									has_perk = journey_planner_perk
+								}
+								multiply = {
+									value = voyager_journey_planner_value
+									desc = journey_planner_perk_name
 								}
 							}
 							# Some people get one free.
@@ -1513,6 +1568,15 @@
 									multiply = ep2_activities_legacy_2_grand_weddings_discount_value
 									multiply = -1
 									desc = ep2_activities_legacy_2_name
+								}
+							}
+							if = {
+								limit = {
+									has_perk = journey_planner_perk
+								}
+								multiply = {
+									value = voyager_journey_planner_value
+									desc = journey_planner_perk_name
 								}
 							}
 							# Some people get one free.
@@ -1631,6 +1695,15 @@
 									desc = ep2_activities_legacy_2_name
 								}
 							}
+							if = {
+								limit = {
+									has_perk = journey_planner_perk
+								}
+								multiply = {
+									value = voyager_journey_planner_value
+									desc = journey_planner_perk_name
+								}
+							}
 							# Some people get one free.
 							if = {
 								limit = { 
@@ -1726,6 +1799,15 @@
 									multiply = ep2_activities_legacy_2_grand_weddings_discount_value
 									multiply = -1
 									desc = ep2_activities_legacy_2_name
+								}
+							}
+							if = {
+								limit = {
+									has_perk = journey_planner_perk
+								}
+								multiply = {
+									value = voyager_journey_planner_value
+									desc = journey_planner_perk_name
 								}
 							}
 							# Some people get one free.
@@ -1825,6 +1907,15 @@
 									multiply = ep2_activities_legacy_2_grand_weddings_discount_value
 									multiply = -1
 									desc = ep2_activities_legacy_2_name
+								}
+							}
+							if = {
+								limit = {
+									has_perk = journey_planner_perk
+								}
+								multiply = {
+									value = voyager_journey_planner_value
+									desc = journey_planner_perk_name
 								}
 							}
 							# Some people get one free.
@@ -2693,7 +2784,7 @@
 	# scope:activity = the activity
 	# scope:host = host of the activity
 	on_enter_active_state = {
-
+		surveyor_no_stone_unturned_perk_effect = yes
 	}
 
 	# Effects run during the activity event pulse for characters in the active state

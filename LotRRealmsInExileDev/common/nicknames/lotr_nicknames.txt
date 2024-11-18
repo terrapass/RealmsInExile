@@ -46,6 +46,7 @@
 	# Northmen Nicknames
 	nick_the_last = {}
 	nick_the_outrider = {}
+	nick_the_steadfast_shield = {}
 
 	# Dorwinion Nicknames 
 	nick_gwinaran = {} # Wine-king
@@ -81,6 +82,7 @@
 	nick_gilded_star = {}
 	nick_the_restless_flame = {}
 	nick_the_lord_of_blades_unique = {}
+	nick_silken_spider = {}
 
 	# Vulmaw Nicknames
 	nick_dragon_at_world_end = {}
@@ -96,6 +98,7 @@
 	nick_first_among_equals = {}
 	nick_thornheart = {}
 	nick_bloodspear = {}
+	nick_red_raider = {}
 	
 	# Gwathuirim
 	nick_the_mad_dog = {}
@@ -210,6 +213,7 @@
 	nick_halfelven = {}
 	nick_the_duckwarrior = {}
 	nick_the_venturesome = {}
+	nick_galion = {}
 
 	# Dwarven
 	nick_the_deathless = {}
@@ -235,7 +239,9 @@
 	nick_the_bloodstained_thrar_III = {}
 	nick_three_day_king_thrar_IV = {}
 	nick_the_rebuilder_thrar_V = {}
-	
+	nick_of_the_naugrim = {}
+	nick_orc_hewer = {}
+
 	# Maia
 	nick_lord_of_the_rings = {}
 	nick_the_dark_lord = {}
@@ -262,7 +268,11 @@
 	nick_the_ship_born = {}
 	nick_the_iron_handed = {}
 	nick_throng_cleaver = {}
+	nick_the_lookout_unique = {}
 	nick_twice_bled = {}
+	nick_captain_of_the_pit = {}
+	nick_seashadow = {}
+	nick_golden_reaver = {}
 	
 	# Haruzan
 	nick_serpentlord = {}
@@ -275,6 +285,8 @@
 	nick_the_warlord_haruzan = {}
 	
 	# Dune Sea
+	nick_wind_crowned = {}
+	nick_tent_ruler = {}
 	nick_the_sandstorm = {}
 	nick_mother_of_shades = {}
 	nick_the_evil_dunesea = {}
@@ -316,6 +328,7 @@
 	# Bellakar
 	nick_ironhand = {}
 	nick_league_maker = {}
+	nick_the_warmaker = {}
 	nick_the_virtuous = {}
 	nick_the_hammer_of_doom = {}
 	nick_the_prudent = {}
@@ -333,6 +346,7 @@
 	nick_the_anointed_saint = {}
 
 	# Thani-Hazad
+	nick_the_black_dulgu = {}
 	nick_storm_disciple = {}
 	nick_black_vizier = {}
 	nick_the_rebuilder_thani = {}
@@ -376,6 +390,7 @@
 	nick_vatra_acolu = {}
 	nick_the_flame_tender = {}
 	nick_storm_queller = {}
+	nick_west_conquerer = {}
 
 	# Event
 	nick_serpent_slayer = {}
@@ -385,6 +400,10 @@
 	nick_loremaster = {}
 	nick_brightlordlady = {}
 	nick_archivist = {}
+	nick_the_mariner = {}
+	nick_the_sailor = {}
+	nick_the_corsair = {}
+	nick_the_plunderer = {}
 	
 	# Mountain Orcs / Goblins (Scripted)
 	# nick_one_hand = {} # Already in vanilla
@@ -433,6 +452,26 @@
 	nick_flameflinger = {}
 	nick_darkseeker = {}
 	nick_the_deep = { is_bad = yes }
+	nick_gate_warden = {}
+	nick_book_keeper = {}
+	nick_the_scrapper = {}
+	nick_spear_tosser = {}
+	nick_hand_eater = {}
+	nick_the_amicable = {}
+	nick_peak_watcher = {}
+	nick_the_menacing = {}
+	nick_the_ponderer = {}
+	nick_the_fishmonger = {}
+	nick_the_toll_collector = {}
+	nick_great_goblin_lw = {}
+	nick_gutsmasher = {}
+	nick_the_snatcher = {}
+	nick_the_believer = {}
+	nick_the_obliging = {}
+	nick_frog_skin = {}
+	nick_the_survivor = {}
+	nick_the_burrower = {}
+	nick_the_twin = {}
 
 	# Orcs
 	nick_flamesworn = {}
@@ -441,6 +480,12 @@
 	nick_red_eyes = {}
 	nick_blood_eyes = {}
 	nick_fire_eyes = {}
+	nick_blood_painter = {}
+	nick_guldur_herald = {}
+	nick_the_fervent = {}
+	nick_the_pale_orc = {}
+	nick_the_gourmet = {}
+	nick_rusty_axe = {}
 	nick_bag_head = {}
 	nick_the_handsome_face = {}
 	nick_barrel_scraper = { is_bad = yes }
@@ -735,7 +780,6 @@
 	nick_the_abolist = {}
 	nick_fly_nest = {}
 	nick_ghul_kin = {}
-	nick_the_plunderer = {}
 	nick_the_mauled = {}
 	nick_the_warmonger = {}
 	nick_the_cunning = {}
@@ -744,3 +788,11 @@
 	nick_drake_slayer = {}
 	nick_spider_eater = {}
 	nick_terror_in_the_woods = {}
+	nick_bloody_fist = {}
+	nick_spider_lover = {}
+	nick_the_sailor_unique = {}
+	nick_the_ugly = {}
+	nick_the_tower = {}
+	nick_the_watchful = {}
+	nick_the_slave_driver = {}
+	nick_caragor_wrestler = {}

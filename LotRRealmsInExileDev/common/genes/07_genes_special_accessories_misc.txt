@@ -201,7 +201,7 @@ special_genes = {
 					1 = male_legwear_generic
 				}
 				female = {
-					1 = female_legwear_secular_western_common_01
+					1 = male_legwear_generic
 				}
 				boy = male
 				girl = female
@@ -213,7 +213,7 @@ special_genes = {
 					1 = male_legwear_rohan_guard
 				}
 				female = {
-					1 = female_legwear_secular_western_common_01
+					1 = male_legwear_generic
 				}
 			}
 			
@@ -1625,6 +1625,16 @@ special_genes = {
 				boy = male
 				girl = female
 			}
+			bp3_walking_stick_01 = {
+				index = 53
+				male = {
+					1 = bp3_walking_stick_01_a
+					1 = bp3_walking_stick_01_b
+				}
+				female = male
+				boy = male
+				girl = female
+			}
 			
 			dwarven_spear_left_hand = {
 				index = 55
@@ -1742,6 +1752,26 @@ special_genes = {
 				index = 66
 				male = {
 					1 = isengard_shield_01_portrait
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			orc_shield_01 = {
+				index = 67
+				male = {
+					1 = orc_shield_01_portrait
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			easterling_shield_01 = {
+				index = 68
+				male = {
+					1 = easterling_shield_01_portrait
 				}
 				female = male
 				boy = male
@@ -2875,23 +2905,183 @@ special_genes = {
 			}
 
 			gondor_shield_01_right = {
-			index = 117
-			male = {
+				index = 117
+				male = {
 				1 = gondor_shield_01_portrait_right
-			}
-			female = male
-			boy = male
-			girl = female
+				}
+				female = male
+				boy = male
+				girl = female
 			}
 
 			isengard_shield_01_right = {
-			index = 118
-			male = {
-				1 = isengard_shield_01_portrait_right
+				index = 118
+				male = {
+					1 = isengard_shield_01_portrait_right
+				}
+				female = male
+				boy = male
+				girl = female
 			}
-			female = male
-			boy = male
-			girl = female
+
+			orc_shield_01_right = {
+				index = 119
+				male = {
+					1 = orc_shield_01_portrait_right
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			easterling_shield_01_right = {
+				index = 120
+				male = {
+					1 = easterling_shield_01_portrait_right
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			dwarven_hammer_01 = {
+			index = 121
+				male = {
+					1 = dwarven_hammer_01
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			dwarven_hammer_02 = {
+				index = 122
+				male = {
+					1 = dwarven_hammer_02
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			dwarven_mace_01 = {
+				index = 123
+				male = {
+					1 = dwarven_mace_01
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			dwarven_mace_02 = {
+				index = 124
+				male = {
+					1 = dwarven_mace_02
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			dwarven_mace_03 = {
+				index = 125
+				male = {
+					1 = dwarven_mace_03
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			dwarven_mace_04 = {
+				index = 126
+				male = {
+					1 = dwarven_mace_04
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			orc_longaxe_01 = {
+				index = 127
+				male = {
+					1 = orc_longaxe_01
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			woodman_longaxe_01 = {
+				index = 128
+				male = {
+					1 = woodman_longaxe_01
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			northron_longaxe_01 = {
+				index = 129
+				male = {
+					1 = northron_longaxe_01
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			dunedain_longaxe_01 = {
+				index = 130
+				male = {
+					1 = dunedain_longaxe_01
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			lotr_artifact_longaxe_equipped = {
+				index = 131
+				male = {
+					1 = ep1_artifact_axe_equipped_01
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			dwarven_longaxe_01 = {
+				index = 132
+				male = {
+					1 = dwarven_longaxe_01
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			dwarven_longaxe_02 = {
+				index = 133
+				male = {
+					1 = dwarven_longaxe_02
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+
+			dwarven_longaxe_03 = {
+				index = 134
+				male = {
+					1 = dwarven_longaxe_03
+				}
+				female = male
+				boy = male
+				girl = female
 			}
 		}
 	

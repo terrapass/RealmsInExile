@@ -32,6 +32,12 @@ c_guishas = {
         change_development_level = 8
 		government = tribal_government
     }
+	6760.10.1 = {
+		holder = linegumahar1 #Jabaka
+	}
+	6792.2.23 = {
+        holder = linegumahar3 #Adeg
+    }
     6849.7.11 = {
         holder = lineolamma1 #Mihar
     }
@@ -62,6 +68,12 @@ c_nol_klust = {
         change_development_level = 5
 		government = tribal_government
     }
+	6760.10.1 = {
+		holder = linegumahar1 #Jabaka
+	}
+	6792.2.23 = {
+        holder = linegumahar3 #Adeg
+    }
     6849.7.11 = {
         holder = lineolamma1 #Mihar
     }
@@ -91,6 +103,12 @@ c_che_chy = {
 	5100.1.1 = { # Lomchy Migration
         change_development_level = 4
 		government = tribal_government
+    }
+	6760.10.1 = {
+		holder = linegumahar1 #Jabaka
+	}
+	6792.2.23 = {
+        holder = linegumahar3 #Adeg
     }
     6849.7.11 = {
         holder = lineolamma1 #Mihar
@@ -140,6 +158,15 @@ d_gard_kinn = {
 }
 c_kelun = {
 	1.1.1 = {
+        holder = k_wastelands_holder
+		change_development_level = -100
+		government = wastelands_government
+    }
+	3770.1.1 = {
+        change_development_level = 6
+		holder = lineshelepinn1
+    }
+	6900.1.1 = {
         holder = k_wastelands_holder
 		change_development_level = -100
 		government = wastelands_government
@@ -205,14 +232,47 @@ c_okan = {
 		change_development_level = -100
 		government = wastelands_government
 	}
+	6773.8.6 = {
+		holder = linedirsakounika4
+		change_development_level = 4	
+		government = tribal_government
+	}
+	6780.1.2 = {
+		liege = "d_tam_wamo"
+	}
+	6854.1.1 = {
+		holder = k_wastelands_holder
+		change_development_level = -100
+		government = wastelands_government
+	}
 }
 c_durche = {
+	6780.1.1 = {
+		holder = linedirsakounika3
+	}
+	6780.1.2 = {
+		liege = "d_tam_wamo"
+	}
+	6833.12.1 = {
+		liege = none
+	}
 	7026.4.28 = {
         change_development_level = 4
         holder = lineogori9
+		
     }
+	
 }
 c_deghuka = {
+	6780.1.1 = {
+		holder = linemasamavin3 #Dartoyir
+	}
+	6780.1.2 = {
+		liege = "d_tanturak"
+	}
+	6833.12.1 = {
+		liege = none
+	}
 	7026.4.28 = {
         change_development_level = 5
         holder = lineogori9
@@ -230,7 +290,7 @@ k_tanturak = {
 	}
 	3913.8.2 = {
 		holder = 0
-	}
+	}	
 }
 d_tanturak = {
 	3845.2.9 = {
@@ -240,6 +300,13 @@ d_tanturak = {
 		holder = tanturakigovernor4
 	}
 	3913.8.2 = {
+		holder = 0
+	}
+	6780.1.1 = {
+		holder = linemasamavin1 #Radovan
+	}
+	
+	6833.12.1 = {
 		holder = 0
 	}
 }
@@ -252,6 +319,9 @@ c_sarul = {
 	}
 	3861.2.11 = {
 		holder = tanturakigovernor4
+	}
+	6780.1.1 = {
+		holder = linemasamavin1 #Radovan
 	}
     6844.1.12 = {
         holder = linediganyadi1 #Diganjad
@@ -273,7 +343,10 @@ c_bata_an_sarul = {
 	3770.1.1 = {
         change_development_level = 9
     }
-    6844.1.12 = {
+    6780.1.1 = {
+		holder = linemasamavin1 #Radovan
+	}
+	6844.1.12 = {
         holder = linediganyadi1 #Diganjad
     }
     6906.8.26 = {
@@ -293,8 +366,23 @@ c_narsacha = {
 	3770.1.1 = {
         change_development_level = 8
     }
-	7000.1.1 = {
-        holder = linetamskahanan12 #TODO TEMP
+    6780.1.1 = {
+		holder = linemasamavin1 #Radovan
+	}
+	6833.3.24 = {
+        holder = lineeguundayo1 #Gayin
+    }
+    6904.8.10 = {
+        holder = lineeguundayo3 #Diganyad
+    }
+    6952.2.5 = {
+        holder = lineeguundayo5 #Kulakamuul
+    }
+    6959.4.14 = {
+        holder = lineeguundayo7 #Eguundayo
+    }
+    7006.9.21 = {
+        holder = lineeguundayo9 #Rugani
     }
 }
 c_hye_uvar = {
@@ -306,12 +394,32 @@ c_hye_uvar = {
 		change_development_level = -100
 		government = wastelands_government
 	}
+	6783.6.6 = {
+		holder = linemusanes1
+		change_development_level = 4	
+		government = tribal_government
+	}
+	6880.1.1 = {
+		holder = k_wastelands_holder
+		change_development_level = -100
+		government = wastelands_government
+	}
 }
 c_azu_uri = {
 	3770.1.1 = {
         change_development_level = 4
     }
 	5483.1.1 = {
+		holder = k_wastelands_holder
+		change_development_level = -100
+		government = wastelands_government
+	}
+	6783.6.6 = {
+		holder = linemasamavin1 #Radovan
+		change_development_level = 4	
+		government = tribal_government
+	}
+	6854.1.1 = {
 		holder = k_wastelands_holder
 		change_development_level = -100
 		government = wastelands_government
@@ -336,6 +444,16 @@ c_lwohebata = {
 		change_development_level = -100
 		government = wastelands_government
 	}
+	6783.6.6 = {
+		holder = linemusanes1
+		change_development_level = 4	
+		government = tribal_government
+	}
+	6854.1.1 = {
+		holder = k_wastelands_holder
+		change_development_level = -100
+		government = wastelands_government
+	}
 }
 ###    Ardinâk (d_ardinak)
 c_ardinak = {
@@ -346,6 +464,14 @@ c_ardinak = {
 	}
 }
 ###    Tâm Wâmo (d_tam_wamo)
+d_tam_wamo = {
+	6753.6.6 = {
+		holder = linedirsakounika1
+	}
+	6854.1.1 = {
+		holder = 0
+	}
+}
 c_tam_wamo = {
 	3770.1.1 = {
         change_development_level = 8
@@ -355,13 +481,41 @@ c_tam_wamo = {
 		change_development_level = -100
 		government = wastelands_government
 	}
+	6753.6.6 = {
+		holder = linedirsakounika1
+		change_development_level = 4	
+		government = tribal_government
+	}
+	6854.1.1 = {
+		holder = k_wastelands_holder
+		change_development_level = -100
+		government = wastelands_government
+	}
 }
 c_wamo_vasa = {
 	3770.1.1 = {
         change_development_level = 6
     }
-	7000.1.1 = {
-        holder = linetamskahanan12 #TODO TEMP
+    6780.1.1 = {
+		holder = linemasamavin3 #Dartoyir
+	}
+	6780.1.2 = {
+		liege = "d_tanturak"
+	}
+	6833.3.24 = {
+        holder = lineeguundayo1 #Gayin
+    }
+    6904.8.10 = {
+        holder = lineeguundayo3 #Diganyad
+    }
+    6952.2.5 = {
+        holder = lineeguundayo5 #Kulakamuul
+    }
+    6959.4.14 = {
+        holder = lineeguundayo7 #Eguundayo
+    }
+    7006.9.21 = {
+        holder = lineeguundayo9 #Rugani
     }
 }
 c_hideg = {
@@ -373,6 +527,16 @@ c_hideg = {
 		change_development_level = -100
 		government = wastelands_government
 	}
+	6753.6.6 = {
+		holder = linedirsakounika1
+		change_development_level = 4	
+		government = tribal_government
+	}
+	6854.1.1 = {
+		holder = k_wastelands_holder
+		change_development_level = -100
+		government = wastelands_government
+	}
 }
 c_wamoru = {
 	1.1.1 = {
@@ -380,6 +544,16 @@ c_wamoru = {
 		change_development_level = -100
 		government = wastelands_government
 	}
+	6753.6.6 = {
+		holder = linedirsakounika1
+		change_development_level = 4	
+		government = tribal_government
+	}
+	6854.1.1 = {
+		holder = k_wastelands_holder
+		change_development_level = -100
+		government = wastelands_government
+	}	
 }
 c_jodeg = {
 	3770.1.1 = {
@@ -416,6 +590,14 @@ c_aludeg = {
 	}
 }
 ###    Azra-Zhê (d_azra_zhe)
+d_azra_zhe = {
+	6780.1.1 = {
+        holder = linemasamavin1 #Radovan
+    }
+	6833.12.1 = {
+	    holder = 0
+	}
+}
 c_azra_zhe = {
 	3770.1.1 = {
         change_development_level = 8
@@ -423,10 +605,13 @@ c_azra_zhe = {
     6710.2.13 = {
         holder = lineoludajin1 #Ayamido
     }
-    6759.2.25 = { #Long winter start date ruler
+    6759.2.25 = { 
         holder = lineoludajin3 #Ojahar
     }
-    6784.7.12 = {
+   	6780.1.1 = {
+		liege = "d_tanturak"
+	}
+    6784.7.12 = { #Long winter start date ruler
         holder = lineoludajin5 #Diganyad
     }
     6832.10.3 = {
@@ -455,10 +640,13 @@ c_hwozaya = {
     6710.2.13 = {
         holder = lineoludajin1 #Ayamido
     }
-    6759.2.25 = { #Long winter start date ruler
+    6759.2.25 = { 
         holder = lineoludajin3 #Ojahar
     }
-    6784.7.12 = {
+    6780.1.1 = {
+		liege = "d_tanturak"
+	}
+	6784.7.12 = { #Long winter start date ruler
         holder = lineoludajin5 #Diganyad
     }
     6832.10.3 = {
@@ -484,7 +672,20 @@ c_rathane = {
 	3770.1.1 = {
         change_development_level = 7
     }
-    6853.12.12 = {
+    6710.2.13 = {
+        holder = lineoludajin1 #Ayamido
+    }
+    6759.2.25 = { 
+        holder = lineoludajin3 #Ojahar
+    }    
+	6780.1.1 = {
+		liege = "d_tanturak"
+	}
+	6784.7.12 = { #Long winter start date ruler
+        holder = lineoludajin5 #Diganyad
+    }
+	
+	6853.12.12 = {
         holder = linekulakamuui1 #Niwahar
     }
     6913.4.2 = {
@@ -501,13 +702,21 @@ c_rathane = {
     }
 }
 ###    Wâriga (d_wariga)
+d_wariga = {
+	6703.1.12 = {
+		holder = lineraghash1 #Radnag
+	}
+	6786.10.8 = {
+	    holder = 0
+	}
+}
 c_hwomo = {
 	3770.1.1 = {
 		holder = k_wastelands_holder
 		change_development_level = -100
 		government = wastelands_government
 	}
-	5583.1.1 = {
+	6883.1.1 = {
         change_development_level = 4	
 		government = tribal_government
     }
@@ -533,24 +742,75 @@ c_mbara = {
 	5583.1.1 = {
         change_development_level = 4
     }
-	7000.1.1 = {
-        holder = linetamskahanan14 #TODO TEMP
-	government = tribal_government
+	
+	6703.1.12 = {
+		holder = lineraghash1 #Radnag
+		government = tribal_government
+	}
+	6786.10.8 = {
+		holder = lineraghash5 #Radzag
+		government = tribal_government
     }
+	6909.3.22 = {
+        holder = linerulum1 #Mauduf
+		government = tribal_government
+    }
+    6968.9.20 = {
+        holder = linerulum3 #Lagrad
+    }
+    6984.6.23 = {
+        holder = linerulum5 #Gazdush
+    }
+    7031.1.11 = {
+        holder = linerulum7 #Yagrat
+    }
+
 }
 c_godega = {
 	3770.1.1 = {
         change_development_level = 3
     }
-	7000.1.1 = {
-        holder = linetamskahanan14 #TODO TEMP
+	6703.1.12 = {
+		holder = lineraghash1 #Radnag
+		government = tribal_government
+	}
+	6786.10.8 = {
+		holder = lineraghash4 #Radnu
+		government = tribal_government
+    }
+	6909.3.22 = {
+        holder = linerulum1 #Mauduf
+		government = tribal_government
+    }
+    6968.9.20 = {
+        holder = linerulum3 #Lagrad
+    }
+    6984.6.23 = {
+        holder = linerulum5 #Gazdush
+    }
+    7031.1.11 = {
+        holder = linerulum7 #Yagrat
     }
 }
 c_ramorth = {
 	3770.1.1 = {
-        change_development_level = 3
+        change_development_level = 7
     }
-	7000.1.1 = {
-        holder = linetamskahanan15 #TODO TEMP
+	6703.1.12 = {
+		holder = lineraghash1 #Radnag
+		government = tribal_government
+	}  
+	6786.10.8 = {
+		holder = lineraghash3 #Rhukar
+		government = tribal_government
+    }
+   6911.10.20 = {
+        holder = linemorakh1 #Gazdush
+    }
+    6983.8.3 = {
+        holder = linemorakh3 #Wrask_u
+    }
+    7010.8.3 = {
+        holder = linemorakh5 #Yaglu_u_n
     }
 }

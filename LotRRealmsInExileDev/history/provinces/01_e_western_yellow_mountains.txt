@@ -7,7 +7,13 @@
     culture = blacklocks_nargubraz
     religion = faith_blacklocks
     holding = dwarven_holding
+    special_building_slot = wonder_mines_of_bruni		
+    
+	6926.6.15 = {	#Bruni delves his mines
+		special_building = wonder_mines_of_bruni
+	}
 }
+
 
 ##    Khebabarsâ (c_khebabarsa)
 
@@ -112,7 +118,7 @@
     holding = wastelands_holding
 	buildings = {
 		stale_air
-		strange_creatures
+		wild_orcs
 	}
 }
 
@@ -190,6 +196,9 @@
     culture = wastelands
     religion = faith_wastelands_pagan
     holding = wastelands_holding
+	buildings = {
+		wild_orcs
+	}
 }
 
 ##    Zudkhashmur (c_zudkhashmur)
@@ -239,7 +248,7 @@
     religion = faith_wastelands_pagan
     holding = wastelands_holding
 	buildings = {
-		collapsed_ceiling
+		wild_orcs
 	}
 }
 
@@ -279,8 +288,10 @@
     culture = wastelands
     religion = faith_wastelands_pagan
     holding = wastelands_holding
+	special_building_slot = wonder_igal_zaram		
+	special_building = wonder_igal_zaram
 	buildings = {
-		collapsed_ceiling
+		flooded_tunnels
 		strange_creatures
 	}
 }
@@ -292,7 +303,7 @@
     religion = faith_wastelands_pagan
     holding = wastelands_holding
 	buildings = {
-		bear_den
+		wild_orcs
 	}
 }
 
@@ -358,6 +369,9 @@
     culture = wastelands
     religion = faith_wastelands_pagan
     holding = wastelands_holding
+	buildings = {
+		wild_orcs
+	}
 }
 
 ###    Uznîm (d_uznim)
@@ -381,7 +395,7 @@
     holding = wastelands_holding
 	buildings = {
 		collapsed_ceiling
-		stale_air
+		wild_orcs
 	}
 }
 

@@ -1152,7 +1152,8 @@
 				template = gondorian_war
 				range = { 0.81 0.99 } # For the randomness to work correctly
 			}
-		}	
+		}
+		outfit_tags = { gondor_war_prince }	
 		weight = {
 			base = 0
 			modifier = {
@@ -1182,9 +1183,14 @@
             base = 0
             modifier = {
                 add = 50 
-                portrait_commoner_armor_trigger = { 
-                     CULTURE_INPUT = arnorian
-                }
+				OR = {
+					portrait_commoner_armor_trigger = {
+						 CULTURE_INPUT = arnorian
+					}
+					portrait_commoner_armor_trigger = { 
+						 CULTURE_INPUT = uialdain
+					}
+				}
             }
         }
 	}
@@ -1209,6 +1215,12 @@
 					portrait_high_nobles_armor_trigger = { 
 						CULTURE_INPUT = arnorian
 					}
+					portrait_low_nobles_armor_trigger = { 
+						CULTURE_INPUT = uialdain
+					}
+					portrait_high_nobles_armor_trigger = { 
+						CULTURE_INPUT = uialdain
+					}					
 				}
             }
         }
@@ -1270,6 +1282,11 @@
 				portrait_northern_proxy_clothing_trigger = yes
 				portrait_rohirrim_clothing_trigger = no
 				portrait_gwathiurim_clothing_trigger = no
+			}
+			modifier = {
+				add = -100
+				portrait_wear_helmet_trigger = yes
+				portrait_hobbit_clothing_trigger = yes
 			}
 		}
 	}
@@ -2013,6 +2030,7 @@
                 }
             }
 		}
+		outfit_tags = { elven_war_silvan }
 	}
 	
 	elven_war_silvan_king = {
@@ -2054,6 +2072,7 @@
 				culture = { has_cultural_pillar = heritage_calaquendi }
 			}		
 		}
+		outfit_tags = { elven_war_noldor }
 	}
 	
 	elven_war_galadhrim = {
@@ -2153,6 +2172,25 @@
 				portrait_wear_helmet_trigger = yes
 				portrait_dwarf_clothing_trigger = yes
 				portrait_dwarf_bronze_clothing_trigger = yes
+			}
+		}
+	}
+	
+	blacklock_dwarf_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = northron_war
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 110
+				portrait_wear_helmet_trigger = yes
+				culture = { has_cultural_pillar = heritage_blacklock }
 			}
 		}
 	}
@@ -2271,6 +2309,25 @@
 				add = 120
 				portrait_wear_helmet_trigger = yes
 				portrait_angmarrim_clothing_trigger = yes
+			}
+		}
+	}
+	
+	hobbit_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = fp2_christian_common
+				accessory = male_headgear_secular_fp2_iberian_christian_common_01
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 120
+				portrait_wear_helmet_trigger = yes
+				portrait_hobbit_clothing_trigger = yes
 			}
 		}
 	}

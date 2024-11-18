@@ -648,6 +648,11 @@
                     }
 				}
 			}
+			modifier = {
+				add = 101
+				portrait_wear_armor_trigger = yes
+				portrait_hobbit_clothing_trigger = yes
+			}
 		}
 	}
 
@@ -861,7 +866,7 @@
 			accessory = {
 				mode = add
 				gene = legwear
-				template = no_legwear
+				template = mountain_orc_legwear
 				range = { 0 1 } # For the randomness to work correctly
 			}
 		}	
@@ -1245,6 +1250,26 @@
 				add = 100
 				portrait_circumpolar_clothing_trigger = yes
 			}
+		}
+	}
+	
+	blacklock_legwear = {
+
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = mena_war_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}	
+		weight = {
+			base = 0
+			modifier = {
+				add = 120
+				portrait_wear_armor_trigger = yes
+				culture = { has_cultural_pillar = heritage_blacklock }
+			}		
 		}
 	}
 }

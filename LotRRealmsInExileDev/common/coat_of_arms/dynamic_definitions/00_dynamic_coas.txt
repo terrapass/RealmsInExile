@@ -534,6 +534,41 @@ d_gundabad = {
 	}
 }
 
+d_gundalok = {
+	item = {
+		trigger = { coa_switch_to_dwarf_trigger = yes }
+		coat_of_arms = d_dorf_gundalok
+	}
+}
+
+d_gunduz_mahab = {
+	item = {
+		trigger = { coa_switch_to_dwarf_trigger = yes }
+		coat_of_arms = d_dorf_gunduz_mahab
+	}
+}
+
+d_malasul_tagerkar = {
+	item = {
+		trigger = { coa_switch_to_dwarf_trigger = yes }
+		coat_of_arms = d_dorf_malasul_tagerkar
+	}
+}
+
+d_haryagsh = {
+	item = {
+		trigger = { coa_switch_to_dwarf_trigger = yes }
+		coat_of_arms = d_dorf_haryagsh
+	}
+}
+
+d_foryagsh = {
+	item = {
+		trigger = { coa_switch_to_dwarf_trigger = yes }
+		coat_of_arms = d_dorf_foryagsh
+	}
+}
+
 d_drakkenvast = {
 	item = {
 		trigger = { coa_switch_to_dwarf_trigger = yes }
@@ -1449,4 +1484,13 @@ d_wariga = {
         trigger = {coa_switch_to_adunai_trigger = yes}
         coat_of_arms = d_wariga_adunaic
     } 
+}
+
+# Numenor-in-Exile
+
+e_numenor_in_exile = {
+	item = {
+		trigger = {coa_switch_to_adunai_trigger = yes}
+		coat_of_arms = e_numenor_in_exile_adunai
+	}
 }

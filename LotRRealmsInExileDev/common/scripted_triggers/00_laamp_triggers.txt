@@ -287,6 +287,8 @@ ep3_adventurer_invasion_allowed_for_character_trigger = {
 	has_ep3_dlc_trigger = yes
 	government_has_flag = government_is_landless_adventurer
 	is_landed = no
+	is_wastelands = no #LOTR
+	is_in_valinor = no #LOTR
 }
 
 ep3_adventurer_invasion_allowed_for_character_display_regardless_trigger = {
@@ -296,6 +298,14 @@ ep3_adventurer_invasion_allowed_for_character_display_regardless_trigger = {
 
 ep3_adventurer_landless_allowed_against_character_trigger = {
 	is_landed = yes
+	scope:attacker = {
+		is_wastelands = no #LOTR
+		is_in_valinor = no #LOTR
+	}
+	scope:defender = {
+		is_wastelands = no #LOTR
+		is_in_valinor = no #LOTR
+	}
 	# Players vs. AI filtering.
 	OR = {
 		# Can always target the AI.
@@ -386,7 +396,7 @@ valid_laamp_basic_trigger = {
 		is_ai = yes
 		# Plus some standard stuff.
 		is_alive = yes
-		is_adult = yes
+		is_lotr_adult = yes
 	}
 	$EMPLOYER$ = { is_incapable = no }
 	# Laamps shouldn't offer contracts in their local area, ever.
@@ -423,6 +433,9 @@ valid_laamp_basic_trigger = {
 			}
 		}
 	}
+	## LotR - make sure the employer qualifies to give them contracts
+	$EMPLOYER$ = { lotr_appropriate_contract_employer_trigger = { CHARACTER = $LAAMP$ } }
+	
 	$LAAMP$ = { government_has_flag = government_is_landless_adventurer }
 	$LAAMP$ = {
 		trigger_if = {
@@ -598,7 +611,7 @@ laamp_base_3001_valid_neighbours_trigger = {
 		# Or on people we're currently at war with — it's a little late for court whispers.
 		is_at_war_with = $EMPLOYER$
 	}
-	is_adult = yes
+	is_lotr_adult = yes
 	is_incapable = no
 	is_imprisoned = no
 }
@@ -754,6 +767,10 @@ enable_debug_laamp_event_logging_toggle_trigger = { always = no }
 ### YOU HAVE BEEN WARNED.
 ai_can_valid_to_create_laamp_trigger = {
 	save_temporary_scope_as = char_temp
+	scope:char_temp = {
+		is_wastelands = no #LOTR
+		is_in_valinor = no #LOTR
+	}
 	OR = {
 		# General checking.
 		global_variable_list_size = {
@@ -812,7 +829,7 @@ would_judge_new_gallivanters_trigger = {
 			has_trait = eccentric
 		}
 	}
-	is_adult = yes
+	is_lotr_adult = yes
 }
 
 butcher_animals_decision_available_dogs_trigger = {

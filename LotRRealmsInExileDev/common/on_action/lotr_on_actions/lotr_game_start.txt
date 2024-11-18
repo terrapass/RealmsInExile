@@ -15,86 +15,6 @@ lotr_on_game_start = {
 		}
 		### GAME RULE: EXTRA ADMINS
 		apply_historic_administrative_game_rule_effect = yes
-		
-		# Set up camp members and types for LAAMPs
-		## Gildor Inglorion - 3000TA
-		character:lineofgildor ?= {
-			if = {
-				limit = { 
-					is_alive = yes
-					has_dlc_feature = roads_to_power
-				}
-				add_realm_law_skip_effects = camp_purpose_scholars
-			}
-		}
-		## Rangers of Ithilien - 3000TA
-		character:linearphenian24 ?= {
-			if = {
-				limit = { 
-					is_alive = yes
-					has_dlc_feature = roads_to_power
-				}
-				add_realm_law_skip_effects = camp_purpose_mercenaries
-				if = {
-					limit = {
-						character:lineofanborn1 = {
-							NOT = { is_courtier_of = character:linearphenian24 }
-						}
-					}
-					add_courtier = character:lineofanborn1
-				}
-				if = {
-					limit = {
-						character:linehathor17 = {
-							NOT = { is_courtier_of = character:linearphenian24 }
-						}
-					}
-					add_courtier = character:linehathor17
-				}
-				if = {
-					limit = {
-						character:lineofmadril1 = {
-							NOT = { is_courtier_of = character:linearphenian24 }
-						}
-					}
-					add_courtier = character:lineofmadril1
-				}
-			}
-		}
-
-		character:lineofvalathmir1 ?= {
-			if = {
-				limit = { 
-					is_alive = yes
-					has_dlc_feature = roads_to_power
-				}
-				add_realm_law_skip_effects = camp_purpose_mercenaries
-				if = {
-					limit = {
-						character:lineofvalathmir2 = {
-							NOT = { is_courtier_of = character:lineofvalathmir1 }
-						}
-					}
-					add_courtier = character:lineofvalathmir2
-				}
-				if = {
-					limit = {
-						character:lineofvalathmir3 = {
-							NOT = { is_courtier_of = character:lineofvalathmir1 }
-						}
-					}
-					add_courtier = character:lineofvalathmir3
-				}
-				if = {
-					limit = {
-						character:lineofvalathmir4 = {
-							NOT = { is_courtier_of = character:lineofvalathmir1 }
-						}
-					}
-					add_courtier = character:lineofvalathmir4
-				}
-			}
-		}
 
 		# Variables so the window can be made invisble
 		#LotR
@@ -175,8 +95,10 @@ lotr_on_game_start = {
 		
 		princely_houses_of_dunedain = yes
 
-		
+		### Fire Intro Events ###
 		fire_intro_events = yes
+
+		### Sorcery Setup ###
 		generate_sorcery_list_on_start = yes
 
 		title:k_wastelands.holder = { create_story = story_artifact_crafting }
@@ -216,6 +138,12 @@ lotr_on_game_start = {
 				days = 1
 			}
 		}
+
+		#########################
+		# Gamestart Culture Edits
+		# Some culture ethos/traditions vary between start dates
+		#########################
+		lotr_gamestart_culture_effect = yes
 
 		#########################
 		# WILDERNESS total clear of courtiers, guests and downgrading the leader
@@ -484,59 +412,260 @@ lotr_on_game_start = {
 		
 		### GONDOR ###
 		
-		title:c_morannon = {
+		title:c_morannon = { #Black Gate
 			set_important_location = {
 				title = title:e_gondor
-				enter_realm_event = gondor.6001
+				enter_realm_event = lotr_enter_realm.2001
 			}
 			set_important_location = {
 				title = title:e_gondor_steward
-				enter_realm_event = gondor.6001
+				enter_realm_event = lotr_enter_realm.2001
 			}
 			set_important_location = {
 				title = title:e_castamir
-				enter_realm_event = gondor.6001
+				enter_realm_event = lotr_enter_realm.2001
+			}
+			set_important_location = {
+				title = title:e_reunitedkingdom
+				enter_realm_event = lotr_enter_realm.2001
+			}
+			set_important_location = {
+				title = title:e_mordor
+				enter_realm_event = lotr_enter_realm.2003
+				leave_realm_event = lotr_enter_realm.2002
 			}
 		}
 		
-		title:c_minas_tirith = {
+		title:c_minas_tirith = { #Minas Tirith
 			set_important_location = {
 				title = title:e_gondor
-				enter_realm_event = gondor.6002
-				leave_realm_event = gondor.6003
+				enter_realm_event = lotr_enter_realm.2005
+				leave_realm_event = lotr_enter_realm.2004
 			}
 			set_important_location = {
 				title = title:e_gondor_steward
-				enter_realm_event = gondor.6002
-				leave_realm_event = gondor.6003
+				enter_realm_event = lotr_enter_realm.2005
+				leave_realm_event = lotr_enter_realm.2004
+			}
+			set_important_location = {
+				title = title:e_reunitedkingdom
+				enter_realm_event = lotr_enter_realm.2005
+				leave_realm_event = lotr_enter_realm.2004
+			}
+			set_important_location = {
+				title = title:e_mordor
+				enter_realm_event = lotr_enter_realm.2006
+			}
+			set_important_location = {
+				title = title:k_morgul
+				enter_realm_event = lotr_enter_realm.2006
 			}
 		}
 		
-		title:c_umbar = {
+		title:c_umbar = { #Umbar
 			set_important_location = {
 				title = title:e_gondor
-				enter_realm_event = gondor.6004
+				enter_realm_event = lotr_enter_realm.2007
 			}
 			set_important_location = {
 				title = title:e_gondor_steward
-				enter_realm_event = gondor.6004
+				enter_realm_event = lotr_enter_realm.2007
+			}
+			set_important_location = {
+				title = title:e_reunitedkingdom
+				enter_realm_event = lotr_enter_realm.2007
+			}
+			set_important_location = {
+				title = title:e_adunaim
+				enter_realm_event = lotr_enter_realm.2008
 			}
 		}	
 		
-		title:c_minas_ithil = {
+		title:c_minas_ithil = { #Minas Morgul
 			set_important_location = {
 				title = title:e_gondor
-				enter_realm_event = gondor.2300
+				enter_realm_event = lotr_enter_realm.2009
 			}
 			set_important_location = {
 				title = title:e_gondor_steward
-				enter_realm_event = gondor.2300
+				enter_realm_event = lotr_enter_realm.2009
 			}
 			set_important_location = {
 				title = title:e_castamir
-				enter_realm_event = gondor.2300
+				enter_realm_event = lotr_enter_realm.2009
+			}
+			set_important_location = {
+				title = title:e_reunitedkingdom
+				enter_realm_event = lotr_enter_realm.2009
 			}
 		}
+		
+		### ROHAN ###
+		
+		title:c_kingstead = { #Edoras
+			set_important_location = {
+				title = title:k_rohan
+				leave_realm_event = lotr_enter_realm.3005
+				enter_realm_event = lotr_enter_realm.3006
+			}
+			set_important_location = {
+				title = title:k_isengard
+				enter_realm_event = lotr_enter_realm.3004
+			}
+			set_important_location = {
+				title = title:e_isengard_unleashed
+				enter_realm_event = lotr_enter_realm.3004
+			}
+		}
+		
+		title:c_helmsdeep = { #Helm's Deep
+			set_important_location = {
+				title = title:k_rohan
+				leave_realm_event = lotr_enter_realm.3002
+				enter_realm_event = lotr_enter_realm.3003
+			}
+			set_important_location = {
+				title = title:k_isengard
+				enter_realm_event = lotr_enter_realm.3001
+			}
+			set_important_location = {
+				title = title:e_isengard_unleashed
+				enter_realm_event = lotr_enter_realm.3001
+			}
+		}
+		
+		title:c_isengard = { #Isengard
+			set_important_location = {
+				title = title:k_rohan
+				enter_realm_event = lotr_enter_realm.3009
+			}
+			set_important_location = {
+				title = title:k_isengard
+				leave_realm_event = lotr_enter_realm.3007
+				enter_realm_event = lotr_enter_realm.3008
+			}
+			set_important_location = {
+				title = title:e_isengard_unleashed
+				leave_realm_event = lotr_enter_realm.3007
+				enter_realm_event = lotr_enter_realm.3008
+			}
+		}
+		
+		### ANDUIN VALE & GREENWOOD ###
+		
+		title:c_caras_galadhon = { #Caras Galadhon
+			set_important_location = {
+				title = title:k_lothlorien
+				leave_realm_event = lotr_enter_realm.4001
+				enter_realm_event = lotr_enter_realm.4002
+			}
+			set_important_location = {
+				title = title:e_laurelindorenan
+				leave_realm_event = lotr_enter_realm.4001
+				enter_realm_event = lotr_enter_realm.4002
+			}
+			set_important_location = {
+				title = title:k_amon_lanc
+				enter_realm_event = lotr_enter_realm.4003
+			}
+			set_important_location = {
+				title = title:k_khazad_dum
+				enter_realm_event = lotr_enter_realm.4003
+			}
+			set_important_location = {
+				title = title:e_misty_mountains
+				enter_realm_event = lotr_enter_realm.4003
+			}
+			set_important_location = {
+				title = title:e_orc_horde
+				enter_realm_event = lotr_enter_realm.4003
+			}
+			set_important_location = {
+				title = title:e_mordor
+				enter_realm_event = lotr_enter_realm.4003
+			}
+			set_important_location = {
+				title = title:k_morgul
+				enter_realm_event = lotr_enter_realm.4003
+			}
+			set_important_location = {
+				title = title:k_isengard
+				enter_realm_event = lotr_enter_realm.4003
+			}
+		}
+
+		### NORTHERN MOUNTAINS ####
+
+		title:c_throne_of_erebor = {
+			set_important_location = {
+				title = title:k_erebor
+				leave_realm_event = lotr_enter_realm.5001
+				enter_realm_event = lotr_enter_realm.5002
+			}
+			set_important_location = {
+				title = title:k_iron_hills
+				leave_realm_event = lotr_enter_realm.5001
+				enter_realm_event = lotr_enter_realm.5002
+			}
+			set_important_location = {
+				title = title:e_iron_mountains
+				leave_realm_event = lotr_enter_realm.5001
+				enter_realm_event = lotr_enter_realm.5002
+			}
+			set_important_location = {
+				title = title:k_khazad_dum
+				leave_realm_event = lotr_enter_realm.5001
+				enter_realm_event = lotr_enter_realm.5002
+			}
+			set_important_location = {
+				title = title:k_gundabad
+				leave_realm_event = lotr_enter_realm.5001
+				enter_realm_event = lotr_enter_realm.5002
+			}
+			set_important_location = {
+				title = title:e_misty_mountains
+				leave_realm_event = lotr_enter_realm.5001
+				enter_realm_event = lotr_enter_realm.5002
+			}
+			set_important_location = {
+				title = title:e_orc_horde
+				enter_realm_event = lotr_enter_realm.5002
+			}
+			set_important_location = {
+				title = title:e_mordor
+				enter_realm_event = lotr_enter_realm.5002
+			}
+
+		}
+		
+		### ERIADOR ###
+		
+		title:c_tharbad = {
+			set_important_location = {
+				title = title:e_gondor
+				enter_realm_event = lotr_enter_realm.1001
+			}
+			set_important_location = {
+				title = title:e_gondor_steward
+				enter_realm_event = lotr_enter_realm.1001
+			}
+			set_important_location = {
+				title = title:e_arnor
+				enter_realm_event = lotr_enter_realm.1001
+			}
+			set_important_location = {
+				title = title:k_cardolan
+				enter_realm_event = lotr_enter_realm.1001
+			}
+			set_important_location = {
+				title = title:e_reunitedkingdom
+				enter_realm_event = lotr_enter_realm.1001
+			}
+			set_important_location = {
+				title = title:d_northern_dunedain
+				enter_realm_event = lotr_enter_realm.1001
+			}
+		}	
 	}
 }
 
@@ -551,14 +680,47 @@ lotr_on_game_start_after_lobby = {
     }	
 	
 	effect = {
-		character:lineofzuberi7 = { create_story = story_death_of_ola_barasi }
+		if = {
+			limit = {
+				title:c_mispir.holder = {
+					highest_held_title_tier < tier_kingdom
+					NOT = { has_trait = balan_lai_member }
+					any_held_county = {
+						percent > 0.50
+						title_province = { geographical_region = middleearth_thani_hazad_struggle_region }
+					}
+					OR = {
+						any_character_struggle = { 
+							is_struggle_type = thani_hazad_struggle 
+							involvement = involved
+						}
+						any_character_struggle = { 
+							is_struggle_type = thani_hazad_struggle 
+							involvement = interloper
+						}
+					}
+				}
+			}
+			title:c_mispir.holder = { create_story = story_mispir }
+		}
+		every_ruler = {
+			limit = {
+				has_character_modifier = sauron_strengthened_3_modifier
+				OR = {
+					highest_held_title_tier < tier_kingdom
+					primary_title = title:k_gundabad # Special case since they're very small
+				}
+			}
+			create_story = story_conqueror
+		}
+		remove_kingdom_and_duchy_variables_from_empires = yes
 		### Ruler designer elves get an event to age up
 		every_player = {
 			if = {
 				limit = { 
 					is_elf = yes
 					is_from_ruler_designer = yes
-					is_landed = yes
+					is_landed_or_landless_administrative = yes
 				}
 			trigger_event = elven_racial.0102
 			}
@@ -566,7 +728,7 @@ lotr_on_game_start_after_lobby = {
 				limit = { 
 					is_elf = yes
 					is_from_ruler_designer = yes
-					is_landed = no
+					is_landed_or_landless_administrative = no
 				}
 			trigger_event = elven_racial.0103
 			}
@@ -649,6 +811,287 @@ lotr_on_game_start_after_lobby = {
 			every_held_title = {
 				update_dynamic_coa = yes
 			}
-		}	
+		}
+
+		# Set up camp members and types for LAAMPs
+		## Saruman - 1000TA
+		character:lineofsaruman ?= {
+			if = {
+				limit = { 
+					is_alive = yes
+					game_start_date >= 5033.1.1
+					game_start_date <= 6790.1.1
+					has_dlc_feature = roads_to_power
+				}
+				add_realm_law_skip_effects = camp_purpose_scholars
+			}
+		}
+		## Gildor Inglorion - 3000TA
+		character:lineofgildor ?= {
+			if = {
+				limit = { 
+					is_alive = yes
+					has_dlc_feature = roads_to_power
+				}
+				add_realm_law_skip_effects = camp_purpose_scholars
+			}
+		}
+		## Rangers of Ithilien - 3000TA
+		character:linearphenian24 ?= {
+			if = {
+				limit = { 
+					is_alive = yes
+					has_dlc_feature = roads_to_power
+				}
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				if = {
+					limit = {
+						character:lineofanborn1 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:linearphenian24 }
+						}
+					}
+					add_courtier = character:lineofanborn1
+				}
+				if = {
+					limit = {
+						character:linehathor17 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:linearphenian24 }
+						}
+					}
+					add_courtier = character:linehathor17
+				}
+				if = {
+					limit = {
+						character:lineofmadril1 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:linearphenian24 }
+						}
+					}
+					add_courtier = character:lineofmadril1
+				}
+			}
+		}
+
+		character:lineofvalathmir1 ?= {
+			if = {
+				limit = { 
+					is_alive = yes
+					has_dlc_feature = roads_to_power
+				}
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				if = {
+					limit = {
+						character:lineofvalathmir2 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofvalathmir1 }
+						}
+					}
+					add_courtier = character:lineofvalathmir2
+				}
+				if = {
+					limit = {
+						character:lineofvalathmir3 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofvalathmir1 }
+						}
+					}
+					add_courtier = character:lineofvalathmir3
+				}
+				if = {
+					limit = {
+						character:lineofvalathmir4 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofvalathmir1 }
+						}
+					}
+					add_courtier = character:lineofvalathmir4
+				}
+			}
+		}
+		## Arkhâd's Venture - Bellakarean Adventurers
+		character:lineofsujanir_adventurer ?= { #LotR
+			if = {
+				limit = {
+					is_alive = yes
+					has_dlc_feature = roads_to_power
+				}
+				add_realm_law_skip_effects = camp_purpose_explorers
+				if = {
+					limit = {
+						character:lininzilloniadventurer1 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofsujanir_adventurer }
+						}
+					}
+					add_courtier = character:lininzilloniadventurer1
+				}
+				if = {
+					limit = {
+						character:lininzilloniadventurer2 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofsujanir_adventurer }
+						}
+					}
+					add_courtier = character:lininzilloniadventurer2
+				}
+				if = {
+					limit = {
+						character:lineoftedkazir77brother ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofsujanir_adventurer }
+						}
+					}
+					add_courtier = character:lineoftedkazir77brother
+				}
+			}
+		}
+
+		#Dusk-Breaker Horde - 3000TA
+		character:lineofdriond35 ?= { #LotR
+			if = {
+				limit = {
+					is_alive = yes
+					has_dlc_feature = roads_to_power
+				}
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				if = {
+					limit = {
+						character:lineofdriond37 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofdriond35 }
+						}
+					}
+					add_courtier = character:lineofdriond37
+				}
+				if = {
+					limit = {
+						character:lineofdriond39 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofdriond35 }
+						}
+					}
+					add_courtier = character:lineofdriond39
+				}
+				if = {
+					limit = {
+						character:lineofdriond42 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofdriond35 }
+						}
+					}
+					add_courtier = character:lineofdriond42
+				}
+				if = {
+					limit = {
+						character:lineofdriond45 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofdriond35 }
+						}
+					}
+					add_courtier = character:lineofdriond45
+				}
+				if = {
+					limit = {
+						character:lineofazumenakhad97 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofdriond35 }
+						}
+					}
+					add_courtier = character:lineofazumenakhad97
+				}
+				if = {
+					limit = {
+						character:lineoftejhazor8 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofdriond35 }
+						}
+					}
+					add_courtier = character:lineoftejhazor8
+				}
+			}
+		}
+		character:lineofdriond37 ?= { #LotR
+			if = {
+				limit = {
+					is_alive = yes
+					has_dlc_feature = roads_to_power
+					game_start_date >= 7006.4.18
+				}
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				house ?= {
+					if = {
+						limit = { NOT = { house_head = PREV } }
+						set_house_head = prev
+					}
+				}
+				if = {
+					limit = {
+						character:lineofdriond39 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofdriond37 }
+						}
+					}
+					add_courtier = character:lineofdriond39
+				}
+				if = {
+					limit = {
+						character:lineofdriond42 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofdriond37 }
+						}
+					}
+					add_courtier = character:lineofdriond42
+				}
+				if = {
+					limit = {
+						character:lineofdriond45 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofdriond37 }
+						}
+					}
+					add_courtier = character:lineofdriond45
+				}
+				if = {
+					limit = {
+						character:lineofazumenakhad97 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofdriond37 }
+						}
+					}
+					add_courtier = character:lineofazumenakhad97
+				}
+				if = {
+					limit = {
+						character:lineoftejhazor8 ?= {
+							is_alive = yes
+							is_landed = no
+							NOT = { is_courtier_of = character:lineofdriond37 }
+						}
+					}
+					add_courtier = character:lineoftejhazor8
+				}
+			}
+		}
 	}
 }

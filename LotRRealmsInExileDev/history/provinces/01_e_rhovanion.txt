@@ -26,17 +26,17 @@
 		holding = castle_holding
 		buildings = { # Rebuilding of Dale	
 			castle_02
-			barracks_01	
+			hill_forts_01
 			hill_farms_01
-			# hill_forts_01 
+			# barracks_01
 		}
 	}
 	6984.1.1 = { # Trade with the Dwarves really picks up, Dale's expansion starts
 		buildings = { # Dale thrives	
 			castle_03
-			barracks_02	
+			hill_forts_03
 			hill_farms_06
-			# hill_forts_03 
+			# barracks_02
 			# hunting_grounds_03 
 		}
 		special_building_slot = wonder_market_of_dale	
@@ -45,9 +45,7 @@
 }
 
 3392 = {	#Austeinfell (b_austeinfell)
-	culture = wastelands
-	religion = faith_wastelands_pagan
-	holding = wastelands_holding
+	holding = none
 	6974.1.1 = {
 		culture = dalemen
 		religion = faith_dale
@@ -60,9 +58,7 @@
 }
 
 3391 = {	#Aldurinsgard (b_aldurinsgard)
-	culture = wastelands
-	religion = faith_wastelands_pagan
-	holding = wastelands_holding
+	holding = none
 	6974.1.1 = {
 		culture = dalemen
 		religion = faith_dale
@@ -75,9 +71,7 @@
 }
 
 3393 = {	#Drakasgard (b_drakasgard)
-	culture = wastelands
-	religion = faith_wastelands_pagan
-	holding = wastelands_holding
+	holding = none
 	6974.1.1 = {
 		culture = dalemen
 		religion = faith_dale
@@ -86,9 +80,7 @@
 }
 
 3394 = {	#Dolgafull (b_dolgafull)
-	culture = wastelands
-	religion = faith_wastelands_pagan
-	holding = wastelands_holding
+	holding = none
 	6974.1.1 = {
 		culture = dalemen
 		religion = faith_dale
@@ -623,7 +615,7 @@
 	religion = faith_wastelands_pagan
 	holding = wastelands_holding
 	buildings = {
-		bear_den
+		wild_orcs
 	}
 	3800.1.1 = {
 		culture = gramas
@@ -640,6 +632,8 @@
 		culture = dalemen
 		religion = faith_dale
 		holding = castle_holding
+		special_building_slot = wonder_four_winds_hall	
+		special_building = wonder_four_winds_hall
 		buildings = {	
 			castle_02
 			hill_forts_04
@@ -725,7 +719,7 @@
 	religion = faith_wastelands_pagan
 	holding = wastelands_holding
 	buildings = {
-		wolf_den
+		bandits
 		flooded_lands
 	}
 	6623.1.1 = { 
@@ -1143,7 +1137,7 @@
 	religion = faith_wastelands_pagan
 	holding = wastelands_holding
 	buildings = {
-		flooded_lands
+		wild_orcs
 	}
 	6741.1.11 = { # Dale expands north
 		culture = dalemen
@@ -1532,7 +1526,7 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			bandits
+			wild_orcs
 			flooded_lands
 		}
 	}
@@ -5703,7 +5697,7 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			bandits
+			wild_orcs
 			shadow_of_mordor
 		}
 	}
@@ -5771,6 +5765,10 @@
         culture = wastelands
 	    religion = faith_wastelands_pagan
 	    holding = wastelands_holding
+		buildings = {
+			wild_orcs
+			bandits
+		}
     }
 	6982.2.12 = {
 		culture = magriag
@@ -5833,15 +5831,174 @@
 
 ####	 Brownlands (k_brownlands)
 ###		Undeeps (d_undeeps)
-##		Berennyn
-##		South Undeep
-##		Wudcomb
+		
+## 		Berennyn (c_berennyn)	
+	
+181 = {		#b_helestor
+	culture = wastelands
+	religion = faith_wastelands_pagan
+	holding = wastelands_holding
+	buildings = {
+	    wild_orcs
+		bandits
+	}
+	6689.11.27 = {
+	    culture = leofring
+		religion = faith_fey_court
+		holding = tribal_holding
+    }
+	6933.1.1 = {		
+		culture = leofring
+		religion = faith_withered_court
+		holding = tribal_holding
+	}		
+}			
+182 = {		#b_lashkarg	
+	culture = leofring		
+	religion = faith_withered_court		
+	holding = none		
+}			
+183 = {		#b_barancil	
+	culture = leofring		
+	religion = faith_withered_court		
+	holding = none		
+}			
+184 = {		#b_burhfald	
+	culture = leofring		
+	religion = faith_withered_court		
+	holding = none		
+}	
+		
+## 		South Undeep (c_southundeep)
+
+185 = {			
+	culture = wastelands
+	religion = faith_wastelands_pagan
+	holding = wastelands_holding
+	buildings = {
+	    flooded_lands
+	}
+	6677.6.8 = {
+		culture = leofring
+		religion = faith_fey_court
+		holding = tribal_holding
+	}
+	6835.1.1 = {
+		religion = faith_withered_court
+		holding = tribal_holding
+	}
+}			
+186 = {			
+	culture = leofring		
+	religion = faith_withered_court		
+	holding = none		
+}			
+187 = {			
+	culture = leofring		
+	religion = faith_withered_court		
+	holding = none		
+}
+
+##		 Wudcomb (c_wudcomb)
+
+3804 = {			
+	culture = wastelands
+	religion = faith_wastelands_pagan
+	holding = wastelands_holding
+	buildings = {
+		wolf_den
+		wild_orcs
+	}
+	6961.2.11 = {
+		culture = leofring
+		religion = faith_withered_court
+		holding = tribal_holding
+	}	
+}				
+188 = {			
+	culture = leofring		
+	religion = faith_withered_court		
+	holding = none		
+}			
+189 = {			
+	culture = leofring		
+	religion = faith_withered_court		
+	holding = none		
+}
+
 
 ###		Brown Lands (d_brown_lands)
-## Nan Lothanduin
-## Tiringon
+##		 Nan Lothanduin (c_nanlothanduin)
+
+190 = {					
+	culture = wastelands
+	religion = faith_wastelands_pagan
+	holding = wastelands_holding
+	buildings = {
+		flooded_lands
+		ghosts
+	}
+	6929.1.1 = {
+		culture = leofring		
+		religion = faith_withered_court		
+		holding = tribal_holding
+	}
+	6965.6.23 = { # Leofrings flee from Orcs
+		culture = wastelands
+		religion = faith_wastelands_pagan
+		holding = wastelands_holding
+		buildings = {
+			flooded_lands
+			ghosts
+		}
+	}
+}			
+191 = {			
+	#culture = leofring		
+	#religion = faith_withered_court		
+	#holding = none		
+	
+	culture = wastelands
+	religion = faith_wastelands_pagan
+	holding = none
+}
+754 = {			
+	#culture = leofring		
+	#religion = faith_withered_court		
+	#holding = none		
+	
+	culture = wastelands
+	religion = faith_wastelands_pagan
+	holding = none
+}
+
+## 		Tiringon (c_tiringon)
+
+192 = {			
+	#culture = leofring		
+	#religion = faith_withered_court		
+	#holding = none		
+	
+	culture = wastelands
+	religion = faith_wastelands_pagan
+	holding = wastelands_holding
+	buildings = {
+		bandits
+		wild_orcs
+	}
+}			
+193 = {			
+	#culture = leofring		
+	#religion = faith_withered_court		
+	#holding = none		
+	
+	culture = wastelands
+	religion = faith_wastelands_pagan
+	holding = none
+}	
 
 ##		Varad (c_varad)
+
 751 = {	#Dol Varad (b_dol_varad)
 	#culture = leofring
 	#religion = faith_withered_court
@@ -5851,7 +6008,7 @@
 	holding = wastelands_holding
 	buildings = {
 		bandits
-		wolf_den
+		wild_orcs
 	}
 }
 
@@ -5864,10 +6021,78 @@
 	holding = none
 }
 
-### 	Tumcelon (d_tumcelon)
 
-## 		Dor Fírnen
-##		Morangol
+### 	Tumcelon (d_tumcelon)
+##		 Dor Firnen (c_dorfirnen)	
+		
+194 = {			
+	3912.1.1 = { # Realms-in-Exile Start (Post Akallabeth)
+		culture = northron
+		religion = faith_northmen
+		holding = tribal_holding
+	}
+	5382.5.1 = { # Rise of Angmar Start
+		culture = rhovannic
+	}
+	6000.1.1 = {
+		culture = wastelands
+		religion = faith_wastelands_pagan
+		holding = wastelands_holding
+		buildings = {
+			wild_orcs
+			ghosts
+		}
+	}
+	6970.1.1 = {
+		culture = rhovannic
+		religion = faith_northmen
+		holding = tribal_holding
+	}
+}		
+						
+197 = {			
+	culture = rhovannic
+	religion = faith_northmen		
+	holding = none		
+}			
+198 = {			
+	culture = rhovannic
+	religion = faith_northmen	
+	holding = none		
+}
+
+##		 Morangol (c_morangol)
+
+195 = {			
+	3912.1.1 = { # Realms-in-Exile Start (Post Akallabeth)
+		culture = northron
+		religion = faith_northmen
+		holding = tribal_holding
+	}
+	5382.5.1 = { # Rise of Angmar Start
+		culture = rhovannic
+	}
+	6500.1.1 = {
+		culture = wastelands
+		religion = faith_wastelands_pagan
+		holding = wastelands_holding
+		buildings = {
+			dense_growth
+			wild_orcs
+			
+		}
+	}
+	6953.3.26 = {
+		culture = rhovannic
+		religion = faith_withered_court
+		holding = tribal_holding
+	}
+}	
+196 = {			
+	culture = rhovannic
+	religion = faith_withered_court	
+	holding = none		
+}	
 
 ##		Rhunost (c_rhunost)
 
@@ -6512,7 +6737,7 @@
 		holding = wastelands_holding
 		buildings = {
 			bandits
-			wolf_den
+			wild_orcs
 		}
 	}
 }
@@ -6580,7 +6805,7 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			bandits
+			wild_orcs
 			wolf_den
 		}
 	}
@@ -6650,7 +6875,7 @@
 		holding = wastelands_holding
 		buildings = {
 			bandits
-			wolf_den
+			ghosts
 		}
 	}
 }
@@ -6784,7 +7009,7 @@
 		holding = wastelands_holding
 		buildings = {
 			bandits
-			wolf_den
+			wild_orcs
 		}
 	}
 }
@@ -6960,10 +7185,11 @@
 		religion = faith_wastelands_pagan
 		holding = wastelands_holding
 		buildings = {
-			flooded_lands
+			wild_orcs
+			spider_nest
 		}
 	}
-	6424.1.1 = {
+	6958.2.3 = {
 		culture = magriag
 		religion = faith_rhun_pantheistic
 		holding = tribal_holding
@@ -7367,7 +7593,7 @@
 		holding = wastelands_holding
 		buildings = {
 			bandits
-			bear_den
+			wild_orcs
 		}
 	}
 }
@@ -7546,6 +7772,7 @@
 		holding = wastelands_holding
 		buildings = {
 			flooded_lands
+			wild_orcs
 		}
 	}
 	6974.1.1 = { # Dale Rebuilt, southern expansion

@@ -143,6 +143,9 @@ travel_events.2000 = {
 			}
 		}
 	}
+	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_very_small }
+	}
 	#That's nice
 	option = { 
 		name = {
@@ -230,7 +233,8 @@ travel_events.2000 = {
 			base = 100
 			modifier = {
 				OR = {
-					is_adult = no
+					#is_adult = no
+					is_lotr_adult = no
 					has_trait = brave
 				}
 				factor = 2
@@ -2025,7 +2029,7 @@ travel_events.2005 = {
 	#Friendly: improve their pastures for friendship!
 	option = { 
 		name = travel_events.2005.b
-		skill = stewardship
+		
 		location.county = {
 			add_county_modifier = {
 				modifier = travel_improved_pasture_modifier
@@ -2453,6 +2457,7 @@ travel_events.2007 = {
 		NOT = { has_character_flag = had_travel_elephant_pen_event_recently }
 	}
    immediate = {
+   		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
 		#I have been previously traumatized by elephants
 		mp_delay_travel_plan = { DAYS = 90 }
 		if = {
@@ -2649,6 +2654,7 @@ travel_events.2008 = {
 		NOT = { has_character_flag = had_travel_elephant_pen_event_recently }
 	}
    immediate = {
+   		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
 		mp_delay_travel_plan = { DAYS = 90 }
 		#Save the scope for easy reference
 		location.county.holder = {
@@ -3115,6 +3121,7 @@ travel_events.2010 = {
 		}
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_very_small }
 		#Save the scope for easy reference
 		location.county.holder = {
 				save_scope_as = county_liege
@@ -3868,6 +3875,7 @@ travel_events.2012 = {
 		is_location_valid_for_travel_event_on_land = yes
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
 		#Save the scope for easy reference
 		location.county.holder = {
 			if = {
@@ -4559,7 +4567,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 								type = event_toast_effect_good
 								left_icon = root
 								title = travel_events.2013.a_success.tt
-								remove_short_term_gold = medium_gold_value
+								remove_short_term_gold = tiny_gold_value
 								add_trait = reckless
 							}
 						}
@@ -4571,7 +4579,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 								left_icon = root
 								title = travel_events.2013.a_failure.tt
 								desc = travel_events.2013.a_failed
-								remove_short_term_gold = medium_gold_value
+								remove_short_term_gold = tiny_gold_value
 							}
 						}
 					}
@@ -4592,7 +4600,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 									left_icon = root
 									right_icon = $CHARACTER_SCOPE$
 									title = travel_events.2013.a_success.tt
-									remove_short_term_gold = medium_gold_value
+									remove_short_term_gold = tiny_gold_value
 									$CHARACTER_SCOPE$ = { add_trait = reckless }
 								}
 							}
@@ -4607,7 +4615,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 									right_icon = $CHARACTER_SCOPE$
 									title = travel_events.2013.a_failure.tt
 									desc = travel_events.2013.a_failed
-									remove_short_term_gold = medium_gold_value
+									remove_short_term_gold = tiny_gold_value
 								}
 							}
 						}
@@ -4624,7 +4632,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 									left_icon = root
 									right_icon = $CHARACTER_SCOPE$
 									title = travel_events.2013.a_success.tt
-									remove_short_term_gold = medium_gold_value
+									remove_short_term_gold = tiny_gold_value
 									$CHARACTER_SCOPE$ = { add_trait = reckless }
 								}
 							}
@@ -4639,7 +4647,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 									right_icon = $CHARACTER_SCOPE$
 									title = travel_events.2013.a_failure.tt
 									desc = travel_events.2013.a_failed
-									remove_short_term_gold = medium_gold_value
+									remove_short_term_gold = tiny_gold_value
 								}
 							}
 						}
@@ -4660,7 +4668,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 								type = event_toast_effect_good
 								left_icon = root
 								title = travel_events.2013.a_success.tt
-								remove_short_term_gold = medium_gold_value
+								remove_short_term_gold = tiny_gold_value
 								add_trait = rough_terrain_expert
 							}
 						}
@@ -4672,7 +4680,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 								left_icon = root
 								title = travel_events.2013.a_failure.tt
 								desc = travel_events.2013.a_failed
-								remove_short_term_gold = medium_gold_value
+								remove_short_term_gold = tiny_gold_value
 							}
 						}
 					}
@@ -4693,7 +4701,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 									left_icon = root
 									right_icon = $CHARACTER_SCOPE$
 									title = travel_events.2013.a_success.tt
-									remove_short_term_gold = medium_gold_value
+									remove_short_term_gold = tiny_gold_value
 									$CHARACTER_SCOPE$ = { add_trait = rough_terrain_expert }
 								}
 							}
@@ -4708,7 +4716,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 									right_icon = $CHARACTER_SCOPE$
 									title = travel_events.2013.a_failure.tt
 									desc = travel_events.2013.a_failed
-									remove_short_term_gold = medium_gold_value
+									remove_short_term_gold = tiny_gold_value
 								}
 							}
 						}
@@ -4725,7 +4733,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 									left_icon = root
 									right_icon = $CHARACTER_SCOPE$
 									title = travel_events.2013.a_success.tt
-									remove_short_term_gold = medium_gold_value
+									remove_short_term_gold = tiny_gold_value
 									$CHARACTER_SCOPE$ = { add_trait = rough_terrain_expert }
 								}
 							}
@@ -4740,7 +4748,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 									right_icon = $CHARACTER_SCOPE$
 									title = travel_events.2013.a_failure.tt
 									desc = travel_events.2013.a_failed
-									remove_short_term_gold = medium_gold_value
+									remove_short_term_gold = tiny_gold_value
 								}
 							}
 						}
@@ -4761,7 +4769,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 								left_icon = root
 								title = travel_events.2013.a_success.tt
 								desc = travel_events.2013.a_rough_terrain
-								remove_short_term_gold = medium_gold_value
+								remove_short_term_gold = tiny_gold_value
 								add_trait = rough_terrain_expert
 							}
 						}
@@ -4773,7 +4781,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 								left_icon = root
 								title = travel_events.2013.a_success.tt
 								desc = travel_events.2013.a_reckless
-								remove_short_term_gold = medium_gold_value
+								remove_short_term_gold = tiny_gold_value
 								add_trait = reckless
 							}
 						}
@@ -4795,7 +4803,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 									left_icon = root
 									right_icon = $CHARACTER_SCOPE$
 									title = travel_events.2013.a_success.tt
-									remove_short_term_gold = medium_gold_value
+									remove_short_term_gold = tiny_gold_value
 									$CHARACTER_SCOPE$ = { add_trait = rough_terrain_expert }
 								}
 							}
@@ -4809,7 +4817,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 									left_icon = root
 									right_icon = $CHARACTER_SCOPE$
 									title = travel_events.2013.a_success.tt
-									remove_short_term_gold = medium_gold_value
+									remove_short_term_gold = tiny_gold_value
 									$CHARACTER_SCOPE$ = { add_trait = reckless }
 								}
 							}
@@ -4827,7 +4835,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 									left_icon = root
 									right_icon = $CHARACTER_SCOPE$
 									title = travel_events.2013.a_success.tt
-									remove_short_term_gold = medium_gold_value
+									remove_short_term_gold = tiny_gold_value
 									$CHARACTER_SCOPE$ = { add_trait = rough_terrain_expert }
 								}
 							}
@@ -4841,7 +4849,7 @@ scripted_effect check_traits_apply_appropriate_effect = {
 									left_icon = root
 									right_icon = $CHARACTER_SCOPE$
 									title = travel_events.2013.a_success.tt
-									remove_short_term_gold = medium_gold_value
+									remove_short_term_gold = tiny_gold_value
 									$CHARACTER_SCOPE$ = { add_trait = reckless }
 								}
 							}
@@ -4969,7 +4977,8 @@ travel_events.2013 = {
 					any_entourage_character = {
 						is_primary_heir_of = root
 						is_available_travelling = yes
-						is_adult = yes
+						#is_adult = yes
+						is_lotr_adult = yes
 						NOT = { this = scope:guard_type_character }
 					}
 				}
@@ -4977,7 +4986,8 @@ travel_events.2013 = {
 					limit = { 
 						is_primary_heir_of = root
 						is_available_travelling = yes
-						is_adult = yes
+						#is_adult = yes
+						is_lotr_adult = yes
 						NOT = { this = scope:guard_type_character }
 					}
 					save_scope_as = entourage_heir
@@ -4989,7 +4999,8 @@ travel_events.2013 = {
 					any_entourage_character = {
 						is_heir_of = root
 						is_available_travelling = yes
-						is_adult = yes
+						#is_adult = yes
+						is_lotr_adult = yes
 						NOT = { this = scope:guard_type_character }
 					}
 				}
@@ -4997,7 +5008,8 @@ travel_events.2013 = {
 					limit = { 
 						is_heir_of = root
 						is_available_travelling = yes
-						is_adult = yes
+						#is_adult = yes
+						is_lotr_adult = yes
 						NOT = { this = scope:guard_type_character }
 					}
 					save_scope_as = entourage_heir
@@ -5454,7 +5466,8 @@ travel_events.2014 = {
 		name = travel_events.2014.a
 		if = {
 			limit = {
-				is_adult = yes
+				#is_adult = yes
+				is_lotr_adult = yes
 			}
 			duel = {
 				skill = prowess
@@ -5685,7 +5698,8 @@ travel_events.2014 = {
 				add = 50
 			}
 			modifier = {
-				is_adult = no
+				#is_adult = no
+				is_lotr_adult = no
 				factor = 0.5
 			}
 			modifier = {
@@ -5820,7 +5834,8 @@ travel_events.2015 = {
 						min = -49
 					}
 					modifier = {
-						is_adult = no
+						#is_adult = no
+						is_lotr_adult = no
 						add = 25
 					}
 					desc = travel_events.2015.a_convinced_desc
@@ -5873,7 +5888,8 @@ travel_events.2015 = {
 						min = -49
 					}
 					modifier = {
-						is_adult = no
+						#is_adult = no
+						is_lotr_adult = no
 						add = 25
 					}
 					desc = travel_events.2015.a_convinced_desc
@@ -6037,6 +6053,7 @@ travel_events.2016 = {
 		}
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_medium }
 		#Dummy bull loc
 		dummy_male = {
 			save_scope_as = bull_loc
@@ -6071,12 +6088,14 @@ travel_events.2016 = {
 					#Adults first
 					limit = {
 						NOT = { this = scope:guard_type_character }
-						is_adult = yes
+						#is_adult = yes
+						is_lotr_adult = yes
 					}
 					#Then kids
 					alternative_limit = {
 						NOT = { this = scope:guard_type_character }
-						is_adult = no
+						#is_adult = no
+						is_lotr_adult = no
 						age > 10
 					}
 					save_scope_as = entourage_member
@@ -6085,10 +6104,12 @@ travel_events.2016 = {
 			else = {
 				random_entourage_character = {
 					#Adults first
-					limit = { is_adult = yes }
+					#limit = { is_adult = yes }
+					limit = { is_lotr_adult = yes }
 					#Then kids
 					alternative_limit = { 
-						is_adult = no
+						#is_adult = no
+						is_lotr_adult = no
 						age > 10
 					}
 					save_scope_as = entourage_member
@@ -6099,7 +6120,8 @@ travel_events.2016 = {
 	#Get in the fray!
 	option = {
 		name = travel_events.2016.a
-		trigger = { is_adult = yes }
+		#trigger = { is_adult = yes }
+		trigger = { is_lotr_adult = yes }
 		duel = {
 			skills = { prowess learning }
 			value = medium_skill_rating
@@ -6421,7 +6443,8 @@ travel_events.2016 = {
 		#You just let a kid get bull rushed
 		if = {
 			limit = {
-				scope:entourage_member = { is_adult = no }
+				#scope:entourage_member = { is_adult = no }
+				scope:entourage_member = { is_lotr_adult = no }
 			}
 			add_dread = medium_dread_gain
 		}
@@ -6625,7 +6648,8 @@ travel_events.2017 = {
 				limit = {
 					is_available_travelling = yes
 					#For the pack resolution; shouldn't have children punching adults
-					is_adult = yes
+					#is_adult = yes
+					is_lotr_adult = yes
 				}
 				save_scope_as = entourage_member_one
 			}
@@ -6767,6 +6791,11 @@ travel_events.2018 = {
 		trigger = { exists = scope:entourage_member_three }
 		character = scope:entourage_member_three
 	}
+
+	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
+	}
+
 	#Go with the pack
 	option = {
 		name = travel_events.2018.a
@@ -6976,6 +7005,7 @@ travel_events.2019 = {
 		hide_info = yes
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_medium }
 		play_music_cue = "mx_cue_murder"
 		#Create our agent/murderer
 		create_character = {
@@ -7352,6 +7382,7 @@ travel_events.2020 = {
 		animation = personality_compassionate
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
 		play_music_cue = "mx_cue_sacredrite"
 		#Create our mystic
 		create_character = {
@@ -7517,7 +7548,8 @@ travel_events.2020 = {
 		trigger = {
 			is_elf = no
 			cannot_be_killed = no
-			is_adult = yes
+			#is_adult = yes
+			is_lotr_adult = yes
 			NOT = { has_trait = celibate }
 			OR = {
 				has_trait = lustful
@@ -8895,6 +8927,7 @@ travel_events.2025 = {
 		NOT = { has_character_flag = had_travel_farm_estate_event_recently }
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_very_small }
 		#Find a suitable shady estate owner
 		if = {
 			limit = {
@@ -9157,6 +9190,7 @@ travel_events.2026 = {
 		travel_interaction_with_locals_desired = yes #lotr
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_very_small }
 		#Save scope for easy access
 		location.county.holder = { save_scope_as = county_liege }
 		#Find an estate owner
@@ -10201,6 +10235,7 @@ travel_events.2029 = {
 		}
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
 		#Chaplain won't look kindly on you blaspheming your religion
 		if = {
 			limit = { 
@@ -10747,6 +10782,7 @@ travel_events.2031 = {
 		NOT = { has_character_flag = had_travel_cereal_field_event_recently }
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_very_small }
 		#Find a gardener
 		mp_delay_travel_plan = { DAYS = 90 }
 		if = {
@@ -10944,6 +10980,7 @@ travel_events.2032 = {
 		middle_of_year_season_trigger = yes
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_very_small }
 		mp_delay_travel_plan = { DAYS = 90 }
 		#Find a herbalist
 		if = {
@@ -11255,7 +11292,8 @@ travel_events.2033 = {
 						2033_is_sadistically_inclined_trigger = yes
 						is_cannibal_trigger = yes
 					}
-					scope:prisoner = { is_adult = yes }
+					#scope:prisoner = { is_adult = yes }
+					scope:prisoner = { is_lotr_adult = yes }
 				}
 				desc = travel_events.2033.desc_manhunt
 			}
@@ -11269,7 +11307,8 @@ travel_events.2033 = {
 						2033_is_sadistically_inclined_trigger = yes
 						is_cannibal_trigger = yes
 					}
-					scope:prisoner = { is_adult = yes }
+					#scope:prisoner = { is_adult = yes }
+					scope:prisoner = { is_lotr_adult = yes }
 				}
 				desc = travel_events.2033.desc_manhunt_previous
 			}
@@ -11280,7 +11319,8 @@ travel_events.2033 = {
 						2033_is_sadistically_inclined_trigger = yes
 						is_cannibal_trigger = yes
 					}
-					scope:prisoner = { is_adult = yes }
+					#scope:prisoner = { is_adult = yes }
+					scope:prisoner = { is_lotr_adult = yes }
 				}
 				desc = travel_events.2033.desc_manhunt_first
 			}
@@ -11300,7 +11340,8 @@ travel_events.2033 = {
 					2033_is_sadistically_inclined_trigger = yes
 					is_cannibal_trigger = yes
 				}
-				scope:prisoner = { is_adult = yes }
+				#scope:prisoner = { is_adult = yes }
+				scope:prisoner = { is_lotr_adult = yes }
 			}
 			animation = schadenfreude
 		}
@@ -11315,7 +11356,8 @@ travel_events.2033 = {
 					2033_is_sadistically_inclined_trigger = yes
 					is_cannibal_trigger = yes
 				}
-				scope:prisoner = { is_adult = yes }
+				#scope:prisoner = { is_adult = yes }
+				scope:prisoner = { is_lotr_adult = yes }
 			}
 			animation = fear
 		}
@@ -11337,6 +11379,7 @@ travel_events.2033 = {
 		NOT = { has_character_flag = had_travel_hunting_grounds_event_recently } 
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
 		current_travel_plan = {
 			random_entourage_character = {
 				limit = {
@@ -11373,7 +11416,8 @@ travel_events.2033 = {
 				is_cannibal_trigger = yes
 				2033_is_sadistically_inclined_trigger = yes
 			}
-			scope:prisoner = { is_adult = yes }
+			#scope:prisoner = { is_adult = yes }
+			scope:prisoner = { is_lotr_adult = yes }
 		}
 		custom_tooltip = travel_events.2033.a_manhunt_tt
 		#We know what you did
@@ -11666,7 +11710,8 @@ travel_events.2033 = {
 				}
 				modifier = {
 					scope:prisoner = {
-						is_adult = no
+						#is_adult = no
+	is_lotr_adult = no
 					}
 					add = 25
 				}
@@ -11802,18 +11847,21 @@ travel_events.2034 = {
 			province = root.location
 			exists = var:escaped_prisoner
 			var:escaped_prisoner = flag:vengeful
-			is_adult = yes
+			#is_adult = yes
+			is_lotr_adult = yes
 		}
 		cannot_be_killed = no #lotr
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_medium }
 		play_music_cue = "mx_cue_murder"
 		random_pool_character = {
 			province = root.location
 			limit = {
 				has_variable = escaped_prisoner
 				var:escaped_prisoner = flag:vengeful
-				is_adult = yes
+				#is_adult = yes
+				is_lotr_adult = yes
 			}
 			save_scope_as = vengeful_prisoner
 		}
@@ -12205,10 +12253,12 @@ travel_events.2036 = {
 				var:escaped_prisoner = flag:peaceful
 				var:escaped_prisoner = flag:reformed
 			}
-			is_adult = yes
+			#is_adult = yes
+			is_lotr_adult = yes
 		}
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
 		play_music_cue = "mx_cue_low_key_positive"
 		random_pool_character = {
 			province = root.location
@@ -12218,7 +12268,8 @@ travel_events.2036 = {
 					var:escaped_prisoner = flag:peaceful
 					var:escaped_prisoner = flag:reformed
 				}
-				is_adult = yes
+				#is_adult = yes
+				is_lotr_adult = yes
 			}
 			save_scope_as = peaceful_prisoner
 		}
@@ -12435,7 +12486,8 @@ travel_events.2037 = {
 		desc = travel_events.2037.desc
 		first_valid = {
 			triggered_desc = {
-				trigger = { is_adult = yes }
+				#trigger = { is_adult = yes }
+				trigger = { is_lotr_adult = yes }
 				desc = travel_events.2037.desc_adult
 			}
 			triggered_desc = {
@@ -12445,7 +12497,8 @@ travel_events.2037 = {
 		desc = travel_events.2037.desc_segway
 		first_valid = {
 			triggered_desc = {
-				trigger = { is_adult = yes }
+				#trigger = { is_adult = yes }
+				trigger = { is_lotr_adult = yes }
 				desc = travel_events.2037.desc_outro_segway_adult
 			}
 			triggered_desc = {
@@ -12456,12 +12509,14 @@ travel_events.2037 = {
 			triggered_desc = {
 				trigger = {
 					exists = var:has_manhunted
-					is_adult = yes
+					#is_adult = yes
+					is_lotr_adult = yes
 				}
 				desc = travel_events.2037.desc_outro_manhunter
 			}
 			triggered_desc = {
-				trigger = { is_adult = yes }
+				#trigger = { is_adult = yes }
+				trigger = { is_lotr_adult = yes }
 				desc = travel_events.2037.desc_outro
 			}
 		}
@@ -12489,11 +12544,13 @@ travel_events.2037 = {
 		is_available_travelling = yes
 		is_location_valid_for_travel_event_on_land = yes
 		trigger_if = {
-			limit = { is_adult = no }
+			#limit = { is_adult = no }
+			limit = { is_lotr_adult = no }
 			current_travel_plan = {
 				any_entourage_character = {
 					count > 1
-					is_adult = yes
+					#is_adult = yes
+					is_lotr_adult = yes
 					NOT = { has_relation_rival = root }
 				}
 			}
@@ -12513,7 +12570,8 @@ travel_events.2037 = {
 				save_temporary_scope_as = imprisoner_check
 				any_prisoner = {
 					is_imprisoned_by = scope:imprisoner_check
-					is_adult = yes
+					#is_adult = yes
+					is_lotr_adult = yes
 					is_ai = yes
 				}
 			}
@@ -12521,6 +12579,7 @@ travel_events.2037 = {
 		NOT = { has_character_flag = had_travel_hunting_grounds_event_recently }
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
 		#Save the scope for easy reference
 		location.county.holder = {
 			if = {
@@ -12534,7 +12593,8 @@ travel_events.2037 = {
 			random_prisoner = {
 				limit = {
 					is_imprisoned_by = scope:2037_county_liege
-					is_adult = yes
+					#is_adult = yes
+					is_lotr_adult = yes
 					is_ai = yes
 					cannot_be_killed = no
 				}
@@ -12544,12 +12604,14 @@ travel_events.2037 = {
 		#Only children needs an adult present
     	if = {
     		limit = {
-    			is_adult = no
+    			#is_adult = no
+				is_lotr_adult = no
     		}
     		current_travel_plan = {
     			random_entourage_character = {
     				limit = { 
-    					is_adult = yes
+    					#is_adult = yes
+						is_lotr_adult = yes
     					NOT = { has_relation_rival = root }
     				}
     				save_scope_as = entourage_character
@@ -12568,7 +12630,8 @@ travel_events.2037 = {
 			text = {
 				first_valid = {
 					triggered_desc = {
-						trigger = { is_adult = no }
+						trigger = { #is_adult = no
+	is_lotr_adult = no }
 						desc = travel_events.2037.a_child
 					}
 					#I have done this before!
@@ -12741,7 +12804,8 @@ travel_events.2037 = {
 			text = {
 				first_valid = {
 					triggered_desc = {
-						trigger = { is_adult = no }
+						trigger = { #is_adult = no
+	is_lotr_adult = no }
 						desc = travel_events.2037.b_child
 					}
 					triggered_desc = {
@@ -12938,7 +13002,8 @@ travel_events.2037 = {
 			text = {
 				first_valid = {
 					triggered_desc = {
-						trigger = { is_adult = no }
+						trigger = { #is_adult = no
+	is_lotr_adult = no }
 						desc = travel_events.2037.c_child
 					}
 					triggered_desc = {
@@ -13037,26 +13102,31 @@ travel_events.2038 = {
 			any_entourage_character = {
 				OR = {
 					AND = {
-						is_adult = yes
+						#is_adult = yes
+						is_lotr_adult = yes
 						is_primary_heir_of = root
 						short_term_gold >= root.medium_gold_value			
 					}
 					AND = {
-						is_adult = yes
+						#is_adult = yes
+						is_lotr_adult = yes
 						is_heir_of = root
 						short_term_gold >= root.medium_gold_value
 					}
 					AND = {
-						is_adult = no
+						#is_adult = no
+	is_lotr_adult = no
 						is_child_of = root
 						age > 10
 					}
 					AND = {
-						is_adult = yes
+						#is_adult = yes
+						is_lotr_adult = yes
 						short_term_gold >= root.medium_gold_value
 					}
 					AND = {
-						is_adult = no
+						#is_adult = no
+	is_lotr_adult = no
 						age > 10
 					}
 				}
@@ -13078,7 +13148,8 @@ travel_events.2038 = {
 				}
 				alternative_limit = {
 					is_available_travelling_adult = yes
-					is_adult = yes
+					#is_adult = yes
+					is_lotr_adult = yes
 					is_heir_of = root
 					short_term_gold >= root.medium_gold_value
 					are_on_friendly_terms_trigger = yes
@@ -13129,7 +13200,8 @@ travel_events.2038 = {
 				show_as_tooltip = {
 					scope:entourage_character = {
 						if = {
-							limit = { is_adult = yes }
+							#limit = { is_adult = yes }
+							limit = { is_lotr_adult = yes }
 							pay_short_term_gold = {
 								target = root
 								gold = root.medium_gold_value
@@ -13270,7 +13342,8 @@ travel_events.2038 = {
 		name = travel_events.2038.b
 		trigger = {
 			scope:entourage_character = {
-				is_adult = no
+				#is_adult = no
+	is_lotr_adult = no
 				NOT = {
 					any_artifact = {
 						artifact_owner = scope:entourage_character
@@ -13475,7 +13548,8 @@ travel_events.2039 = {
 			limit = { scope:winning_character = root }
 			scope:entourage_character = {
 				if = {
-					limit = { is_adult = yes }
+					#limit = { is_adult = yes }
+					limit = { is_lotr_adult = yes }
 					pay_short_term_gold = {
 						target = root
 						gold = root.medium_gold_value
@@ -13609,7 +13683,8 @@ travel_events.2040 = {
     	desc = travel_events.2040.intro
     	first_valid = {
     		triggered_desc = {
-    			trigger = { is_adult = no }
+    			#trigger = { is_adult = no }
+				trigger = { is_lotr_adult = no }
     			desc = travel_events.2040.desc_child
     		}
     		triggered_desc = {
@@ -13713,7 +13788,8 @@ travel_events.2040 = {
     		text = {
     			first_valid = {
     				triggered_desc = {
-    					trigger = { is_adult = no }
+    					#trigger = { is_adult = no }
+						trigger = { is_lotr_adult = no }
     					desc = travel_events.2040.a_child
     				}
     				triggered_desc = {
@@ -13739,7 +13815,8 @@ travel_events.2040 = {
     	flavor = {
     		first_valid = {
     			triggered_desc = {
-    				trigger = { is_adult = no }
+    				#trigger = { is_adult = no }
+					trigger = { is_lotr_adult = no }
     				desc = travel_events.2040.a.flavor_child
     			}
     			triggered_desc = {
@@ -13815,7 +13892,8 @@ travel_events.2040 = {
     		text = {
     			first_valid = {
     				triggered_desc = {
-    					trigger = { is_adult = no }
+    					#trigger = { is_adult = no }
+						trigger = { is_lotr_adult = no }
     					desc = travel_events.2040.b_child
     				}
     				triggered_desc = {
@@ -13827,7 +13905,8 @@ travel_events.2040 = {
     	flavor = {
     		first_valid = {
     			triggered_desc = {
-    				trigger = { is_adult = no }
+    				#trigger = { is_adult = no }
+					trigger = { is_lotr_adult = no }
     				desc = travel_events.2040.b.flavor_child
     			}
     			triggered_desc = {
@@ -13870,7 +13949,8 @@ travel_events.2040 = {
     #I shall slay you for glory!
     option = {
     	name = travel_events.2040.c
-    	trigger = { is_adult = yes }
+    	#trigger = { is_adult = yes }
+		trigger = { is_lotr_adult = yes }
     	duel = {
     		skill = prowess
     		target = scope:2037_manhunt_prisoner
@@ -14259,6 +14339,7 @@ travel_events.2100 = {
 		}
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_medium }
 		#Let's save our root scope for bilateral shenanigans
 		save_scope_as = visiting_ruler
 		#Saving for loc reasons
@@ -14626,6 +14707,7 @@ travel_events.2101 = {
 		character = scope:bodyguard
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_medium }
 		if = {
 			limit = { is_travelling = yes }
 			current_travel_plan = {
@@ -15007,6 +15089,9 @@ travel_events.2104 = {
 		character = scope:murder_target
 		animation = disbelief
 	}
+	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_high }
+	}
 	#Excellent!
 	option = {
 		name = {
@@ -15105,6 +15190,9 @@ travel_events.2105 = {
 	right_portrait = {
 		character = scope:visiting_ruler
 		animation = marshal
+	}
+	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
 	}
 	#Thank you
 	option = {
@@ -15738,6 +15826,11 @@ travel_events.2108 = {
 		character = scope:province_liege
 		animation = marshal
 	}
+
+	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
+	}
+
 	#Yay
 	option = {
 		name = {
@@ -15896,6 +15989,7 @@ travel_events.2109 = {
 		animation = admiration
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_high }
 		rescuer_battle_effect = yes
 	}
 	#Hero woop woop
@@ -16113,6 +16207,7 @@ travel_events.2110 = {
 		animation = marshal
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_medium }
 		mp_delay_travel_plan = { DAYS = 90 }
 		current_travel_plan = {
 			if = {
@@ -16615,6 +16710,7 @@ travel_events.2111 = {
 		animation = personality_content
 	}
 	immediate = {
+		wayfarer_storyteller_fame_effect = { VALUE = roaming_reward_fame_small }
 		random_list = {
 			1 = {
 				dummy_female = {
