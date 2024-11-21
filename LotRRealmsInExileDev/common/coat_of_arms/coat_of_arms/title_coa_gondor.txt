@@ -532,7 +532,7 @@ b_harlond_gondor = {
 	}
 }
 
-c_malred = {
+c_malridh = {
 	pattern = "pattern_diamond_01.dds"
 	color1 = "white"
 	color2 = "black"
@@ -571,7 +571,7 @@ c_malred = {
 	}
 }
 
-b_malred = {
+b_thimbar = {
 	pattern = "pattern_diamond_01.dds"
 	color1 = "pitch_black"
 	color2 = "umbar_gold"
@@ -1627,7 +1627,7 @@ b_larnach = {
 		color2 = "lossarnach_green"
 	}
 }
-#b_taur_broseliand = {}
+#b_sir_asgar = {}
 c_faedur = {
 	pattern = "pattern_solid.dds"
 	color1 = "black"
@@ -2186,7 +2186,7 @@ c_edhelion = {
 	}
 
 }
-c_rosuldrie = {
+c_tarnost = {
 	pattern="pattern_solid.dds"
 	color1=rgb { 64 134 199 }
 	color2=white
@@ -2194,7 +2194,7 @@ c_rosuldrie = {
 	colored_emblem={
 		color1=rgb { 188 186 185 }
 		color2=rgb { 75 209 88 }
-		texture="ce_c_rosuldrie.dds"
+		texture="ce_c_tarnost.dds"
 		instance={
 			position={ 0.500000 0.470000 }
 			scale={ 0.820000 0.820000 }
@@ -2403,7 +2403,7 @@ c_eregost = {
 	}
 
 }
-d_anghabar = {
+d_dor_en_ernil = {
 	pattern="pattern_solid.dds"
 	color1=blue_light
 	color2=yellow
@@ -2701,7 +2701,7 @@ c_araglas = {
 		color1 = "white"
 	}
 }
-c_harnastin = { 
+c_min_rimmon = { 
 	pattern = "pattern_solid.tga"
 	color1 = "black"
 	color2 = "white"
@@ -2993,7 +2993,7 @@ d_lamedon = {
 		color2 = "white"
 	}
 }
-c_ethring = {
+c_ringnen = {
 	pattern="pattern_solid.dds"
 	color1=orange
 	color2=yellow
@@ -3093,7 +3093,7 @@ d_morthond_vale = {
 	}
 
 }
-c_erech = {
+c_morthond = {
 	pattern="pattern_diagonal_split_01.dds"
 	color1=green_light
 	color2=black
@@ -3129,7 +3129,7 @@ c_erech = {
 	}
 
 }
-d_tarlang = {
+d_glandhir = {
 	pattern="pattern_vertical_split_01.dds"
 	color1=green
 	color2=black

@@ -890,13 +890,16 @@ add_buildings_to_historical_provinces = {
 	province:206 = { # Amon Dim
 		add_building_if_possible = { BUILDING = courier_stables_02 }
 	}
-	province:223 = { # Min-Rimmon
+	province:2775 = { # Nardol
 		add_building_if_possible = { BUILDING = courier_stables_02 }
+	}
+	province:223 = { # Erelas
+		add_building_if_possible = { BUILDING = courier_stables_01 }
 	}
 	province:278 = { # Bar Melui
 		add_building_if_possible = { BUILDING = courier_stables_01 }
 	}
-	province:280 = { # Minas Imduin
+	province:280 = { # Minas tumladen
 		add_building_if_possible = { BUILDING = courier_stables_02 }
 	}
 	province:307 = { # Iaurost
@@ -911,7 +914,10 @@ add_buildings_to_historical_provinces = {
 	province:373 = { # Hashadir
 		add_building_if_possible = { BUILDING = courier_stables_02 }
 	}
-	province:317 = { # Bar Haeron
+	province:316 = { # Rohallor
+		add_building_if_possible = { BUILDING = courier_stables_01 }
+	}
+	province:347 = { # Bar-Erib
 		add_building_if_possible = { BUILDING = courier_stables_01 }
 	}
 	### Isengard ###
@@ -927,13 +933,13 @@ add_buildings_to_historical_provinces = {
 		add_building_if_possible = { BUILDING = pastures_02 }
 		add_building_if_possible = { BUILDING = cereal_fields_02 }
 	}
-	province:8 = { # Foldbourn
-		add_building_if_possible = { BUILDING = cereal_fields_02 }
+	province:8 = { # Eamund
+		add_building_if_possible = { BUILDING = peat_quarries_02 }
 	}
-	province:12 = { # Harrowdale
+	province:12 = { # Simbelmyne
 		add_building_if_possible = { BUILDING = pastures_02 }
 	}
-	province:16 = { # Firienfeld
+	province:16 = { # Westweald
 		add_building_if_possible = { BUILDING = pastures_02 }
 		add_building_if_possible = { BUILDING = cereal_fields_02 }
 	}
@@ -942,17 +948,10 @@ add_buildings_to_historical_provinces = {
 		add_building_if_possible = { BUILDING = cereal_fields_02 }
 	}
 	province:37 = { # Ealdeorl
-		add_building_if_possible = { BUILDING = cereal_fields_01 }
-	}
-	province:60 = { # Eaworth
 		add_building_if_possible = { BUILDING = pastures_02 }
 	}
 	province:64 = { # Halifirien
 		add_building_if_possible = { BUILDING = pastures_02 }
-	}
-	province:66 = { # Fenmark
-		add_building_if_possible = { BUILDING = pastures_01 }
-		add_building_if_possible = { BUILDING = cereal_fields_02 }
 	}
 	province:68 = { # Walding
 		add_building_if_possible = { BUILDING = cereal_fields_02 }
