@@ -15743,6 +15743,37 @@ lineimloth39 = {
 	7157.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
+}
+
+lineimloth40 = {
+	name = Surien
+    female = yes
+	dynasty_house = house_edhelion
+	religion = faith_edain
+	culture = belfalathrim
+
+	female = yes
+
+	father = lineimloth32
+	mother = lineimloth33
+
+	trait = content
+    trait = diligent
+	trait = gregarious
+	trait = beauty_good_2
+
+
+	trait = blood_of_numenor_3
+	7002.4.12 = {
+		birth = yes
+		effect = {
+			learn_language = language_sindarin
+		}			
+	}
+
+	7139.9.3 = {
+		death = { death_reason = death_natural_causes }
+	}
 }	
 
 ################################
@@ -17393,12 +17424,12 @@ lineheledir30 = {
 }	
 
 ###############################
-##### The Lords of Tarlang ####
+##### The Lords of Glandhir ####
 ###############################
 # House of Axanturionath
 
 lineaxantur1 = {
-	name = Axantur # Lord of Tarlang
+	name = Axantur # Lord of Glandhir
 	dynasty = dynasty_tarlang
 	religion = faith_edain
 	culture = gondorian
@@ -22308,6 +22339,69 @@ lineastandur12 = {
 		death = { death_reason = death_natural_causes }
 	}
 }	
+
+#### House of Arandal #### 
+
+#### House of Drinbar #### Defenders of the northern frontier of Ithilien, long suffered from Rhunnic attacks. 
+
+lineofdrinbarfinal = { # Artamir of Drinbar, ranger of Ithilien. Fell in battle near the Morannon, as Ithilien fell into shadow.
+	name = Artamir 
+	dynasty = dynasty_drinbar
+	religion = faith_edain
+	culture = gondorian
+
+	#father = 
+
+	trait = vengeful
+	trait = brave
+	trait = compassionate
+	trait = loyal
+
+	trait = education_martial_3
+
+	trait = blood_of_numenor_1
+
+	6850.2.20 = {
+		birth = yes
+		effect = {
+			learn_language = language_sindarin	
+		}			
+	}
+	6937.5.2 = { # 2904
+		death = { death_reason = death_battle }
+	}
+}	
+
+#### House of Finnarphen ####
+
+#### House of Asgaril ####
+
+#### House of Faerdur ####
+
+#### House of Wilwarin ####
+
+#### House of Coruvegil ####
+
+#### House of Rian ####
+
+#### House of Othnir ####
+
+#### House of Elemir ####
+
+#### House of Ususluni #### 
+
+#### House of Glorel ####
+
+#### House of Telengaur ####
+
+#### House of Faron ####
+
+#### House of Morvegil ####
+
+#### House of Nepos ####
+
+#### House of Tiridon ####
+
 
 ###############################
 ###### Governors of Umbar #####

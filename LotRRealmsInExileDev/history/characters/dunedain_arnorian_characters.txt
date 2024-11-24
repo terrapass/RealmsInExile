@@ -2112,7 +2112,7 @@ linehalbarad7 = {
 		}	
 	}
 	6998.1.1 = {
-		death = { death_reason = death_natural_causes } 
+		death = { death_reason = death_accident } 
 	}
 }
  
@@ -2135,7 +2135,7 @@ linehalbarad8 = {
 			learn_language = language_sindarin
 		}	
 	}
-	6966.1.1 = {
+	7031.1.1 = {
 		death = { death_reason = death_natural_causes } 
 	}
 }
@@ -54588,6 +54588,9 @@ lineoftarmacilin34 = {
     religion = faith_edain
     culture = arnorian
 
+    father = lineoftarmacilin31
+    mother = lineoftarmacilin32
+
     sexuality = heterosexual
 
     trait = blood_of_numenor_6
@@ -54620,6 +54623,7 @@ lineoftarmacilin35 = {
     name = Arniel
     female = yes
 
+    dynasty_house = house_tarmacilin
     religion = faith_edain
     culture = arnorian
 

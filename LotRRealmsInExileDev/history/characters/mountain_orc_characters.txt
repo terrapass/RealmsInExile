@@ -5065,6 +5065,7 @@ lineofyagrash3 = { # Ruler Grey Mountains
     dynasty = dynasty_yagrash
     religion = way_of_strength
     culture = worauthai_madur
+	dna = lineyagrash3_dna
 
     sexuality = heterosexual
 	
@@ -5109,6 +5110,7 @@ lineofyagrash4 = { # ruler Grey Mountains
     dynasty = dynasty_yagrash
     religion = way_of_strength
     culture = worauthai_madur
+	dna = lineyagrash4_dna
 
 	father = lineofyagrash1
 	mother = lineofyagrash2
@@ -5164,6 +5166,7 @@ lineofburzat = {	# Ruler, Grey Mountains
     dynasty = dynasty_burzat
     religion = dragon_cult
     culture = worauthai_madur
+	dna = lineofburzat_dna
 
     sexuality = asexual
 
@@ -5180,7 +5183,6 @@ lineofburzat = {	# Ruler, Grey Mountains
 
     trait = education_learning_1
 	trait = lunatic_genetic
-	trait = beauty_bad_2
 
 	6697.12.11 = {
 		birth = yes
@@ -14564,6 +14566,7 @@ linegreleb3 = {
     dynasty = dynasty_greleb
     religion = lidless_eye
     culture = kazgumhoth
+	dna = linegreleb3_dna
 
     father = linegreleb1
     mother = linegreleb2
@@ -14841,6 +14844,7 @@ linegrulukh1 = {
     dynasty = dynasty_grulukh
     religion = lidless_eye
     culture = kazgumhoth
+	
 
     sexuality = heterosexual
 
@@ -14907,6 +14911,7 @@ linegrulukh3 = {
     dynasty = dynasty_grulukh
     religion = lidless_eye
     culture = kazgumhoth
+	dna = linegrulukh3_dna
 
     father = linegrulukh1
     mother = linegrulukh2
@@ -16406,6 +16411,7 @@ linemarku7 = {
     dynasty = dynasty_marku
     religion = volcano_cult
     culture = rukhashai
+	dna = linemarku7_dna
 
     father = linemarku5
     mother = linemarku6
@@ -17081,6 +17087,7 @@ linemorakh5 = {
     dynasty = dynasty_morakh
     religion = volcano_cult
     culture = rukhashai
+	dna = linemorakh5_dna
 
     father = linemorakh3
     mother = linemorakh4
