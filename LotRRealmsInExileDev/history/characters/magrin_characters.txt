@@ -19311,7 +19311,7 @@ lineofosikogasek1a2 = {
     }
 }
 
-# LW Lords of Chupiga Deg
+#  Lords of Chupiga Deg
 
 lineofugowadig1 = {
     name = Makawa
@@ -19921,7 +19921,7 @@ lineofugowadig1a2a3 = {
     }
 }
 
-# LW Lords of Akos
+#  Lords of Akos
 
 lineofakos1 = {
     name = Gayode
@@ -20021,7 +20021,7 @@ lineofakos3 = {
     }
 }
 
-## LW Lords of the Southeastern coast of Mag-Tûmag
+##  Lords of the Southeastern coast of Mag-Tûmag
 
 lineofpagadeg1 = {
     name = Ongeludi
@@ -20417,7 +20417,7 @@ lineofpagadeg3a3 = {
     }
 }
 
-## LW Lords of Kôrul
+##  Lords of Kôrul
 
 linetamska141brother = {
     name = Yeeloguma

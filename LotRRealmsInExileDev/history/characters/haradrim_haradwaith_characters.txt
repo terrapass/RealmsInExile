@@ -7606,7 +7606,7 @@ lineofyahyaka16 = {
     }
 }
 
-lineofyahyaka15a = { # LW HoF - A militant and zealous priest, pushing to spread Khäz-Gramaze by force
+lineofyahyaka15a = { #  HoF - A militant and zealous priest, pushing to spread Khäz-Gramaze by force
     name = Pravak
 
     dynasty = dynasty_khadomejka

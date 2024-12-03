@@ -5986,7 +5986,7 @@ linegreleb3_dna = { # by Loon-kellenpure
 	enabled=yes
 }
 
-#Karrog LW start
+#Karrog  start
 dolguldurorc5_dna = { # by Loon-kellenpure
 	portrait_info = {
 		genes={

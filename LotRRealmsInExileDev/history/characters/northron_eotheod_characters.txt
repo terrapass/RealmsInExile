@@ -23629,7 +23629,7 @@ linethorne4 = { # E_lfgyth
 		death = { death_reason = death_natural_causes }
 	}
 }
-linethorne5 = { # Lord Thorne of the Wold, LW Ruler - Traitor of Rohan, sides with Wulf and helps capture Edoras
+linethorne5 = { # Lord Thorne of the Wold - Traitor of Rohan, sides with Wulf and helps capture Edoras
 	name = SwithrE_d
 	
 	dynasty = dynasty_thorne

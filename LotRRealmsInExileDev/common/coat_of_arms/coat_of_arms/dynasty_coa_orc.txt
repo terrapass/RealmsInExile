@@ -830,7 +830,7 @@ dynasty_ukkri={
 	}
 
 }
-#Grey Mountains LW
+#Grey Mountains 
 
 dynasty_daurukh = {
 	pattern="pattern_solid.dds"

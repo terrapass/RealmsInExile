@@ -7796,7 +7796,7 @@ lineerukath56 = {
 ###########################
 ## House of Khibilathôr ###
 ###########################
-# Corsair-lords of Barazôn under the rule of Umbar in the LW
+# Corsair-lords of Barazôn under the rule of Umbar
 linebarazoncorsair1 = {
     name = Khibilatho_o_r
 
@@ -8785,7 +8785,7 @@ linebarazoncorsair27 = {
 #######################
 ### House of Zoran ####
 #######################
-# Umbarean Lords of Sakal an Khar in the LW
+# Umbarean Lords of Sakal an Khar
 linezoran1 = {
     name = Ni_i_lo_o_zi_i_r
 
