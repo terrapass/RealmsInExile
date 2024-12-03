@@ -1782,7 +1782,6 @@ lotr_intro_events.6230 = { # Introduction to Steward Beren
 		character = root
 		animation = personality_cynical
 	}
-	orphan = yes
 
 	option = {
 		name = lotr_intro_events.6230.a
@@ -1879,7 +1878,6 @@ lotr_intro_events.6403 = { # Helm Hammerhand
 		character = scope:freca
 		animation = personality_dishonorable
 	}
-	orphan = yes
 
 	immediate = {
 		play_music_cue = lotr_cue_rohan

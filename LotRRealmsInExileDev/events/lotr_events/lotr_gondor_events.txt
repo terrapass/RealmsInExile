@@ -9858,6 +9858,7 @@ gondor.3801 = { #Arassuil arrives at Minas Tirith
 		}
 		root = { add_character_flag = try_rotk }
 	}
+	orphan = yes
 	
 	option = { #I'll go directly to the steward
 		name = gondor.3801.a
