@@ -1843,7 +1843,7 @@ lineofafalku10 = {
 	}
 }
 
-lineofafalku11a = { # King of Haruzan in LW
+lineofafalku11a = { # King of Haruzan
 	name = Hu_u_ssamaddin # King of Haruzan
 
 	dynasty = dynasty_ayerikka
@@ -2561,9 +2561,9 @@ lineofafalku28awife = {
 	}
 }
 
-lineofafalku28aSon = { # LW LAAMP Khäz-Gramaze Missionary, historically unsuccessful and killed in Tedja
+lineofafalku28aSon = { # Khäz-Gramaze Missionary, historically unsuccessful and killed in Tedja
 	# Juke Note: Hoping to potentially give him a small event chain in the future
-	# Two years after LW gamestart, King of Haruzan gets an event where his nephew forms the LAAMP. He can switch to him, or support him with cash
+	# King of Haruzan gets an event where his nephew forms the LAAMP. He can switch to him, or support him with cash
 	# Serpent Cult HoF can also give cash
 	# Instantly gets effects of missionary LAAMP decision
 	# Then he sets out to preach in Tedja, Dune Sea, Lurmsakun or Arysis
