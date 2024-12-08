@@ -9,6 +9,7 @@ lotr_on_game_start = {
 	}
 
 	effect = {
+		religion:magrin_religion = { every_faith = { set_variable = historical_magrin_faith } }
 		set_global_variable = {
 			name = th_confederation_val
 			value = 0
@@ -21,28 +22,38 @@ lotr_on_game_start = {
 		religion:religion_wastelands_pagan = { set_variable = religion_invis }
 		faith:faith_wastelands_pagan = { set_variable = faith_invis }
 		culture:wastelands = { set_variable = culture_invis }
-
+		
 		### Initialise Durin's Bane Struggle
 		start_struggle = { # Balrog flees after defeat in War of Wrath, settling in Moria
 			struggle_type = balrog_struggle
-			start_phase = struggle_balrog_phase_wandering
+			start_phase = struggle_balrog_phase_slumbering
 		}
 		if = {
-			limit = { # Moria destroyed, Balrog calms down somewhat
-				game_start_date >= 6023.1.1
-			}
-			struggle:balrog_struggle = {
-				change_struggle_phase = struggle_balrog_phase_wandering	
-			}
-		}
-		else_if = { # Mithril miners under King Durin IV awaken the Balrog
 			limit = {
 				game_start_date >= 6013.1.1
 			}
-			struggle:balrog_struggle = {
-				change_struggle_phase = struggle_balrog_phase_armageddon	
+			if = {
+				limit = { # Moria destroyed, Balrog calms down somewhat
+					game_start_date >= 6023.1.1
+				}
+				struggle:balrog_struggle = {
+					change_struggle_phase = struggle_balrog_phase_wandering	
+				}
+			}
+			else_if = { # Mithril miners under King Durin IV awaken the Balrog
+				limit = {
+					game_start_date >= 6013.1.1
+				}
+				struggle:balrog_struggle = {
+					change_struggle_phase = struggle_balrog_phase_armageddon	
+				}
+			}
+			if = {
+				limit = { province:4909 = { has_building = wonder_durin_throne } }
+				province:4909 = { remove_building = wonder_durin_throne }
 			}
 		}
+		else = { province:4909 = { add_special_building = wonder_durin_throne } }
 		
 		### DW Code ###
 		add_empires_to_global_list = yes
@@ -103,7 +114,7 @@ lotr_on_game_start = {
 
 		title:k_wastelands.holder = { create_story = story_artifact_crafting }
 
-		title:e_mag_tumag.holder = { create_story = story_cycle_tamskangi }
+		title:d_tamska_main.holder = { create_story = story_cycle_tamskangi }
 
 		if = { # The Establishment of the Ithilien Rangers
 			limit = { game_start_date > 2934.1.1 } # The year is after T.A. 2901, when Henneth Annun was built
@@ -250,7 +261,19 @@ lotr_on_game_start = {
 				id = wraith.0001	
 				days = 1
 			}
-        }					
+        }	
+		
+		## Ensure Future Tamskas are not prematurely showing as Tamska in earlier start dates
+
+		if = {
+			limit = {
+				game_start_date = 6787.1.1
+			}
+			character:linetamska159 = { 
+				remove_trait = tamska
+				add_trait = tamska_heir
+			}
+		}
 
 		### Cap Dynasty Perks at 5 ###
 		
@@ -827,6 +850,19 @@ lotr_on_game_start_after_lobby = {
 			}
 		}
 		
+		## Khäz-Gramaze Preacher - 2754TA
+		character:lineofafalku28aSon ?= {
+			if = {
+				limit = { 
+					is_alive = yes
+					game_start_date >= 6781.6.21
+					game_start_date <= 6801.3.10
+					has_dlc_feature = roads_to_power
+				}
+				add_realm_law_skip_effects = camp_purpose_scholars
+			}
+		}
+
 		#Kindilár Sword-Clans - 2754TA
 		character:lineunurani1 ?= { #LotR
 			if = {
